@@ -1,1 +1,1 @@
-# DPW8-Plotting Buffet Test Case 1b -- ONERA OAT15A transonic airfoil, non-RANS schemes
+# DPW8-Plotting Buffet Working Group plots
