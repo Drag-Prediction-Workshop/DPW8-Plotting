@@ -694,7 +694,7 @@ $!VarSet |CstmUsrAdp_Maps| = "                                                  
 #-------------------------------------------------
 $!AlterData
   IgnoreDivideByZero = Yes
-  Equation = '{1/h} = 1/{GRID_SIZE}'
+  Equation = '{1/h} = 1/({GRID_SIZE}**(1/2))'
 $!Varset |1_h| = |NumVars|
 $!AlterData
   IgnoreDivideByZero = Yes
@@ -751,8 +751,9 @@ $!GlobalLinePlot
     }
 
 $!PrintSetup Palette = Color
-$!ExportSetup ImageWidth = 450
 $!ExportSetup UseSuperSampleAntiAliasing = Yes
+$!ExportSetup ExportFormat = EPS
+$!ExportSetup ImageWidth = 2000
 
 #==================================================================================================
 # SA/SA-QCR/SST variants
@@ -778,30 +779,30 @@ $!AttachText AnchorPos { X = 76 Y = 93 } TextShape { Height = 12 IsBold = No } C
 $!LineMap [1-|NumLineMaps|]  Assign{XAxisVar = 6 YAxisVar = 7}
 #$!View Fit
 #$!View NiceFit
-$!View DataFit
+$!View NiceFit
 $!View MakeCurrentViewNice
 #$!XYLineAxis XDetail 1 {RangeMin = -1.0E-06 RangeMax = 4.0E-05}
-$!ExportSetup ExportFName = 'Grid|GRID|_CL_Alpha_Turb.png'
+$!ExportSetup ExportFName = '|MACROFILEPATH|/Grid|GRID|_CL_Alpha_Turb.eps'
 $!Export 
   ExportRegion = AllFrames
 
 # CMy
 $!LineMap [1-|NumLineMaps|]  Assign{XAxisVar = 9 YAxisVar = 6}
-$!View DataFit
+$!View NiceFit
 $!View MakeCurrentViewNice
 #$!XYLineAxis XDetail 1 {RangeMin = -1.0E-06 RangeMax = 4.0E-05}
 #$!XYLineAxis YDetail 1 {RangeMin = 0.0115   RangeMax = 0.0165}
-$!ExportSetup ExportFName = 'Grid|GRID|_CM_Alpha_Turb.png'
+$!ExportSetup ExportFName = '|MACROFILEPATH|/Grid|GRID|_CM_Alpha_Turb.eps'
 $!Export 
   ExportRegion = AllFrames
 
 # CD
 $!LineMap [1-|NumLineMaps|]  Assign{XAxisVar = 8 YAxisVar = 7}
-$!View DataFit
+$!View NiceFit
 $!View MakeCurrentViewNice
 #$!XYLineAxis XDetail 1 {RangeMin = -1.0E-06 RangeMax = 4.0E-05}
 #$!XYLineAxis YDetail 1 {RangeMin = 0.0115   RangeMax = 0.0165}
-$!ExportSetup ExportFName = 'Grid|GRID|_CD_CL_Turb.png'
+$!ExportSetup ExportFName = '|MACROFILEPATH|/Grid|GRID|_CD_CL_Turb.eps'
 $!Export 
   ExportRegion = AllFrames
 
@@ -842,30 +843,30 @@ $!IF 1 == 1
 
   # CL
    $!LineMap [1-|NumLineMaps|]  Assign{XAxisVar = 6 YAxisVar = 7}
-   $!View DataFit
+   $!View NiceFit
    $!View MakeCurrentViewNice
   #$!XYLineAxis XDetail 1 {RangeMin = -1.0E-06 RangeMax = 4.0E-05}
-   $!ExportSetup ExportFName = 'Grid|GRID|_CL_Alpha_Grid.png'
+   $!ExportSetup ExportFName = '|MACROFILEPATH|/Grid|GRID|_CL_Alpha_Grid.eps'
    $!Export 
      ExportRegion = AllFrames
 
   # CMy
    $!LineMap [1-|NumLineMaps|]  Assign{XAxisVar = 9 YAxisVar = 6}
-   $!View DataFit
+   $!View NiceFit
    $!View MakeCurrentViewNice
   #$!XYLineAxis XDetail 1 {RangeMin = -1.0E-06 RangeMax = 4.0E-05}
   #$!XYLineAxis YDetail 1 {RangeMin = 0.0115   RangeMax = 0.0165}
-   $!ExportSetup ExportFName = 'Grid|GRID|_CM_Alpha_Grid.png'
+   $!ExportSetup ExportFName = '|MACROFILEPATH|/Grid|GRID|_CM_Alpha_Grid.eps'
    $!Export 
      ExportRegion = AllFrames
 
   # CD
    $!LineMap [1-|NumLineMaps|]  Assign{XAxisVar = 8 YAxisVar = 7}
-   $!View DataFit
+   $!View NiceFit
    $!View MakeCurrentViewNice
   #$!XYLineAxis XDetail 1 {RangeMin = -1.0E-06 RangeMax = 4.0E-05}
   #$!XYLineAxis YDetail 1 {RangeMin = 0.0115   RangeMax = 0.0165}
-   $!ExportSetup ExportFName = 'Grid|GRID|_CD_CL_Grid.png'
+   $!ExportSetup ExportFName = '|MACROFILEPATH|/Grid|GRID|_CD_CL_Grid.eps'
    $!Export 
      ExportRegion = AllFrames
 $!ENDIF

@@ -316,7 +316,7 @@ $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
 $!LineMap [|N|]  Assign{Zone = |Z|}
-$!ActiveLineMaps -= [|N|]
+$!ActiveLineMaps += [|N|]
 
 #-------------------------------------------------
 $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/009_ONERA/08_elsA_ONERA-structured_kwSST/DPW8-AePW4_ForceMoment_v5.dat" '
@@ -330,6 +330,9 @@ $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
 $!LineMap [|N|]  Assign{Zone = |Z|}
+$!ActiveLineMaps += [|N|]
+
+# Note: 009.08 is identical to 009.07 and needs updating
 $!ActiveLineMaps -= [|N|]
 
 #-------------------------------------------------
@@ -472,6 +475,9 @@ $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
 $!LineMap [|N|]  Assign{Zone = |Z|}
 $!ActiveLineMaps += [|N|]
+
+# Note: 020.02 data is 1st order and needs updated.
+$!ActiveLineMaps -= [|N|]
 
 #-------------------------------------------------
 $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/020_DukeUniversity/03_FUN3D_CadenceStructured_SAneg/DPW8-AePW4_ForceMoment_v5.dat" '
@@ -694,7 +700,7 @@ $!VarSet |CstmUsrAdp_Maps| = "                                                  
 #-------------------------------------------------
 $!AlterData
   IgnoreDivideByZero = Yes
-  Equation = '{1/h} = 1/{GRID_SIZE}'
+  Equation = '{1/h} = 1/({GRID_SIZE}**(1/2))'
 $!Varset |1_h| = |NumVars|
 $!AlterData
   IgnoreDivideByZero = Yes
@@ -751,8 +757,9 @@ $!GlobalLinePlot
     }
 
 $!PrintSetup Palette = Color
-$!ExportSetup ImageWidth = 450
 $!ExportSetup UseSuperSampleAntiAliasing = Yes
+$!ExportSetup ExportFormat = EPS
+$!ExportSetup ImageWidth = 2000
 
 #==================================================================================================
 # SA/SA-QCR/SST variants
@@ -778,31 +785,33 @@ $!AttachText AnchorPos { X = 76 Y = 93 } TextShape { Height = 12 IsBold = No } C
 $!LineMap [1-|NumLineMaps|]  Assign{XAxisVar = |1_h| YAxisVar = 7}
 #$!View Fit
 #$!View NiceFit
-$!View DataFit
+$!View NiceFit
 $!View MakeCurrentViewNice
-$!XYLineAxis XDetail 1 {RangeMin = -1.0E-06 RangeMax = 4.0E-05}
-
-$!ExportSetup ExportFName = 'Alpha|ALPHA|_CL_Turb.png'
+$!XYLineAxis XDetail 1 {RangeMin = 2.5E-04 RangeMax = 2.5E-02}
+$!XYLineAxis XDetail 1 {CoordScale = Log}
+$!ExportSetup ExportFName = '|MACROFILEPATH|/Alpha|ALPHA|_CL_Turb.eps'
 $!Export 
   ExportRegion = AllFrames
 
 # CMy
 $!LineMap [1-|NumLineMaps|]  Assign{XAxisVar = |1_h| YAxisVar = 9}
-$!View DataFit
+$!View NiceFit
 $!View MakeCurrentViewNice
-$!XYLineAxis XDetail 1 {RangeMin = -1.0E-06 RangeMax = 4.0E-05}
+$!XYLineAxis XDetail 1 {RangeMin = 2.5E-04 RangeMax = 2.5E-02}
+$!XYLineAxis XDetail 1 {CoordScale = Log}
 #$!XYLineAxis YDetail 1 {RangeMin = 0.0115   RangeMax = 0.0165}
-$!ExportSetup ExportFName = 'Alpha|ALPHA|_CM_Turb.png'
+$!ExportSetup ExportFName = '|MACROFILEPATH|/Alpha|ALPHA|_CM_Turb.eps'
 $!Export 
   ExportRegion = AllFrames
 
 # CD
 $!LineMap [1-|NumLineMaps|]  Assign{XAxisVar = |1_h| YAxisVar = 8}
-$!View DataFit
+$!View NiceFit
 $!View MakeCurrentViewNice
-$!XYLineAxis XDetail 1 {RangeMin = -1.0E-06 RangeMax = 4.0E-05}
+$!XYLineAxis XDetail 1 {RangeMin = 2.5E-04 RangeMax = 2.5E-02}
+$!XYLineAxis XDetail 1 {CoordScale = Log}
 #$!XYLineAxis YDetail 1 {RangeMin = 0.0115   RangeMax = 0.0165}
-$!ExportSetup ExportFName = 'Alpha|ALPHA|_CD_Turb.png'
+$!ExportSetup ExportFName = '|MACROFILEPATH|/Alpha|ALPHA|_CD_Turb.eps'
 $!Export 
   ExportRegion = AllFrames
 
@@ -843,30 +852,33 @@ $!IF 1 == 1
 
   # CL
    $!LineMap [1-|NumLineMaps|]  Assign{XAxisVar = |1_h| YAxisVar = 7}
-   $!View DataFit
+   $!View NiceFit
    $!View MakeCurrentViewNice
-   $!XYLineAxis XDetail 1 {RangeMin = -1.0E-06 RangeMax = 4.0E-05}
-   $!ExportSetup ExportFName = 'Alpha|ALPHA|_CL_Grid.png'
+   $!XYLineAxis XDetail 1 {RangeMin = 2.5E-04 RangeMax = 2.5E-02}
+   $!XYLineAxis XDetail 1 {CoordScale = Log}
+   $!ExportSetup ExportFName = '|MACROFILEPATH|/Alpha|ALPHA|_CL_Grid.eps'
    $!Export 
      ExportRegion = AllFrames
 
   # CMy
    $!LineMap [1-|NumLineMaps|]  Assign{XAxisVar = |1_h| YAxisVar = 9}
-   $!View DataFit
+   $!View NiceFit
    $!View MakeCurrentViewNice
-   $!XYLineAxis XDetail 1 {RangeMin = -1.0E-06 RangeMax = 4.0E-05}
+   $!XYLineAxis XDetail 1 {RangeMin = 2.5E-04 RangeMax = 2.5E-02}
+   $!XYLineAxis XDetail 1 {CoordScale = Log}
   #$!XYLineAxis YDetail 1 {RangeMin = 0.0115   RangeMax = 0.0165}
-   $!ExportSetup ExportFName = 'Alpha|ALPHA|_CM_Grid.png'
+   $!ExportSetup ExportFName = '|MACROFILEPATH|/Alpha|ALPHA|_CM_Grid.eps'
    $!Export 
      ExportRegion = AllFrames
 
   # CD
    $!LineMap [1-|NumLineMaps|]  Assign{XAxisVar = |1_h| YAxisVar = 8}
-   $!View DataFit
+   $!View NiceFit
    $!View MakeCurrentViewNice
-   $!XYLineAxis XDetail 1 {RangeMin = -1.0E-06 RangeMax = 4.0E-05}
+   $!XYLineAxis XDetail 1 {RangeMin = 2.5E-04 RangeMax = 2.5E-02}
+   $!XYLineAxis XDetail 1 {CoordScale = Log}
   #$!XYLineAxis YDetail 1 {RangeMin = 0.0115   RangeMax = 0.0165}
-   $!ExportSetup ExportFName = 'Alpha|ALPHA|_CD_Grid.png'
+   $!ExportSetup ExportFName = '|MACROFILEPATH|/Alpha|ALPHA|_CD_Grid.eps'
    $!Export 
      ExportRegion = AllFrames
 $!ENDIF
