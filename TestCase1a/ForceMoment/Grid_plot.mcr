@@ -168,7 +168,7 @@ $!PageName = 'CM_Alpha_Turb'
 $!Pick Paste
 $!FrameControl DeleteByNumber
   Frame = 1
-$!LineMap [1-|NumLineMaps|]  Assign{XAxisVar = 9 YAxisVar = 6}
+$!LineMap [1-|NumLineMaps|]  Assign{XAxisVar = 6 YAxisVar = 9}
 $!View NiceFit
 $!View MakeCurrentViewNice
 #$!XYLineAxis XDetail 1 {RangeMin = -1.0E-06 RangeMax = 4.0E-05}
@@ -252,7 +252,7 @@ $!IF 1 == 1
    $!Pick Paste
    $!FrameControl DeleteByNumber
      Frame = 1
-   $!LineMap [1-|NumLineMaps|]  Assign{XAxisVar = 9 YAxisVar = 6}
+   $!LineMap [1-|NumLineMaps|]  Assign{XAxisVar = 6 YAxisVar = 9}
    $!View NiceFit
    $!View MakeCurrentViewNice
   #$!XYLineAxis XDetail 1 {RangeMin = -1.0E-06 RangeMax = 4.0E-05}

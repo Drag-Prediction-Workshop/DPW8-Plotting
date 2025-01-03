@@ -487,6 +487,9 @@ $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
 $!LineMap [|N|]  Assign{Zone = |Z|}
 $!ActiveLineMaps += [|N|]
 
+# Note: 020.02 data is 1st order and needs updated.
+$!ActiveLineMaps -= [|N|]
+
 #-------------------------------------------------
 $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/020_DukeUniversity/04_FUN3D_CadenceUnstructured_SAneg/DPW8-AePW4_ForceMoment_v5.dat" '
   ReadDataOption = Append

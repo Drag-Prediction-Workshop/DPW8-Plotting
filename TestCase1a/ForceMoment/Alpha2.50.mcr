@@ -591,9 +591,6 @@ $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
 $!LineMap [|N|]  Assign{Zone = |Z|}
 $!ActiveLineMaps += [|N|]
 
-# Note: Missing CMy data
-$!ActiveLineMaps -= [|N|]
-
 #-------------------------------------------------
 $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/027_RMIT/02_SA/DPW8-AePW4_ForceMoment_v5.dat" '
   ReadDataOption = Append
