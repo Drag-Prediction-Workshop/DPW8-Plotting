@@ -334,8 +334,8 @@ $!GlobalLinePlot
     RowSpacing = 1.1
     XYPos
       {
-      X = 98
-      Y = 98
+      X = 44.542
+      Y = 28.104
       }
     }
 $!LineMap  [1]
@@ -343,62 +343,8 @@ $!LineMap  [1]
   Assign
     {
     Zone = 4
-    XAxisVar = 1
-    YAxisVar = 2
-    }
-  Lines
-    {
-    Color = Red
-    LineThickness = 0.4
-    }
-  Symbols
-    {
-    Color = Red
-    FillColor = Red
-    }
-  BarCharts
-    {
-    Color = Red
-    FillColor = Red
-    }
-  ErrorBars
-    {
-    Color = Red
-    }
-$!LineMap  [2]
-  Name = '&ZN&'
-  Assign
-    {
-    Zone = 12
-    XAxisVar = 1
-    YAxisVar = 2
-    }
-  Lines
-    {
-    Color = Custom10
-    LineThickness = 0.4
-    }
-  Symbols
-    {
-    Color = Red
-    FillColor = Red
-    }
-  BarCharts
-    {
-    Color = Red
-    FillColor = Red
-    }
-  ErrorBars
-    {
-    Color = Red
-    }
-$!LineMap  [3]
-  Name = '&ZN&'
-  Assign
-    {
-    Zone = 22
-    XAxisVar = 1
-    YAxisVar = 2
+    XAxisVar = 'f(Hz)'
+    YAxisVar = '<p(Pa^2)>'
     }
   Lines
     {
@@ -419,17 +365,71 @@ $!LineMap  [3]
     {
     Color = Red
     }
-$!LineMap  [4]
-  Name = '&ZN&'
+$!LineMap  [2]
+  Name = '&(ZONENAME[12]%6.6s)'
   Assign
     {
-    Zone = 32
-    XAxisVar = 1
-    YAxisVar = 2
+    Zone = 12
+    XAxisVar = 'f(Hz)'
+    YAxisVar = '<p(Pa^2)>'
     }
   Lines
     {
-    Color = Custom13
+    Color = Green
+    LineThickness = 0.4
+    }
+  Symbols
+    {
+    Color = Red
+    FillColor = Red
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [3]
+  Name = '&(ZONENAME[22]%6.6s)'
+  Assign
+    {
+    Zone = 22
+    XAxisVar = 'f(Hz)'
+    YAxisVar = '<p(Pa^2)>'
+    }
+  Lines
+    {
+    Color = Green
+    LineThickness = 0.4
+    }
+  Symbols
+    {
+    Color = Red
+    FillColor = Red
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [4]
+  Name = '&(ZONENAME[32]%6.6s)'
+  Assign
+    {
+    Zone = 32
+    XAxisVar = 'f(Hz)'
+    YAxisVar = '<p(Pa^2)>'
+    }
+  Lines
+    {
+    Color = Custom9
     LineThickness = 0.4
     }
   Symbols
@@ -451,8 +451,8 @@ $!LineMap  [5]
   Assign
     {
     Zone = 42
-    XAxisVar = 1
-    YAxisVar = 2
+    XAxisVar = 'f(Hz)'
+    YAxisVar = '<p(Pa^2)>'
     }
   Lines
     {
@@ -477,7 +477,7 @@ $!XYLineAxis
   DepXToYRatio = 1
   ViewportPosition
     {
-    X1 = 14
+    X1 = 12
     Y1 = 10
     X2 = 94
     Y2 = 94
@@ -502,12 +502,17 @@ $!XYLineAxis
       PatternLength = 0.5
       LineThickness = 0.2
       }
+    Title
+      {
+      TitleMode = UseText
+      Text = 'f (Hz)'
+      }
     }
 $!XYLineAxis 
   YDetail 1
     {
     CoordScale = Log
-    RangeMin = 9.9999999999999995475E-08
+    RangeMin = 9.9999999999999995475E-07
     RangeMax = 10000000000
     GRSpacing = 2000000000
     Gridlines
@@ -524,9 +529,80 @@ $!XYLineAxis
       }
     Title
       {
-      Offset = 11
+      Offset = 8
       }
     }
+$!AttachText 
+  AnchorPos
+    {
+    X = 72
+    Y = 97
+    }
+  Anchor = HeadLeft
+  Text = 'Temporal Scheme:'
+$!AttachText 
+  AnchorPos
+    {
+    X = 75
+    Y = 89
+    }
+  TextShape
+    {
+    IsBold = No
+    }
+  Anchor = HeadLeft
+  Text = 'WMLES'
+$!AttachText 
+  AnchorPos
+    {
+    X = 75
+    Y = 94
+    }
+  TextShape
+    {
+    IsBold = No
+    }
+  Color = Custom9
+  Anchor = HeadLeft
+  Text = 'URANS'
+$!AttachText 
+  AnchorPos
+    {
+    X = 75
+    Y = 91.5
+    }
+  TextShape
+    {
+    IsBold = No
+    }
+  Color = Green
+  Anchor = HeadLeft
+  Text = 'ZDES'
+$!AttachText 
+  AnchorPos
+    {
+    X = 75
+    Y = 86.5
+    }
+  TextShape
+    {
+    IsBold = No
+    }
+  Color = Blue
+  Anchor = HeadLeft
+  Text = 'Experiment'
+$!AttachGeom 
+  GeomType = Rectangle
+  PositionCoordSys = Frame
+  AnchorPos
+    {
+    X = 71.2990936555891
+    Y = 98.50075528700904
+    }
+  IsFilled = Yes
+  LineThickness = 0.2
+  RawData
+25.1359522343 -15.7183080912 
 $!FrameControl ActivateByNumber
   Frame = 1
 $!SetStyleBase Config

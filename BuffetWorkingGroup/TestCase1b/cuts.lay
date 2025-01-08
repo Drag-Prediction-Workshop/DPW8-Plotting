@@ -1,10 +1,12 @@
 #!MC 1410
-$!VarSet |LFDSFN1| = '"../../../DPW8-Buffet/TestCase1b/005_LAVA_Curvilinear/03_ZDES_SAneg/DPW8-AePW4_UnsteadyForceMoment_LAVA_OAT15A_ZDES_SAneg_005.03.dat" "../../../DPW8-Buffet/TestCase1b/005_LAVA_Curvilinear/04_ZDES_SAneg_blend2/DPW8-AePW4_UnsteadyForceMoment_LAVA_OAT15A_ZDES_SAneg_005.04.dat" "../../../DPW8-Buffet/TestCase1b/005_LAVA_Curvilinear/05_URANS_SARCcomp/DPW8-AePW4_UnsteadyForceMoment_LAVA_OAT15A_URANS_SARC_CC_005.05.dat"'
-$!VarSet |LFDSVL1| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_AVG" "CD_AVG" "CM_AVG" "CL_RMS" "CD_RMS" "CM_RMS"'
-$!VarSet |LFDSFN2| = '"../../../DPW8-Buffet/TestCase1b/008_Metacomp/02_CFD++_Deck/DPW8-AePW4_UnsteadyForceMoment_008.02.dat"'
-$!VarSet |LFDSVL2| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_AVG" "CD_AVG" "CM_AVG" "CL_RMS" "CD_RMS" "CM_RMS"'
-$!VarSet |LFDSFN3| = '"../../../DPW8-Buffet/TestCase1b/010_Boeing/010_DPW8-AePW4_UnsteadyForceMoment_v5.dat"'
-$!VarSet |LFDSVL3| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_AVG" "CD_AVG" "CM_AVG" "CL_RMS" "CD_RMS" "CM_RMS"'
+$!VarSet |LFDSFN1| = '"../../../DPW8-Buffet/TestCase1b/Experiment/Cp.dat"'
+$!VarSet |LFDSVL1| = '"x/c" "Cp"'
+$!VarSet |LFDSFN2| = '"../../../DPW8-Buffet/TestCase1b/Experiment/Cp_rms.dat"'
+$!VarSet |LFDSVL2| = '"x/c" "Cp" "P<sub>rms</sub>/Q<sub>0</sub>"'
+$!VarSet |LFDSFN3| = '"../../../DPW8-Buffet/TestCase1b/005_LAVA_Curvilinear/03_ZDES_SAneg/DPW8-AePW4_UnsteadySectionalCuts_LAVA_OAT15A_ZDES_SAneg_005.03.dat" "../../../DPW8-Buffet/TestCase1b/005_LAVA_Curvilinear/04_ZDES_SAneg_blend2/DPW8-AePW4_UnsteadySectionalCuts_LAVA_OAT15A_ZDES_SAneg_005.04.dat" "../../../DPW8-Buffet/TestCase1b/005_LAVA_Curvilinear/05_URANS_SARCcomp/DPW8-AePW4_UnsteadySectionalCuts_LAVA_OAT15A_URANS_SARC_CC_005.05.dat"'
+$!VarSet |LFDSVL3| = '"x/c" "Cp";"CP_AVG" "P<sub>rms</sub>/Q<sub>0</sub>" "X" "Y" "Z" "CP_RMS" "CF_AVG" "CF_RMS"'
+$!VarSet |LFDSFN4| = '"../../../DPW8-Buffet/TestCase1b/010_Boeing/010_DPW8-AePW4_UnsteadySectionalCuts_v5.dat"'
+$!VarSet |LFDSVL4| = '"x/c" "Cp";"CP_AVG" "P<sub>rms</sub>/Q<sub>0</sub>" "X" "Y" "Z" "CP_RMS" "CF_AVG" "CF_RMS"'
 $!SetStyleBase Factory
 $!BasicColor 
   Custom9
@@ -145,54 +147,6 @@ $!BasicColor
     G = 37
     B = 29
     }
-  Custom33
-    {
-    R = 237
-    G = 133
-    B = 140
-    }
-  Custom34
-    {
-    R = 134
-    G = 211
-    B = 143
-    }
-  Custom35
-    {
-    R = 130
-    G = 131
-    B = 255
-    }
-  Custom36
-    {
-    R = 127
-    G = 127
-    B = 127
-    }
-  Custom37
-    {
-    R = 240
-    G = 222
-    B = 149
-    }
-  Custom38
-    {
-    R = 197
-    G = 173
-    B = 153
-    }
-  Custom39
-    {
-    R = 193
-    G = 192
-    B = 255
-    }
-  Custom40
-    {
-    R = 255
-    G = 137
-    B = 220
-    }
   Custom49
     {
     R = 135
@@ -272,9 +226,17 @@ $!ReadDataSet  '|LFDSFN3|'
   VarNameList = '|LFDSVL3|'
 $!RemoveVar |LFDSVL3|
 $!RemoveVar |LFDSFN3|
-$!AlterData  [4]
-  IgnoreDivideByZero = Yes
-  Equation = '{CM_AVG} = -{CM_AVG}'
+$!ReadDataSet  '|LFDSFN4|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL4|'
+$!RemoveVar |LFDSVL4|
+$!RemoveVar |LFDSFN4|
 $!FrameLayout 
   ShowBorder = No
   ShowHeader = No
@@ -294,7 +256,7 @@ $!FrameName  = 'Frame 001'
 $!GlobalTime 
   SolutionTime = 0
 $!DeleteLineMaps 
-$!ActiveLineMaps  =  [1-3,5-7]
+$!ActiveLineMaps  =  [1-7]
 $!GlobalLinePlot 
   DataLabels
     {
@@ -311,37 +273,29 @@ $!GlobalLinePlot
     RowSpacing = 1.1
     XYPos
       {
-      X = 39.631
-      Y = 93.106
+      X = 56.288
+      Y = 38.23
       }
     }
 $!LineMap  [1]
-  Name = '&(ZONENAME[1]%6.6s)'
+  Name = 'Experiment'
   Assign
     {
-    Zone = 1
-    XAxisVar = 'ALPHA'
-    YAxisVar = 'CL_AVG'
+    Zone = 3
+    XAxisVar = 'x/c'
+    YAxisVar = 'Cp'
     }
   Lines
     {
-    Color = Green
+    Color = Custom11
     LineThickness = 0.4
     }
   Symbols
     {
-    SymbolShape
-      {
-      IsASCII = Yes
-      ASCIIShape
-        {
-        UseBaseFont = No
-        FontOverride = Greek
-        ASCIIChar = '\C'
-        }
-      }
-    Color = Green
-    FillColor = Green
+    Color = Custom11
+    FillMode = UseLineColor
+    FillColor = Red
+    Size = 1
     }
   BarCharts
     {
@@ -353,228 +307,190 @@ $!LineMap  [1]
     Color = Red
     }
 $!LineMap  [2]
-  Name = '&(ZONENAME[2]%6.6s)'
+  Name = '&(ZONENAME[17]%6.6s)'
   Assign
     {
-    Zone = 2
-    XAxisVar = 'ALPHA'
-    YAxisVar = 'CL_AVG'
+    Zone = 17
+    XAxisVar = 'x/c'
+    YAxisVar = 'Cp'
     }
   Lines
     {
+    Show = No
     Color = Green
     LineThickness = 0.4
     }
   Symbols
     {
-    SymbolShape
-      {
-      IsASCII = Yes
-      ASCIIShape
-        {
-        UseBaseFont = No
-        FontOverride = Greek
-        ASCIIChar = '\c'
-        }
-      }
+    Color = Green
+    FillMode = UseLineColor
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
     Color = Green
     FillColor = Green
     }
-  BarCharts
-    {
-    Color = Red
-    FillColor = Red
-    }
   ErrorBars
     {
-    Color = Red
+    Color = Green
     }
 $!LineMap  [3]
-  Name = '&(ZONENAME[3]%6.6s)'
+  Name = '&(ZONENAME[27]%6.6s)'
   Assign
     {
-    Zone = 3
-    XAxisVar = 'ALPHA'
-    YAxisVar = 'CL_AVG'
+    Zone = 27
+    XAxisVar = 'x/c'
+    YAxisVar = 'Cp'
     }
   Lines
     {
-    Color = Red
+    Show = No
+    Color = Green
     LineThickness = 0.4
     }
   Symbols
     {
-    SymbolShape
-      {
-      IsASCII = Yes
-      ASCIIShape
-        {
-        UseBaseFont = No
-        ASCIIChar = '\C'
-        }
-      }
-    Color = Red
-    FillColor = Red
+    Color = Green
+    FillMode = UseLineColor
+    FillColor = Green
+    Size = 1
     }
   BarCharts
     {
-    Color = Red
-    FillColor = Red
+    Color = Green
+    FillColor = Green
     }
   ErrorBars
     {
-    Color = Red
+    Color = Green
     }
 $!LineMap  [4]
-  Name = '&(ZONENAME[4]%6.6s)'
+  Name = '&(ZONENAME[37]%6.6s)'
   Assign
     {
-    Zone = 4
-    XAxisVar = 'ALPHA'
-    YAxisVar = 'CL_AVG'
+    Zone = 37
+    XAxisVar = 'x/c'
+    YAxisVar = 'Cp'
     }
   Lines
     {
+    Show = No
     Color = Red
     LineThickness = 0.4
     }
   Symbols
     {
-    SymbolShape
-      {
-      IsASCII = Yes
-      ASCIIShape
-        {
-        FontOverride = UserDef
-        ASCIIChar = '\F'
-        }
-      }
-    Color = Red
-    FillColor = Red
+    Color = Custom9
+    FillMode = UseLineColor
+    FillColor = Green
+    Size = 1
     }
   BarCharts
     {
-    Color = Red
-    FillColor = Red
+    Color = Green
+    FillColor = Green
     }
   ErrorBars
     {
-    Color = Red
+    Color = Green
     }
 $!LineMap  [5]
-  Name = '&(ZONENAME[5]%6.6s)'
+  Name = '&(ZONENAME[47]%6.6s)'
   Assign
     {
-    Zone = 5
-    XAxisVar = 'ALPHA'
-    YAxisVar = 'CL_AVG'
+    Zone = 47
+    XAxisVar = 'x/c'
+    YAxisVar = 'Cp'
     }
   Lines
     {
-    Color = Black
+    Show = No
+    Color = Red
     LineThickness = 0.4
     }
   Symbols
     {
-    SymbolShape
-      {
-      IsASCII = Yes
-      ASCIIShape
-        {
-        FontOverride = UserDef
-        ASCIIChar = '\T'
-        }
-      }
     Color = Black
-    FillColor = Black
+    FillMode = UseLineColor
+    FillColor = Green
+    Size = 1
     }
   BarCharts
     {
-    Color = Red
-    FillColor = Red
+    Color = Green
+    FillColor = Green
     }
   ErrorBars
     {
-    Color = Red
+    Color = Green
     }
 $!LineMap  [6]
-  Name = '&(ZONENAME[6]%6.6s)'
+  Name = '&(ZONENAME[57]%6.6s)'
   Assign
     {
-    Zone = 6
-    XAxisVar = 'ALPHA'
-    YAxisVar = 'CL_AVG'
+    Zone = 57
+    XAxisVar = 'x/c'
+    YAxisVar = 'Cp'
     }
   Lines
     {
-    Color = Black
+    Show = No
+    Color = Red
     LineThickness = 0.4
     }
   Symbols
     {
-    SymbolShape
-      {
-      IsASCII = Yes
-      ASCIIShape
-        {
-        FontOverride = UserDef
-        ASCIIChar = '\t'
-        }
-      }
     Color = Black
-    FillColor = Black
+    FillMode = UseLineColor
+    FillColor = Green
+    Size = 1
     }
   BarCharts
     {
-    Color = Red
-    FillColor = Red
+    Color = Green
+    FillColor = Green
     }
   ErrorBars
     {
-    Color = Red
+    Color = Green
     }
 $!LineMap  [7]
-  Name = '&(ZONENAME[7]%6.6s)'
+  Name = '&(ZONENAME[67]%6.6s)'
   Assign
     {
-    Zone = 7
-    XAxisVar = 'ALPHA'
-    YAxisVar = 'CL_AVG'
+    Zone = 67
+    XAxisVar = 'x/c'
+    YAxisVar = 'Cp'
     }
   Lines
     {
-    Color = Black
+    Show = No
+    Color = Red
     LineThickness = 0.4
     }
   Symbols
     {
-    SymbolShape
-      {
-      IsASCII = Yes
-      ASCIIShape
-        {
-        UseBaseFont = No
-        FontOverride = Greek
-        ASCIIChar = '\T'
-        }
-      }
     Color = Black
-    FillColor = Black
+    FillMode = UseLineColor
+    FillColor = Green
+    Size = 1
     }
   BarCharts
     {
-    Color = Red
-    FillColor = Red
+    Color = Green
+    FillColor = Green
     }
   ErrorBars
     {
-    Color = Red
+    Color = Green
     }
 $!XYLineAxis 
   DepXToYRatio = 1
   ViewportPosition
     {
-    X1 = 12
+    X1 = 14
     Y1 = 10
     X2 = 94
     Y2 = 94
@@ -584,9 +500,9 @@ $!XYLineAxis
   XDetail 1
     {
     CoordScale = Linear
-    RangeMin = 1
-    RangeMax = 4
-    GRSpacing = 1
+    RangeMin = 0
+    RangeMax = 1
+    GRSpacing = 0.2
     Gridlines
       {
       Show = Yes
@@ -604,9 +520,10 @@ $!XYLineAxis
   YDetail 1
     {
     CoordScale = Linear
-    RangeMin = 0.5999999999999999778
-    RangeMax = 1.1000000000000000888
-    GRSpacing = 0.05
+    RangeMin = -1.5
+    RangeMax = 1
+    IsReversed = Yes
+    GRSpacing = 0.5
     Gridlines
       {
       Show = Yes
@@ -621,7 +538,9 @@ $!XYLineAxis
       }
     Title
       {
-      Offset = 8
+      TitleMode = UseText
+      Text = 'CP'
+      Offset = 11
       }
     }
 $!LinePlotLayers 
@@ -672,6 +591,19 @@ $!AttachText
   Color = Green
   Anchor = HeadLeft
   Text = 'ZDES'
+$!AttachText 
+  AnchorPos
+    {
+    X = 75
+    Y = 86.5
+    }
+  TextShape
+    {
+    IsBold = No
+    }
+  Color = Blue
+  Anchor = HeadLeft
+  Text = 'Experiment'
 $!AttachGeom 
   GeomType = Rectangle
   PositionCoordSys = Frame
@@ -683,7 +615,7 @@ $!AttachGeom
   IsFilled = Yes
   LineThickness = 0.2
   RawData
-25.1359522343 -12.5075533986 
+25.1359522343 -15.7183080912 
 $!FrameControl ActivateByNumber
   Frame = 1
 $!SetStyleBase Config
