@@ -272,9 +272,6 @@ $!ReadDataSet  '|LFDSFN3|'
   VarNameList = '|LFDSVL3|'
 $!RemoveVar |LFDSVL3|
 $!RemoveVar |LFDSFN3|
-$!AlterData  [4]
-  IgnoreDivideByZero = Yes
-  Equation = '{CM_AVG} = -{CM_AVG}'
 $!FrameLayout 
   ShowBorder = No
   ShowHeader = No
@@ -294,7 +291,7 @@ $!FrameName  = 'Frame 001'
 $!GlobalTime 
   SolutionTime = 0
 $!DeleteLineMaps 
-$!ActiveLineMaps  =  [1-3,5-7]
+$!ActiveLineMaps  =  [1-7]
 $!GlobalLinePlot 
   DataLabels
     {
@@ -311,8 +308,8 @@ $!GlobalLinePlot
     RowSpacing = 1.1
     XYPos
       {
-      X = 39.631
-      Y = 93.106
+      X = 92.43
+      Y = 37.288
       }
     }
 $!LineMap  [1]
@@ -320,7 +317,7 @@ $!LineMap  [1]
   Assign
     {
     Zone = 1
-    XAxisVar = 'ALPHA'
+    XAxisVar = 'CM_AVG'
     YAxisVar = 'CL_AVG'
     }
   Lines
@@ -357,7 +354,7 @@ $!LineMap  [2]
   Assign
     {
     Zone = 2
-    XAxisVar = 'ALPHA'
+    XAxisVar = 'CM_AVG'
     YAxisVar = 'CL_AVG'
     }
   Lines
@@ -394,7 +391,7 @@ $!LineMap  [3]
   Assign
     {
     Zone = 3
-    XAxisVar = 'ALPHA'
+    XAxisVar = 'CM_AVG'
     YAxisVar = 'CL_AVG'
     }
   Lines
@@ -430,7 +427,7 @@ $!LineMap  [4]
   Assign
     {
     Zone = 4
-    XAxisVar = 'ALPHA'
+    XAxisVar = 'CM_AVG'
     YAxisVar = 'CL_AVG'
     }
   Lines
@@ -466,7 +463,7 @@ $!LineMap  [5]
   Assign
     {
     Zone = 5
-    XAxisVar = 'ALPHA'
+    XAxisVar = 'CM_AVG'
     YAxisVar = 'CL_AVG'
     }
   Lines
@@ -502,7 +499,7 @@ $!LineMap  [6]
   Assign
     {
     Zone = 6
-    XAxisVar = 'ALPHA'
+    XAxisVar = 'CM_AVG'
     YAxisVar = 'CL_AVG'
     }
   Lines
@@ -538,7 +535,7 @@ $!LineMap  [7]
   Assign
     {
     Zone = 7
-    XAxisVar = 'ALPHA'
+    XAxisVar = 'CM_AVG'
     YAxisVar = 'CL_AVG'
     }
   Lines
@@ -574,7 +571,7 @@ $!XYLineAxis
   DepXToYRatio = 1
   ViewportPosition
     {
-    X1 = 12
+    X1 = 14
     Y1 = 10
     X2 = 94
     Y2 = 94
@@ -584,9 +581,10 @@ $!XYLineAxis
   XDetail 1
     {
     CoordScale = Linear
-    RangeMin = 1
-    RangeMax = 4
-    GRSpacing = 1
+    RangeMin = -0.14999999999999999445
+    RangeMax = -0.11000000000000000056
+    IsReversed = Yes
+    GRSpacing = 0.01
     Gridlines
       {
       Show = Yes
@@ -621,7 +619,7 @@ $!XYLineAxis
       }
     Title
       {
-      Offset = 8
+      Offset = 11
       }
     }
 $!LinePlotLayers 
