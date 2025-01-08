@@ -1,0 +1,532 @@
+#!MC 1410
+$!VarSet |LFDSFN1| = '"experimentalData/spectra.dat"'
+$!VarSet |LFDSVL1| = '"f(Hz)" "<p(Pa^2)>"'
+$!VarSet |LFDSFN2| = '"../../../DPW8-Buffet/TestCase1b/005_LAVA_Curvilinear/03_ZDES_SAneg/DPW8-AePW4_UnsteadySpectra_LAVA_OAT15A_ZDES_SAneg_005.03.dat"'
+$!VarSet |LFDSVL2| = '"f(Hz)";"FREQ" "<p(Pa^2)>"'
+$!VarSet |LFDSFN3| = '"../../../DPW8-Buffet/TestCase1b/005_LAVA_Curvilinear/04_ZDES_SAneg_blend2/DPW8-AePW4_UnsteadySpectra_LAVA_OAT15A_ZDES_SAneg_005.04.dat"'
+$!VarSet |LFDSVL3| = '"f(Hz)";"FREQ" "<p(Pa^2)>"'
+$!VarSet |LFDSFN4| = '"../../../DPW8-Buffet/TestCase1b/005_LAVA_Curvilinear/05_URANS_SARCcomp/DPW8-AePW4_UnsteadySpectra_LAVA_OAT15A_URANS_SARC_CC_005.05.dat"'
+$!VarSet |LFDSVL4| = '"f(Hz)";"FREQ" "<p(Pa^2)>"'
+$!VarSet |LFDSFN5| = '"../../../DPW8-Buffet/TestCase1b/008_Metacomp/02_CFD++_Deck/DPW8-AePW4_UnsteadySpectra_008.02.dat"'
+$!VarSet |LFDSVL5| = '"f(Hz)";"FREQ" "<p(Pa^2)>"'
+$!SetStyleBase Factory
+$!BasicColor 
+  Custom9
+    {
+    R = 220
+    }
+  Custom10
+    {
+    R = 0
+    B = 0
+    }
+  Custom11
+    {
+    R = 0
+    G = 0
+    B = 255
+    }
+  Custom12
+    {
+    R = 0
+    G = 0
+    B = 0
+    }
+  Custom13
+    {
+    R = 228
+    G = 190
+    B = 0
+    }
+  Custom14
+    {
+    R = 141
+    G = 91
+    B = 47
+    }
+  Custom15
+    {
+    R = 131
+    G = 131
+    }
+  Custom16
+    {
+    G = 26
+    B = 184
+    }
+  Custom17
+    {
+    R = 0
+    G = 255
+    B = 193
+    }
+  Custom18
+    {
+    R = 0
+    G = 131
+    B = 149
+    }
+  Custom19
+    {
+    R = 0
+    G = 0
+    B = 123
+    }
+  Custom20
+    {
+    R = 149
+    G = 211
+    B = 79
+    }
+  Custom21
+    {
+    R = 246
+    G = 158
+    B = 219
+    }
+  Custom22
+    {
+    R = 211
+    G = 17
+    }
+  Custom23
+    {
+    R = 123
+    G = 26
+    B = 105
+    }
+  Custom24
+    {
+    R = 246
+    G = 17
+    B = 96
+    }
+  Custom25
+    {
+    R = 18
+    G = 63
+    B = 121
+    }
+  Custom26
+    {
+    R = 50
+    G = 97
+    B = 152
+    }
+  Custom27
+    {
+    R = 97
+    G = 134
+    B = 182
+    }
+  Custom28
+    {
+    R = 145
+    G = 191
+    B = 219
+    }
+  Custom29
+    {
+    R = 254
+    G = 224
+    B = 144
+    }
+  Custom30
+    {
+    R = 252
+    G = 141
+    B = 89
+    }
+  Custom31
+    {
+    R = 215
+    G = 48
+    B = 39
+    }
+  Custom32
+    {
+    R = 160
+    G = 37
+    B = 29
+    }
+  Custom33
+    {
+    R = 237
+    G = 133
+    B = 140
+    }
+  Custom34
+    {
+    R = 134
+    G = 211
+    B = 143
+    }
+  Custom35
+    {
+    R = 130
+    G = 131
+    B = 255
+    }
+  Custom36
+    {
+    R = 127
+    G = 127
+    B = 127
+    }
+  Custom37
+    {
+    R = 240
+    G = 222
+    B = 149
+    }
+  Custom38
+    {
+    R = 197
+    G = 173
+    B = 153
+    }
+  Custom39
+    {
+    R = 193
+    G = 192
+    B = 255
+    }
+  Custom40
+    {
+    R = 255
+    G = 137
+    B = 220
+    }
+  Custom49
+    {
+    R = 135
+    G = 1
+    B = 1
+    }
+  Custom50
+    {
+    R = 245
+    G = 245
+    B = 245
+    }
+$!GlobalPaper 
+  PaperSizeInfo
+    {
+    Letter
+      {
+      Width = 8.5
+      Height = 11
+      LeftHardClipOffset = 0.125
+      RightHardClipOffset = 0.125
+      TopHardClipOffset = 0.125
+      BottomHardClipOffset = 0.125
+      }
+    }
+$!Page 
+  Name = 'Untitled'
+  PaperAttributes
+    {
+    BackgroundColor = White
+    IsTransparent = Yes
+    OrientPortrait = No
+    ShowGrid = Yes
+    ShowRuler = No
+    ShowPaper = No
+    PaperSize = Letter
+    RulerSpacing = OneInch
+    PaperGridSpacing = HalfInch
+    RegionInWorkArea
+      {
+      X1 = 1
+      Y1 = 0.25
+      X2 = 10
+      Y2 = 8.25
+      }
+    }
+### Frame Number 1 ###
+$!ReadDataSet  '|LFDSFN1|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL1|'
+$!RemoveVar |LFDSVL1|
+$!RemoveVar |LFDSFN1|
+$!ReadDataSet  '|LFDSFN2|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL2|'
+$!RemoveVar |LFDSVL2|
+$!RemoveVar |LFDSFN2|
+$!ReadDataSet  '|LFDSFN3|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL3|'
+$!RemoveVar |LFDSVL3|
+$!RemoveVar |LFDSFN3|
+$!ReadDataSet  '|LFDSFN4|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL4|'
+$!RemoveVar |LFDSVL4|
+$!RemoveVar |LFDSFN4|
+$!ReadDataSet  '|LFDSFN5|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL5|'
+$!RemoveVar |LFDSVL5|
+$!RemoveVar |LFDSFN5|
+$!FrameLayout 
+  ShowBorder = No
+  ShowHeader = No
+  HeaderColor = Red
+  XYPos
+    {
+    X = 1
+    Y = 0.25
+    }
+  Width = 9
+  Height = 8
+$!ThreeDAxis 
+  AspectRatioLimit = 25
+  BoxAspectRatioLimit = 25
+$!PlotType  = XYLine
+$!FrameName  = 'Frame 001'
+$!GlobalTime 
+  SolutionTime = 0
+$!DeleteLineMaps 
+$!ActiveLineMaps  =  [1-4]
+$!GlobalLinePlot 
+  DataLabels
+    {
+    DistanceSkip = 5
+    }
+  Legend
+    {
+    Show = Yes
+    Box
+      {
+      BoxType = Filled
+      Margin = 5
+      }
+    RowSpacing = 1.1
+    XYPos
+      {
+      X = 98
+      Y = 98
+      }
+    }
+$!LineMap  [1]
+  Name = 'Experiment'
+  Assign
+    {
+    Zone = 4
+    XAxisVar = 1
+    YAxisVar = 2
+    }
+  Lines
+    {
+    Color = Red
+    LineThickness = 0.4
+    }
+  Symbols
+    {
+    Color = Red
+    FillColor = Red
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [2]
+  Name = '&ZN&'
+  Assign
+    {
+    Zone = 12
+    XAxisVar = 1
+    YAxisVar = 2
+    }
+  Lines
+    {
+    Color = Custom10
+    LineThickness = 0.4
+    }
+  Symbols
+    {
+    Color = Red
+    FillColor = Red
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [3]
+  Name = '&ZN&'
+  Assign
+    {
+    Zone = 22
+    XAxisVar = 1
+    YAxisVar = 2
+    }
+  Lines
+    {
+    Color = Custom11
+    LineThickness = 0.4
+    }
+  Symbols
+    {
+    Color = Red
+    FillColor = Red
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [4]
+  Name = '&ZN&'
+  Assign
+    {
+    Zone = 32
+    XAxisVar = 1
+    YAxisVar = 2
+    }
+  Lines
+    {
+    Color = Custom13
+    LineThickness = 0.4
+    }
+  Symbols
+    {
+    Color = Red
+    FillColor = Red
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [5]
+  Name = '&ZN&'
+  Assign
+    {
+    Zone = 42
+    XAxisVar = 1
+    YAxisVar = 2
+    }
+  Lines
+    {
+    Color = Custom14
+    LineThickness = 0.4
+    }
+  Symbols
+    {
+    Color = Red
+    FillColor = Red
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!XYLineAxis 
+  DepXToYRatio = 1
+  ViewportPosition
+    {
+    X1 = 14
+    Y1 = 10
+    X2 = 94
+    Y2 = 94
+    }
+  ViewportTopSnapTarget = 94
+$!XYLineAxis 
+  XDetail 1
+    {
+    CoordScale = Log
+    RangeMin = 10
+    RangeMax = 10000
+    GRSpacing = 2000
+    Gridlines
+      {
+      Show = Yes
+      LineThickness = 0.4
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      LinePattern = Dashed
+      PatternLength = 0.5
+      LineThickness = 0.2
+      }
+    }
+$!XYLineAxis 
+  YDetail 1
+    {
+    CoordScale = Log
+    RangeMin = 9.9999999999999995475E-08
+    RangeMax = 10000000000
+    GRSpacing = 2000000000
+    Gridlines
+      {
+      Show = Yes
+      LineThickness = 0.4
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      LinePattern = Dashed
+      PatternLength = 0.5
+      LineThickness = 0.2
+      }
+    Title
+      {
+      Offset = 11
+      }
+    }
+$!FrameControl ActivateByNumber
+  Frame = 1
+$!SetStyleBase Config
