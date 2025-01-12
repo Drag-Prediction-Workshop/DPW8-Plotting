@@ -5,6 +5,8 @@ $!NewLayout
 
 $!VarSet |GRID| = "3"
 
+$!Varset |Zi| = 0
+
 #-------------------------------------------------
 $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Scatter/TestCase1a/002_Embraer/01_CFD++_CadenceUnstructured_SA-RC-QCR/DPW8-AePW4_ForceMoment_v5.dat"'
   ReadDataOption = New
@@ -16,10 +18,10 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Scatter/TestCase1a/002_Embraer/01
 $!ActiveLineMaps -= [1-|NumLineMaps|]
 $!DeleteLineMaps  [1-|NumLineMaps|]
 
-$!Varset |Z| = ( 3 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = 1
 $!CreateLineMap
-#$!LineMap [|N|]  Name = '&ZN&'
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
 $!LineMap [|N|]  Assign{Zone = |Z|}
 $!ActiveLineMaps += [|N|]
@@ -31,7 +33,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Scatter/TestCase1a/002_Embraer/02
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 20 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -45,7 +48,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Scatter/TestCase1a/002_Embraer/03
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 37 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -59,7 +63,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Scatter/TestCase1a/002_Embraer/04
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 54 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -73,7 +78,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Scatter/TestCase1a/002_Embraer/05
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 71 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -87,7 +93,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/004_NASALangley
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 87 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -101,7 +108,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/004_NASALangley
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 103 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -115,7 +123,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/004_NASALangley
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 119 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -129,7 +138,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/005_LAVA_Steady
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 135 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -143,7 +153,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/005_LAVA_Steady
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 151 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -157,7 +168,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Scatter/TestCase1a/006/01_FeCFD/D
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 167 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -171,7 +183,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/007_JAXA/01_FaS
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 183 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -185,7 +198,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/007_JAXA/02_FaS
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 190 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -199,7 +213,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/007_JAXA/03_FaS
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 197 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -213,7 +228,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/008_Metacomp/01
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 204 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -227,7 +243,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/009_ONERA/01_el
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 220 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -241,7 +258,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/009_ONERA/02_el
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 236 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -255,7 +273,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/009_ONERA/03_el
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 252 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -269,7 +288,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/009_ONERA/04_el
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 267 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -283,7 +303,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/009_ONERA/05_el
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 286 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -297,7 +318,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/009_ONERA/06_el
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 302 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -311,12 +333,13 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/009_ONERA/07_el
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 318 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
 $!LineMap [|N|]  Assign{Zone = |Z|}
-$!ActiveLineMaps -= [|N|]
+$!ActiveLineMaps += [|N|]
 
 #-------------------------------------------------
 $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/009_ONERA/08_elsA_ONERA-structured_kwSST/DPW8-AePW4_ForceMoment_v5.dat" '
@@ -325,12 +348,13 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/009_ONERA/08_el
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 334 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
 $!LineMap [|N|]  Assign{Zone = |Z|}
-$!ActiveLineMaps -= [|N|]
+$!ActiveLineMaps += [|N|]
 
 #-------------------------------------------------
 $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Scatter/TestCase1a/011_HEMLAB/01_Structured/DPW8-AePW4_ForceMoment_v5.dat" '
@@ -339,7 +363,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Scatter/TestCase1a/011_HEMLAB/01_
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 350 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -353,7 +378,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Scatter/TestCase1a/011_HEMLAB/02_
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 357 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -367,7 +393,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/014_IISc/01_SU2
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 377 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -381,7 +408,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/014_IISc/02_SU2
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 386 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&ZN&'
@@ -396,7 +424,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Static-Deform/TestCase1a/015_USAr
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 395 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -410,7 +439,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Static-Deform/TestCase1a/015_USAr
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 406 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -424,7 +454,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/018_zCFD_steady
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 417 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -438,7 +469,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/018_zCFD_steady
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 432 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -452,7 +484,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/020_DukeUnivers
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 447 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -466,7 +499,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/020_DukeUnivers
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 463 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -483,7 +517,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/020_DukeUnivers
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 469 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -497,7 +532,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/020_DukeUnivers
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 485 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -511,7 +547,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/023_Polytechniq
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 501 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -525,7 +562,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/024_Universityo
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 517 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -539,7 +577,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Static-Deform/TestCase1a/025_TLGA
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 533 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -553,7 +592,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/026_CorvidTechn
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 544 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -567,7 +607,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/026_CorvidTechn
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 560 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -581,7 +622,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/027_RMIT/01_SST
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 576 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -595,7 +637,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/027_RMIT/02_SA/
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 584 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -609,7 +652,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Scatter/TestCase1a/029_MIT_SANS/0
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 593 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -623,7 +667,8 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../DPW8-Scatter/TestCase1a/029_MIT_SANS/0
   VarLoadMode = ByName
   AssignStrandIDs = Yes
 
-$!Varset |Z| = ( 605 + 0 )
+$!Varset |Z| = ( |Zi| + 3 )
+$!Varset |Zi| = |NumZones|
 $!Varset |N| = (|NumLineMaps|+1)
 $!CreateLineMap
 $!LineMap [|N|]  Name = '&(ZONENAME[|Z|]%6.6s)'
@@ -632,4 +677,3 @@ $!ActiveLineMaps += [|N|]
 
 #==================================================================================================
 $!INCLUDEMACRO "|MACROFILEPATH|/Grid_plot.mcr"
-

@@ -56,10 +56,10 @@ $!VarSet |SST_Maps|        = "    3,               11,      14,               20
 # Grid Type Variants
 $!VarSet |ALL_Maps|        = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44"
 $!VarSet |CadenceStr_Maps| = "      4,        9,10,   12,13,14,15,16,         20,                                 32,   34                   41,42      "
-$!VarSet |CadenceUnS_Maps| = "1,2,3,    6,7,8,     11,               17,         21,      24,25,26,   28,29,30,31,   33,   35,36,37,38,39,40            "
+$!VarSet |CadenceUnS_Maps| = "1,2,3,    6,7,8,     11,               17,         21,      24,   26,27,28,29,30,31,   33,   35,36,37,38,39,40            "
 $!VarSet |HeldenUnSt_Maps| = "        5,                                18,         22                                                                  "
 $!VarSet |OneraStruc_Maps| = "                                             19,         23                                                               "
-$!VarSet |CstmUsrAdp_Maps| = "                                                                     27,                                             43,44"
+$!VarSet |CstmUsrAdp_Maps| = "                                                               25,                                                   43,44"
 #$!VarSet |CstmUsrStr_Maps| = "                                                                                                                          "
 #$!VarSet |CstmUsrUns_Maps| = "                                                                                                                          "
 #-------------------------------------------------
@@ -99,9 +99,9 @@ $!RenameDataSetVar Var = 18 Name = 'CL<sub>Pylon</sub>'
 $!RenameDataSetVar Var = 19 Name = 'CD<sub>Pylon</sub>'
 $!RenameDataSetVar Var = 20 Name = 'CMy<sub>Pylon</sub>'
 
-# Value blanking for data with AOA <= 1.0
+# Value blanking for data with AOA <= |ALPHA|
 #$!Blanking Value { Include = Yes }
-#$!Blanking Value { Constraint 1 { Include = Yes ValueCutoff = 1.0 VarA = 6 } }
+#$!Blanking Value { Constraint 1 { Include = Yes ValueCutoff = |ALPHA| VarA = 6 } }
 
 #-------------------------------------------------
 $!LineMap [1-|NumLineMaps|]  Symbols { Size = 1.5 }
@@ -123,6 +123,7 @@ $!GlobalLinePlot
     AnchorAlignment = BottomLeft
     }
 
+$!FrameLayout ShowBorder = No
 $!PrintSetup Palette = Color
 $!ExportSetup UseSuperSampleAntiAliasing = Yes
 $!ExportSetup ExportFormat = EPS
@@ -134,6 +135,7 @@ $!LineMap  [|SA_Maps|]  Lines   { Color = Red   } Symbols { Color = Red   FillCo
 $!LineMap  [|SAQ_Maps|] Lines   { Color = Green } Symbols { Color = Green FillColor = Green }
 $!LineMap  [|SST_Maps|] Lines   { Color = Black } Symbols { Color = Black FillColor = Black }
 
+#==================================================================================================
 $!IF 0 == 1
       $!AttachText AnchorPos { X = 50 Y = 99 } TextShape { Height = 18 IsBold = No } Color = Black  Anchor = HeadCenter TextType = LaTeX Text = R"(Test Case 1a: ONERA OAT15A
 
@@ -155,7 +157,7 @@ $!View NiceFit
 $!View MakeCurrentViewNice
 #$!XYLineAxis XDetail 1 {RangeMin = -1.0E-06 RangeMax = 4.0E-05}
 $!ExportSetup ExportFName = '|MACROFILEPATH|/Grid|GRID|_CL_Alpha_Turb.eps'
-$!Export 
+$!Export
   ExportRegion = AllFrames
 
 $!Pick AddAll
@@ -174,7 +176,7 @@ $!View MakeCurrentViewNice
 #$!XYLineAxis XDetail 1 {RangeMin = -1.0E-06 RangeMax = 4.0E-05}
 #$!XYLineAxis YDetail 1 {RangeMin = 0.0115   RangeMax = 0.0165}
 $!ExportSetup ExportFName = '|MACROFILEPATH|/Grid|GRID|_CM_Alpha_Turb.eps'
-$!Export 
+$!Export
   ExportRegion = AllFrames
 
 # CD
@@ -189,7 +191,7 @@ $!View MakeCurrentViewNice
 #$!XYLineAxis XDetail 1 {RangeMin = -1.0E-06 RangeMax = 4.0E-05}
 #$!XYLineAxis YDetail 1 {RangeMin = 0.0115   RangeMax = 0.0165}
 $!ExportSetup ExportFName = '|MACROFILEPATH|/Grid|GRID|_CD_CL_Turb.eps'
-$!Export 
+$!Export
   ExportRegion = AllFrames
 
 # Cadence Structured Grid
@@ -239,7 +241,7 @@ $!IF 1 == 1
    $!View MakeCurrentViewNice
   #$!XYLineAxis XDetail 1 {RangeMin = -1.0E-06 RangeMax = 4.0E-05}
    $!ExportSetup ExportFName = '|MACROFILEPATH|/Grid|GRID|_CL_Alpha_Grid.eps'
-   $!Export 
+   $!Export
      ExportRegion = AllFrames
 
    $!Pick AddAll
@@ -258,7 +260,7 @@ $!IF 1 == 1
   #$!XYLineAxis XDetail 1 {RangeMin = -1.0E-06 RangeMax = 4.0E-05}
   #$!XYLineAxis YDetail 1 {RangeMin = 0.0115   RangeMax = 0.0165}
    $!ExportSetup ExportFName = '|MACROFILEPATH|/Grid|GRID|_CM_Alpha_Grid.eps'
-   $!Export 
+   $!Export
      ExportRegion = AllFrames
 
   # CD
@@ -273,6 +275,6 @@ $!IF 1 == 1
   #$!XYLineAxis XDetail 1 {RangeMin = -1.0E-06 RangeMax = 4.0E-05}
   #$!XYLineAxis YDetail 1 {RangeMin = 0.0115   RangeMax = 0.0165}
    $!ExportSetup ExportFName = '|MACROFILEPATH|/Grid|GRID|_CD_CL_Grid.eps'
-   $!Export 
+   $!Export
      ExportRegion = AllFrames
 $!ENDIF

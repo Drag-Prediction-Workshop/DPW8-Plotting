@@ -56,10 +56,10 @@ $!VarSet |SST_Maps|        = "    3,               11,      14,               20
 # Grid Type Variants
 $!VarSet |ALL_Maps|        = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44"
 $!VarSet |CadenceStr_Maps| = "      4,        9,10,   12,13,14,15,16,         20,                                 32,   34                   41,42      "
-$!VarSet |CadenceUnS_Maps| = "1,2,3,    6,7,8,     11,               17,         21,      24,25,26,   28,29,30,31,   33,   35,36,37,38,39,40            "
+$!VarSet |CadenceUnS_Maps| = "1,2,3,    6,7,8,     11,               17,         21,      24,   26,27,28,29,30,31,   33,   35,36,37,38,39,40            "
 $!VarSet |HeldenUnSt_Maps| = "        5,                                18,         22                                                                  "
 $!VarSet |OneraStruc_Maps| = "                                             19,         23                                                               "
-$!VarSet |CstmUsrAdp_Maps| = "                                                                     27,                                             43,44"
+$!VarSet |CstmUsrAdp_Maps| = "                                                               25,                                                   43,44"
 #$!VarSet |CstmUsrStr_Maps| = "                                                                                                                          "
 #$!VarSet |CstmUsrUns_Maps| = "                                                                                                                          "
 #-------------------------------------------------
