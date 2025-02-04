@@ -1,0 +1,58 @@
+Tecplot 2024.1.0.52134 Batch Log
+ACTION: PageControl: CREATE
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: LoadAddOn
+ACTION: OpenLayout: /Users/bwpomero/crm/hs/dpw-8/github/DPW8-Plotting/BuffetWorkingGroup/TestCase1b/fandm.lay
+ACTION: DrawGraphics: YES
+ACTION: ReadStyleSheet: sty/fandm/alpha-cm.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/fandm/cl-alpha.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/fandm/cl-cm.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/fandm/alpha-cm.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/fandm/cl-alpha.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/fandm/cl-cm.sty
+ACTION: Export
