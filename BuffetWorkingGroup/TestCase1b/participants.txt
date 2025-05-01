@@ -5,9 +5,9 @@ ID     |  1a                                                                    
    02  |  DPW8-Scatter/TestCase1a/002_Embraer/02_CFD++_CadenceUnstructured_SA                   |
    03  |  DPW8-Scatter/TestCase1a/002_Embraer/03_CFD++_CadenceUnstructured_SST                  |
    04  |  DPW8-Scatter/TestCase1a/002_Embraer/04_CFD++_CadenceStructured_SA-RC-QCR              |
-   05  |  DPW8-Scatter/TestCase1a/002_Embraer/05_CFD++_HeldenMesh_SA-RC-QCR                     |  
+   05  |  DPW8-Scatter/TestCase1a/002_Embraer/05_CFD++_HeldenMesh_SA-RC-QCR                     |
 -------|----------------------------------------------------------------------------------------|
-004    |                                                                                        | 
+004    |                                                                                        |
    01  |  DPW8-Buffet/TestCase1a/004_NASALangleyCAB/01_SA                                       |
    02  |  DPW8-Buffet/TestCase1a/004_NASALangleyCAB/02_SAR                                      |
    03  |  DPW8-Buffet/TestCase1a/004_NASALangleyCAB/03_SAQCR                                    |
@@ -17,7 +17,7 @@ ID     |  1a                                                                    
    02  |  DPW8-Buffet/TestCase1a/005_LAVA_SteadyRANS_Results/02_SARC_CC                         |
    03  |                                                                                        |  DPW8-Buffet/TestCase1b/005_LAVA_Curvilinear/03_ZDES_SAneg
    04  |                                                                                        |  DPW8-Buffet/TestCase1b/005_LAVA_Curvilinear/04_ZDES_SAneg_blend2
-   05  |                                                                                        |  DPW8-Buffet/TestCase1b/005_LAVA_Curvilinear/05_URANS_SARCcomp                                |
+   05  |                                                                                        |  DPW8-Buffet/TestCase1b/005_LAVA_Curvilinear/05_URANS_SARCcomp
 -------|----------------------------------------------------------------------------------------|
 006    |                                                                                        |
    01  |  DPW8-Scatter/TestCase1a/006/01_LociChem                                               |
@@ -88,7 +88,7 @@ ID     |  1a                                                                    
 -------|----------------------------------------------------------------------------------------|
 024    |                                                                                        |
    01  |  DPW8-Buffet/TestCase1a/024_UniversityofLiverpool/01_SAneg                             |
-   02  |                                                                                        |  DPW8-Buffet/TestCase1b/024_UniversityofLiverpool/01_GlobalStability                          |
+   02  |                                                                                        |  DPW8-Buffet/TestCase1b/024_UniversityofLiverpool/01_GlobalStability
 -------|----------------------------------------------------------------------------------------|
 026    |                                                                                        |
    01  |  DPW8-Buffet/TestCase1a/026_CorvidTechnologies/01_SA                                   |
