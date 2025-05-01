@@ -1,37 +1,37 @@
 #!MC 1410
 
-#-------------------------------------------------
-
 
 #-------------------------------------------------
-# Turbulence Model Variants
-$!VarSet |ALL_Maps|        = "1,2,3,4,5,6,7"
-$!VarSet |SaUrans_Maps|   = "   3,4        "
-$!VarSet |SaZdes_Maps|    = "1,2           "
-$!VarSet |Wmles_Maps|      = "        5,6,7"
+# Temporal Scheme
+$!VarSet |Dhrl|  = "217-232"
+$!VarSet |Hrles| = "201-216, 361"
+$!VarSet |Rans| = "1-17, 18-34, 35-51, 52-68, 69-85, 86-101, 102-117, 118-133, 134-149, 150-165, 169-184, 233-239, 240-246, 247-253, 254-269, 270-285, 286-301, 344-359, 362-377, 378-393, 394-408, 409-427, 428-443, 444-459, 460-475, 476-494, 498-513, 514-429, 530-545, 546-561, 562-577, 594-609, 610-625, 626-641, 642-567, 658-673, 695-703, 704-712, 714-728, 729-743, 744-759, 760-765, 766-781, 782-797, 798-813, 814-829, 830-845, 846-861, 862-869, 870-878"
+$!VarSet |Urans| = "168, 185-200, 302-315, 316-329, 330-343, 360, 676-694, 713, 879-887, 888-894"
+$!VarSet |Wmles| = "495-497"
+$!VarSet |Zdes|  = "166, 167"
+
+
 
 #-------------------------------------------------
-
-$!LineMap  [|SaUrans_Maps|] Lines   { Color = Red   } Symbols { Color = Red   FillColor = Red   } 
-$!LineMap  [|SaZdes_Maps|]  Lines   { Color = Green } Symbols { Color = Green FillColor = Green } 
-$!LineMap  [|Wmles_Maps|]   Lines   { Color = Black } Symbols { Color = Black FillColor = Black } 
-
-
-
+# Turbulence Model
+$!VarSet |Dynamic| = "495-497"
+$!VarSet |Kw| = "169-184, 185-200, 217-232"
+$!VarSet |Sa| = "1-17, 18-34, 52-68, 69-85, 86-101, 102-117, 118-133, 134-149, 150-165, 166, 167, 168, 233-239, 240-246, 254-269, 270-285, 286-301, 302-315, 316-329, 330-343, 344-359, 360, 361, 362-377, 378-393, 394-408, 409-427, 428-443, 444-459, 460-475, 476-494, 498-513, 514-429, 530-545, 546-561, 562-577, 578-593, 594-609, 610-625, 626-641, 642-567, 658-673, 695-703, 704-712, 713, 714-728, 744-759, 760-765, 766-781, 782-797, 798-813, 814-829, 830-845, 846-861, 870-878, 888-894"
+$!VarSet |Sst| = "35-51, 201-216, 247-253, 676-694, 729-743, 862-869, 879-887"
 
 
 
+#-------------------------------------------------
+# Scheme & Turbulence Model
+$!VarSet |DhrlKw|       = "217-232"
+$!VarSet |HrlesSst|     = "201-216"
+$!VarSet |HrlesSa|      = "361"
+$!VarSet |RansKw|       = "169-184"
+$!VarSet |RansSa|       = "1-17, 18-34, 52-68, 69-85, 86-101, 102-117, 118-133, 134-149, 150-165, 233-239, 240-246, 254-269, 270-285, 286-301, 344-359, 362-377, 378-393, 394-408, 409-427, 428-443, 444-459, 460-475, 476-494, 498-513, 514-429, 530-545, 546-561, 562-577, 594-609, 610-625, 626-641, 642-567, 658-673, 695-703, 704-712, 714-728, 744-759, 760-765, 766-781, 782-797, 798-813, 814-829, 830-845, 846-861, 870-878"
+$!VarSet |RansSst|      = "35-51, 247-253, 729-743, 862-869"
+$!VarSet |UransKw|      = "185-200"
+$!VarSet |UransSa|      = "168, 302-315, 316-329, 330-343, 360, 713, 888-894"
+$!VarSet |UransSst|     = "676-694, 879-887"
+$!VarSet |ZdesSa|       = "166, 167"
+$!VarSet |WmlesDynamic| = "495-497"
 
-
-
-
-#$!LineMap  [1]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\A'}}}
-#$!LineMap  [2]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\a'}}}
-#$!LineMap  [3]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Greek   ASCIIChar = '\A'}}}
-#$!LineMap  [4]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Greek   ASCIIChar = '\a'}}}
-#$!LineMap  [5]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No                        ASCIIChar = '\A'}}}
-
-
-#$!LineMap  [|SA_Maps|]  Lines   { Color = Red   } Symbols { Color = Red   FillColor = Red   } 
-#$!LineMap  [|SAQ_Maps|] Lines   { Color = Green } Symbols { Color = Green FillColor = Green } 
-#$!LineMap  [|SST_Maps|] Lines   { Color = Black } Symbols { Color = Black FillColor = Black } 

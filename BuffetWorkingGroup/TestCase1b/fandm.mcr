@@ -56,5 +56,3 @@ $!RunMacroFunction "PngLooper" ('cl-cm',2400)
 $!RunMacroFunction "EpsLooper" ('alpha-cm')
 $!RunMacroFunction "EpsLooper" ('cl-alpha')
 $!RunMacroFunction "EpsLooper" ('cl-cm')
-
-
