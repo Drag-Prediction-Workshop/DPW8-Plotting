@@ -1,0 +1,412 @@
+#!MC 1410
+$!SetStyleBase Factory
+$!PlotType  = XYLine
+$!FrameLayout 
+  ShowBorder = No
+  ShowHeader = No
+  HeaderColor = Red
+  XYPos
+    {
+    X = 1
+    Y = 0.25
+    }
+  Width = 9
+  Height = 8
+$!ThreeDAxis 
+  AspectRatioLimit = 25
+  BoxAspectRatioLimit = 25
+$!GlobalTime 
+  SolutionTime = 0
+$!DeleteLineMaps 
+$!ActiveLineMaps  =  [1-7]
+$!GlobalLinePlot 
+  DataLabels
+    {
+    DistanceSkip = 5
+    }
+  Legend
+    {
+    Show = Yes
+    Box
+      {
+      BoxType = Filled
+      Margin = 5
+      }
+    RowSpacing = 1.1
+    XYPos
+      {
+      X = 92.43
+      Y = 37.288
+      }
+    }
+$!LineMap  [1]
+  Name = '&(ZONENAME[1]%6.6s)'
+  Assign
+    {
+    Zone = 1
+    XAxisVar = 'CM_AVG'
+    YAxisVar = 'CL_AVG'
+    }
+  Lines
+    {
+    Color = Green
+    LineThickness = 0.4
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\C'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [2]
+  Name = '&(ZONENAME[2]%6.6s)'
+  Assign
+    {
+    Zone = 2
+    XAxisVar = 'CM_AVG'
+    YAxisVar = 'CL_AVG'
+    }
+  Lines
+    {
+    Color = Green
+    LineThickness = 0.4
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\c'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [3]
+  Name = '&(ZONENAME[3]%6.6s)'
+  Assign
+    {
+    Zone = 3
+    XAxisVar = 'CM_AVG'
+    YAxisVar = 'CL_AVG'
+    }
+  Lines
+    {
+    Color = Red
+    LineThickness = 0.4
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        ASCIIChar = '\C'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [4]
+  Name = '&(ZONENAME[4]%6.6s)'
+  Assign
+    {
+    Zone = 4
+    XAxisVar = 'CM_AVG'
+    YAxisVar = 'CL_AVG'
+    }
+  Lines
+    {
+    Color = Red
+    LineThickness = 0.4
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\F'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [5]
+  Name = '&(ZONENAME[5]%6.6s)'
+  Assign
+    {
+    Zone = 5
+    XAxisVar = 'CM_AVG'
+    YAxisVar = 'CL_AVG'
+    }
+  Lines
+    {
+    Color = Black
+    LineThickness = 0.4
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\T'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [6]
+  Name = '&(ZONENAME[6]%6.6s)'
+  Assign
+    {
+    Zone = 6
+    XAxisVar = 'CM_AVG'
+    YAxisVar = 'CL_AVG'
+    }
+  Lines
+    {
+    Color = Black
+    LineThickness = 0.4
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\t'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [7]
+  Name = '&(ZONENAME[7]%6.6s)'
+  Assign
+    {
+    Zone = 7
+    XAxisVar = 'CM_AVG'
+    YAxisVar = 'CL_AVG'
+    }
+  Lines
+    {
+    Color = Black
+    LineThickness = 0.4
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\T'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!XYLineAxis 
+  DepXToYRatio = 1
+  ViewportPosition
+    {
+    X1 = 14
+    Y1 = 10
+    X2 = 94
+    Y2 = 94
+    }
+  ViewportTopSnapTarget = 94
+$!XYLineAxis 
+  XDetail 1
+    {
+    CoordScale = Linear
+    RangeMin = -0.14999999999999999445
+    RangeMax = -0.11000000000000000056
+    IsReversed = Yes
+    GRSpacing = 0.01
+    Gridlines
+      {
+      Show = Yes
+      LineThickness = 0.4
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      LinePattern = Dashed
+      PatternLength = 0.5
+      LineThickness = 0.2
+      }
+    }
+$!XYLineAxis 
+  YDetail 1
+    {
+    CoordScale = Linear
+    RangeMin = 0.5999999999999999778
+    RangeMax = 1.1000000000000000888
+    GRSpacing = 0.05
+    Gridlines
+      {
+      Show = Yes
+      LineThickness = 0.4
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      LinePattern = Dashed
+      PatternLength = 0.5
+      LineThickness = 0.2
+      }
+    Title
+      {
+      Offset = 11
+      }
+    }
+$!LinePlotLayers 
+  ShowSymbols = Yes
+$!AttachText 
+  AnchorPos
+    {
+    X = 72
+    Y = 97
+    }
+  Anchor = HeadLeft
+  Text = 'Temporal Scheme:'
+$!AttachText 
+  AnchorPos
+    {
+    X = 75
+    Y = 89
+    }
+  TextShape
+    {
+    IsBold = No
+    }
+  Anchor = HeadLeft
+  Text = 'WMLES'
+$!AttachText 
+  AnchorPos
+    {
+    X = 75
+    Y = 94
+    }
+  TextShape
+    {
+    IsBold = No
+    }
+  Color = Custom9
+  Anchor = HeadLeft
+  Text = 'URANS'
+$!AttachText 
+  AnchorPos
+    {
+    X = 75
+    Y = 91.5
+    }
+  TextShape
+    {
+    IsBold = No
+    }
+  Color = Green
+  Anchor = HeadLeft
+  Text = 'ZDES'
+$!AttachGeom 
+  GeomType = Rectangle
+  PositionCoordSys = Frame
+  AnchorPos
+    {
+    X = 71.2990936555891
+    Y = 98.50075528700904
+    }
+  IsFilled = Yes
+  LineThickness = 0.2
+  RawData
+25.1359522343 -12.5075533986 
+$!SetStyleBase Config
