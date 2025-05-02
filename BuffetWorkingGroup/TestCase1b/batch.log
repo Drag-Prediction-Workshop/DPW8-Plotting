@@ -1,4 +1,4 @@
-Tecplot 2024.1.0.52134 Batch Log
+Tecplot 2024.2.0.66426 Batch Log
 ACTION: PageControl: CREATE
 ACTION: LoadAddOn
 ACTION: LoadAddOn
@@ -43,16 +43,21 @@ ACTION: LoadAddOn
 ACTION: LoadAddOn
 ACTION: LoadAddOn
 ACTION: OpenLayout: /Users/bwpomero/crm/hs/dpw-8/github/DPW8-Plotting/BuffetWorkingGroup/TestCase1b/fandm.lay
-ACTION: DrawGraphics: YES
-ACTION: ReadStyleSheet: sty/fandm/alpha-cm.sty
-ACTION: Export
-ACTION: ReadStyleSheet: sty/fandm/cl-alpha.sty
-ACTION: Export
-ACTION: ReadStyleSheet: sty/fandm/cl-cm.sty
-ACTION: Export
-ACTION: ReadStyleSheet: sty/fandm/alpha-cm.sty
-ACTION: Export
-ACTION: ReadStyleSheet: sty/fandm/cl-alpha.sty
-ACTION: Export
-ACTION: ReadStyleSheet: sty/fandm/cl-cm.sty
-ACTION: Export
+Error: Invalid Modifier List On Main Command
+
+Text where error occurred:
+$!FieldMap  [1-17, 18-34, 35-51, 52-68, 69-85, 86-101,
+102-117, 118-133, 134-149, 150-165, 169-184, 233-239,
+240-246, 247-253, 254-269, 270-285, 286-301, 344-359,
+362-377, 378-393, 394-408, 409-427, 428-443, 444-459,
+460-475, 476-494, 498-513, 514-429, 530-545, 546-561,
+562-577, 594-609, 610-625, 626-641, 642-567, 658-673,
+695-703, 704-712, 714-728, 729-743, 744-759, 760-765,
+766-781, 782-797, 798-813, 814-829, 830-845, 846-861,
+862-869, 870-878, 895-910]
+  Lines
+    {
+    Color = Red
+    }
+Error: Failed to execute macro file
+/Users/bwpomero/crm/hs/dpw-8/github/DPW8-Plotting/BuffetWorkingGroup/TestCase1b/fandm-setup.mcr
