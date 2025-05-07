@@ -85,9 +85,11 @@ ID     |  1a                                                                    
 -------|----------------------------------------------------------------------------------------|
 021    |                                                                                        |
    01  |  DPW8-Buffet/TestCase1a/021_CREATE/01_SA                                               |
+   02  |                                                                                        | DPW8-Buffet/TestCase1a/021_CREATE/02_SA
 -------|----------------------------------------------------------------------------------------|
 023    |                                                                                        |
    01  |  DPW8-Buffet/TestCase1a/023_PolytechniqueMontreal/01_SA                                |
+   02  |  DPW8-Buffet/TestCase1a/023_PolytechniqueMontreal/02_SA_BestPractice                   |
 -------|----------------------------------------------------------------------------------------|
 024    |                                                                                        |
    01  |  DPW8-Buffet/TestCase1a/024_UniversityofLiverpool/01_SAneg                             |
