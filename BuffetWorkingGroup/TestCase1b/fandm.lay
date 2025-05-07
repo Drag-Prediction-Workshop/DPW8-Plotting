@@ -612,6 +612,7 @@ $!LineMap  [1]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -640,6 +641,7 @@ $!LineMap  [2]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -668,6 +670,7 @@ $!LineMap  [3]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -696,6 +699,7 @@ $!LineMap  [4]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -724,6 +728,7 @@ $!LineMap  [5]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -752,6 +757,7 @@ $!LineMap  [6]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -780,6 +786,7 @@ $!LineMap  [7]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -808,6 +815,7 @@ $!LineMap  [8]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -836,6 +844,7 @@ $!LineMap  [9]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -864,6 +873,7 @@ $!LineMap  [10]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -892,6 +902,7 @@ $!LineMap  [11]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -920,6 +931,7 @@ $!LineMap  [12]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -948,6 +960,7 @@ $!LineMap  [13]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -976,6 +989,7 @@ $!LineMap  [14]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -1004,6 +1018,7 @@ $!LineMap  [15]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -1032,6 +1047,7 @@ $!LineMap  [16]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -1060,6 +1076,7 @@ $!LineMap  [17]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -1088,6 +1105,7 @@ $!LineMap  [18]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -1116,6 +1134,7 @@ $!LineMap  [19]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -1144,6 +1163,7 @@ $!LineMap  [20]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -1172,6 +1192,7 @@ $!LineMap  [21]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -1200,6 +1221,7 @@ $!LineMap  [22]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -1228,6 +1250,7 @@ $!LineMap  [23]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -1256,6 +1279,7 @@ $!LineMap  [24]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -1284,6 +1308,7 @@ $!LineMap  [25]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -1312,6 +1337,7 @@ $!LineMap  [26]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -1340,6 +1366,7 @@ $!LineMap  [27]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -1368,6 +1395,7 @@ $!LineMap  [28]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -1396,6 +1424,7 @@ $!LineMap  [29]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -1424,6 +1453,7 @@ $!LineMap  [30]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -1452,6 +1482,7 @@ $!LineMap  [31]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -1480,6 +1511,7 @@ $!LineMap  [32]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -1508,6 +1540,7 @@ $!LineMap  [33]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -1536,6 +1569,7 @@ $!LineMap  [34]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -1561,13 +1595,10 @@ $!LineMap  [35]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -1593,13 +1624,10 @@ $!LineMap  [36]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -1625,13 +1653,10 @@ $!LineMap  [37]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -1657,13 +1682,10 @@ $!LineMap  [38]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -1689,13 +1711,10 @@ $!LineMap  [39]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -1721,13 +1740,10 @@ $!LineMap  [40]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -1753,13 +1769,10 @@ $!LineMap  [41]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -1785,13 +1798,10 @@ $!LineMap  [42]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -1817,13 +1827,10 @@ $!LineMap  [43]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -1849,13 +1856,10 @@ $!LineMap  [44]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -1881,13 +1885,10 @@ $!LineMap  [45]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -1913,13 +1914,10 @@ $!LineMap  [46]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -1945,13 +1943,10 @@ $!LineMap  [47]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -1977,13 +1972,10 @@ $!LineMap  [48]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -2009,13 +2001,10 @@ $!LineMap  [49]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -2041,13 +2030,10 @@ $!LineMap  [50]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -2073,13 +2059,10 @@ $!LineMap  [51]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -2108,6 +2091,7 @@ $!LineMap  [52]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2136,6 +2120,7 @@ $!LineMap  [53]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2164,6 +2149,7 @@ $!LineMap  [54]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2192,6 +2178,7 @@ $!LineMap  [55]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2220,6 +2207,7 @@ $!LineMap  [56]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2248,6 +2236,7 @@ $!LineMap  [57]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2276,6 +2265,7 @@ $!LineMap  [58]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2304,6 +2294,7 @@ $!LineMap  [59]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2332,6 +2323,7 @@ $!LineMap  [60]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2360,6 +2352,7 @@ $!LineMap  [61]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2388,6 +2381,7 @@ $!LineMap  [62]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2416,6 +2410,7 @@ $!LineMap  [63]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2444,6 +2439,7 @@ $!LineMap  [64]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2472,6 +2468,7 @@ $!LineMap  [65]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2500,6 +2497,7 @@ $!LineMap  [66]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2528,6 +2526,7 @@ $!LineMap  [67]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2556,6 +2555,7 @@ $!LineMap  [68]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2584,6 +2584,7 @@ $!LineMap  [69]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2612,6 +2613,7 @@ $!LineMap  [70]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2640,6 +2642,7 @@ $!LineMap  [71]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2668,6 +2671,7 @@ $!LineMap  [72]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2696,6 +2700,7 @@ $!LineMap  [73]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2724,6 +2729,7 @@ $!LineMap  [74]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2752,6 +2758,7 @@ $!LineMap  [75]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2780,6 +2787,7 @@ $!LineMap  [76]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2808,6 +2816,7 @@ $!LineMap  [77]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2836,6 +2845,7 @@ $!LineMap  [78]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2864,6 +2874,7 @@ $!LineMap  [79]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2892,6 +2903,7 @@ $!LineMap  [80]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2920,6 +2932,7 @@ $!LineMap  [81]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2948,6 +2961,7 @@ $!LineMap  [82]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -2976,6 +2990,7 @@ $!LineMap  [83]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3004,6 +3019,7 @@ $!LineMap  [84]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3032,6 +3048,7 @@ $!LineMap  [85]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3060,6 +3077,7 @@ $!LineMap  [86]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3088,6 +3106,7 @@ $!LineMap  [87]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3116,6 +3135,7 @@ $!LineMap  [88]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3144,6 +3164,7 @@ $!LineMap  [89]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3172,6 +3193,7 @@ $!LineMap  [90]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3200,6 +3222,7 @@ $!LineMap  [91]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3228,6 +3251,7 @@ $!LineMap  [92]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3256,6 +3280,7 @@ $!LineMap  [93]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3284,6 +3309,7 @@ $!LineMap  [94]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3312,6 +3338,7 @@ $!LineMap  [95]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3340,6 +3367,7 @@ $!LineMap  [96]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3368,6 +3396,7 @@ $!LineMap  [97]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3396,6 +3425,7 @@ $!LineMap  [98]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3424,6 +3454,7 @@ $!LineMap  [99]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3452,6 +3483,7 @@ $!LineMap  [100]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3480,6 +3512,7 @@ $!LineMap  [101]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3508,6 +3541,7 @@ $!LineMap  [102]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3536,6 +3570,7 @@ $!LineMap  [103]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3564,6 +3599,7 @@ $!LineMap  [104]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3592,6 +3628,7 @@ $!LineMap  [105]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3620,6 +3657,7 @@ $!LineMap  [106]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3648,6 +3686,7 @@ $!LineMap  [107]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3676,6 +3715,7 @@ $!LineMap  [108]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3704,6 +3744,7 @@ $!LineMap  [109]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3732,6 +3773,7 @@ $!LineMap  [110]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3760,6 +3802,7 @@ $!LineMap  [111]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3788,6 +3831,7 @@ $!LineMap  [112]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3816,6 +3860,7 @@ $!LineMap  [113]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3844,6 +3889,7 @@ $!LineMap  [114]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3872,6 +3918,7 @@ $!LineMap  [115]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3900,6 +3947,7 @@ $!LineMap  [116]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3928,6 +3976,7 @@ $!LineMap  [117]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3956,6 +4005,7 @@ $!LineMap  [118]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -3984,6 +4034,7 @@ $!LineMap  [119]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4012,6 +4063,7 @@ $!LineMap  [120]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4040,6 +4092,7 @@ $!LineMap  [121]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4068,6 +4121,7 @@ $!LineMap  [122]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4096,6 +4150,7 @@ $!LineMap  [123]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4124,6 +4179,7 @@ $!LineMap  [124]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4152,6 +4208,7 @@ $!LineMap  [125]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4180,6 +4237,7 @@ $!LineMap  [126]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4208,6 +4266,7 @@ $!LineMap  [127]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4236,6 +4295,7 @@ $!LineMap  [128]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4264,6 +4324,7 @@ $!LineMap  [129]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4292,6 +4353,7 @@ $!LineMap  [130]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4320,6 +4382,7 @@ $!LineMap  [131]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4348,6 +4411,7 @@ $!LineMap  [132]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4376,6 +4440,7 @@ $!LineMap  [133]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4404,6 +4469,7 @@ $!LineMap  [134]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4432,6 +4498,7 @@ $!LineMap  [135]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4460,6 +4527,7 @@ $!LineMap  [136]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4488,6 +4556,7 @@ $!LineMap  [137]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4516,6 +4585,7 @@ $!LineMap  [138]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4544,6 +4614,7 @@ $!LineMap  [139]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4572,6 +4643,7 @@ $!LineMap  [140]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4600,6 +4672,7 @@ $!LineMap  [141]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4628,6 +4701,7 @@ $!LineMap  [142]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4656,6 +4730,7 @@ $!LineMap  [143]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4684,6 +4759,7 @@ $!LineMap  [144]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4712,6 +4788,7 @@ $!LineMap  [145]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4740,6 +4817,7 @@ $!LineMap  [146]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4768,6 +4846,7 @@ $!LineMap  [147]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4796,6 +4875,7 @@ $!LineMap  [148]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4824,6 +4904,7 @@ $!LineMap  [149]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4852,6 +4933,7 @@ $!LineMap  [150]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4880,6 +4962,7 @@ $!LineMap  [151]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4908,6 +4991,7 @@ $!LineMap  [152]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4936,6 +5020,7 @@ $!LineMap  [153]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4964,6 +5049,7 @@ $!LineMap  [154]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -4992,6 +5078,7 @@ $!LineMap  [155]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -5020,6 +5107,7 @@ $!LineMap  [156]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -5048,6 +5136,7 @@ $!LineMap  [157]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -5076,6 +5165,7 @@ $!LineMap  [158]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -5104,6 +5194,7 @@ $!LineMap  [159]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -5132,6 +5223,7 @@ $!LineMap  [160]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -5160,6 +5252,7 @@ $!LineMap  [161]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -5188,6 +5281,7 @@ $!LineMap  [162]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -5216,6 +5310,7 @@ $!LineMap  [163]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -5244,6 +5339,7 @@ $!LineMap  [164]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -5272,6 +5368,7 @@ $!LineMap  [165]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -5300,6 +5397,7 @@ $!LineMap  [166]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -5328,6 +5426,7 @@ $!LineMap  [167]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -5356,6 +5455,7 @@ $!LineMap  [168]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -5381,13 +5481,10 @@ $!LineMap  [169]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -5413,13 +5510,10 @@ $!LineMap  [170]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -5445,13 +5539,10 @@ $!LineMap  [171]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -5477,13 +5568,10 @@ $!LineMap  [172]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -5509,13 +5597,10 @@ $!LineMap  [173]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -5541,13 +5626,10 @@ $!LineMap  [174]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -5573,13 +5655,10 @@ $!LineMap  [175]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -5605,13 +5684,10 @@ $!LineMap  [176]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -5637,13 +5713,10 @@ $!LineMap  [177]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -5669,13 +5742,10 @@ $!LineMap  [178]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -5701,13 +5771,10 @@ $!LineMap  [179]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -5733,13 +5800,10 @@ $!LineMap  [180]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -5765,13 +5829,10 @@ $!LineMap  [181]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -5797,13 +5858,10 @@ $!LineMap  [182]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -5829,13 +5887,10 @@ $!LineMap  [183]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -5861,13 +5916,10 @@ $!LineMap  [184]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -5893,13 +5945,10 @@ $!LineMap  [185]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -5925,13 +5974,10 @@ $!LineMap  [186]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -5957,13 +6003,10 @@ $!LineMap  [187]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -5989,13 +6032,10 @@ $!LineMap  [188]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -6021,13 +6061,10 @@ $!LineMap  [189]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -6053,13 +6090,10 @@ $!LineMap  [190]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -6085,13 +6119,10 @@ $!LineMap  [191]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -6117,13 +6148,10 @@ $!LineMap  [192]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -6149,13 +6177,10 @@ $!LineMap  [193]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -6181,13 +6206,10 @@ $!LineMap  [194]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -6213,13 +6235,10 @@ $!LineMap  [195]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -6245,13 +6264,10 @@ $!LineMap  [196]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -6277,13 +6293,10 @@ $!LineMap  [197]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -6309,13 +6322,10 @@ $!LineMap  [198]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -6341,13 +6351,10 @@ $!LineMap  [199]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -6373,13 +6380,10 @@ $!LineMap  [200]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -6405,13 +6409,10 @@ $!LineMap  [201]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -6437,13 +6438,10 @@ $!LineMap  [202]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -6469,13 +6467,10 @@ $!LineMap  [203]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -6501,13 +6496,10 @@ $!LineMap  [204]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -6533,13 +6525,10 @@ $!LineMap  [205]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -6565,13 +6554,10 @@ $!LineMap  [206]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -6597,13 +6583,10 @@ $!LineMap  [207]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -6629,13 +6612,10 @@ $!LineMap  [208]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -6661,13 +6641,10 @@ $!LineMap  [209]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -6693,13 +6670,10 @@ $!LineMap  [210]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -6725,13 +6699,10 @@ $!LineMap  [211]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -6757,13 +6728,10 @@ $!LineMap  [212]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -6789,13 +6757,10 @@ $!LineMap  [213]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -6821,13 +6786,10 @@ $!LineMap  [214]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -6853,13 +6815,10 @@ $!LineMap  [215]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -6885,13 +6844,10 @@ $!LineMap  [216]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -6917,13 +6873,10 @@ $!LineMap  [217]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -6949,13 +6902,10 @@ $!LineMap  [218]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -6981,13 +6931,10 @@ $!LineMap  [219]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -7013,13 +6960,10 @@ $!LineMap  [220]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -7045,13 +6989,10 @@ $!LineMap  [221]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -7077,13 +7018,10 @@ $!LineMap  [222]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -7109,13 +7047,10 @@ $!LineMap  [223]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -7141,13 +7076,10 @@ $!LineMap  [224]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -7173,13 +7105,10 @@ $!LineMap  [225]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -7205,13 +7134,10 @@ $!LineMap  [226]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -7237,13 +7163,10 @@ $!LineMap  [227]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -7269,13 +7192,10 @@ $!LineMap  [228]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -7301,13 +7221,10 @@ $!LineMap  [229]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -7333,13 +7250,10 @@ $!LineMap  [230]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -7365,13 +7279,10 @@ $!LineMap  [231]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -7397,13 +7308,10 @@ $!LineMap  [232]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Grad
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -7432,6 +7340,7 @@ $!LineMap  [233]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -7460,6 +7369,7 @@ $!LineMap  [234]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -7488,6 +7398,7 @@ $!LineMap  [235]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -7516,6 +7427,7 @@ $!LineMap  [236]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -7544,6 +7456,7 @@ $!LineMap  [237]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -7572,6 +7485,7 @@ $!LineMap  [238]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -7600,6 +7514,7 @@ $!LineMap  [239]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -7628,6 +7543,7 @@ $!LineMap  [240]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -7656,6 +7572,7 @@ $!LineMap  [241]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -7684,6 +7601,7 @@ $!LineMap  [242]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -7712,6 +7630,7 @@ $!LineMap  [243]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -7740,6 +7659,7 @@ $!LineMap  [244]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -7768,6 +7688,7 @@ $!LineMap  [245]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -7796,6 +7717,7 @@ $!LineMap  [246]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -7821,13 +7743,10 @@ $!LineMap  [247]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -7853,13 +7772,10 @@ $!LineMap  [248]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -7885,13 +7801,10 @@ $!LineMap  [249]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -7917,13 +7830,10 @@ $!LineMap  [250]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -7949,13 +7859,10 @@ $!LineMap  [251]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -7981,13 +7888,10 @@ $!LineMap  [252]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -8013,13 +7917,10 @@ $!LineMap  [253]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -8048,6 +7949,7 @@ $!LineMap  [254]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8076,6 +7978,7 @@ $!LineMap  [255]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8104,6 +8007,7 @@ $!LineMap  [256]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8132,6 +8036,7 @@ $!LineMap  [257]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8160,6 +8065,7 @@ $!LineMap  [258]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8188,6 +8094,7 @@ $!LineMap  [259]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8216,6 +8123,7 @@ $!LineMap  [260]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8244,6 +8152,7 @@ $!LineMap  [261]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8272,6 +8181,7 @@ $!LineMap  [262]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8300,6 +8210,7 @@ $!LineMap  [263]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8328,6 +8239,7 @@ $!LineMap  [264]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8356,6 +8268,7 @@ $!LineMap  [265]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8384,6 +8297,7 @@ $!LineMap  [266]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8412,6 +8326,7 @@ $!LineMap  [267]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8440,6 +8355,7 @@ $!LineMap  [268]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8468,6 +8384,7 @@ $!LineMap  [269]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8496,6 +8413,7 @@ $!LineMap  [270]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8524,6 +8442,7 @@ $!LineMap  [271]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8552,6 +8471,7 @@ $!LineMap  [272]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8580,6 +8500,7 @@ $!LineMap  [273]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8608,6 +8529,7 @@ $!LineMap  [274]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8636,6 +8558,7 @@ $!LineMap  [275]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8664,6 +8587,7 @@ $!LineMap  [276]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8692,6 +8616,7 @@ $!LineMap  [277]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8720,6 +8645,7 @@ $!LineMap  [278]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8748,6 +8674,7 @@ $!LineMap  [279]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8776,6 +8703,7 @@ $!LineMap  [280]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8804,6 +8732,7 @@ $!LineMap  [281]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8832,6 +8761,7 @@ $!LineMap  [282]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8860,6 +8790,7 @@ $!LineMap  [283]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8888,6 +8819,7 @@ $!LineMap  [284]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8916,6 +8848,7 @@ $!LineMap  [285]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8944,6 +8877,7 @@ $!LineMap  [286]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -8972,6 +8906,7 @@ $!LineMap  [287]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9000,6 +8935,7 @@ $!LineMap  [288]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9028,6 +8964,7 @@ $!LineMap  [289]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9056,6 +8993,7 @@ $!LineMap  [290]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9084,6 +9022,7 @@ $!LineMap  [291]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9112,6 +9051,7 @@ $!LineMap  [292]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9140,6 +9080,7 @@ $!LineMap  [293]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9168,6 +9109,7 @@ $!LineMap  [294]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9196,6 +9138,7 @@ $!LineMap  [295]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9224,6 +9167,7 @@ $!LineMap  [296]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9252,6 +9196,7 @@ $!LineMap  [297]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9280,6 +9225,7 @@ $!LineMap  [298]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9308,6 +9254,7 @@ $!LineMap  [299]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9336,6 +9283,7 @@ $!LineMap  [300]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9364,6 +9312,7 @@ $!LineMap  [301]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9392,6 +9341,7 @@ $!LineMap  [302]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9420,6 +9370,7 @@ $!LineMap  [303]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9448,6 +9399,7 @@ $!LineMap  [304]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9476,6 +9428,7 @@ $!LineMap  [305]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9504,6 +9457,7 @@ $!LineMap  [306]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9532,6 +9486,7 @@ $!LineMap  [307]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9560,6 +9515,7 @@ $!LineMap  [308]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9588,6 +9544,7 @@ $!LineMap  [309]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9616,6 +9573,7 @@ $!LineMap  [310]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9644,6 +9602,7 @@ $!LineMap  [311]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9672,6 +9631,7 @@ $!LineMap  [312]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9700,6 +9660,7 @@ $!LineMap  [313]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9728,6 +9689,7 @@ $!LineMap  [314]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9756,6 +9718,7 @@ $!LineMap  [315]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9784,6 +9747,7 @@ $!LineMap  [316]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9812,6 +9776,7 @@ $!LineMap  [317]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9840,6 +9805,7 @@ $!LineMap  [318]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9868,6 +9834,7 @@ $!LineMap  [319]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9896,6 +9863,7 @@ $!LineMap  [320]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9924,6 +9892,7 @@ $!LineMap  [321]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9952,6 +9921,7 @@ $!LineMap  [322]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -9980,6 +9950,7 @@ $!LineMap  [323]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10008,6 +9979,7 @@ $!LineMap  [324]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10036,6 +10008,7 @@ $!LineMap  [325]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10064,6 +10037,7 @@ $!LineMap  [326]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10092,6 +10066,7 @@ $!LineMap  [327]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10120,6 +10095,7 @@ $!LineMap  [328]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10148,6 +10124,7 @@ $!LineMap  [329]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10176,6 +10153,7 @@ $!LineMap  [330]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10204,6 +10182,7 @@ $!LineMap  [331]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10232,6 +10211,7 @@ $!LineMap  [332]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10260,6 +10240,7 @@ $!LineMap  [333]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10288,6 +10269,7 @@ $!LineMap  [334]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10316,6 +10298,7 @@ $!LineMap  [335]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10344,6 +10327,7 @@ $!LineMap  [336]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10372,6 +10356,7 @@ $!LineMap  [337]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10400,6 +10385,7 @@ $!LineMap  [338]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10428,6 +10414,7 @@ $!LineMap  [339]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10456,6 +10443,7 @@ $!LineMap  [340]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10484,6 +10472,7 @@ $!LineMap  [341]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10512,6 +10501,7 @@ $!LineMap  [342]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10540,6 +10530,7 @@ $!LineMap  [343]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10568,6 +10559,7 @@ $!LineMap  [344]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10596,6 +10588,7 @@ $!LineMap  [345]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10624,6 +10617,7 @@ $!LineMap  [346]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10652,6 +10646,7 @@ $!LineMap  [347]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10680,6 +10675,7 @@ $!LineMap  [348]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10708,6 +10704,7 @@ $!LineMap  [349]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10736,6 +10733,7 @@ $!LineMap  [350]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10764,6 +10762,7 @@ $!LineMap  [351]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10792,6 +10791,7 @@ $!LineMap  [352]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10820,6 +10820,7 @@ $!LineMap  [353]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10848,6 +10849,7 @@ $!LineMap  [354]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10876,6 +10878,7 @@ $!LineMap  [355]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10904,6 +10907,7 @@ $!LineMap  [356]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10932,6 +10936,7 @@ $!LineMap  [357]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10960,6 +10965,7 @@ $!LineMap  [358]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -10988,6 +10994,7 @@ $!LineMap  [359]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11016,6 +11023,7 @@ $!LineMap  [360]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11044,6 +11052,7 @@ $!LineMap  [361]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11072,6 +11081,7 @@ $!LineMap  [362]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11100,6 +11110,7 @@ $!LineMap  [363]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11128,6 +11139,7 @@ $!LineMap  [364]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11156,6 +11168,7 @@ $!LineMap  [365]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11184,6 +11197,7 @@ $!LineMap  [366]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11212,6 +11226,7 @@ $!LineMap  [367]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11240,6 +11255,7 @@ $!LineMap  [368]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11268,6 +11284,7 @@ $!LineMap  [369]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11296,6 +11313,7 @@ $!LineMap  [370]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11324,6 +11342,7 @@ $!LineMap  [371]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11352,6 +11371,7 @@ $!LineMap  [372]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11380,6 +11400,7 @@ $!LineMap  [373]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11408,6 +11429,7 @@ $!LineMap  [374]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11436,6 +11458,7 @@ $!LineMap  [375]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11464,6 +11487,7 @@ $!LineMap  [376]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11492,6 +11516,7 @@ $!LineMap  [377]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11520,6 +11545,7 @@ $!LineMap  [378]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11548,6 +11574,7 @@ $!LineMap  [379]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11576,6 +11603,7 @@ $!LineMap  [380]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11604,6 +11632,7 @@ $!LineMap  [381]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11632,6 +11661,7 @@ $!LineMap  [382]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11660,6 +11690,7 @@ $!LineMap  [383]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11688,6 +11719,7 @@ $!LineMap  [384]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11716,6 +11748,7 @@ $!LineMap  [385]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11744,6 +11777,7 @@ $!LineMap  [386]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11772,6 +11806,7 @@ $!LineMap  [387]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11800,6 +11835,7 @@ $!LineMap  [388]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11828,6 +11864,7 @@ $!LineMap  [389]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11856,6 +11893,7 @@ $!LineMap  [390]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11884,6 +11922,7 @@ $!LineMap  [391]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11912,6 +11951,7 @@ $!LineMap  [392]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11940,6 +11980,7 @@ $!LineMap  [393]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11968,6 +12009,7 @@ $!LineMap  [394]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -11996,6 +12038,7 @@ $!LineMap  [395]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12024,6 +12067,7 @@ $!LineMap  [396]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12052,6 +12096,7 @@ $!LineMap  [397]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12080,6 +12125,7 @@ $!LineMap  [398]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12108,6 +12154,7 @@ $!LineMap  [399]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12136,6 +12183,7 @@ $!LineMap  [400]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12164,6 +12212,7 @@ $!LineMap  [401]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12192,6 +12241,7 @@ $!LineMap  [402]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12220,6 +12270,7 @@ $!LineMap  [403]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12248,6 +12299,7 @@ $!LineMap  [404]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12276,6 +12328,7 @@ $!LineMap  [405]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12304,6 +12357,7 @@ $!LineMap  [406]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12332,6 +12386,7 @@ $!LineMap  [407]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12360,6 +12415,7 @@ $!LineMap  [408]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12388,6 +12444,7 @@ $!LineMap  [409]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12416,6 +12473,7 @@ $!LineMap  [410]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12444,6 +12502,7 @@ $!LineMap  [411]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12472,6 +12531,7 @@ $!LineMap  [412]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12500,6 +12560,7 @@ $!LineMap  [413]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12528,6 +12589,7 @@ $!LineMap  [414]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12556,6 +12618,7 @@ $!LineMap  [415]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12584,6 +12647,7 @@ $!LineMap  [416]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12612,6 +12676,7 @@ $!LineMap  [417]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12640,6 +12705,7 @@ $!LineMap  [418]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12668,6 +12734,7 @@ $!LineMap  [419]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12696,6 +12763,7 @@ $!LineMap  [420]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12724,6 +12792,7 @@ $!LineMap  [421]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12752,6 +12821,7 @@ $!LineMap  [422]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12780,6 +12850,7 @@ $!LineMap  [423]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12808,6 +12879,7 @@ $!LineMap  [424]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12836,6 +12908,7 @@ $!LineMap  [425]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12864,6 +12937,7 @@ $!LineMap  [426]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12892,6 +12966,7 @@ $!LineMap  [427]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -12917,13 +12992,10 @@ $!LineMap  [428]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -12949,13 +13021,10 @@ $!LineMap  [429]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -12981,13 +13050,10 @@ $!LineMap  [430]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -13013,13 +13079,10 @@ $!LineMap  [431]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -13045,13 +13108,10 @@ $!LineMap  [432]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -13077,13 +13137,10 @@ $!LineMap  [433]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -13109,13 +13166,10 @@ $!LineMap  [434]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -13141,13 +13195,10 @@ $!LineMap  [435]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -13173,13 +13224,10 @@ $!LineMap  [436]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -13205,13 +13253,10 @@ $!LineMap  [437]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -13237,13 +13282,10 @@ $!LineMap  [438]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -13269,13 +13311,10 @@ $!LineMap  [439]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -13301,13 +13340,10 @@ $!LineMap  [440]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -13333,13 +13369,10 @@ $!LineMap  [441]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -13365,13 +13398,10 @@ $!LineMap  [442]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -13397,13 +13427,10 @@ $!LineMap  [443]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -13429,13 +13456,10 @@ $!LineMap  [444]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -13461,13 +13485,10 @@ $!LineMap  [445]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -13493,13 +13514,10 @@ $!LineMap  [446]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -13525,13 +13543,10 @@ $!LineMap  [447]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -13557,13 +13572,10 @@ $!LineMap  [448]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -13589,13 +13601,10 @@ $!LineMap  [449]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -13621,13 +13630,10 @@ $!LineMap  [450]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -13653,13 +13659,10 @@ $!LineMap  [451]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -13685,13 +13688,10 @@ $!LineMap  [452]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -13717,13 +13717,10 @@ $!LineMap  [453]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -13749,13 +13746,10 @@ $!LineMap  [454]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -13781,13 +13775,10 @@ $!LineMap  [455]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -13813,13 +13804,10 @@ $!LineMap  [456]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -13845,13 +13833,10 @@ $!LineMap  [457]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -13877,13 +13862,10 @@ $!LineMap  [458]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -13909,13 +13891,10 @@ $!LineMap  [459]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -13941,13 +13920,10 @@ $!LineMap  [460]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -13973,13 +13949,10 @@ $!LineMap  [461]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -14005,13 +13978,10 @@ $!LineMap  [462]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -14037,13 +14007,10 @@ $!LineMap  [463]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -14069,13 +14036,10 @@ $!LineMap  [464]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -14101,13 +14065,10 @@ $!LineMap  [465]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -14133,13 +14094,10 @@ $!LineMap  [466]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -14165,13 +14123,10 @@ $!LineMap  [467]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -14197,13 +14152,10 @@ $!LineMap  [468]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -14229,13 +14181,10 @@ $!LineMap  [469]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -14261,13 +14210,10 @@ $!LineMap  [470]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -14293,13 +14239,10 @@ $!LineMap  [471]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -14325,13 +14268,10 @@ $!LineMap  [472]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -14357,13 +14297,10 @@ $!LineMap  [473]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -14389,13 +14326,10 @@ $!LineMap  [474]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -14421,13 +14355,10 @@ $!LineMap  [475]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -14453,13 +14384,10 @@ $!LineMap  [476]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -14485,13 +14413,10 @@ $!LineMap  [477]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -14517,13 +14442,10 @@ $!LineMap  [478]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -14549,13 +14471,10 @@ $!LineMap  [479]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -14581,13 +14500,10 @@ $!LineMap  [480]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -14613,13 +14529,10 @@ $!LineMap  [481]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -14645,13 +14558,10 @@ $!LineMap  [482]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -14677,13 +14587,10 @@ $!LineMap  [483]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -14709,13 +14616,10 @@ $!LineMap  [484]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -14741,13 +14645,10 @@ $!LineMap  [485]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -14773,13 +14674,10 @@ $!LineMap  [486]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -14805,13 +14703,10 @@ $!LineMap  [487]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -14837,13 +14732,10 @@ $!LineMap  [488]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -14869,13 +14761,10 @@ $!LineMap  [489]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -14901,13 +14790,10 @@ $!LineMap  [490]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -14933,13 +14819,10 @@ $!LineMap  [491]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -14965,13 +14848,10 @@ $!LineMap  [492]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -14997,13 +14877,10 @@ $!LineMap  [493]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -15029,13 +14906,10 @@ $!LineMap  [494]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -15061,13 +14935,10 @@ $!LineMap  [495]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Diamond
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -15093,13 +14964,10 @@ $!LineMap  [496]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Diamond
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -15125,13 +14993,10 @@ $!LineMap  [497]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Diamond
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -15160,6 +15025,7 @@ $!LineMap  [498]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15188,6 +15054,7 @@ $!LineMap  [499]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15216,6 +15083,7 @@ $!LineMap  [500]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15244,6 +15112,7 @@ $!LineMap  [501]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15272,6 +15141,7 @@ $!LineMap  [502]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15300,6 +15170,7 @@ $!LineMap  [503]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15328,6 +15199,7 @@ $!LineMap  [504]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15356,6 +15228,7 @@ $!LineMap  [505]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15384,6 +15257,7 @@ $!LineMap  [506]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15412,6 +15286,7 @@ $!LineMap  [507]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15440,6 +15315,7 @@ $!LineMap  [508]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15468,6 +15344,7 @@ $!LineMap  [509]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15496,6 +15373,7 @@ $!LineMap  [510]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15524,6 +15402,7 @@ $!LineMap  [511]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15552,6 +15431,7 @@ $!LineMap  [512]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15580,6 +15460,7 @@ $!LineMap  [513]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15608,6 +15489,7 @@ $!LineMap  [514]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15636,6 +15518,7 @@ $!LineMap  [515]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15664,6 +15547,7 @@ $!LineMap  [516]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15692,6 +15576,7 @@ $!LineMap  [517]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15720,6 +15605,7 @@ $!LineMap  [518]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15748,6 +15634,7 @@ $!LineMap  [519]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15776,6 +15663,7 @@ $!LineMap  [520]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15804,6 +15692,7 @@ $!LineMap  [521]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15832,6 +15721,7 @@ $!LineMap  [522]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15860,6 +15750,7 @@ $!LineMap  [523]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15888,6 +15779,7 @@ $!LineMap  [524]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15916,6 +15808,7 @@ $!LineMap  [525]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15944,6 +15837,7 @@ $!LineMap  [526]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -15972,6 +15866,7 @@ $!LineMap  [527]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16000,6 +15895,7 @@ $!LineMap  [528]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16028,6 +15924,7 @@ $!LineMap  [529]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16056,6 +15953,7 @@ $!LineMap  [530]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16084,6 +15982,7 @@ $!LineMap  [531]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16112,6 +16011,7 @@ $!LineMap  [532]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16140,6 +16040,7 @@ $!LineMap  [533]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16168,6 +16069,7 @@ $!LineMap  [534]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16196,6 +16098,7 @@ $!LineMap  [535]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16224,6 +16127,7 @@ $!LineMap  [536]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16252,6 +16156,7 @@ $!LineMap  [537]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16280,6 +16185,7 @@ $!LineMap  [538]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16308,6 +16214,7 @@ $!LineMap  [539]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16336,6 +16243,7 @@ $!LineMap  [540]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16364,6 +16272,7 @@ $!LineMap  [541]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16392,6 +16301,7 @@ $!LineMap  [542]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16420,6 +16330,7 @@ $!LineMap  [543]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16448,6 +16359,7 @@ $!LineMap  [544]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16476,6 +16388,7 @@ $!LineMap  [545]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16504,6 +16417,7 @@ $!LineMap  [546]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16532,6 +16446,7 @@ $!LineMap  [547]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16560,6 +16475,7 @@ $!LineMap  [548]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16588,6 +16504,7 @@ $!LineMap  [549]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16616,6 +16533,7 @@ $!LineMap  [550]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16644,6 +16562,7 @@ $!LineMap  [551]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16672,6 +16591,7 @@ $!LineMap  [552]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16700,6 +16620,7 @@ $!LineMap  [553]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16728,6 +16649,7 @@ $!LineMap  [554]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16756,6 +16678,7 @@ $!LineMap  [555]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16784,6 +16707,7 @@ $!LineMap  [556]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16812,6 +16736,7 @@ $!LineMap  [557]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16840,6 +16765,7 @@ $!LineMap  [558]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16868,6 +16794,7 @@ $!LineMap  [559]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16896,6 +16823,7 @@ $!LineMap  [560]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16924,6 +16852,7 @@ $!LineMap  [561]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16952,6 +16881,7 @@ $!LineMap  [562]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -16980,6 +16910,7 @@ $!LineMap  [563]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17008,6 +16939,7 @@ $!LineMap  [564]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17036,6 +16968,7 @@ $!LineMap  [565]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17064,6 +16997,7 @@ $!LineMap  [566]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17092,6 +17026,7 @@ $!LineMap  [567]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17120,6 +17055,7 @@ $!LineMap  [568]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17148,6 +17084,7 @@ $!LineMap  [569]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17176,6 +17113,7 @@ $!LineMap  [570]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17204,6 +17142,7 @@ $!LineMap  [571]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17232,6 +17171,7 @@ $!LineMap  [572]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17260,6 +17200,7 @@ $!LineMap  [573]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17288,6 +17229,7 @@ $!LineMap  [574]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17316,6 +17258,7 @@ $!LineMap  [575]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17344,6 +17287,7 @@ $!LineMap  [576]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17372,6 +17316,7 @@ $!LineMap  [577]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17400,6 +17345,7 @@ $!LineMap  [578]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17428,6 +17374,7 @@ $!LineMap  [579]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17456,6 +17403,7 @@ $!LineMap  [580]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17484,6 +17432,7 @@ $!LineMap  [581]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17512,6 +17461,7 @@ $!LineMap  [582]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17540,6 +17490,7 @@ $!LineMap  [583]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17568,6 +17519,7 @@ $!LineMap  [584]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17596,6 +17548,7 @@ $!LineMap  [585]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17624,6 +17577,7 @@ $!LineMap  [586]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17652,6 +17606,7 @@ $!LineMap  [587]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17680,6 +17635,7 @@ $!LineMap  [588]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17708,6 +17664,7 @@ $!LineMap  [589]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17736,6 +17693,7 @@ $!LineMap  [590]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17764,6 +17722,7 @@ $!LineMap  [591]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17792,6 +17751,7 @@ $!LineMap  [592]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17820,6 +17780,7 @@ $!LineMap  [593]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17848,6 +17809,7 @@ $!LineMap  [594]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17876,6 +17838,7 @@ $!LineMap  [595]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17904,6 +17867,7 @@ $!LineMap  [596]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17932,6 +17896,7 @@ $!LineMap  [597]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17960,6 +17925,7 @@ $!LineMap  [598]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -17988,6 +17954,7 @@ $!LineMap  [599]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18016,6 +17983,7 @@ $!LineMap  [600]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18044,6 +18012,7 @@ $!LineMap  [601]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18072,6 +18041,7 @@ $!LineMap  [602]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18100,6 +18070,7 @@ $!LineMap  [603]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18128,6 +18099,7 @@ $!LineMap  [604]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18156,6 +18128,7 @@ $!LineMap  [605]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18184,6 +18157,7 @@ $!LineMap  [606]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18212,6 +18186,7 @@ $!LineMap  [607]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18240,6 +18215,7 @@ $!LineMap  [608]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18268,6 +18244,7 @@ $!LineMap  [609]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18296,6 +18273,7 @@ $!LineMap  [610]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18324,6 +18302,7 @@ $!LineMap  [611]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18352,6 +18331,7 @@ $!LineMap  [612]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18380,6 +18360,7 @@ $!LineMap  [613]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18408,6 +18389,7 @@ $!LineMap  [614]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18436,6 +18418,7 @@ $!LineMap  [615]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18464,6 +18447,7 @@ $!LineMap  [616]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18492,6 +18476,7 @@ $!LineMap  [617]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18520,6 +18505,7 @@ $!LineMap  [618]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18548,6 +18534,7 @@ $!LineMap  [619]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18576,6 +18563,7 @@ $!LineMap  [620]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18604,6 +18592,7 @@ $!LineMap  [621]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18632,6 +18621,7 @@ $!LineMap  [622]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18660,6 +18650,7 @@ $!LineMap  [623]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18688,6 +18679,7 @@ $!LineMap  [624]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18716,6 +18708,7 @@ $!LineMap  [625]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18744,6 +18737,7 @@ $!LineMap  [626]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18772,6 +18766,7 @@ $!LineMap  [627]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18800,6 +18795,7 @@ $!LineMap  [628]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18828,6 +18824,7 @@ $!LineMap  [629]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18856,6 +18853,7 @@ $!LineMap  [630]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18884,6 +18882,7 @@ $!LineMap  [631]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18912,6 +18911,7 @@ $!LineMap  [632]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18940,6 +18940,7 @@ $!LineMap  [633]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18968,6 +18969,7 @@ $!LineMap  [634]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -18996,6 +18998,7 @@ $!LineMap  [635]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19024,6 +19027,7 @@ $!LineMap  [636]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19052,6 +19056,7 @@ $!LineMap  [637]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19080,6 +19085,7 @@ $!LineMap  [638]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19108,6 +19114,7 @@ $!LineMap  [639]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19136,6 +19143,7 @@ $!LineMap  [640]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19164,6 +19172,7 @@ $!LineMap  [641]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19192,6 +19201,7 @@ $!LineMap  [642]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19220,6 +19230,7 @@ $!LineMap  [643]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19248,6 +19259,7 @@ $!LineMap  [644]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19276,6 +19288,7 @@ $!LineMap  [645]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19304,6 +19317,7 @@ $!LineMap  [646]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19332,6 +19346,7 @@ $!LineMap  [647]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19360,6 +19375,7 @@ $!LineMap  [648]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19388,6 +19404,7 @@ $!LineMap  [649]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19416,6 +19433,7 @@ $!LineMap  [650]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19444,6 +19462,7 @@ $!LineMap  [651]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19472,6 +19491,7 @@ $!LineMap  [652]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19500,6 +19520,7 @@ $!LineMap  [653]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19528,6 +19549,7 @@ $!LineMap  [654]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19556,6 +19578,7 @@ $!LineMap  [655]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19584,6 +19607,7 @@ $!LineMap  [656]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19612,6 +19636,7 @@ $!LineMap  [657]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19640,6 +19665,7 @@ $!LineMap  [658]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19668,6 +19694,7 @@ $!LineMap  [659]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19696,6 +19723,7 @@ $!LineMap  [660]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19724,6 +19752,7 @@ $!LineMap  [661]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19752,6 +19781,7 @@ $!LineMap  [662]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19780,6 +19810,7 @@ $!LineMap  [663]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19808,6 +19839,7 @@ $!LineMap  [664]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19836,6 +19868,7 @@ $!LineMap  [665]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19864,6 +19897,7 @@ $!LineMap  [666]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19892,6 +19926,7 @@ $!LineMap  [667]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19920,6 +19955,7 @@ $!LineMap  [668]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19948,6 +19984,7 @@ $!LineMap  [669]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -19976,6 +20013,7 @@ $!LineMap  [670]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -20004,6 +20042,7 @@ $!LineMap  [671]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -20032,6 +20071,7 @@ $!LineMap  [672]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -20060,6 +20100,7 @@ $!LineMap  [673]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -20088,6 +20129,7 @@ $!LineMap  [674]
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -20116,6 +20158,7 @@ $!LineMap  [675]
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -20141,13 +20184,10 @@ $!LineMap  [676]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -20173,13 +20213,10 @@ $!LineMap  [677]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -20205,13 +20242,10 @@ $!LineMap  [678]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -20237,13 +20271,10 @@ $!LineMap  [679]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -20269,13 +20300,10 @@ $!LineMap  [680]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -20301,13 +20329,10 @@ $!LineMap  [681]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -20333,13 +20358,10 @@ $!LineMap  [682]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -20365,13 +20387,10 @@ $!LineMap  [683]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -20397,13 +20416,10 @@ $!LineMap  [684]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -20429,13 +20445,10 @@ $!LineMap  [685]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -20461,13 +20474,10 @@ $!LineMap  [686]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -20493,13 +20503,10 @@ $!LineMap  [687]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -20525,13 +20532,10 @@ $!LineMap  [688]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -20557,13 +20561,10 @@ $!LineMap  [689]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -20589,13 +20590,10 @@ $!LineMap  [690]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -20621,13 +20619,10 @@ $!LineMap  [691]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -20653,13 +20648,10 @@ $!LineMap  [692]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -20685,13 +20677,10 @@ $!LineMap  [693]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -20717,13 +20706,10 @@ $!LineMap  [694]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -20752,6 +20738,7 @@ $!LineMap  [695]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -20780,6 +20767,7 @@ $!LineMap  [696]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -20808,6 +20796,7 @@ $!LineMap  [697]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -20836,6 +20825,7 @@ $!LineMap  [698]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -20864,6 +20854,7 @@ $!LineMap  [699]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -20892,6 +20883,7 @@ $!LineMap  [700]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -20920,6 +20912,7 @@ $!LineMap  [701]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -20948,6 +20941,7 @@ $!LineMap  [702]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -20976,6 +20970,7 @@ $!LineMap  [703]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -21004,6 +20999,7 @@ $!LineMap  [704]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -21032,6 +21028,7 @@ $!LineMap  [705]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -21060,6 +21057,7 @@ $!LineMap  [706]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -21088,6 +21086,7 @@ $!LineMap  [707]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -21116,6 +21115,7 @@ $!LineMap  [708]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -21144,6 +21144,7 @@ $!LineMap  [709]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -21172,6 +21173,7 @@ $!LineMap  [710]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -21200,6 +21202,7 @@ $!LineMap  [711]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -21228,6 +21231,7 @@ $!LineMap  [712]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -21256,6 +21260,7 @@ $!LineMap  [713]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -21284,6 +21289,7 @@ $!LineMap  [714]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -21312,6 +21318,7 @@ $!LineMap  [715]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -21340,6 +21347,7 @@ $!LineMap  [716]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -21368,6 +21376,7 @@ $!LineMap  [717]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -21396,6 +21405,7 @@ $!LineMap  [718]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -21424,6 +21434,7 @@ $!LineMap  [719]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -21452,6 +21463,7 @@ $!LineMap  [720]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -21480,6 +21492,7 @@ $!LineMap  [721]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -21508,6 +21521,7 @@ $!LineMap  [722]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -21536,6 +21550,7 @@ $!LineMap  [723]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -21564,6 +21579,7 @@ $!LineMap  [724]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -21592,6 +21608,7 @@ $!LineMap  [725]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -21620,6 +21637,7 @@ $!LineMap  [726]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -21648,6 +21666,7 @@ $!LineMap  [727]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -21676,6 +21695,7 @@ $!LineMap  [728]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -21701,13 +21721,10 @@ $!LineMap  [729]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -21733,13 +21750,10 @@ $!LineMap  [730]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -21765,13 +21779,10 @@ $!LineMap  [731]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -21797,13 +21808,10 @@ $!LineMap  [732]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -21829,13 +21837,10 @@ $!LineMap  [733]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -21861,13 +21866,10 @@ $!LineMap  [734]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -21893,13 +21895,10 @@ $!LineMap  [735]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -21925,13 +21924,10 @@ $!LineMap  [736]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -21957,13 +21953,10 @@ $!LineMap  [737]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -21989,13 +21982,10 @@ $!LineMap  [738]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -22021,13 +22011,10 @@ $!LineMap  [739]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -22053,13 +22040,10 @@ $!LineMap  [740]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -22085,13 +22069,10 @@ $!LineMap  [741]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -22117,13 +22098,10 @@ $!LineMap  [742]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -22149,13 +22127,10 @@ $!LineMap  [743]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -22184,6 +22159,7 @@ $!LineMap  [744]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22212,6 +22188,7 @@ $!LineMap  [745]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22240,6 +22217,7 @@ $!LineMap  [746]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22268,6 +22246,7 @@ $!LineMap  [747]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22296,6 +22275,7 @@ $!LineMap  [748]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22324,6 +22304,7 @@ $!LineMap  [749]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22352,6 +22333,7 @@ $!LineMap  [750]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22380,6 +22362,7 @@ $!LineMap  [751]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22408,6 +22391,7 @@ $!LineMap  [752]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22436,6 +22420,7 @@ $!LineMap  [753]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22464,6 +22449,7 @@ $!LineMap  [754]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22492,6 +22478,7 @@ $!LineMap  [755]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22520,6 +22507,7 @@ $!LineMap  [756]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22548,6 +22536,7 @@ $!LineMap  [757]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22576,6 +22565,7 @@ $!LineMap  [758]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22604,6 +22594,7 @@ $!LineMap  [759]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22632,6 +22623,7 @@ $!LineMap  [760]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22660,6 +22652,7 @@ $!LineMap  [761]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22688,6 +22681,7 @@ $!LineMap  [762]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22716,6 +22710,7 @@ $!LineMap  [763]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22744,6 +22739,7 @@ $!LineMap  [764]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22772,6 +22768,7 @@ $!LineMap  [765]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22800,6 +22797,7 @@ $!LineMap  [766]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22828,6 +22826,7 @@ $!LineMap  [767]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22856,6 +22855,7 @@ $!LineMap  [768]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22884,6 +22884,7 @@ $!LineMap  [769]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22912,6 +22913,7 @@ $!LineMap  [770]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22940,6 +22942,7 @@ $!LineMap  [771]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22968,6 +22971,7 @@ $!LineMap  [772]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -22996,6 +23000,7 @@ $!LineMap  [773]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23024,6 +23029,7 @@ $!LineMap  [774]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23052,6 +23058,7 @@ $!LineMap  [775]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23080,6 +23087,7 @@ $!LineMap  [776]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23108,6 +23116,7 @@ $!LineMap  [777]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23136,6 +23145,7 @@ $!LineMap  [778]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23164,6 +23174,7 @@ $!LineMap  [779]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23192,6 +23203,7 @@ $!LineMap  [780]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23220,6 +23232,7 @@ $!LineMap  [781]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23248,6 +23261,7 @@ $!LineMap  [782]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23276,6 +23290,7 @@ $!LineMap  [783]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23304,6 +23319,7 @@ $!LineMap  [784]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23332,6 +23348,7 @@ $!LineMap  [785]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23360,6 +23377,7 @@ $!LineMap  [786]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23388,6 +23406,7 @@ $!LineMap  [787]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23416,6 +23435,7 @@ $!LineMap  [788]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23444,6 +23464,7 @@ $!LineMap  [789]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23472,6 +23493,7 @@ $!LineMap  [790]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23500,6 +23522,7 @@ $!LineMap  [791]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23528,6 +23551,7 @@ $!LineMap  [792]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23556,6 +23580,7 @@ $!LineMap  [793]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23584,6 +23609,7 @@ $!LineMap  [794]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23612,6 +23638,7 @@ $!LineMap  [795]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23640,6 +23667,7 @@ $!LineMap  [796]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23668,6 +23696,7 @@ $!LineMap  [797]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23696,6 +23725,7 @@ $!LineMap  [798]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23724,6 +23754,7 @@ $!LineMap  [799]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23752,6 +23783,7 @@ $!LineMap  [800]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23780,6 +23812,7 @@ $!LineMap  [801]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23808,6 +23841,7 @@ $!LineMap  [802]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23836,6 +23870,7 @@ $!LineMap  [803]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23864,6 +23899,7 @@ $!LineMap  [804]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23892,6 +23928,7 @@ $!LineMap  [805]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23920,6 +23957,7 @@ $!LineMap  [806]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23948,6 +23986,7 @@ $!LineMap  [807]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -23976,6 +24015,7 @@ $!LineMap  [808]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24004,6 +24044,7 @@ $!LineMap  [809]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24032,6 +24073,7 @@ $!LineMap  [810]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24060,6 +24102,7 @@ $!LineMap  [811]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24088,6 +24131,7 @@ $!LineMap  [812]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24116,6 +24160,7 @@ $!LineMap  [813]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24144,6 +24189,7 @@ $!LineMap  [814]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24172,6 +24218,7 @@ $!LineMap  [815]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24200,6 +24247,7 @@ $!LineMap  [816]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24228,6 +24276,7 @@ $!LineMap  [817]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24256,6 +24305,7 @@ $!LineMap  [818]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24284,6 +24334,7 @@ $!LineMap  [819]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24312,6 +24363,7 @@ $!LineMap  [820]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24340,6 +24392,7 @@ $!LineMap  [821]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24368,6 +24421,7 @@ $!LineMap  [822]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24396,6 +24450,7 @@ $!LineMap  [823]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24424,6 +24479,7 @@ $!LineMap  [824]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24452,6 +24508,7 @@ $!LineMap  [825]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24480,6 +24537,7 @@ $!LineMap  [826]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24508,6 +24566,7 @@ $!LineMap  [827]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24536,6 +24595,7 @@ $!LineMap  [828]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24564,6 +24624,7 @@ $!LineMap  [829]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24592,6 +24653,7 @@ $!LineMap  [830]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24620,6 +24682,7 @@ $!LineMap  [831]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24648,6 +24711,7 @@ $!LineMap  [832]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24676,6 +24740,7 @@ $!LineMap  [833]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24704,6 +24769,7 @@ $!LineMap  [834]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24732,6 +24798,7 @@ $!LineMap  [835]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24760,6 +24827,7 @@ $!LineMap  [836]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24788,6 +24856,7 @@ $!LineMap  [837]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24816,6 +24885,7 @@ $!LineMap  [838]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24844,6 +24914,7 @@ $!LineMap  [839]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24872,6 +24943,7 @@ $!LineMap  [840]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24900,6 +24972,7 @@ $!LineMap  [841]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24928,6 +25001,7 @@ $!LineMap  [842]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24956,6 +25030,7 @@ $!LineMap  [843]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -24984,6 +25059,7 @@ $!LineMap  [844]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -25012,6 +25088,7 @@ $!LineMap  [845]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -25040,6 +25117,7 @@ $!LineMap  [846]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -25068,6 +25146,7 @@ $!LineMap  [847]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -25096,6 +25175,7 @@ $!LineMap  [848]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -25124,6 +25204,7 @@ $!LineMap  [849]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -25152,6 +25233,7 @@ $!LineMap  [850]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -25180,6 +25262,7 @@ $!LineMap  [851]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -25208,6 +25291,7 @@ $!LineMap  [852]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -25236,6 +25320,7 @@ $!LineMap  [853]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -25264,6 +25349,7 @@ $!LineMap  [854]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -25292,6 +25378,7 @@ $!LineMap  [855]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -25320,6 +25407,7 @@ $!LineMap  [856]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -25348,6 +25436,7 @@ $!LineMap  [857]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -25376,6 +25465,7 @@ $!LineMap  [858]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -25404,6 +25494,7 @@ $!LineMap  [859]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -25432,6 +25523,7 @@ $!LineMap  [860]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -25460,6 +25552,7 @@ $!LineMap  [861]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -25485,13 +25578,10 @@ $!LineMap  [862]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -25517,13 +25607,10 @@ $!LineMap  [863]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -25549,13 +25636,10 @@ $!LineMap  [864]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -25581,13 +25665,10 @@ $!LineMap  [865]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -25613,13 +25694,10 @@ $!LineMap  [866]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -25645,13 +25723,10 @@ $!LineMap  [867]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -25677,13 +25752,10 @@ $!LineMap  [868]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -25709,13 +25781,10 @@ $!LineMap  [869]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -25744,6 +25813,7 @@ $!LineMap  [870]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -25772,6 +25842,7 @@ $!LineMap  [871]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -25800,6 +25871,7 @@ $!LineMap  [872]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -25828,6 +25900,7 @@ $!LineMap  [873]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -25856,6 +25929,7 @@ $!LineMap  [874]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -25884,6 +25958,7 @@ $!LineMap  [875]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -25912,6 +25987,7 @@ $!LineMap  [876]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -25940,6 +26016,7 @@ $!LineMap  [877]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -25968,6 +26045,7 @@ $!LineMap  [878]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -25993,13 +26071,10 @@ $!LineMap  [879]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -26025,13 +26100,10 @@ $!LineMap  [880]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -26057,13 +26129,10 @@ $!LineMap  [881]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -26089,13 +26158,10 @@ $!LineMap  [882]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Purple
+    Size = 1.75
     }
   BarCharts
     {
@@ -26121,13 +26187,10 @@ $!LineMap  [883]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Red
+    Size = 1.75
     }
   BarCharts
     {
@@ -26153,13 +26216,10 @@ $!LineMap  [884]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Green
+    Size = 1.75
     }
   BarCharts
     {
@@ -26185,13 +26245,10 @@ $!LineMap  [885]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Blue
+    Size = 1.75
     }
   BarCharts
     {
@@ -26217,13 +26274,10 @@ $!LineMap  [886]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom1
+    Size = 1.75
     }
   BarCharts
     {
@@ -26249,13 +26303,10 @@ $!LineMap  [887]
     }
   Symbols
     {
-    SymbolShape
-      {
-      GeomShape = Del
-      }
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom3
+    Size = 1.75
     }
   BarCharts
     {
@@ -26284,6 +26335,7 @@ $!LineMap  [888]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -26312,6 +26364,7 @@ $!LineMap  [889]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -26340,6 +26393,7 @@ $!LineMap  [890]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -26368,6 +26422,7 @@ $!LineMap  [891]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -26396,6 +26451,7 @@ $!LineMap  [892]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -26424,6 +26480,7 @@ $!LineMap  [893]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -26452,6 +26509,7 @@ $!LineMap  [894]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -26480,6 +26538,7 @@ $!LineMap  [895]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -26508,6 +26567,7 @@ $!LineMap  [896]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -26536,6 +26596,7 @@ $!LineMap  [897]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -26564,6 +26625,7 @@ $!LineMap  [898]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -26592,6 +26654,7 @@ $!LineMap  [899]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -26620,6 +26683,7 @@ $!LineMap  [900]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -26648,6 +26712,7 @@ $!LineMap  [901]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -26676,6 +26741,7 @@ $!LineMap  [902]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -26704,6 +26770,7 @@ $!LineMap  [903]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -26732,6 +26799,7 @@ $!LineMap  [904]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -26760,6 +26828,7 @@ $!LineMap  [905]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -26788,6 +26857,7 @@ $!LineMap  [906]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -26816,6 +26886,7 @@ $!LineMap  [907]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -26844,6 +26915,7 @@ $!LineMap  [908]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -26872,6 +26944,7 @@ $!LineMap  [909]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -26900,6 +26973,7 @@ $!LineMap  [910]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -26928,6 +27002,7 @@ $!LineMap  [911]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -26956,6 +27031,7 @@ $!LineMap  [912]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -26984,6 +27060,7 @@ $!LineMap  [913]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -27012,6 +27089,7 @@ $!LineMap  [914]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -27040,6 +27118,7 @@ $!LineMap  [915]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -27068,6 +27147,7 @@ $!LineMap  [916]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -27096,6 +27176,7 @@ $!LineMap  [917]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -27124,6 +27205,7 @@ $!LineMap  [918]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -27152,6 +27234,7 @@ $!LineMap  [919]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -27180,6 +27263,7 @@ $!LineMap  [920]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {
@@ -27208,6 +27292,7 @@ $!LineMap  [921]
     Color = Black
     FillMode = UseLineColor
     FillColor = Custom9
+    Size = 1.75
     }
   BarCharts
     {

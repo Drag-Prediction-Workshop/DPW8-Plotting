@@ -47,56 +47,128 @@ $!VarSet |Alpha3p90| = '17, 34, 51, 68, 85, 101, 117, 133, 149, 165, 184, 200, 2
 
 
 
+
+#####################################################################
+### For your reference, here are all of the options... change vlaues below "Display Customizations"
+#####################################################################
+
+#Lines{Color = Custom9  LineThickness=0.25}
+#Lines{Color = Custom10 LineThickness=0.25}
+#Lines{Color = Custom11 LineThickness=0.25}
+#Lines{Color = Custom12 LineThickness=0.25}
+#Lines{Color = Custom13 LineThickness=0.25}
+#Lines{Color = Custom14 LineThickness=0.25}
+#Lines{Color = Custom15 LineThickness=0.25}
+#Lines{Color = Custom16 LineThickness=0.25}
+#Lines{Color = Custom17 LineThickness=0.25}
+#Lines{Color = Custom18 LineThickness=0.25}
+#Lines{Color = Custom19 LineThickness=0.25}
+#
+#Symbols{Color = Custom9  FillMode = UseLineColor SymbolShape{GeomShape = Square  } Size = 1.75 }
+#Symbols{Color = Custom10 FillMode = UseLineColor SymbolShape{GeomShape = Del     } Size = 1.75 }
+#Symbols{Color = Custom11 FillMode = UseLineColor SymbolShape{GeomShape = Grad    } Size = 1.75 }
+#Symbols{Color = Custom12 FillMode = UseLineColor SymbolShape{GeomShape = RTri    } Size = 1.75 }
+#Symbols{Color = Custom13 FillMode = UseLineColor SymbolShape{GeomShape = LTri    } Size = 1.75 }
+#Symbols{Color = Custom14 FillMode = UseLineColor SymbolShape{GeomShape = Diamond } Size = 1.75 }
+#Symbols{Color = Custom15 FillMode = UseLineColor SymbolShape{GeomShape = Circle  } Size = 1.75 }
+#Symbols{Color = Custom16 FillMode = UseLineColor SymbolShape{IsASCII = Yes ASCIIShape{UseBaseFont = No FontOverride = Greek ASCIIChar = '\a'}} Size = 1.75 }
+#Symbols{Color = Custom17 FillMode = UseLineColor SymbolShape{IsASCII = Yes ASCIIShape{UseBaseFont = No FontOverride = Greek ASCIIChar = '\b'}} Size = 1.75 }
+#Symbols{Color = Custom18 FillMode = UseLineColor SymbolShape{IsASCII = Yes ASCIIShape{UseBaseFont = No FontOverride = Greek ASCIIChar = '\c'}} Size = 1.75 }
+#Symbols{Color = Custom19 FillMode = UseLineColor SymbolShape{IsASCII = Yes ASCIIShape{UseBaseFont = No FontOverride = Greek ASCIIChar = '\d'}} Size = 1.75 }
+
+
+
 #####################################################################
 ### Display Customizations
 #####################################################################
 
-$!If 1 == 1
+$!If 0 == 1
    # Temporal Scheme
-   $!LineMap [|Rans|]  Lines{Color = Custom9  LineThickness=0.25} Symbols{Color = Custom9  FillMode = UseLineColor }
-   $!LineMap [|Urans|] Lines{Color = Custom10 LineThickness=0.25} Symbols{Color = Custom10 FillMode = UseLineColor }
-   $!LineMap [|Hrles|] Lines{Color = Custom11 LineThickness=0.25} Symbols{Color = Custom11 FillMode = UseLineColor }
-   $!LineMap [|Wmles|] Lines{Color = Custom12 LineThickness=0.25} Symbols{Color = Custom12 FillMode = UseLineColor }
-   $!LineMap [|Dhrl|]  Lines{Color = Custom13 LineThickness=0.25} Symbols{Color = Custom13 FillMode = UseLineColor }
+   $!LineMap [|Rans|]      Lines{Color = Custom9  LineThickness=0.25}
+   $!LineMap [|Urans|]     Lines{Color = Custom10 LineThickness=0.25}
+   $!LineMap [|Hrles|]     Lines{Color = Custom11 LineThickness=0.25}
+   $!LineMap [|Wmles|]     Lines{Color = Custom12 LineThickness=0.25}
+   $!LineMap [|Dhrl|]      Lines{Color = Custom13 LineThickness=0.25}
+
+   $!LineMap [|Rans|]      Symbols{Color = Custom9  FillMode = UseLineColor SymbolShape{GeomShape = Square  } Size = 1.75 }
+   $!LineMap [|Urans|]     Symbols{Color = Custom10 FillMode = UseLineColor SymbolShape{GeomShape = Del     } Size = 1.75 }
+   $!LineMap [|Hrles|]     Symbols{Color = Custom11 FillMode = UseLineColor SymbolShape{GeomShape = Grad    } Size = 1.75 }
+   $!LineMap [|Wmles|]     Symbols{Color = Custom12 FillMode = UseLineColor SymbolShape{GeomShape = RTri    } Size = 1.75 }
+   $!LineMap [|Dhrl|]      Symbols{Color = Custom13 FillMode = UseLineColor SymbolShape{GeomShape = LTri    } Size = 1.75 }
+
 $!EndIf
 
 
 
 # Turbulence Model
 $!If 0 == 1
-   $!LineMap [|Sa|]      Symbols{SymbolShape{GeomShape = Square  } Size = 2.50 }
-   $!LineMap [|Sst|]     Symbols{SymbolShape{GeomShape = Del     } Size = 2.50 }
-   $!LineMap [|Kw|]      Symbols{SymbolShape{GeomShape = Grad    } Size = 2.50 }
-   $!LineMap [|Dynamic|] Symbols{SymbolShape{GeomShape = Diamond } Size = 2.50 }
+   $!LineMap [|Sa|]        Lines{Color = Custom9  LineThickness=0.25}
+   $!LineMap [|Sst|]       Lines{Color = Custom10 LineThickness=0.25}
+   $!LineMap [|Kw|]        Lines{Color = Custom11 LineThickness=0.25}
+   $!LineMap [|Dynamic|]   Lines{Color = Custom12 LineThickness=0.25}
+
+   $!LineMap [|Sa|]        Symbols{Color = Custom9  FillMode = UseLineColor SymbolShape{GeomShape = Square  } Size = 1.75 }
+   $!LineMap [|Sst|]       Symbols{Color = Custom10 FillMode = UseLineColor SymbolShape{GeomShape = Del     } Size = 1.75 }
+   $!LineMap [|Kw|]        Symbols{Color = Custom11 FillMode = UseLineColor SymbolShape{GeomShape = Grad    } Size = 1.75 }
+   $!LineMap [|Dynamic|]   Symbols{Color = Custom12 FillMode = UseLineColor SymbolShape{GeomShape = RTri    } Size = 1.75 }
+
 $!EndIf
 
+
+
 # Grid Level
-$!If 0 == 1
-   $!LineMap [|Grid1|]  Lines{Color = Custom9  LineThickness=0.25} Symbols{Color = Custom9  FillMode = UseLineColor }
-   $!LineMap [|Grid2|]  Lines{Color = Custom10 LineThickness=0.25} Symbols{Color = Custom10 FillMode = UseLineColor }
-   $!LineMap [|Grid3|]  Lines{Color = Custom11 LineThickness=0.25} Symbols{Color = Custom11 FillMode = UseLineColor }
-   $!LineMap [|Grid4|]  Lines{Color = Custom12 LineThickness=0.25} Symbols{Color = Custom12 FillMode = UseLineColor }
-   $!LineMap [|Grid5|]  Lines{Color = Custom13 LineThickness=0.25} Symbols{Color = Custom13 FillMode = UseLineColor }
-   $!LineMap [|Grid6|]  Lines{Color = Custom14 LineThickness=0.25} Symbols{Color = Custom14 FillMode = UseLineColor }
-   $!LineMap [|Grid7|]  Lines{Color = Custom15 LineThickness=0.25} Symbols{Color = Custom15 FillMode = UseLineColor }
-   $!LineMap [|Grid8|]  Lines{Color = Custom16 LineThickness=0.25} Symbols{Color = Custom16 FillMode = UseLineColor }
-   $!LineMap [|Grid9|]  Lines{Color = Custom17 LineThickness=0.25} Symbols{Color = Custom17 FillMode = UseLineColor }
-   $!LineMap [|Grid10|] Lines{Color = Custom18 LineThickness=0.25} Symbols{Color = Custom18 FillMode = UseLineColor }
-   $!LineMap [|Grid11|] Lines{Color = Custom19 LineThickness=0.25} Symbols{Color = Custom19 FillMode = UseLineColor }
+$!If 1 == 1
+   $!LineMap [|Grid1|]     Lines{Color = Custom9  LineThickness=0.25}
+   $!LineMap [|Grid2|]     Lines{Color = Custom10 LineThickness=0.25}
+   $!LineMap [|Grid3|]     Lines{Color = Custom11 LineThickness=0.25}
+   $!LineMap [|Grid4|]     Lines{Color = Custom12 LineThickness=0.25}
+   $!LineMap [|Grid5|]     Lines{Color = Custom13 LineThickness=0.25}
+   $!LineMap [|Grid6|]     Lines{Color = Custom14 LineThickness=0.25}
+   $!LineMap [|Grid7|]     Lines{Color = Custom15 LineThickness=0.25}
+   $!LineMap [|Grid8|]     Lines{Color = Custom16 LineThickness=0.25}
+   $!LineMap [|Grid9|]     Lines{Color = Custom17 LineThickness=0.25}
+   $!LineMap [|Grid10|]    Lines{Color = Custom18 LineThickness=0.25}
+   $!LineMap [|Grid11|]    Lines{Color = Custom19 LineThickness=0.25}
+
+   $!LineMap [|Grid1|]     Symbols{Color = Custom9  FillMode = UseLineColor SymbolShape{GeomShape = Square  } Size = 1.75 }
+   $!LineMap [|Grid2|]     Symbols{Color = Custom10 FillMode = UseLineColor SymbolShape{GeomShape = Del     } Size = 1.75 }
+   $!LineMap [|Grid3|]     Symbols{Color = Custom11 FillMode = UseLineColor SymbolShape{GeomShape = Grad    } Size = 1.75 }
+   $!LineMap [|Grid4|]     Symbols{Color = Custom12 FillMode = UseLineColor SymbolShape{GeomShape = RTri    } Size = 1.75 }
+   $!LineMap [|Grid5|]     Symbols{Color = Custom13 FillMode = UseLineColor SymbolShape{GeomShape = LTri    } Size = 1.75 }
+   $!LineMap [|Grid6|]     Symbols{Color = Custom14 FillMode = UseLineColor SymbolShape{GeomShape = Diamond } Size = 1.75 }
+   $!LineMap [|Grid7|]     Symbols{Color = Custom15 FillMode = UseLineColor SymbolShape{GeomShape = Circle  } Size = 1.75 }
+   $!LineMap [|Grid8|]     Symbols{Color = Custom16 FillMode = UseLineColor SymbolShape{IsASCII = Yes ASCIIShape{UseBaseFont = No FontOverride = Greek ASCIIChar = '\a'}} Size = 1.75 }
+   $!LineMap [|Grid9|]     Symbols{Color = Custom17 FillMode = UseLineColor SymbolShape{IsASCII = Yes ASCIIShape{UseBaseFont = No FontOverride = Greek ASCIIChar = '\b'}} Size = 1.75 }
+   $!LineMap [|Grid10|]    Symbols{Color = Custom18 FillMode = UseLineColor SymbolShape{IsASCII = Yes ASCIIShape{UseBaseFont = No FontOverride = Greek ASCIIChar = '\c'}} Size = 1.75 }
+   $!LineMap [|Grid11|]    Symbols{Color = Custom19 FillMode = UseLineColor SymbolShape{IsASCII = Yes ASCIIShape{UseBaseFont = No FontOverride = Greek ASCIIChar = '\d'}} Size = 1.75 }
 $!EndIf
-   
+
+
+
 # Alpha
 $!If 0 == 1
-   $!LineMap [|Alpha1p36|] Lines{Color = Custom9  LineThickness=0.25} Symbols{Color = Custom9  FillMode = UseLineColor }
-   $!LineMap [|Alpha1p50|] Lines{Color = Custom10 LineThickness=0.25} Symbols{Color = Custom10 FillMode = UseLineColor }
-   $!LineMap [|Alpha2p50|] Lines{Color = Custom11 LineThickness=0.25} Symbols{Color = Custom11 FillMode = UseLineColor }
-   $!LineMap [|Alpha3p00|] Lines{Color = Custom12 LineThickness=0.25} Symbols{Color = Custom12 FillMode = UseLineColor }
-   $!LineMap [|Alpha3p10|] Lines{Color = Custom13 LineThickness=0.25} Symbols{Color = Custom13 FillMode = UseLineColor }
-   $!LineMap [|Alpha3p25|] Lines{Color = Custom14 LineThickness=0.25} Symbols{Color = Custom14 FillMode = UseLineColor }
-   $!LineMap [|Alpha3p40|] Lines{Color = Custom15 LineThickness=0.25} Symbols{Color = Custom15 FillMode = UseLineColor }
-   $!LineMap [|Alpha3p50|] Lines{Color = Custom16 LineThickness=0.25} Symbols{Color = Custom16 FillMode = UseLineColor }
-   $!LineMap [|Alpha3p60|] Lines{Color = Custom17 LineThickness=0.25} Symbols{Color = Custom17 FillMode = UseLineColor }
-   $!LineMap [|Alpha3p90|] Lines{Color = Custom18 LineThickness=0.25} Symbols{Color = Custom18 FillMode = UseLineColor }
+   $!LineMap [|Alpha1p36|] Lines{Color = Custom9  LineThickness=0.25}
+   $!LineMap [|Alpha1p50|] Lines{Color = Custom10 LineThickness=0.25}
+   $!LineMap [|Alpha2p50|] Lines{Color = Custom11 LineThickness=0.25}
+   $!LineMap [|Alpha3p00|] Lines{Color = Custom12 LineThickness=0.25}
+   $!LineMap [|Alpha3p10|] Lines{Color = Custom13 LineThickness=0.25}
+   $!LineMap [|Alpha3p25|] Lines{Color = Custom14 LineThickness=0.25}
+   $!LineMap [|Alpha3p40|] Lines{Color = Custom15 LineThickness=0.25}
+   $!LineMap [|Alpha3p50|] Lines{Color = Custom16 LineThickness=0.25}
+   $!LineMap [|Alpha3p60|] Lines{Color = Custom17 LineThickness=0.25}
+   $!LineMap [|Alpha3p90|] Lines{Color = Custom18 LineThickness=0.25}
+
+   $!LineMap [|Alpha1p36|] Symbols{Color = Custom9  FillMode = UseLineColor SymbolShape{GeomShape = Square  } Size = 1.75 }
+   $!LineMap [|Alpha1p50|] Symbols{Color = Custom10 FillMode = UseLineColor SymbolShape{GeomShape = Del     } Size = 1.75 }
+   $!LineMap [|Alpha2p50|] Symbols{Color = Custom11 FillMode = UseLineColor SymbolShape{GeomShape = Grad    } Size = 1.75 }
+   $!LineMap [|Alpha3p00|] Symbols{Color = Custom12 FillMode = UseLineColor SymbolShape{GeomShape = RTri    } Size = 1.75 }
+   $!LineMap [|Alpha3p10|] Symbols{Color = Custom13 FillMode = UseLineColor SymbolShape{GeomShape = LTri    } Size = 1.75 }
+   $!LineMap [|Alpha3p25|] Symbols{Color = Custom14 FillMode = UseLineColor SymbolShape{GeomShape = Diamond } Size = 1.75 }
+   $!LineMap [|Alpha3p40|] Symbols{Color = Custom15 FillMode = UseLineColor SymbolShape{GeomShape = Circle  } Size = 1.75 }
+   $!LineMap [|Alpha3p50|] Symbols{Color = Custom16 FillMode = UseLineColor SymbolShape{IsASCII = Yes ASCIIShape{UseBaseFont = No FontOverride = Greek ASCIIChar = '\a'}} Size = 1.75 }
+   $!LineMap [|Alpha3p60|] Symbols{Color = Custom17 FillMode = UseLineColor SymbolShape{IsASCII = Yes ASCIIShape{UseBaseFont = No FontOverride = Greek ASCIIChar = '\b'}} Size = 1.75 }
+   $!LineMap [|Alpha3p90|] Symbols{Color = Custom18 FillMode = UseLineColor SymbolShape{IsASCII = Yes ASCIIShape{UseBaseFont = No FontOverride = Greek ASCIIChar = '\c'}} Size = 1.75 }
+
 $!EndIf
 
 
@@ -113,8 +185,10 @@ $!EndIf
 # Or add
 #           $!ActiveLineMaps += [|Rans|]
 
-$!ActiveLineMaps  =  []
 
+
+$!ActiveLineMaps  =  []
+# Turning on zones
 #$!ActiveLineMaps += [|Rans|]
 #$!ActiveLineMaps += [|Urans|]
 #$!ActiveLineMaps += [|Hrles|]
@@ -139,7 +213,7 @@ $!ActiveLineMaps  =  []
 #$!ActiveLineMaps += [|Grid11|]
 
 #$!ActiveLineMaps += [|Alpha1p36|]
- $!ActiveLineMaps += [|Alpha1p50|]
+#$!ActiveLineMaps += [|Alpha1p50|]
 #$!ActiveLineMaps += [|Alpha2p50|]
 #$!ActiveLineMaps += [|Alpha3p00|]
 #$!ActiveLineMaps += [|Alpha3p10|]
@@ -148,3 +222,40 @@ $!ActiveLineMaps  =  []
 #$!ActiveLineMaps += [|Alpha3p50|]
 #$!ActiveLineMaps += [|Alpha3p60|]
 #$!ActiveLineMaps += [|Alpha3p90|]
+
+
+
+# Turning off zones
+#$!ActiveLineMaps -= [|Rans|]
+#$!ActiveLineMaps -= [|Urans|]
+#$!ActiveLineMaps -= [|Hrles|]
+#$!ActiveLineMaps -= [|Wmles|]
+#$!ActiveLineMaps -= [|Dhrl|]
+
+#$!ActiveLineMaps -= [|Sa|
+#$!ActiveLineMaps -= [|Sst|
+#$!ActiveLineMaps -= [|Kw|
+#$!ActiveLineMaps -= [|Dynamic|
+
+#$!ActiveLineMaps -= [|Grid1|]
+#$!ActiveLineMaps -= [|Grid2|]
+#$!ActiveLineMaps -= [|Grid3|]
+#$!ActiveLineMaps -= [|Grid4|]
+#$!ActiveLineMaps -= [|Grid5|]
+#$!ActiveLineMaps -= [|Grid6|]
+#$!ActiveLineMaps -= [|Grid7|]
+#$!ActiveLineMaps -= [|Grid8|]
+#$!ActiveLineMaps -= [|Grid9|]
+#$!ActiveLineMaps -= [|Grid10|]
+#$!ActiveLineMaps -= [|Grid11|]
+
+#$!ActiveLineMaps -= [|Alpha1p36|]
+#$!ActiveLineMaps -= [|Alpha1p50|]
+#$!ActiveLineMaps -= [|Alpha2p50|]
+#$!ActiveLineMaps -= [|Alpha3p00|]
+#$!ActiveLineMaps -= [|Alpha3p10|]
+#$!ActiveLineMaps -= [|Alpha3p25|]
+#$!ActiveLineMaps -= [|Alpha3p40|]
+#$!ActiveLineMaps -= [|Alpha3p50|]
+#$!ActiveLineMaps -= [|Alpha3p60|]
+#$!ActiveLineMaps -= [|Alpha3p90|]
