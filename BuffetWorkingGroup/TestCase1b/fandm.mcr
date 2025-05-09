@@ -49,10 +49,10 @@ $!EndMacroFunction
 ######################################################
 # Call Macro
 ######################################################
-$!RunMacroFunction "PngLooper" ('alpha-cm',2400)
-$!RunMacroFunction "PngLooper" ('cl-alpha',2400)
-$!RunMacroFunction "PngLooper" ('cl-cm',2400)
+$!RunMacroFunction "PngLooper" ('sty/fandm/blah1',2400)
+$!RunMacroFunction "PngLooper" ('sty/fandm/blah2',2400)
+$!RunMacroFunction "PngLooper" ('sty/fandm/blah3',2400)
 
-$!RunMacroFunction "EpsLooper" ('alpha-cm')
-$!RunMacroFunction "EpsLooper" ('cl-alpha')
-$!RunMacroFunction "EpsLooper" ('cl-cm')
+$!RunMacroFunction "PngLooper" ('sty/fandm/blah1')
+$!RunMacroFunction "PngLooper" ('sty/fandm/blah2')
+$!RunMacroFunction "PngLooper" ('sty/fandm/blah3')
