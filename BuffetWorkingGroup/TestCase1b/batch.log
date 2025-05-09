@@ -1,4 +1,4 @@
-Tecplot 2024.2.0.66426 Batch Log
+Tecplot 2024.1.0.52134 Batch Log
 ACTION: PageControl: CREATE
 ACTION: LoadAddOn
 ACTION: LoadAddOn
@@ -42,22 +42,57 @@ ACTION: LoadAddOn
 ACTION: LoadAddOn
 ACTION: LoadAddOn
 ACTION: LoadAddOn
-ACTION: OpenLayout: /Users/bwpomero/crm/hs/dpw-8/github/DPW8-Plotting/BuffetWorkingGroup/TestCase1b/fandm.lay
-Error: Invalid Modifier List On Main Command
-
-Text where error occurred:
-$!FieldMap  [1-17, 18-34, 35-51, 52-68, 69-85, 86-101,
-102-117, 118-133, 134-149, 150-165, 169-184, 233-239,
-240-246, 247-253, 254-269, 270-285, 286-301, 344-359,
-362-377, 378-393, 394-408, 409-427, 428-443, 444-459,
-460-475, 476-494, 498-513, 514-429, 530-545, 546-561,
-562-577, 594-609, 610-625, 626-641, 642-567, 658-673,
-695-703, 704-712, 714-728, 729-743, 744-759, 760-765,
-766-781, 782-797, 798-813, 814-829, 830-845, 846-861,
-862-869, 870-878, 895-910]
-  Lines
-    {
-    Color = Red
-    }
-Error: Failed to execute macro file
-/Users/bwpomero/crm/hs/dpw-8/github/DPW8-Plotting/BuffetWorkingGroup/TestCase1b/fandm-setup.mcr
+ACTION: OpenLayout: /Users/bwpomero/crm/hs/dpw-8/github/DPW8-Plotting/BuffetWorkingGroup/TestCase1b/cuts.lay
+ACTION: DrawGraphics: YES
+ACTION: ReadStyleSheet: sty/cuts/outlier/outlier1.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/outlier/outlier2.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/outlier/outlier3.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/outlier/outlier4.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/outlier/outlier5.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/outlier/outlier6.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/outlier/outlier7.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/outlier/outlier8.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/outlier/outlier9.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/outlier/outlier10.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/outlier/outlier11.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/outlier/outlier12.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/outlier/outlier13.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/outlier/outlier14.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/outlier/outlier15.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/outlier/outlier16.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/outlier/outlier17.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/outlier/outlier18.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/outlier/outlier19.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/outlier/outlier20.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/outlier/outlier22.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/outlier/outlier23.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/outlier/outlier24.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/outlier/outlier25.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/outlier/outlier26.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/outlier/outlier27.sty
+ACTION: Export

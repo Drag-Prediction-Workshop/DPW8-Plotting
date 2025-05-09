@@ -1,515 +1,6 @@
 #!MC 1410
-$!VarSet |LFDSFN1| = '"../../../DPW8-Scatter/TestCase1a/002_Embraer/01_CFD++_CadenceUnstructured_SA-RC-QCR/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Scatter/TestCase1a/002_Embraer/02_CFD++_CadenceUnstructured_SA/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Scatter/TestCase1a/002_Embraer/03_CFD++_CadenceUnstructured_SST/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Scatter/TestCase1a/002_Embraer/04_CFD++_CadenceStructured_SA-RC-QCR/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Scatter/TestCase1a/002_Embraer/05_CFD++_HeldenMesh_SA-RC-QCR/DPW8-AePW4_SectionalCuts_v5.dat"'
-$!VarSet |LFDSVL1| = '"x/c" "Cp" "X" "Y" "Z" "CF" "CFX" "CFY" "CFZ"'
-$!VarSet |LFDSFN2| = '"../../../DPW8-Buffet/TestCase1a/004_NASALangleyCAB/01_SA/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Buffet/TestCase1a/004_NASALangleyCAB/02_SAR/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Buffet/TestCase1a/004_NASALangleyCAB/03_SAQCR/DPW8-AePW4_SectionalCuts_v5.dat"'
-$!VarSet |LFDSVL2| = '"x/c";"XoC" "Cp" "X" "Y" "Z" "CF" "CFX" "CFY" "CFZ"'
-$!VarSet |LFDSFN3| = '"../../../DPW8-Buffet/TestCase1a/005_LAVA_SteadyRANS_Results/01_SAneg/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Buffet/TestCase1a/005_LAVA_SteadyRANS_Results/02_SARC_CC/DPW8-AePW4_SectionalCuts_v5.dat"'
-$!VarSet |LFDSVL3| = '"x/c";"XoC" "Cp" "X" "Y" "Z" "CF" "CFX" "CFY" "CFZ" "YPLUS"'
-$!VarSet |LFDSFN4| = '"../../../DPW8-Buffet/TestCase1b/005_LAVA_Curvilinear/03_ZDES_SAneg/DPW8-AePW4_UnsteadySectionalCuts_LAVA_OAT15A_ZDES_SAneg_005.03.dat" "../../../DPW8-Buffet/TestCase1b/005_LAVA_Curvilinear/04_ZDES_SAneg_blend2/DPW8-AePW4_UnsteadySectionalCuts_LAVA_OAT15A_ZDES_SAneg_005.04.dat" "../../../DPW8-Buffet/TestCase1b/005_LAVA_Curvilinear/05_URANS_SARCcomp/DPW8-AePW4_UnsteadySectionalCuts_LAVA_OAT15A_URANS_SARC_CC_005.05.dat"'
-$!VarSet |LFDSVL4| = '"x/c";"XoC" "Cp";"CP_AVG" "X" "Y" "Z" "CF";"CF_AVG" "CFX" "CFY" "CFZ" "YPLUS" "CP_RMS" "CF_RMS"'
-$!VarSet |LFDSFN5| = '"../../../DPW8-Scatter/TestCase1a/006/01_LociChem/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Scatter/TestCase1a/006/02_LociChem_URANS/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Scatter/TestCase1a/006/03_LociChen_HybridRANSLES/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Scatter/TestCase1a/006/04_LociChem_DHRL/DPW8-AePW4_SectionalCuts_v5.dat"'
-$!VarSet |LFDSVL5| = '"x/c";"XoC" "Cp";"CP_AVG" "X" "Y" "Z" "CF";"CF_AVG" "CFX" "CFY" "CFZ" "YPLUS" "CP_RMS" "CF_RMS"'
-$!VarSet |LFDSFN6| = '"../../../DPW8-Buffet/TestCase1a/007_JAXA/01_FaSTAR_Cadence-Structured_SA-noft2/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Buffet/TestCase1a/007_JAXA/02_FaSTAR_Cadence-Structured_SA-noft2-R-QCR2000/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Buffet/TestCase1a/007_JAXA/03_FaSTAR_Cadence-Structured_SST-2003sust/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Buffet/TestCase1a/007_JAXA/04_FaSTAR_JAXA-Custom-Structured_SA-noft2/DPW8-AePW4_SectionalCuts_v5_Grid-Level-1.dat" "../../../DPW8-Buffet/TestCase1a/007_JAXA/04_FaSTAR_JAXA-Custom-Structured_SA-noft2/DPW8-AePW4_SectionalCuts_v5_Grid-Level-2.dat" "../../../DPW8-Buffet/TestCase1a/007_JAXA/04_FaSTAR_JAXA-Custom-Structured_SA-noft2/DPW8-AePW4_SectionalCuts_v5_Grid-Level-3.dat" "../../../DPW8-Buffet/TestCase1a/007_JAXA/04_FaSTAR_JAXA-Custom-Structured_SA-noft2/DPW8-AePW4_SectionalCuts_v5_Grid-Level-4.dat" "../../../DPW8-Buffet/TestCase1a/007_JAXA/04_FaSTAR_JAXA-Custom-Structured_SA-noft2/DPW8-AePW4_SectionalCuts_v5_Grid-Level-5.dat" "../../../DPW8-Buffet/TestCase1a/007_JAXA/04_FaSTAR_JAXA-Custom-Structured_SA-noft2/DPW8-AePW4_SectionalCuts_v5_Grid-Level-6.dat" "../../../DPW8-Buffet/TestCase1a/007_JAXA/05_FaSTAR_JAXA-Custom-Structured_SA-noft2-R/DPW8-AePW4_SectionalCuts_v5_Grid-Level-1.dat" "../../../DPW8-Buffet/TestCase1a/007_JAXA/05_FaSTAR_JAXA-Custom-Structured_SA-noft2-R/DPW8-AePW4_SectionalCuts_v5_Grid-Level-2.dat" "../../../DPW8-Buffet/TestCase1a/007_JAXA/05_FaSTAR_JAXA-Custom-Structured_SA-noft2-R/DPW8-AePW4_SectionalCuts_v5_Grid-Level-3.dat" "../../../DPW8-Buffet/TestCase1a/007_JAXA/05_FaSTAR_JAXA-Custom-Structured_SA-noft2-R/DPW8-AePW4_SectionalCuts_v5_Grid-Level-4.dat" "../../../DPW8-Buffet/TestCase1a/007_JAXA/05_FaSTAR_JAXA-Custom-Structured_SA-noft2-R/DPW8-AePW4_SectionalCuts_v5_Grid-Level-5.dat" "../../../DPW8-Buffet/TestCase1a/007_JAXA/05_FaSTAR_JAXA-Custom-Structured_SA-noft2-R/DPW8-AePW4_SectionalCuts_v5_Grid-Level-6.dat" "../../../DPW8-Buffet/TestCase1a/007_JAXA/06_FaSTAR_JAXA-Custom-Structured_SA-noft2-R-QCR2000/DPW8-AePW4_SectionalCuts_v5_Grid-Level-1.dat" "../../../DPW8-Buffet/TestCase1a/007_JAXA/06_FaSTAR_JAXA-Custom-Structured_SA-noft2-R-QCR2000/DPW8-AePW4_SectionalCuts_v5_Grid-Level-2.dat" "../../../DPW8-Buffet/TestCase1a/007_JAXA/06_FaSTAR_JAXA-Custom-Structured_SA-noft2-R-QCR2000/DPW8-AePW4_SectionalCuts_v5_Grid-Level-3.dat" "../../../DPW8-Buffet/TestCase1a/007_JAXA/06_FaSTAR_JAXA-Custom-Structured_SA-noft2-R-QCR2000/DPW8-AePW4_SectionalCuts_v5_Grid-Level-4.dat" "../../../DPW8-Buffet/TestCase1a/007_JAXA/06_FaSTAR_JAXA-Custom-Structured_SA-noft2-R-QCR2000/DPW8-AePW4_SectionalCuts_v5_Grid-Level-5.dat" "../../../DPW8-Buffet/TestCase1a/007_JAXA/06_FaSTAR_JAXA-Custom-Structured_SA-noft2-R-QCR2000/DPW8-AePW4_SectionalCuts_v5_Grid-Level-6.dat"'
-$!VarSet |LFDSVL6| = '"x/c";"XoC" "Cp";"CP_AVG" "X" "Y" "Z" "CF";"CF_AVG" "CFX" "CFY" "CFZ" "YPLUS" "CP_RMS" "CF_RMS"'
-$!VarSet |LFDSFN7| = '"../../../DPW8-Buffet/TestCase1b/007_JAXA/07_FaSTAR_JAXA-Custom-Structured_SA-noft2/DPW8-AePW4_UnsteadySectionalCuts_v5_Grid-Level-1.dat" "../../../DPW8-Buffet/TestCase1b/007_JAXA/07_FaSTAR_JAXA-Custom-Structured_SA-noft2/DPW8-AePW4_UnsteadySectionalCuts_v5_Grid-Level-2.dat" "../../../DPW8-Buffet/TestCase1b/007_JAXA/07_FaSTAR_JAXA-Custom-Structured_SA-noft2/DPW8-AePW4_UnsteadySectionalCuts_v5_Grid-Level-3.dat" "../../../DPW8-Buffet/TestCase1b/007_JAXA/07_FaSTAR_JAXA-Custom-Structured_SA-noft2/DPW8-AePW4_UnsteadySectionalCuts_v5_Grid-Level-4.dat"'
-$!VarSet |LFDSVL7| = '"x/c";"XoC" "Cp";"CP_AVG" "X" "Y" "Z" "CF";"CF_AVG" "CFX" "CFY" "CFZ" "YPLUS" "CP_RMS" "CF_RMS"'
-$!VarSet |LFDSFN8| = '"../../../DPW8-Buffet/TestCase1b/007_JAXA/08_FaSTAR_JAXA-Custom-Structured_SA-noft2-R/DPW8-AePW4_UnsteadySectionalCuts_v5_Grid-Level-1.dat" "../../../DPW8-Buffet/TestCase1b/007_JAXA/08_FaSTAR_JAXA-Custom-Structured_SA-noft2-R/DPW8-AePW4_UnsteadySectionalCuts_v5_Grid-Level-2.dat" "../../../DPW8-Buffet/TestCase1b/007_JAXA/08_FaSTAR_JAXA-Custom-Structured_SA-noft2-R/DPW8-AePW4_UnsteadySectionalCuts_v5_Grid-Level-3.dat" "../../../DPW8-Buffet/TestCase1b/007_JAXA/08_FaSTAR_JAXA-Custom-Structured_SA-noft2-R/DPW8-AePW4_UnsteadySectionalCuts_v5_Grid-Level-4.dat" "../../../DPW8-Buffet/TestCase1b/007_JAXA/09_FaSTAR_JAXA-Custom-Structured_SA-noft2-R-QCR2000/DPW8-AePW4_UnsteadySectionalCuts_v5_Grid-Level-1.dat" "../../../DPW8-Buffet/TestCase1b/007_JAXA/09_FaSTAR_JAXA-Custom-Structured_SA-noft2-R-QCR2000/DPW8-AePW4_UnsteadySectionalCuts_v5_Grid-Level-2.dat" "../../../DPW8-Buffet/TestCase1b/007_JAXA/09_FaSTAR_JAXA-Custom-Structured_SA-noft2-R-QCR2000/DPW8-AePW4_UnsteadySectionalCuts_v5_Grid-Level-3.dat" "../../../DPW8-Buffet/TestCase1b/007_JAXA/09_FaSTAR_JAXA-Custom-Structured_SA-noft2-R-QCR2000/DPW8-AePW4_UnsteadySectionalCuts_v5_Grid-Level-4.dat"'
-$!VarSet |LFDSVL8| = '"x/c";"XoC" "Cp";"CP_AVG" "X" "Y" "Z" "CF";"CF_AVG" "CFX" "CFY" "CFZ" "YPLUS" "CP_RMS" "CF_RMS"'
-$!VarSet |LFDSFN9| = '"../../../DPW8-Buffet/TestCase1b/010_Boeing/010_DPW8-AePW4_UnsteadySectionalCuts_v5.dat"'
-$!VarSet |LFDSVL9| = '"x/c";"XoC" "Cp";"CP_AVG" "X" "Y" "Z" "CF";"CF_AVG" "CFX" "CFY" "CFZ" "YPLUS" "CP_RMS" "CF_RMS"'
-$!VarSet |LFDSFN10| = '"../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/01_SFE_SAneg/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/02_SFE_SAneg_CC/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/03_SFE_SAneg_QCR_CC/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/04_NCFV_SAneg/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/05_NCFV_SAneg_2ndOrderTurbConv/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/06_NCFV_SAneg_CC/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/07_NCFV_SAneg_CC_2ndOrderTurbConv/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/08_NCFV_SAneg_QCR/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/09_NCFV_SAneg_QCR_CC_2ndOrderTurbConv/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/10_NCFV_SAneg_QCR_RC_CC/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/11_NCFV_SAneg_QCR_RC_CC_2ndOrderTurbConv/DPW8-AePW4_SectionalCuts_v5.dat"'
-$!VarSet |LFDSVL10| = '"x/c";"XoC" "Cp";"CP_AVG" "X" "Y" "Z" "CF";"CF_AVG" "CFX" "CFY" "CFZ" "YPLUS" "CP_RMS" "CF_RMS"'
-$!VarSet |LFDSFN11| = '"../../../DPW8-Buffet/TestCase1a/014_IISc/01_SU2_Symmetric_BC/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Buffet/TestCase1a/014_IISc/02_SU2_Periodic_BC/DPW8-AePW4_SectionalCuts_v5.dat"'
-$!VarSet |LFDSVL11| = '"x/c";"XoC" "Cp";"CP_AVG" "X" "Y" "Z" "CF";"CF_AVG" "CFX" "CFY" "CFZ" "YPLUS" "CP_RMS" "CF_RMS"'
-$!VarSet |LFDSFN12| = '"../../../DPW8-Buffet/TestCase1b/014_IISc/03_SU2_Symmetric_BC/DPW8-AePW4_UnsteadySectionalCuts_v5.dat"'
-$!VarSet |LFDSVL12| = '"x/c";"XoC" "Cp";"CP_AVG" "X" "Y" "Z" "CF";"CF_AVG" "CFX" "CFY" "CFZ" "YPLUS" "CP_RMS" "CF_RMS"'
-$!VarSet |LFDSFN13| = '"../../../DPW8-Buffet/TestCase1a/018_zCFD_steadyRANS/01_SAneg/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Buffet/TestCase1a/018_zCFD_steadyRANS/02_SST-V-2003/DPW8-AePW4_SectionalCuts_v5.dat"'
-$!VarSet |LFDSVL13| = '"x/c";"XoC" "Cp";"CP_AVG" "X" "Y" "Z" "CF";"CF_AVG" "CFX" "CFY" "CFZ" "YPLUS" "CP_RMS" "CF_RMS"'
-$!VarSet |LFDSFN14| = '"../../../DPW8-Buffet/TestCase1a/020_DukeUniversity/01_Fluent_CadenceStructured_SA/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Buffet/TestCase1a/020_DukeUniversity/02_Fluent_CadenceUnstructured_SA/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Buffet/TestCase1a/020_DukeUniversity/03_FUN3D_CadenceStructured_SAneg/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Buffet/TestCase1a/020_DukeUniversity/04_FUN3D_CadenceUnstructured_SAneg/DPW8-AePW4_SectionalCuts_v5.dat"'
-$!VarSet |LFDSVL14| = '"x/c";"XoC" "Cp";"CP_AVG" "X" "Y" "Z" "CF";"CF_AVG" "CFX" "CFY" "CFZ" "YPLUS" "CP_RMS" "CF_RMS"'
-$!VarSet |LFDSFN15| = '"../../../DPW8-Buffet/TestCase1a/021_CREATE/01_SA/DPW8-AePW4_SectionalCuts_v5.dat"'
-$!VarSet |LFDSVL15| = '"x/c";"XoC" "Cp";"CP_AVG" "X" "Y" "Z" "CF";"CF_AVG" "CFX" "CFY" "CFZ" "YPLUS" "CP_RMS" "CF_RMS"'
-$!VarSet |LFDSFN16| = '"../../../DPW8-Buffet/TestCase1b/021_CREATE/02_URANS/DPW8-AePW4_UnsteadySectionalCuts_v5.dat"'
-$!VarSet |LFDSVL16| = '"x/c";"XoC" "Cp";"CP_AVG" "X" "Y" "Z" "CF";"CF_AVG" "CFX" "CFY" "CFZ" "YPLUS" "CP_RMS" "CF_RMS"'
-$!VarSet |LFDSFN17| = '"../../../DPW8-Buffet/TestCase1b/021_CREATE/03_URANS_Extracted/DPW8-AePW4_UnsteadySectionalCuts_v5.dat" "../../../DPW8-Buffet/TestCase1b/021_CREATE/04_DDES/DPW8-AePW4_UnsteadySectionalCuts_v5.dat"'
-$!VarSet |LFDSVL17| = '"x/c";"XoC" "Cp";"CP_AVG" "X" "Y" "Z" "CF";"CF_AVG" "CFX" "CFY" "CFZ" "YPLUS" "CP_RMS" "CF_RMS"'
-$!VarSet |LFDSFN18| = '"../../../DPW8-Buffet/TestCase1a/023_PolytechniqueMontreal/01_SA/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Buffet/TestCase1a/023_PolytechniqueMontreal/02_SA_BestPractice/DPW8-AePW4_SectionalCuts_v5.dat"'
-$!VarSet |LFDSVL18| = '"x/c";"XoC" "Cp";"CP_AVG" "X" "Y" "Z" "CF";"CF_AVG" "CFX" "CFY" "CFZ" "YPLUS" "CP_RMS" "CF_RMS"'
-$!VarSet |LFDSFN19| = '"../../../DPW8-Buffet/TestCase1a/024_UniversityofLiverpool/01_SAneg/DPW8-AePW4_SectionalCuts_v5.dat"'
-$!VarSet |LFDSVL19| = '"x/c";"XoC" "Cp";"CP_AVG" "X" "Y" "Z" "CF";"CF_AVG" "CFX" "CFY" "CFZ" "YPLUS" "CP_RMS" "CF_RMS"'
-$!VarSet |LFDSFN20| = '"../../../DPW8-Buffet/TestCase1a/026_CorvidTechnologies/01_SA/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Buffet/TestCase1a/026_CorvidTechnologies/02_SA_comp/DPW8-AePW4_SectionalCuts_v5.dat"'
-$!VarSet |LFDSVL20| = '"x/c";"XoC" "Cp";"CP_AVG" "X" "Y" "Z" "CF";"CF_AVG" "CFX" "CFY" "CFZ" "YPLUS" "CP_RMS" "CF_RMS"'
-$!VarSet |LFDSFN21| = '"../../../DPW8-Buffet/TestCase1a/027_RMIT/01_SST/DPW8-AePW4_SectionalCuts_v5.dat" "../../../DPW8-Buffet/TestCase1a/027_RMIT/02_SA/DPW8-AePW4_URANS_SectionalCuts_v5.dat"'
-$!VarSet |LFDSVL21| = '"x/c";"XoC" "Cp";"CP_AVG" "X" "Y" "Z" "CF";"CF_AVG" "CFX" "CFY" "CFZ" "YPLUS" "CP_RMS" "CF_RMS"'
-$!VarSet |LFDSFN22| = '"../../../DPW8-Buffet/TestCase1b/027_RMIT/03_SST/DPW8-AePW4_URANS_SectionalCuts_v5.dat" "../../../DPW8-Buffet/TestCase1b/027_RMIT/04_SA/DPW8-AePW4_URANS_SectionalCuts_v5.dat"'
-$!VarSet |LFDSVL22| = '"x/c";"XoC" "Cp";"CP_AVG" "X" "Y" "Z" "CF";"CF_AVG" "CFX" "CFY" "CFZ" "YPLUS" "CP_RMS" "CF_RMS"'
-$!VarSet |LFDSFN23| = '"../../../DPW8-Buffet/TestCase1b/032_KTH-Adaptive_Euler/DPW8-AePW4_UnsteadySectionalCuts_032_AdaptiveEuler_KTH_OAT15A.dat"'
-$!VarSet |LFDSVL23| = '"x/c";"XoC" "Cp";"CP_AVG" "X" "Y" "Z" "CF";"CF_AVG" "CFX" "CFY" "CFZ" "YPLUS" "CP_RMS" "CF_RMS"'
-$!VarSet |LFDSFN24| = '"experimentalData/Cp.dat"'
-$!VarSet |LFDSVL24| = '"x/c";"XoC" "Cp";"CP_AVG" "X" "Y" "Z" "CF";"CF_AVG" "CFX" "CFY" "CFZ" "YPLUS" "CP_RMS" "CF_RMS"'
-$!VarSet |LFDSFN25| = '"experimentalData/Cp_rms.dat"'
-$!VarSet |LFDSVL25| = '"x/c";"XoC" "Cp";"CP_AVG" "X" "Y" "Z" "CF";"CF_AVG" "CFX" "CFY" "CFZ" "YPLUS" "CP_RMS" "CF_RMS" "P<sub>rms</sub>/Q<sub>0</sub>"'
 $!SetStyleBase Factory
-$!BasicColor 
-  Custom9
-    {
-    R = 220
-    }
-  Custom10
-    {
-    R = 0
-    B = 0
-    }
-  Custom11
-    {
-    R = 0
-    G = 0
-    B = 255
-    }
-  Custom12
-    {
-    R = 0
-    G = 0
-    B = 0
-    }
-  Custom13
-    {
-    R = 228
-    G = 190
-    B = 0
-    }
-  Custom14
-    {
-    R = 141
-    G = 91
-    B = 47
-    }
-  Custom15
-    {
-    R = 131
-    G = 131
-    }
-  Custom16
-    {
-    G = 26
-    B = 184
-    }
-  Custom17
-    {
-    R = 0
-    G = 255
-    B = 193
-    }
-  Custom18
-    {
-    R = 0
-    G = 131
-    B = 149
-    }
-  Custom19
-    {
-    R = 0
-    G = 0
-    B = 123
-    }
-  Custom20
-    {
-    R = 149
-    G = 211
-    B = 79
-    }
-  Custom21
-    {
-    R = 246
-    G = 158
-    B = 219
-    }
-  Custom22
-    {
-    R = 211
-    G = 17
-    }
-  Custom23
-    {
-    R = 123
-    G = 26
-    B = 105
-    }
-  Custom24
-    {
-    R = 246
-    G = 17
-    B = 96
-    }
-  Custom25
-    {
-    R = 18
-    G = 63
-    B = 121
-    }
-  Custom26
-    {
-    R = 50
-    G = 97
-    B = 152
-    }
-  Custom27
-    {
-    R = 97
-    G = 134
-    B = 182
-    }
-  Custom28
-    {
-    R = 145
-    G = 191
-    B = 219
-    }
-  Custom29
-    {
-    R = 254
-    G = 224
-    B = 144
-    }
-  Custom30
-    {
-    R = 252
-    G = 141
-    B = 89
-    }
-  Custom31
-    {
-    R = 215
-    G = 48
-    B = 39
-    }
-  Custom32
-    {
-    R = 160
-    G = 37
-    B = 29
-    }
-  Custom49
-    {
-    R = 135
-    G = 1
-    B = 1
-    }
-  Custom50
-    {
-    R = 245
-    G = 245
-    B = 245
-    }
-$!GlobalPaper 
-  PaperSizeInfo
-    {
-    Letter
-      {
-      Width = 8.5
-      Height = 11
-      LeftHardClipOffset = 0.125
-      RightHardClipOffset = 0.125
-      TopHardClipOffset = 0.125
-      BottomHardClipOffset = 0.125
-      }
-    }
-$!Page 
-  Name = 'Untitled'
-  PaperAttributes
-    {
-    BackgroundColor = White
-    IsTransparent = Yes
-    OrientPortrait = No
-    ShowGrid = Yes
-    ShowRuler = No
-    ShowPaper = No
-    PaperSize = Letter
-    RulerSpacing = OneInch
-    PaperGridSpacing = HalfInch
-    RegionInWorkArea
-      {
-      X1 = 1
-      Y1 = 0.25
-      X2 = 10
-      Y2 = 8.25
-      }
-    }
-### Frame Number 1 ###
-$!ReadDataSet  '|LFDSFN1|'
-  InitialPlotType = XYLine
-  IncludeText = No
-  IncludeGeom = No
-  ResetStyle = No
-  AssignStrandIDs = Yes
-  VarLoadMode = ByName
-  VarNameList = '|LFDSVL1|'
-$!RemoveVar |LFDSVL1|
-$!RemoveVar |LFDSFN1|
-$!ReadDataSet  '|LFDSFN2|'
-  InitialPlotType = XYLine
-  IncludeText = No
-  IncludeGeom = No
-  ReadDataOption = Append
-  ResetStyle = No
-  AssignStrandIDs = Yes
-  VarLoadMode = ByName
-  VarNameList = '|LFDSVL2|'
-$!RemoveVar |LFDSVL2|
-$!RemoveVar |LFDSFN2|
-$!ReadDataSet  '|LFDSFN3|'
-  InitialPlotType = XYLine
-  IncludeText = No
-  IncludeGeom = No
-  ReadDataOption = Append
-  ResetStyle = No
-  AssignStrandIDs = Yes
-  VarLoadMode = ByName
-  VarNameList = '|LFDSVL3|'
-$!RemoveVar |LFDSVL3|
-$!RemoveVar |LFDSFN3|
-$!ReadDataSet  '|LFDSFN4|'
-  InitialPlotType = XYLine
-  IncludeText = No
-  IncludeGeom = No
-  ReadDataOption = Append
-  ResetStyle = No
-  AssignStrandIDs = Yes
-  VarLoadMode = ByName
-  VarNameList = '|LFDSVL4|'
-$!RemoveVar |LFDSVL4|
-$!RemoveVar |LFDSFN4|
-$!ReadDataSet  '|LFDSFN5|'
-  InitialPlotType = XYLine
-  IncludeText = No
-  IncludeGeom = No
-  ReadDataOption = Append
-  ResetStyle = No
-  AssignStrandIDs = Yes
-  VarLoadMode = ByName
-  VarNameList = '|LFDSVL5|'
-$!RemoveVar |LFDSVL5|
-$!RemoveVar |LFDSFN5|
-$!ReadDataSet  '|LFDSFN6|'
-  InitialPlotType = XYLine
-  IncludeText = No
-  IncludeGeom = No
-  ReadDataOption = Append
-  ResetStyle = No
-  AssignStrandIDs = Yes
-  VarLoadMode = ByName
-  VarNameList = '|LFDSVL6|'
-$!RemoveVar |LFDSVL6|
-$!RemoveVar |LFDSFN6|
-$!ReadDataSet  '|LFDSFN7|'
-  InitialPlotType = XYLine
-  IncludeText = No
-  IncludeGeom = No
-  ReadDataOption = Append
-  ResetStyle = No
-  AssignStrandIDs = Yes
-  VarLoadMode = ByName
-  VarNameList = '|LFDSVL7|'
-$!RemoveVar |LFDSVL7|
-$!RemoveVar |LFDSFN7|
-$!ReadDataSet  '|LFDSFN8|'
-  InitialPlotType = XYLine
-  IncludeText = No
-  IncludeGeom = No
-  ReadDataOption = Append
-  ResetStyle = No
-  AssignStrandIDs = Yes
-  VarLoadMode = ByName
-  VarNameList = '|LFDSVL8|'
-$!RemoveVar |LFDSVL8|
-$!RemoveVar |LFDSFN8|
-$!ReadDataSet  '|LFDSFN9|'
-  InitialPlotType = XYLine
-  IncludeText = No
-  IncludeGeom = No
-  ReadDataOption = Append
-  ResetStyle = No
-  AssignStrandIDs = Yes
-  VarLoadMode = ByName
-  VarNameList = '|LFDSVL9|'
-$!RemoveVar |LFDSVL9|
-$!RemoveVar |LFDSFN9|
-$!ReadDataSet  '|LFDSFN10|'
-  InitialPlotType = XYLine
-  IncludeText = No
-  IncludeGeom = No
-  ReadDataOption = Append
-  ResetStyle = No
-  AssignStrandIDs = Yes
-  VarLoadMode = ByName
-  VarNameList = '|LFDSVL10|'
-$!RemoveVar |LFDSVL10|
-$!RemoveVar |LFDSFN10|
-$!ReadDataSet  '|LFDSFN11|'
-  InitialPlotType = XYLine
-  IncludeText = No
-  IncludeGeom = No
-  ReadDataOption = Append
-  ResetStyle = No
-  AssignStrandIDs = Yes
-  VarLoadMode = ByName
-  VarNameList = '|LFDSVL11|'
-$!RemoveVar |LFDSVL11|
-$!RemoveVar |LFDSFN11|
-$!ReadDataSet  '|LFDSFN12|'
-  InitialPlotType = XYLine
-  IncludeText = No
-  IncludeGeom = No
-  ReadDataOption = Append
-  ResetStyle = No
-  AssignStrandIDs = Yes
-  VarLoadMode = ByName
-  VarNameList = '|LFDSVL12|'
-$!RemoveVar |LFDSVL12|
-$!RemoveVar |LFDSFN12|
-$!ReadDataSet  '|LFDSFN13|'
-  InitialPlotType = XYLine
-  IncludeText = No
-  IncludeGeom = No
-  ReadDataOption = Append
-  ResetStyle = No
-  AssignStrandIDs = Yes
-  VarLoadMode = ByName
-  VarNameList = '|LFDSVL13|'
-$!RemoveVar |LFDSVL13|
-$!RemoveVar |LFDSFN13|
-$!ReadDataSet  '|LFDSFN14|'
-  InitialPlotType = XYLine
-  IncludeText = No
-  IncludeGeom = No
-  ReadDataOption = Append
-  ResetStyle = No
-  AssignStrandIDs = Yes
-  VarLoadMode = ByName
-  VarNameList = '|LFDSVL14|'
-$!RemoveVar |LFDSVL14|
-$!RemoveVar |LFDSFN14|
-$!ReadDataSet  '|LFDSFN15|'
-  InitialPlotType = XYLine
-  IncludeText = No
-  IncludeGeom = No
-  ReadDataOption = Append
-  ResetStyle = No
-  AssignStrandIDs = Yes
-  VarLoadMode = ByName
-  VarNameList = '|LFDSVL15|'
-$!RemoveVar |LFDSVL15|
-$!RemoveVar |LFDSFN15|
-$!ReadDataSet  '|LFDSFN16|'
-  InitialPlotType = XYLine
-  IncludeText = No
-  IncludeGeom = No
-  ReadDataOption = Append
-  ResetStyle = No
-  AssignStrandIDs = Yes
-  VarLoadMode = ByName
-  VarNameList = '|LFDSVL16|'
-$!RemoveVar |LFDSVL16|
-$!RemoveVar |LFDSFN16|
-$!ReadDataSet  '|LFDSFN17|'
-  InitialPlotType = XYLine
-  IncludeText = No
-  IncludeGeom = No
-  ReadDataOption = Append
-  ResetStyle = No
-  AssignStrandIDs = Yes
-  VarLoadMode = ByName
-  VarNameList = '|LFDSVL17|'
-$!RemoveVar |LFDSVL17|
-$!RemoveVar |LFDSFN17|
-$!ReadDataSet  '|LFDSFN18|'
-  InitialPlotType = XYLine
-  IncludeText = No
-  IncludeGeom = No
-  ReadDataOption = Append
-  ResetStyle = No
-  AssignStrandIDs = Yes
-  VarLoadMode = ByName
-  VarNameList = '|LFDSVL18|'
-$!RemoveVar |LFDSVL18|
-$!RemoveVar |LFDSFN18|
-$!ReadDataSet  '|LFDSFN19|'
-  InitialPlotType = XYLine
-  IncludeText = No
-  IncludeGeom = No
-  ReadDataOption = Append
-  ResetStyle = No
-  AssignStrandIDs = Yes
-  VarLoadMode = ByName
-  VarNameList = '|LFDSVL19|'
-$!RemoveVar |LFDSVL19|
-$!RemoveVar |LFDSFN19|
-$!ReadDataSet  '|LFDSFN20|'
-  InitialPlotType = XYLine
-  IncludeText = No
-  IncludeGeom = No
-  ReadDataOption = Append
-  ResetStyle = No
-  AssignStrandIDs = Yes
-  VarLoadMode = ByName
-  VarNameList = '|LFDSVL20|'
-$!RemoveVar |LFDSVL20|
-$!RemoveVar |LFDSFN20|
-$!ReadDataSet  '|LFDSFN21|'
-  InitialPlotType = XYLine
-  IncludeText = No
-  IncludeGeom = No
-  ReadDataOption = Append
-  ResetStyle = No
-  AssignStrandIDs = Yes
-  VarLoadMode = ByName
-  VarNameList = '|LFDSVL21|'
-$!RemoveVar |LFDSVL21|
-$!RemoveVar |LFDSFN21|
-$!ReadDataSet  '|LFDSFN22|'
-  InitialPlotType = XYLine
-  IncludeText = No
-  IncludeGeom = No
-  ReadDataOption = Append
-  ResetStyle = No
-  AssignStrandIDs = Yes
-  VarLoadMode = ByName
-  VarNameList = '|LFDSVL22|'
-$!RemoveVar |LFDSVL22|
-$!RemoveVar |LFDSFN22|
-$!ReadDataSet  '|LFDSFN23|'
-  InitialPlotType = XYLine
-  IncludeText = No
-  IncludeGeom = No
-  ReadDataOption = Append
-  ResetStyle = No
-  AssignStrandIDs = Yes
-  VarLoadMode = ByName
-  VarNameList = '|LFDSVL23|'
-$!RemoveVar |LFDSVL23|
-$!RemoveVar |LFDSFN23|
-$!ReadDataSet  '|LFDSFN24|'
-  InitialPlotType = XYLine
-  IncludeText = No
-  IncludeGeom = No
-  ReadDataOption = Append
-  ResetStyle = No
-  AssignStrandIDs = Yes
-  VarLoadMode = ByName
-  VarNameList = '|LFDSVL24|'
-$!RemoveVar |LFDSVL24|
-$!RemoveVar |LFDSFN24|
-$!ReadDataSet  '|LFDSFN25|'
-  InitialPlotType = XYLine
-  IncludeText = No
-  IncludeGeom = No
-  ReadDataOption = Append
-  ResetStyle = No
-  AssignStrandIDs = Yes
-  VarLoadMode = ByName
-  VarNameList = '|LFDSVL25|'
-$!RemoveVar |LFDSVL25|
-$!RemoveVar |LFDSFN25|
+$!PlotType  = XYLine
 $!FrameLayout 
   ShowBorder = No
   ShowHeader = No
@@ -524,12 +15,10 @@ $!FrameLayout
 $!ThreeDAxis 
   AspectRatioLimit = 25
   BoxAspectRatioLimit = 25
-$!PlotType  = XYLine
-$!FrameName  = 'Frame 001'
 $!GlobalTime 
   SolutionTime = 0
 $!DeleteLineMaps 
-$!ActiveLineMaps  =  [2523-2528]
+$!ActiveLineMaps  =  [2343-2402,2463-2521,2523-2528]
 $!GlobalLinePlot 
   DataLabels
     {
@@ -51599,11 +51088,11 @@ $!LineMap  [1761]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -51628,11 +51117,11 @@ $!LineMap  [1762]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -51657,11 +51146,11 @@ $!LineMap  [1763]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -51686,11 +51175,11 @@ $!LineMap  [1764]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -51715,11 +51204,11 @@ $!LineMap  [1765]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -51744,11 +51233,11 @@ $!LineMap  [1766]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -51773,11 +51262,11 @@ $!LineMap  [1767]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -51802,11 +51291,11 @@ $!LineMap  [1768]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -51831,11 +51320,11 @@ $!LineMap  [1769]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -51860,11 +51349,11 @@ $!LineMap  [1770]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -51889,11 +51378,11 @@ $!LineMap  [1771]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -51918,11 +51407,11 @@ $!LineMap  [1772]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -51947,11 +51436,11 @@ $!LineMap  [1773]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -51976,11 +51465,11 @@ $!LineMap  [1774]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -52005,11 +51494,11 @@ $!LineMap  [1775]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -52034,11 +51523,11 @@ $!LineMap  [1776]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -52063,11 +51552,11 @@ $!LineMap  [1777]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -52092,11 +51581,11 @@ $!LineMap  [1778]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -52121,11 +51610,11 @@ $!LineMap  [1779]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -52150,11 +51639,11 @@ $!LineMap  [1780]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -52179,11 +51668,11 @@ $!LineMap  [1781]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -52208,11 +51697,11 @@ $!LineMap  [1782]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -52237,11 +51726,11 @@ $!LineMap  [1783]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55166,11 +54655,11 @@ $!LineMap  [1884]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55195,11 +54684,11 @@ $!LineMap  [1885]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55224,11 +54713,11 @@ $!LineMap  [1886]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55253,11 +54742,11 @@ $!LineMap  [1887]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55282,11 +54771,11 @@ $!LineMap  [1888]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55311,11 +54800,11 @@ $!LineMap  [1889]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55340,11 +54829,11 @@ $!LineMap  [1890]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55369,11 +54858,11 @@ $!LineMap  [1891]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55398,11 +54887,11 @@ $!LineMap  [1892]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55427,11 +54916,11 @@ $!LineMap  [1893]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55456,11 +54945,11 @@ $!LineMap  [1894]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55485,11 +54974,11 @@ $!LineMap  [1895]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55514,11 +55003,11 @@ $!LineMap  [1896]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55543,11 +55032,11 @@ $!LineMap  [1897]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55572,11 +55061,11 @@ $!LineMap  [1898]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55601,11 +55090,11 @@ $!LineMap  [1899]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55630,11 +55119,11 @@ $!LineMap  [1900]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55659,11 +55148,11 @@ $!LineMap  [1901]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55688,11 +55177,11 @@ $!LineMap  [1902]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55717,11 +55206,11 @@ $!LineMap  [1903]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55746,11 +55235,11 @@ $!LineMap  [1904]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55775,11 +55264,11 @@ $!LineMap  [1905]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55804,11 +55293,11 @@ $!LineMap  [1906]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55833,11 +55322,11 @@ $!LineMap  [1907]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55862,11 +55351,11 @@ $!LineMap  [1908]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55891,11 +55380,11 @@ $!LineMap  [1909]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55920,11 +55409,11 @@ $!LineMap  [1910]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55949,11 +55438,11 @@ $!LineMap  [1911]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -55978,11 +55467,11 @@ $!LineMap  [1912]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56007,11 +55496,11 @@ $!LineMap  [1913]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56036,11 +55525,11 @@ $!LineMap  [1914]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56065,11 +55554,11 @@ $!LineMap  [1915]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56094,11 +55583,11 @@ $!LineMap  [1916]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56123,11 +55612,11 @@ $!LineMap  [1917]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56152,11 +55641,11 @@ $!LineMap  [1918]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56181,11 +55670,11 @@ $!LineMap  [1919]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56210,11 +55699,11 @@ $!LineMap  [1920]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56239,11 +55728,11 @@ $!LineMap  [1921]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56268,11 +55757,11 @@ $!LineMap  [1922]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56297,11 +55786,11 @@ $!LineMap  [1923]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56326,11 +55815,11 @@ $!LineMap  [1924]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56355,11 +55844,11 @@ $!LineMap  [1925]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56384,11 +55873,11 @@ $!LineMap  [1926]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56413,11 +55902,11 @@ $!LineMap  [1927]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56442,11 +55931,11 @@ $!LineMap  [1928]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56471,11 +55960,11 @@ $!LineMap  [1929]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56500,11 +55989,11 @@ $!LineMap  [1930]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56529,11 +56018,11 @@ $!LineMap  [1931]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56558,11 +56047,11 @@ $!LineMap  [1932]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56587,11 +56076,11 @@ $!LineMap  [1933]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56616,11 +56105,11 @@ $!LineMap  [1934]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56645,11 +56134,11 @@ $!LineMap  [1935]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56674,11 +56163,11 @@ $!LineMap  [1936]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56703,11 +56192,11 @@ $!LineMap  [1937]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56732,11 +56221,11 @@ $!LineMap  [1938]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56761,11 +56250,11 @@ $!LineMap  [1939]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56790,11 +56279,11 @@ $!LineMap  [1940]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56819,11 +56308,11 @@ $!LineMap  [1941]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56848,11 +56337,11 @@ $!LineMap  [1942]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56877,11 +56366,11 @@ $!LineMap  [1943]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56906,11 +56395,11 @@ $!LineMap  [1944]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56935,11 +56424,11 @@ $!LineMap  [1945]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56964,11 +56453,11 @@ $!LineMap  [1946]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -56993,11 +56482,11 @@ $!LineMap  [1947]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57022,11 +56511,11 @@ $!LineMap  [1948]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57051,11 +56540,11 @@ $!LineMap  [1949]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57080,11 +56569,11 @@ $!LineMap  [1950]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57109,11 +56598,11 @@ $!LineMap  [1951]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57138,11 +56627,11 @@ $!LineMap  [1952]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57167,11 +56656,11 @@ $!LineMap  [1953]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57196,11 +56685,11 @@ $!LineMap  [1954]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57225,11 +56714,11 @@ $!LineMap  [1955]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57254,11 +56743,11 @@ $!LineMap  [1956]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57283,11 +56772,11 @@ $!LineMap  [1957]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57312,11 +56801,11 @@ $!LineMap  [1958]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57341,11 +56830,11 @@ $!LineMap  [1959]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57370,11 +56859,11 @@ $!LineMap  [1960]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57399,11 +56888,11 @@ $!LineMap  [1961]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57428,11 +56917,11 @@ $!LineMap  [1962]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57457,11 +56946,11 @@ $!LineMap  [1963]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57486,11 +56975,11 @@ $!LineMap  [1964]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57515,11 +57004,11 @@ $!LineMap  [1965]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57544,11 +57033,11 @@ $!LineMap  [1966]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57573,11 +57062,11 @@ $!LineMap  [1967]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57602,11 +57091,11 @@ $!LineMap  [1968]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57631,11 +57120,11 @@ $!LineMap  [1969]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57660,11 +57149,11 @@ $!LineMap  [1970]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57689,11 +57178,11 @@ $!LineMap  [1971]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57718,11 +57207,11 @@ $!LineMap  [1972]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57747,11 +57236,11 @@ $!LineMap  [1973]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57776,11 +57265,11 @@ $!LineMap  [1974]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57805,11 +57294,11 @@ $!LineMap  [1975]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57834,11 +57323,11 @@ $!LineMap  [1976]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57863,11 +57352,11 @@ $!LineMap  [1977]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57892,11 +57381,11 @@ $!LineMap  [1978]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57921,11 +57410,11 @@ $!LineMap  [1979]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57950,11 +57439,11 @@ $!LineMap  [1980]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -57979,11 +57468,11 @@ $!LineMap  [1981]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58008,11 +57497,11 @@ $!LineMap  [1982]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58037,11 +57526,11 @@ $!LineMap  [1983]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58066,11 +57555,11 @@ $!LineMap  [1984]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58095,11 +57584,11 @@ $!LineMap  [1985]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58124,11 +57613,11 @@ $!LineMap  [1986]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58153,11 +57642,11 @@ $!LineMap  [1987]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58182,11 +57671,11 @@ $!LineMap  [1988]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58211,11 +57700,11 @@ $!LineMap  [1989]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58240,11 +57729,11 @@ $!LineMap  [1990]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58269,11 +57758,11 @@ $!LineMap  [1991]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58298,11 +57787,11 @@ $!LineMap  [1992]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58327,11 +57816,11 @@ $!LineMap  [1993]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58356,11 +57845,11 @@ $!LineMap  [1994]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58385,11 +57874,11 @@ $!LineMap  [1995]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58414,11 +57903,11 @@ $!LineMap  [1996]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58443,11 +57932,11 @@ $!LineMap  [1997]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58472,11 +57961,11 @@ $!LineMap  [1998]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58501,11 +57990,11 @@ $!LineMap  [1999]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58530,11 +58019,11 @@ $!LineMap  [2000]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58559,11 +58048,11 @@ $!LineMap  [2001]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58588,11 +58077,11 @@ $!LineMap  [2002]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58617,11 +58106,11 @@ $!LineMap  [2003]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58646,11 +58135,11 @@ $!LineMap  [2004]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58675,11 +58164,11 @@ $!LineMap  [2005]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58704,11 +58193,11 @@ $!LineMap  [2006]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58733,11 +58222,11 @@ $!LineMap  [2007]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58762,11 +58251,11 @@ $!LineMap  [2008]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58791,11 +58280,11 @@ $!LineMap  [2009]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58820,11 +58309,11 @@ $!LineMap  [2010]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58849,11 +58338,11 @@ $!LineMap  [2011]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58878,11 +58367,11 @@ $!LineMap  [2012]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58907,11 +58396,11 @@ $!LineMap  [2013]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58936,11 +58425,11 @@ $!LineMap  [2014]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58965,11 +58454,11 @@ $!LineMap  [2015]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -58994,11 +58483,11 @@ $!LineMap  [2016]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59023,11 +58512,11 @@ $!LineMap  [2017]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59052,11 +58541,11 @@ $!LineMap  [2018]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59081,11 +58570,11 @@ $!LineMap  [2019]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59110,11 +58599,11 @@ $!LineMap  [2020]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59139,11 +58628,11 @@ $!LineMap  [2021]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59168,11 +58657,11 @@ $!LineMap  [2022]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59197,11 +58686,11 @@ $!LineMap  [2023]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59226,11 +58715,11 @@ $!LineMap  [2024]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59255,11 +58744,11 @@ $!LineMap  [2025]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59284,11 +58773,11 @@ $!LineMap  [2026]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59313,11 +58802,11 @@ $!LineMap  [2027]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59342,11 +58831,11 @@ $!LineMap  [2028]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59371,11 +58860,11 @@ $!LineMap  [2029]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59400,11 +58889,11 @@ $!LineMap  [2030]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59429,11 +58918,11 @@ $!LineMap  [2031]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59458,11 +58947,11 @@ $!LineMap  [2032]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59487,11 +58976,11 @@ $!LineMap  [2033]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59516,11 +59005,11 @@ $!LineMap  [2034]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59545,11 +59034,11 @@ $!LineMap  [2035]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59574,11 +59063,11 @@ $!LineMap  [2036]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59603,11 +59092,11 @@ $!LineMap  [2037]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59632,11 +59121,11 @@ $!LineMap  [2038]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59661,11 +59150,11 @@ $!LineMap  [2039]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59690,11 +59179,11 @@ $!LineMap  [2040]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59719,11 +59208,11 @@ $!LineMap  [2041]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59748,11 +59237,11 @@ $!LineMap  [2042]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59777,11 +59266,11 @@ $!LineMap  [2043]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59806,11 +59295,11 @@ $!LineMap  [2044]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59835,11 +59324,11 @@ $!LineMap  [2045]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59864,11 +59353,11 @@ $!LineMap  [2046]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59893,11 +59382,11 @@ $!LineMap  [2047]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59922,11 +59411,11 @@ $!LineMap  [2048]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59951,11 +59440,11 @@ $!LineMap  [2049]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -59980,11 +59469,11 @@ $!LineMap  [2050]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -60009,11 +59498,11 @@ $!LineMap  [2051]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -60038,11 +59527,11 @@ $!LineMap  [2052]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -60067,11 +59556,11 @@ $!LineMap  [2053]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -60096,11 +59585,11 @@ $!LineMap  [2054]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -60125,11 +59614,11 @@ $!LineMap  [2055]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -60154,11 +59643,11 @@ $!LineMap  [2056]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -60183,11 +59672,11 @@ $!LineMap  [2057]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -60212,11 +59701,11 @@ $!LineMap  [2058]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -60241,11 +59730,11 @@ $!LineMap  [2059]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -60270,11 +59759,11 @@ $!LineMap  [2060]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -60299,11 +59788,11 @@ $!LineMap  [2061]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -60328,11 +59817,11 @@ $!LineMap  [2062]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -60357,11 +59846,11 @@ $!LineMap  [2063]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -60386,11 +59875,11 @@ $!LineMap  [2064]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -60415,11 +59904,11 @@ $!LineMap  [2065]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -60444,11 +59933,11 @@ $!LineMap  [2066]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -60473,11 +59962,11 @@ $!LineMap  [2067]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -60502,11 +59991,11 @@ $!LineMap  [2068]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -60531,11 +60020,11 @@ $!LineMap  [2069]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -60560,11 +60049,11 @@ $!LineMap  [2070]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -60589,11 +60078,11 @@ $!LineMap  [2071]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -60618,11 +60107,11 @@ $!LineMap  [2072]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -62967,7 +62456,7 @@ $!LineMap  [2153]
     }
   Lines
     {
-    Color = Black
+    Color = Custom11
     }
   Symbols
     {
@@ -62996,7 +62485,7 @@ $!LineMap  [2154]
     }
   Lines
     {
-    Color = Black
+    Color = Custom11
     }
   Symbols
     {
@@ -63025,7 +62514,7 @@ $!LineMap  [2155]
     }
   Lines
     {
-    Color = Black
+    Color = Custom11
     }
   Symbols
     {
@@ -63054,7 +62543,7 @@ $!LineMap  [2156]
     }
   Lines
     {
-    Color = Black
+    Color = Custom11
     }
   Symbols
     {
@@ -63083,7 +62572,7 @@ $!LineMap  [2157]
     }
   Lines
     {
-    Color = Black
+    Color = Custom11
     }
   Symbols
     {
@@ -63112,7 +62601,7 @@ $!LineMap  [2158]
     }
   Lines
     {
-    Color = Black
+    Color = Custom11
     }
   Symbols
     {
@@ -63141,7 +62630,7 @@ $!LineMap  [2159]
     }
   Lines
     {
-    Color = Black
+    Color = Custom11
     }
   Symbols
     {
@@ -63170,7 +62659,7 @@ $!LineMap  [2160]
     }
   Lines
     {
-    Color = Black
+    Color = Custom11
     }
   Symbols
     {
@@ -63199,7 +62688,7 @@ $!LineMap  [2161]
     }
   Lines
     {
-    Color = Black
+    Color = Custom11
     }
   Symbols
     {
@@ -63228,7 +62717,7 @@ $!LineMap  [2162]
     }
   Lines
     {
-    Color = Black
+    Color = Custom11
     }
   Symbols
     {
@@ -68477,6 +67966,7 @@ $!LineMap  [2343]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -68506,6 +67996,7 @@ $!LineMap  [2344]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -68535,6 +68026,7 @@ $!LineMap  [2345]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -68564,6 +68056,7 @@ $!LineMap  [2346]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -68593,6 +68086,7 @@ $!LineMap  [2347]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -68622,6 +68116,7 @@ $!LineMap  [2348]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -68651,6 +68146,7 @@ $!LineMap  [2349]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -68680,6 +68176,7 @@ $!LineMap  [2350]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -68709,6 +68206,7 @@ $!LineMap  [2351]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -68738,6 +68236,7 @@ $!LineMap  [2352]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -68767,6 +68266,7 @@ $!LineMap  [2353]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -68796,6 +68296,7 @@ $!LineMap  [2354]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -68825,6 +68326,7 @@ $!LineMap  [2355]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -68854,6 +68356,7 @@ $!LineMap  [2356]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -68883,6 +68386,7 @@ $!LineMap  [2357]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -68912,6 +68416,7 @@ $!LineMap  [2358]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -68941,6 +68446,7 @@ $!LineMap  [2359]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -68970,6 +68476,7 @@ $!LineMap  [2360]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -68999,6 +68506,7 @@ $!LineMap  [2361]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69028,6 +68536,7 @@ $!LineMap  [2362]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69057,6 +68566,7 @@ $!LineMap  [2363]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69086,6 +68596,7 @@ $!LineMap  [2364]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69115,6 +68626,7 @@ $!LineMap  [2365]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69144,6 +68656,7 @@ $!LineMap  [2366]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69173,6 +68686,7 @@ $!LineMap  [2367]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69202,6 +68716,7 @@ $!LineMap  [2368]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69231,6 +68746,7 @@ $!LineMap  [2369]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69260,6 +68776,7 @@ $!LineMap  [2370]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69289,6 +68806,7 @@ $!LineMap  [2371]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69318,6 +68836,7 @@ $!LineMap  [2372]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69347,6 +68866,7 @@ $!LineMap  [2373]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69376,6 +68896,7 @@ $!LineMap  [2374]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69405,6 +68926,7 @@ $!LineMap  [2375]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69434,6 +68956,7 @@ $!LineMap  [2376]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69463,6 +68986,7 @@ $!LineMap  [2377]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69492,6 +69016,7 @@ $!LineMap  [2378]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69521,6 +69046,7 @@ $!LineMap  [2379]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69550,6 +69076,7 @@ $!LineMap  [2380]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69579,6 +69106,7 @@ $!LineMap  [2381]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69608,6 +69136,7 @@ $!LineMap  [2382]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69637,6 +69166,7 @@ $!LineMap  [2383]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69666,6 +69196,7 @@ $!LineMap  [2384]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69695,6 +69226,7 @@ $!LineMap  [2385]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69724,6 +69256,7 @@ $!LineMap  [2386]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69753,6 +69286,7 @@ $!LineMap  [2387]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69782,6 +69316,7 @@ $!LineMap  [2388]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69811,6 +69346,7 @@ $!LineMap  [2389]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69840,6 +69376,7 @@ $!LineMap  [2390]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69869,6 +69406,7 @@ $!LineMap  [2391]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69898,6 +69436,7 @@ $!LineMap  [2392]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69927,6 +69466,7 @@ $!LineMap  [2393]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69956,6 +69496,7 @@ $!LineMap  [2394]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -69985,6 +69526,7 @@ $!LineMap  [2395]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -70014,6 +69556,7 @@ $!LineMap  [2396]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -70043,6 +69586,7 @@ $!LineMap  [2397]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -70072,6 +69616,7 @@ $!LineMap  [2398]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -70101,6 +69646,7 @@ $!LineMap  [2399]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -70130,6 +69676,7 @@ $!LineMap  [2400]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -70159,6 +69706,7 @@ $!LineMap  [2401]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -70188,6 +69736,7 @@ $!LineMap  [2402]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -71957,6 +71506,7 @@ $!LineMap  [2463]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -71986,6 +71536,7 @@ $!LineMap  [2464]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72015,6 +71566,7 @@ $!LineMap  [2465]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72044,6 +71596,7 @@ $!LineMap  [2466]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72073,6 +71626,7 @@ $!LineMap  [2467]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72102,6 +71656,7 @@ $!LineMap  [2468]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72131,6 +71686,7 @@ $!LineMap  [2469]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72160,6 +71716,7 @@ $!LineMap  [2470]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72189,6 +71746,7 @@ $!LineMap  [2471]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72218,6 +71776,7 @@ $!LineMap  [2472]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72247,6 +71806,7 @@ $!LineMap  [2473]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72276,6 +71836,7 @@ $!LineMap  [2474]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72305,6 +71866,7 @@ $!LineMap  [2475]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72334,6 +71896,7 @@ $!LineMap  [2476]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72363,6 +71926,7 @@ $!LineMap  [2477]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72392,6 +71956,7 @@ $!LineMap  [2478]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72421,6 +71986,7 @@ $!LineMap  [2479]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72450,6 +72016,7 @@ $!LineMap  [2480]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72479,6 +72046,7 @@ $!LineMap  [2481]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72508,6 +72076,7 @@ $!LineMap  [2482]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72537,6 +72106,7 @@ $!LineMap  [2483]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72566,6 +72136,7 @@ $!LineMap  [2484]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72595,6 +72166,7 @@ $!LineMap  [2485]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72624,6 +72196,7 @@ $!LineMap  [2486]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72653,6 +72226,7 @@ $!LineMap  [2487]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72682,6 +72256,7 @@ $!LineMap  [2488]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72711,6 +72286,7 @@ $!LineMap  [2489]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72740,6 +72316,7 @@ $!LineMap  [2490]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72769,6 +72346,7 @@ $!LineMap  [2491]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72798,6 +72376,7 @@ $!LineMap  [2492]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72827,6 +72406,7 @@ $!LineMap  [2493]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72856,6 +72436,7 @@ $!LineMap  [2494]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72885,6 +72466,7 @@ $!LineMap  [2495]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72914,6 +72496,7 @@ $!LineMap  [2496]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72943,6 +72526,7 @@ $!LineMap  [2497]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -72972,6 +72556,7 @@ $!LineMap  [2498]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -73001,6 +72586,7 @@ $!LineMap  [2499]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -73030,6 +72616,7 @@ $!LineMap  [2500]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -73059,6 +72646,7 @@ $!LineMap  [2501]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -73088,6 +72676,7 @@ $!LineMap  [2502]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -73117,6 +72706,7 @@ $!LineMap  [2503]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -73146,6 +72736,7 @@ $!LineMap  [2504]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -73175,6 +72766,7 @@ $!LineMap  [2505]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -73204,6 +72796,7 @@ $!LineMap  [2506]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -73233,6 +72826,7 @@ $!LineMap  [2507]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -73262,6 +72856,7 @@ $!LineMap  [2508]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -73291,6 +72886,7 @@ $!LineMap  [2509]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -73320,6 +72916,7 @@ $!LineMap  [2510]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -73349,6 +72946,7 @@ $!LineMap  [2511]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -73378,6 +72976,7 @@ $!LineMap  [2512]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -73407,6 +73006,7 @@ $!LineMap  [2513]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -73436,6 +73036,7 @@ $!LineMap  [2514]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -73465,6 +73066,7 @@ $!LineMap  [2515]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
@@ -73494,11 +73096,11 @@ $!LineMap  [2516]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -73523,11 +73125,11 @@ $!LineMap  [2517]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -73552,11 +73154,11 @@ $!LineMap  [2518]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -73581,11 +73183,11 @@ $!LineMap  [2519]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -73610,11 +73212,11 @@ $!LineMap  [2520]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -73639,11 +73241,11 @@ $!LineMap  [2521]
     }
   Lines
     {
+    Show = No
     Color = Black
     }
   Symbols
     {
-    Show = No
     Color = Custom11
     FillMode = UseLineColor
     FillColor = Red
@@ -74092,6 +73694,20 @@ $!XYLineAxis
     }
 $!LinePlotLayers 
   ShowSymbols = Yes
-$!FrameControl ActivateByNumber
-  Frame = 1
+$!AttachText 
+  AnchorPos
+    {
+    X = 16.64644073180659
+    Y = 89.17599169123559
+    }
+  TextShape
+    {
+    IsBold = No
+    Height = 24
+    }
+  Box
+    {
+    BoxType = Filled
+    }
+  Text = '027.04'
 $!SetStyleBase Config
