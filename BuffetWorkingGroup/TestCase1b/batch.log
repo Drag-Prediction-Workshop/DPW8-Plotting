@@ -44,55 +44,25 @@ ACTION: LoadAddOn
 ACTION: LoadAddOn
 ACTION: OpenLayout: /Users/bwpomero/crm/hs/dpw-8/github/DPW8-Plotting/BuffetWorkingGroup/TestCase1b/cuts.lay
 ACTION: DrawGraphics: YES
-ACTION: ReadStyleSheet: sty/cuts/outlier/outlier1.sty
+ACTION: ReadStyleSheet: sty/cuts/alpha1.36.sty
 ACTION: Export
-ACTION: ReadStyleSheet: sty/cuts/outlier/outlier2.sty
+ACTION: ReadStyleSheet: sty/cuts/alpha1.50.sty
 ACTION: Export
-ACTION: ReadStyleSheet: sty/cuts/outlier/outlier3.sty
+ACTION: ReadStyleSheet: sty/cuts/alpha2.50.sty
 ACTION: Export
-ACTION: ReadStyleSheet: sty/cuts/outlier/outlier4.sty
+ACTION: ReadStyleSheet: sty/cuts/alpha3.00.sty
 ACTION: Export
-ACTION: ReadStyleSheet: sty/cuts/outlier/outlier5.sty
+ACTION: ReadStyleSheet: sty/cuts/alpha3.10.sty
 ACTION: Export
-ACTION: ReadStyleSheet: sty/cuts/outlier/outlier6.sty
+ACTION: ReadStyleSheet: sty/cuts/alpha3.25.sty
 ACTION: Export
-ACTION: ReadStyleSheet: sty/cuts/outlier/outlier7.sty
+ACTION: ReadStyleSheet: sty/cuts/alpha3.40.sty
 ACTION: Export
-ACTION: ReadStyleSheet: sty/cuts/outlier/outlier8.sty
+ACTION: ReadStyleSheet: sty/cuts/alpha3.50.sty
 ACTION: Export
-ACTION: ReadStyleSheet: sty/cuts/outlier/outlier9.sty
+ACTION: ReadStyleSheet: sty/cuts/alpha3.60.sty
 ACTION: Export
-ACTION: ReadStyleSheet: sty/cuts/outlier/outlier10.sty
+ACTION: ReadStyleSheet: sty/cuts/alpha3.90.sty
 ACTION: Export
-ACTION: ReadStyleSheet: sty/cuts/outlier/outlier11.sty
-ACTION: Export
-ACTION: ReadStyleSheet: sty/cuts/outlier/outlier12.sty
-ACTION: Export
-ACTION: ReadStyleSheet: sty/cuts/outlier/outlier13.sty
-ACTION: Export
-ACTION: ReadStyleSheet: sty/cuts/outlier/outlier14.sty
-ACTION: Export
-ACTION: ReadStyleSheet: sty/cuts/outlier/outlier15.sty
-ACTION: Export
-ACTION: ReadStyleSheet: sty/cuts/outlier/outlier16.sty
-ACTION: Export
-ACTION: ReadStyleSheet: sty/cuts/outlier/outlier17.sty
-ACTION: Export
-ACTION: ReadStyleSheet: sty/cuts/outlier/outlier18.sty
-ACTION: Export
-ACTION: ReadStyleSheet: sty/cuts/outlier/outlier19.sty
-ACTION: Export
-ACTION: ReadStyleSheet: sty/cuts/outlier/outlier20.sty
-ACTION: Export
-ACTION: ReadStyleSheet: sty/cuts/outlier/outlier22.sty
-ACTION: Export
-ACTION: ReadStyleSheet: sty/cuts/outlier/outlier23.sty
-ACTION: Export
-ACTION: ReadStyleSheet: sty/cuts/outlier/outlier24.sty
-ACTION: Export
-ACTION: ReadStyleSheet: sty/cuts/outlier/outlier25.sty
-ACTION: Export
-ACTION: ReadStyleSheet: sty/cuts/outlier/outlier26.sty
-ACTION: Export
-ACTION: ReadStyleSheet: sty/cuts/outlier/outlier27.sty
+ACTION: ReadStyleSheet: sty/cuts/rans_sa_alpha3.10.sty
 ACTION: Export
