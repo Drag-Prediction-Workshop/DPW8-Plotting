@@ -5,7 +5,7 @@
 #####################################################################
 
 # Temporal Scheme
-$!VarSet |Rans| = '1-17, 18-34, 35-51, 52-68, 69-85, 86-101, 102-117, 118-133, 134-149, 150-165, 169-184, 233-239, 240-246, 247-253, 254-269, 270-285, 286-301, 344-359, 362-377, 378-393, 394-408, 409-427, 428-443, 444-459, 460-475, 476-494, 498-513, 514-529, 530-545, 546-561, 562-577, 594-609, 610-625, 626-641, 642-667, 658-673, 695-703, 704-712, 714-728, 729-743, 744-759, 760-765, 766-781, 782-797, 798-813, 814-829, 830-845, 846-861, 862-869, 870-878, 895-910'
+$!VarSet |Rans| = '1-17, 18-34, 35-51, 52-68, 69-85, 86-101, 102-117, 118-133, 134-149, 150-165, 169-184, 233-239, 240-246, 247-253, 254-269, 270-285, 286-301, 344-359, 362-377, 378-393, 394-408, 409-427, 428-443, 444-459, 460-475, 476-494, 498-513, 514-529, 530-545, 546-561, 562-577, 594-609, 610-625, 626-641, 642-667, 668-673, 695-703, 704-712, 714-728, 729-743, 744-759, 760-765, 766-781, 782-797, 798-813, 814-829, 830-845, 846-861, 862-869, 870-878, 895-910'
 $!VarSet |Urans| = '168, 185-200, 302-315, 316-329, 330-343, 360, 676-694, 713, 879-887, 888-894, 911-921'
 $!VarSet |Hrles| = '166, 167, 201-216, 361'
 $!VarSet |Wmles| = '495-497'
@@ -13,7 +13,21 @@ $!VarSet |Dhrl|  = '217-232'
 
 
 # Turbulence Model
-$!VarSet |Sa| = '1-17, 18-34, 52-68, 69-85, 86-101, 102-117, 118-133, 134-149, 150-165, 166, 167, 168, 233-239, 240-246, 254-269, 270-285, 286-301, 302-315, 316-329, 330-343, 344-359, 360, 361, 362-377, 378-393, 394-408, 409-427, 498-513, 514-529, 530-545, 546-561, 562-577, 578-593, 594-609, 610-625, 626-641, 642-667, 658-673, 695-703, 704-712, 713, 714-728, 744-759, 760-765, 766-781, 782-797, 798-813, 814-829, 830-845, 846-861, 870-878, 888-894, 895-910, 911-921'
+#$!VarSet |Sa| = '1-17, 18-34, 52-68, 69-85, 86-101, 102-117, 118-133, 134-149, 150-165, 166, 167, 168, 233-239, 240-246, 254-269, 270-285, 286-301, 302-315, 316-329, 330-343, 344-359, 360, 361, 362-377, 378-393, 394-408, 409-427, 498-513, 514-529, 530-545, 546-561, 562-577, 578-593, 594-609, 610-625, 626-641, 642-667, 668-673, 695-703, 704-712, 713, 714-728, 744-759, 760-765, 766-781, 782-797, 798-813, 814-829, 830-845, 846-861, 870-878, 888-894, 895-910, 911-921'
+
+$!VarSet |Sa| = '18-34, 86-101, 134-149, 233-239, 254-269, 302-315, 362-377, 378-393, 394-408, 409-427, 498-513, 546-561, 562-577, 695-703, 704-712, 713, 714-728, 744-759, 760-765, 766-781, 782-797, 798-813, 814-829, 830-845, 870-878'
+#$!VarSet |SaR| = '102-117, 270-285, 316-329'
+#$!VarSet |SaC| = '888-894'
+$!VarSet |SaRC| = '102-117, 270-285, 316-329,888-894'
+#$!VarSet |SaQCR| = '118-133'
+#$!VarSet |SaRQCR| = '240-246, 286-301, 330-343'
+#$!VarSet |SaRCQCR| = '52-68, 69-85, 344-359, 360, 361, 895-910, 911-921'
+$!VarSet |SaRCQCR| = '1-17, 52-68, 69-85, 118-133, 240-246, 286-301, 330-343, 344-359, 360, 361, 895-910, 911-921'
+$!VarSet |Sacomp| = '514-529, 578-593, 594-609, 846-861'
+$!VarSet |SaRCcomp| = '150-165, 168'
+#$!VarSet |SaQCRcomp| = '530-545, 610-625, 626-641'
+#$!VarSet |SaRCQCRcomp| = '642-667, 668-673'
+$!VarSet |SaRCQCRcomp| = '530-545, 610-625, 626-641, 642-667, 668-673'
 $!VarSet |Sst| = '35-51, 201-216, 247-253, 428-443, 444-459, 460-475, 476-494, 676-694, 729-743, 862-869, 879-887'
 $!VarSet |Kw| = '169-184, 185-200, 217-232'
 $!VarSet |Dynamic| = '495-497'
@@ -32,6 +46,12 @@ $!VarSet |Grid9|  = '417, 484, 682'
 $!VarSet |Grid10| = '683'
 $!VarSet |Grid11| = '684'
 
+# Grid type
+$!VarSet |CadenceStructured| = '52-68, 134-149, 150-165, 233-239, 240-246, 247-253, 344-359, 362-377, 428-443, 760-765, 766-781, 862-869, 870-878, 879-887, 888-894'
+$!VarSet |CadenceUnstructured| = '1-17, 18-34, 35-51, 86-101, 102-117, 118-133, 169-184, 185-200, 201-216, 217-232, 378-393, 444-459, 498-513, 514-529, 530-545, 546-561, 562-577, 578-593, 594-609, 610-625, 626-641, 642-667, 668-673, 695-703, 704-712, 713, 714-728, 729-743, 782-797, 798-813, 814-829, 830-845, 846-861, 895-910, 911-921'
+$!VarSet |HeldenAero| = '69-85, 394-408, 460-475'
+$!VarSet |Custom| = '166, 167, 168, 254-269, 270-285, 286-301, 302-315, 316-329, 330-343, 360, 361, 409-427, 476-494, 495-497, 676-694, 744-759'
+
 
 # Alpha
 $!VarSet |Alpha1p36| = '8, 25, 42, 59, 76, 92, 108, 124, 140, 156, 175, 191, 207, 223, 260, 276, 292, 306, 320, 334, 350, 368, 384, 399, 418, 434, 450, 466, 485, 504, 520, 536, 552, 568, 584, 600, 616, 632, 648, 664, 685, 699, 708, 719, 734, 750, 763, 772, 788, 804, 820, 836, 852, 865, 874, 901, 912'
@@ -44,9 +64,6 @@ $!VarSet |Alpha3p40| = '14, 31, 48, 65, 82, 98, 114, 130, 146, 162, 181, 197, 21
 $!VarSet |Alpha3p50| = '15, 32, 49, 66, 83, 99, 115, 131, 147, 163, 182, 198, 214, 230, 267, 283, 299, 313, 327, 341, 357, 375, 391, 406, 425, 441, 457, 473, 492, 511, 527, 543, 559, 575, 591, 607, 623, 639, 655, 671, 692, 726, 741, 757, 779, 795, 811, 827, 843, 859, 885, 892, 908, 919'
 $!VarSet |Alpha3p60| = '16, 33, 50, 67, 84, 100, 116, 132, 148, 164, 183, 199, 215, 231, 268, 284, 300, 314, 328, 342, 358, 376, 392, 407, 426, 442, 458, 474, 493, 512, 528, 544, 560, 576, 592, 608, 624, 640, 656, 672, 693, 727, 742, 758, 780, 796, 812, 828, 844, 860, 886, 893, 909, 920'
 $!VarSet |Alpha3p90| = '17, 34, 51, 68, 85, 101, 117, 133, 149, 165, 184, 200, 216, 232, 269, 285, 301, 315, 329, 343, 359, 377, 393, 408, 427, 443, 459, 475, 494, 513, 529, 545, 561, 577, 593, 609, 625, 641, 657, 673, 694, 728, 743, 759, 781, 797, 813, 829, 845, 861, 887, 894, 910, 921'
-
-
-
 
 #####################################################################
 ### For your reference, here are all of the options... change vlaues below "Display Customizations"
@@ -98,26 +115,36 @@ $!If 0 == 1
 
 $!EndIf
 
-
-
 # Turbulence Model
 $!If 0 == 1
-   $!LineMap [|Sa|]        Lines{Color = Custom9  LineThickness=0.25}
-   $!LineMap [|Sst|]       Lines{Color = Custom10 LineThickness=0.25}
-   $!LineMap [|Kw|]        Lines{Color = Custom11 LineThickness=0.25}
-   $!LineMap [|Dynamic|]   Lines{Color = Custom12 LineThickness=0.25}
+   $!LineMap [|Sa|]          Lines{Color = Custom9   LineThickness=0.25}
+   $!LineMap [|SaRC|]        Lines{Color = Custom10  LineThickness=0.25}
+   $!LineMap [|SaRCQCR|]     Lines{Color = Custom11  LineThickness=0.25}
+   $!LineMap [|Sacomp|]      Lines{Color = Custom12  LineThickness=0.25}
+   $!LineMap [|SaRCcomp|]    Lines{Color = Custom13  LineThickness=0.25}
+   $!LineMap [|SaRCQCRcomp|] Lines{Color = Custom14  LineThickness=0.25}
+   
+   $!LineMap [|Sst|]         Lines{Color = Custom15 LineThickness=0.25}
+   $!LineMap [|Kw|]          Lines{Color = Custom16 LineThickness=0.25}
+   $!LineMap [|Dynamic|]     Lines{Color = Custom17 LineThickness=0.25}
 
-   $!LineMap [|Sa|]        Symbols{Color = Custom9  FillMode = UseLineColor SymbolShape{GeomShape = Square  } Size = 1.75 }
-   $!LineMap [|Sst|]       Symbols{Color = Custom10 FillMode = UseLineColor SymbolShape{GeomShape = Del     } Size = 1.75 }
-   $!LineMap [|Kw|]        Symbols{Color = Custom11 FillMode = UseLineColor SymbolShape{GeomShape = Grad    } Size = 1.75 }
-   $!LineMap [|Dynamic|]   Symbols{Color = Custom12 FillMode = UseLineColor SymbolShape{GeomShape = RTri    } Size = 1.75 }
+   $!LineMap [|Sa|]          Symbols{Color = Custom9   FillMode = UseLineColor SymbolShape{GeomShape = Square  } Size = 1.75 }
+   $!LineMap [|SaRC|]        Symbols{Color = Custom10  FillMode = UseLineColor SymbolShape{GeomShape = Square  } Size = 1.75 }
+   $!LineMap [|SaRCQCR|]     Symbols{Color = Custom11  FillMode = UseLineColor SymbolShape{GeomShape = Square  } Size = 1.75 }
+   $!LineMap [|Sacomp|]      Symbols{Color = Custom12  FillMode = UseLineColor SymbolShape{GeomShape = Square  } Size = 1.75 }
+   $!LineMap [|SaRCcomp|]    Symbols{Color = Custom13  FillMode = UseLineColor SymbolShape{GeomShape = Square  } Size = 1.75 }
+   $!LineMap [|SaRCQCRcomp|] Symbols{Color = Custom14  FillMode = UseLineColor SymbolShape{GeomShape = Square  } Size = 1.75 }
+
+   $!LineMap [|Sst|]         Symbols{Color = Custom15  FillMode = UseLineColor SymbolShape{GeomShape = Del     } Size = 1.75 }
+   $!LineMap [|Kw|]          Symbols{Color = Custom16  FillMode = UseLineColor SymbolShape{GeomShape = Grad    } Size = 1.75 }
+   $!LineMap [|Dynamic|]     Symbols{Color = Custom17  FillMode = UseLineColor SymbolShape{GeomShape = RTri    } Size = 1.75 }
 
 $!EndIf
 
 
 
 # Grid Level
-$!If 1 == 1
+$!If 0 == 1
    $!LineMap [|Grid1|]     Lines{Color = Custom9  LineThickness=0.25}
    $!LineMap [|Grid2|]     Lines{Color = Custom10 LineThickness=0.25}
    $!LineMap [|Grid3|]     Lines{Color = Custom11 LineThickness=0.25}
@@ -143,7 +170,18 @@ $!If 1 == 1
    $!LineMap [|Grid11|]    Symbols{Color = Custom19 FillMode = UseLineColor SymbolShape{IsASCII = Yes ASCIIShape{UseBaseFont = No FontOverride = Greek ASCIIChar = '\d'}} Size = 1.75 }
 $!EndIf
 
+# Grid Type
+$!If 1 == 1
+   $!LineMap [|CadenceStructured|]   Lines{Color = Custom9  LineThickness=0.25}
+   $!LineMap [|CadenceUnstructured|] Lines{Color = Custom10 LineThickness=0.25}
+   $!LineMap [|HeldenAero|]          Lines{Color = Custom11 LineThickness=0.25}
+   $!LineMap [|Custom|]              Lines{Color = Custom12 LineThickness=0.25}
 
+   $!LineMap [|CadenceStructured|]   Symbols{Color = Custom9  FillMode = UseLineColor SymbolShape{GeomShape = Square  } Size = 1.75 }
+   $!LineMap [|CadenceUnstructured|] Symbols{Color = Custom10 FillMode = UseLineColor SymbolShape{GeomShape = Square  } Size = 1.75 }
+   $!LineMap [|HeldenAero|]          Symbols{Color = Custom11 FillMode = UseLineColor SymbolShape{GeomShape = Square  } Size = 1.75 }
+   $!LineMap [|Custom|]              Symbols{Color = Custom12 FillMode = UseLineColor SymbolShape{GeomShape = Square  } Size = 1.75 }
+$!EndIf
 
 # Alpha
 $!If 0 == 1
@@ -171,9 +209,6 @@ $!If 0 == 1
 
 $!EndIf
 
-
-
-
 ########################################################################
 ### Activate Zones
 ########################################################################
@@ -195,10 +230,15 @@ $!ActiveLineMaps  =  []
 #$!ActiveLineMaps += [|Wmles|]
 #$!ActiveLineMaps += [|Dhrl|]
 
-#$!ActiveLineMaps += [|Sa|
-#$!ActiveLineMaps += [|Sst|
-#$!ActiveLineMaps += [|Kw|
-#$!ActiveLineMaps += [|Dynamic|
+#$!ActiveLineMaps += [|Sa|]
+#$!ActiveLineMaps += [|SaRC|]
+#$!ActiveLineMaps += [|SaRCQCR|]
+#$!ActiveLineMaps += [|Sacomp|]
+#$!ActiveLineMaps += [|SaRCcomp|]
+#$!ActiveLineMaps += [|SaRCQCRcomp|]
+#$!ActiveLineMaps += [|Sst|]
+#$!ActiveLineMaps += [|Kw|]
+#$!ActiveLineMaps += [|Dynamic|]
 
 #$!ActiveLineMaps += [|Grid1|]
 #$!ActiveLineMaps += [|Grid2|]
@@ -212,6 +252,11 @@ $!ActiveLineMaps  =  []
 #$!ActiveLineMaps += [|Grid10|]
 #$!ActiveLineMaps += [|Grid11|]
 
+#$!ActiveLineMaps += [|CadenceStructured|]
+#$!ActiveLineMaps += [|CadenceUnstructured|]
+#$!ActiveLineMaps += [|HeldenAero|]
+#$!ActiveLineMaps += [|Custom|]
+
 #$!ActiveLineMaps += [|Alpha1p36|]
 #$!ActiveLineMaps += [|Alpha1p50|]
 #$!ActiveLineMaps += [|Alpha2p50|]
@@ -221,21 +266,26 @@ $!ActiveLineMaps  =  []
 #$!ActiveLineMaps += [|Alpha3p40|]
 #$!ActiveLineMaps += [|Alpha3p50|]
 #$!ActiveLineMaps += [|Alpha3p60|]
-#$!ActiveLineMaps += [|Alpha3p90|]
+$!ActiveLineMaps += [|Alpha3p90|]
 
 
 
 # Turning off zones
 #$!ActiveLineMaps -= [|Rans|]
-#$!ActiveLineMaps -= [|Urans|]
-#$!ActiveLineMaps -= [|Hrles|]
-#$!ActiveLineMaps -= [|Wmles|]
-#$!ActiveLineMaps -= [|Dhrl|]
+$!ActiveLineMaps -= [|Urans|]
+$!ActiveLineMaps -= [|Hrles|]
+$!ActiveLineMaps -= [|Wmles|]
+$!ActiveLineMaps -= [|Dhrl|]
 
-#$!ActiveLineMaps -= [|Sa|
-#$!ActiveLineMaps -= [|Sst|
-#$!ActiveLineMaps -= [|Kw|
-#$!ActiveLineMaps -= [|Dynamic|
+#$!ActiveLineMaps -= [|Sa|]
+#$!ActiveLineMaps -= [|SaRC|]
+#$!ActiveLineMaps -= [|SaRCQCR|]
+#$!ActiveLineMaps -= [|Sacomp|]
+#$!ActiveLineMaps -= [|SaRCcomp|]
+#$!ActiveLineMaps -= [|SaRCQCRcomp|]
+#$!ActiveLineMaps -= [|Sst|]
+#$!ActiveLineMaps -= [|Kw|]
+#$!ActiveLineMaps -= [|Dynamic|]
 
 #$!ActiveLineMaps -= [|Grid1|]
 #$!ActiveLineMaps -= [|Grid2|]
@@ -248,6 +298,11 @@ $!ActiveLineMaps  =  []
 #$!ActiveLineMaps -= [|Grid9|]
 #$!ActiveLineMaps -= [|Grid10|]
 #$!ActiveLineMaps -= [|Grid11|]
+
+#$!ActiveLineMaps -= [|CadenceStructured|]
+#$!ActiveLineMaps -= [|CadenceUnstructured|]
+#$!ActiveLineMaps -= [|HeldenAero|]
+#$!ActiveLineMaps -= [|Custom|]
 
 #$!ActiveLineMaps -= [|Alpha1p36|]
 #$!ActiveLineMaps -= [|Alpha1p50|]

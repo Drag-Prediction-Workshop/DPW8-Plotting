@@ -37,7 +37,7 @@ $!VarSet |LFDSFN18| = '"../../../DPW8-Buffet/TestCase1a/018_zCFD_steadyRANS/01_S
 $!VarSet |LFDSVL18| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT";"CL_AVG" "CD_TOT";"CD_AVG" "CM_TOT";"CM_AVG" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E" "CL_RMS" "CD_RMS" "CM_RMS"'
 $!VarSet |LFDSFN19| = '"../../../DPW8-Buffet/TestCase1a/020_DukeUniversity/01_Fluent_CadenceStructured_SA/DPW8-AePW4_ForceMoment_v5.dat" "../../../DPW8-Buffet/TestCase1a/020_DukeUniversity/02_Fluent_CadenceUnstructured_SA/DPW8-AePW4_ForceMoment_v5.dat" "../../../DPW8-Buffet/TestCase1a/020_DukeUniversity/03_FUN3D_CadenceStructured_SAneg/DPW8-AePW4_ForceMoment_v5.dat" "../../../DPW8-Buffet/TestCase1a/020_DukeUniversity/04_FUN3D_CadenceUnstructured_SAneg/DPW8-AePW4_ForceMoment_v5.dat"'
 $!VarSet |LFDSVL19| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT";"CL_AVG" "CD_TOT";"CD_AVG" "CM_TOT";"CM_AVG" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E" "CL_RMS" "CD_RMS" "CM_RMS"'
-$!VarSet |LFDSFN20| = '"../../../DPW8-Buffet/TestCase1a/023_PolytechniqueMontreal/01_SA/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSFN20| = '"../../../DPW8-Buffet/TestCase1a/023_PolytechniqueMontreal/02_SA_BestPractice/DPW8-AePW4_ForceMoment_v5_mesh.dat"'
 $!VarSet |LFDSVL20| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT";"CL_AVG" "CD_TOT";"CD_AVG" "CM_TOT";"CM_AVG" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E" "CL_RMS" "CD_RMS" "CM_RMS"'
 $!VarSet |LFDSFN21| = '"../../../DPW8-Buffet/TestCase1a/024_UniversityofLiverpool/01_SAneg/DPW8-AePW4_ForceMoment_v5.dat"'
 $!VarSet |LFDSVL21| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT";"CL_AVG" "CD_TOT";"CD_AVG" "CM_TOT";"CM_AVG" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E" "CL_RMS" "CD_RMS" "CM_RMS"'
@@ -47,7 +47,7 @@ $!VarSet |LFDSFN23| = '"../../../DPW8-Buffet/TestCase1a/027_RMIT/01_SST/DPW8-AeP
 $!VarSet |LFDSVL23| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT";"CL_AVG" "CD_TOT";"CD_AVG" "CM_TOT";"CM_AVG" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E" "CL_RMS" "CD_RMS" "CM_RMS"'
 $!VarSet |LFDSFN24| = '"../../../DPW8-Buffet/TestCase1b/027_RMIT/03_SST/DPW8-AePW4_URANS_ForceMoment_v5.dat" "../../../DPW8-Buffet/TestCase1b/027_RMIT/04_SA/DPW8-AePW4_URANS_ForceMoment_v5.dat"'
 $!VarSet |LFDSVL24| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT";"CL_AVG" "CD_TOT";"CD_AVG" "CM_TOT";"CM_AVG" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E" "CL_RMS" "CD_RMS" "CM_RMS"'
-$!VarSet |LFDSFN25| = '"../../../DPW8-Buffet/TestCase1a/021_CREATE/01_SA/DPW8-AePW4_ForceMoment_v5.dat" "../../../DPW8-Buffet/TestCase1b/021_CREATE/02_URANS/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSFN25| = '"../../../DPW8-Buffet/TestCase1a/021_CREATE/01_SA/DPW8-AePW4_ForceMoment_v5.dat" "../../../DPW8-Buffet/TestCase1a/021_CREATE/01_SA/DPW8-AePW4_ForceMoment_v5.dat"'
 $!VarSet |LFDSVL25| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT";"CL_AVG" "CD_TOT";"CD_AVG" "CM_TOT";"CM_AVG" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E" "CL_RMS" "CD_RMS" "CM_RMS"'
 $!SetStyleBase Factory
 $!BasicColor 
@@ -561,10 +561,10 @@ $!FrameLayout
   HeaderColor = Red
   XYPos
     {
-    X = 1
+    X = 0
     Y = 0.25
     }
-  Width = 9
+  Width = 10
   Height = 8
 $!ThreeDAxis 
   AspectRatioLimit = 25
