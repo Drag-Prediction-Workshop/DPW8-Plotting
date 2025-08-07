@@ -1,24 +1,25 @@
 #!MC 1410
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #
-#   DPW-8/AePW-4 SECTIONAL CUTTER (Version 2 - OcTober 16, 2024)
-#      To BE USED WITH:
+#   DPW-8/AePW-4 SECTIONAL CUTTER (Version 2 - October 16, 2024)
+#      TO BE USED WITH:
 #          DPW8-AePW4_SectionalCuts_v5.dat
 #
 #       INSTRUCTIONS:
-#                  1.   Load Fuselage and Wing Surface Zones inTo Tecplot
+#                  1.   Load Fuselage and Wing Surface Zones into Tecplot
 #                  2.   Assign ParticipantID variable as the identIfier of the dataset
-#                  3.   Assign OutputFileName variable To the path where you would like the data
-#                  4.   Assign (Xvar,Yvar,Zvar) variables To the variable number in dataset (typically 1,2,3)
-#                  5.   Assign CPvar    variable To the variable number in dataset (If it exists); either CPvar or Mvar must exist
-#                  6.   Assign Mvar     variable To the variable number in dataset (If it exists); either CPvar or Mvar must exist
-#                  7.   Assign CPRMSvar variable To the variable number in dataset (If it exists)
-#                  8.   Assign MRMSvar  variable To the variable number in dataset (If it exists)
-#                  9.   Assign BodyMaps variable To define which zones define the fuselage surface(s)
-#                 10.   Assign WingMaps variable To define which zones define the wing surface(s)
-#                 11.   Assign PlotTime variable (If multiple time steps are included in dataset) To define which solution time should be used; set To 999999 If only one time step is loaded inTo the Tecplot session
-#                 12.   Assemble boundary-layer profile data inTo data form
+#                  3.   Assign OutputFileName variable to the path where you would like the data
+#                  4.   Assign (Xvar,Yvar,Zvar) variables to the variable number in dataset (typically 1,2,3)
+#                  5.   Assign CPvar    variable to the variable number in dataset (if it exists); either CPvar or Mvar must exist
+#                  6.   Assign Mvar     variable to the variable number in dataset (if it exists); either CPvar or Mvar must exist
+#                  7.   Assign CPRMSvar variable to the variable number in dataset (if it exists)
+#                  8.   Assign MRMSvar  variable to the variable number in dataset (if it exists)
+#                  9.   Assign BodyMaps variable to define which zones define the fuselage surface(s)
+#                 10.   Assign WingMaps variable to define which zones define the wing surface(s)
+#                 11.   Assign PlotTime variable (if multiple time steps are included in dataset) to define which solution time should be used; set to 999999 if only one time step is loaded into the Tecplot session
+#                 12.   Assemble boundary-layer profile data into data form
 #                       DPW8-AePW4_Profiles_v1.dat
+#                 13.   Note: This macro requires Tecplot 360 2020R2 and beyond as variables are referenced by name instead of index number
 #
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 $!DrawGraphics False
@@ -26,10 +27,10 @@ $!DrawGraphics False
 #^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #
 #            USER CUSTOM READ DATA COMMAND
-#            - Go To Scripting --> Record Macro
-#            - Manually read your dataset and sTop recording
+#            - Go to Scripting --> Record Macro
+#            - Manually read your dataset and stop recording
 #            - Copy the resulting macro command here
-#            - Note the required variables for entry below (variable numbers, Maps, etc.)
+#            - Note the required variables for entry below (variable numbers, maps, etc.)
 #
 #$!ReadDataSet ...
 #  ...
@@ -54,22 +55,22 @@ $!VarSet |OutputFileName|      = 'profiles.dat' # File name
 #^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #
-$!VarSet |Xvar|     =  1      # Variable number To use for X coordinate (running from fuselage nose To tail)
-$!VarSet |Yvar|     =  2      # Variable number To use for Y coordinate (running from symmetry plane To wing tip)
-$!VarSet |Zvar|     =  3      # Variable number To use for Z coordinate (running from fuselage keel To crown)
-$!VarSet |CPvar|    =  4      # Variable number To use for Cp
-$!VarSet |Mvar|     =  5      # Variable number To use for Mach number
-$!VarSet |CPRMSvar| =  ''     # Variable number To use for Cp root mean square, If available; use '' If not available
-$!VarSet |MRMSvar|  =  ''     # Variable number To use for Mach number root mean square, If available; use '' If not available
+$!VarSet |Xvar|     =  1      # Variable number to use for X coordinate (running from fuselage nose to tail)
+$!VarSet |Yvar|     =  2      # Variable number to use for Y coordinate (running from symmetry plane to wing tip)
+$!VarSet |Zvar|     =  3      # Variable number to use for Z coordinate (running from fuselage keel to crown)
+$!VarSet |CPvar|    =  4      # Variable number to use for Cp
+$!VarSet |Mvar|     =  5      # Variable number to use for Mach number
+$!VarSet |CPRMSvar| =  ''     # Variable number to use for Cp root mean square, If available; use '' If not available
+$!VarSet |MRMSvar|  =  ''     # Variable number to use for Mach number root mean square, If available; use '' If not available
 
-$!VarSet |BodyMaps| = '5'     # Zone numbers for the body/fuselage surface ('1-2','1,3,5-6',etc.)... will need To be the same as a wing map If a specIfic body map does not exist
+$!VarSet |BodyMaps| = '5'     # Zone numbers for the body/fuselage surface ('1-2','1,3,5-6',etc.)... will need to be the same as a wing map If a specIfic body map does not exist
 $!VarSet |WingMaps| = '6'     # Zone numbers for the wing surface          ('1-2','1,3,5-6',etc.)
 $!VarSet |VolMaps|  = '1'     # Zone numbers for the volume                ('1-2','1,3,5-6',etc.)
-$!VarSet |PlotTime| = ''      # NoTE: Use |PlotTime| == '' If no solution time needs To be set.
+$!VarSet |PlotTime| = ''      # NoTE: Use |PlotTime| == '' If no solution time needs to be set.
 
-$!VarSet |Xrev|      =  0      # Set To 1 ONLY If X-axis is running from fuselage tail To nose (negative drag direction)
-$!VarSet |Yrev|      =  0      # Set To 1 ONLY If Y-axis is running from wing tip To the symmetry plane
-$!VarSet |Zrev|      =  0      # Set To 1 ONLY If Z-axis is running from fuselage crown To keel (negative lIft direction)
+$!VarSet |Xrev|      =  0      # Set to 1 ONLY If X-axis is running from fuselage tail to nose (negative drag direction)
+$!VarSet |Yrev|      =  0      # Set to 1 ONLY If Y-axis is running from wing tip to the symmetry plane
+$!VarSet |Zrev|      =  0      # Set to 1 ONLY If Z-axis is running from fuselage crown to keel (negative lIft direction)
 
 
 #^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -80,9 +81,9 @@ $!VarSet |Zrev|      =  0      # Set To 1 ONLY If Z-axis is running from fuselag
 #^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-$!SetStyleBase FacTory
+$!SetStyleBase Factory
 $!GlobalPaper
-  PaperSizeInfo { Letter { Width = 8.5 Height = 11 LeftHardClipOffset = 0.125 RightHardClipOffset = 0.125 TopHardClipOffset = 0.125 BotTomHardClipOffset = 0.125 } }
+  PaperSizeInfo { Letter { Width = 8.5 Height = 11 LeftHardClipOffset = 0.125 RightHardClipOffset = 0.125 TopHardClipOffset = 0.125 BottomHardClipOffset = 0.125 } }
 $!Page
   Name = 'Untitled'
   PaperAttributes
@@ -112,9 +113,9 @@ $!PlotType = Cartesian3D
 $!ThreeDAxis
   AspectRatioLimit = 25
   BoxAspectRatioLimit = 25
-  XDetail { VarNum = |Xvar| ShowAxis = No RangeMin = 0.0 RangeMax = 1.0 GRSpacing = 10 AxisLine { Edge = 2 } }
-  YDetail { VarNum = |Yvar| ShowAxis = No RangeMin = 0.0 RangeMax = 1.0 GRSpacing = 10 AxisLine { Edge = 3 } }
-  ZDetail { VarNum = |Zvar| ShowAxis = No RangeMin = 0.0 RangeMax = 1.0 GRSpacing =  5 AxisLine { Edge = 2 } }
+  XDetail { VarNum = |Xvar| ShowAxis = No RangeMin = 0.0 RangeMax = 1.0 GrSpacing = 10 AxisLine { Edge = 2 } }
+  YDetail { VarNum = |Yvar| ShowAxis = No RangeMin = 0.0 RangeMax = 1.0 GrSpacing = 10 AxisLine { Edge = 2 } }
+  ZDetail { VarNum = |Zvar| ShowAxis = No RangeMin = 0.0 RangeMax = 1.0 GrSpacing = 10 AxisLine { Edge = 2 } }
   AxisMode = XYZDepEndent
   XYDepXToYRatio = 1
   DepXToYRatio = 1
@@ -131,10 +132,13 @@ $!GlobalRGB
 
 $!Interface ZoneBoundingBoxMode = Off
 
-#===================================================================
+
+
+# ===================================================================
 # Populate variables and standardize variable names
-#===================================================================
-$!VarSet |TotalZones|   = |NUMZONES|
+# ===================================================================
+
+$!VarSet |TotalZones|   =   |NUMZONES|
 $!VarSet |FirstProfile| = ( |NUMZONES| + 1 )
 
 $!RenameDataSetVar
@@ -155,11 +159,11 @@ $!If "|Mvar|" == ""
   $!VarSet |Mvar|      = "|NUMVARS|"
 $!EndIf
 $!If "|CPRMSvar|" == ""
-  $!AlterData Equation  = "{CP_RMS} = -999"
+  $!AlterData Equation  = "{CPrms} = -999"
   $!VarSet |CPRMSvar|   = "|NUMVARS|"
 $!EndIf
 $!If "|MRMSvar|" == ""
-  $!AlterData Equation = "{M_RMS} = -999"
+  $!AlterData Equation = "{Mrms} = -999"
   $!VarSet |MRMSvar|      = "|NUMVARS|"
 $!EndIf
 
@@ -171,17 +175,18 @@ $!RenameDataSetVar
   Name = 'CP'
 $!RenameDataSetVar
   Var = |MRMSvar|
-  Name = 'M_RMS'
+  Name = 'Mrms'
 $!RenameDataSetVar
   Var = |CPRMSvar|
-  Name = 'CP_RMS'
+  Name = 'CPrms'
 
 
-#===================================================================
+
+# ===================================================================
 # Scaling/Translating Dataset (wind tunnel/metric->inches/etc.)
-#===================================================================
+# ===================================================================
+
 # Reverse coordinate axes, If required by user input
-#-------------------------------------
 $!If |Xrev| == 1
   $!AlterData
     Equation = '{X} = -{X}'
@@ -195,12 +200,13 @@ $!If |Zrev| == 1
     Equation = '{Z} = -{Z}'
 $!EndIf
 
-# Calculate scaling based on grid coordinate ranges... put tip at y=1156.75, regardless of the underlying loft
-#-------------------------------------
+# Calculate scaling based on grid coordinate ranges... put tip at y=1156.75, regardless of
+# the mesh tip location
 $!ActiveFieldMaps = [|WingMaps|]
 #$!Pause 'Xrange = (|MINX%.12f|,|MAXX%.12f|)\nYrange = (|MINY%.12f|,|MAXY%.12f|)\nZrange = (|MINZ%.12f|,|MAXZ%.12f|)'
 $!VarSet |Scale|  = (|MAXY%.12f|)
 
+$!ActiveFieldMaps = [1-|NUMZONES|]
 $!AlterData
   Equation = '{X} = {X} / |Scale| * 1176.75'
 $!AlterData
@@ -220,23 +226,26 @@ $!AlterData
   Equation = '{ZOrig} = {Z}'
 $!VarSet |ZOrigvar| = |NUMVARS|
 
-$!ExtEndedCommand 
+$!ExtendedCommand 
   CommandProcessorID = 'CFDAnalyzer4'
-  Command = 'Calculate Function=\'GRIDKUNITNormal\' Normalization=\'None\' ValueLocation=\'CellCentered\' CalculateOnDemand=\'T\' UseMorePointsForFEGradientCalculations=\'F\''
+  Command = 'Calculate Function=\'GridKUnitNormal\' Normalization=\'None\' ValueLocation=\'CellCentered\' CalculateOnDemand=\'T\' UseMorePointsForFEGradientCalculations=\'F\''
 
 $!VarSet |XNormvar| = ( |NUMVARS| - 2 )
 $!VarSet |YNormvar| = ( |NUMVARS| - 1 )
 $!VarSet |ZNormvar| = ( |NUMVARS|     )
 
 
-#===================================================================
-#Create Macro Function: ProfileCutter... tuned To operate at a constant y station, but can be easily generalized
-#===================================================================
+
+# ===================================================================
+# Create Macro Function: ProfileCutter... tuned to operate at a constant y station, but can
+# be generalized if desired
+# ===================================================================
+
 $!MACROFUNCTION
   Name = "ProfileCutter"
-  $!ActiveFieldMaps = [|WingMaps|]
   
   # Extract surface slice to get the x/c mapping
+  $!ActiveFieldMaps = [|WingMaps|]
   $!ExtractSliceToZones
     Origin {X = |1| Y = |2| Z = |3|}
     Normal {X = 0   Y = 1   Z = 0  }
@@ -247,9 +256,9 @@ $!MACROFUNCTION
     SliceSource = SurfaceZones
     SliceSurface = YPlanes
     TransientOperationMode = SingleSolutionTime
-  $!VarSet |SurfaceSliceZone|  = "|NUMZONES|"
+  $!VarSet |SurfaceSliceZone|  = |NUMZONES|
 
-  # Extract volume Slice at the span station
+  # Extract volume slice at the span station
   $!ActiveFieldMaps = [|VolMaps|]
   $!ExtractSliceToZones
     Origin {X = |1| Y = |2| Z = |3|}
@@ -260,15 +269,17 @@ $!MACROFUNCTION
     SliceSource = VolumeZones
     SliceSurface = YPlanes
     TransientOperationMode = SingleSolutionTime
-  $!VarSet |VolumeSliceZone|  = "|NUMZONES|"
+  $!VarSet |VolumeSliceZone|  = |NUMZONES|
 
   $!VarSet |EtaStation| = ( |2|/1176.75)
 
-  #===================================================================
-  # Shift surface cut To Origin and scale To get the closest index
-  #-------------------------------------
 
-  # Get X2... need X2 before finding X1
+
+  # ===================================================================
+  # Shift surface cut to origin and scale to get the closest index
+  # ===================================================================
+  
+  # Get X2... need X2 before finding X1 (furthest point from X2)
   $!ActiveFieldMaps = [|SurfaceSliceZone|]
   $!VarSet |X2| = -99999
   $!Loop |MaxI|
@@ -298,7 +309,6 @@ $!MACROFUNCTION
   $!EndLoop # Find X2
 
   # Now find X1
-  $!ActiveFieldMaps = [|SurfaceSliceZone|]
   $!VarSet |D1| = -999999
   $!Loop |MaxI|
     $!GetFieldValue |CurrX|
@@ -316,8 +326,8 @@ $!MACROFUNCTION
       Var   = |Zvar|
       Index = |LOOP|
     
+    # Not a square root... but doesn't matter
     $!VarSet |CurrD| = ( (|X2|-|CurrX|)**2 + (|Y2|-|CurrY|)**2 + (|Z2|-|CurrZ|)**2 )
-   #$!System "printf '  CurrD...  %.4f\n' |CurrD|"
 
     $!If |CurrD| > |D1|
       $!VarSet |I1| = |LOOP|
@@ -332,17 +342,16 @@ $!MACROFUNCTION
  #$!System "printf 'Index %4i: (x1, y1, z1) (%.4f,  %.4f,  %.4f)\n' |I1| |X1| |Y1| |Z1|"
  #$!System "printf 'Index %4i: (x2, y2, z2) (%.4f,  %.4f,  %.4f)\n' |I2| |X2| |Y2| |Z2|"
   
-  # Shift LE To Origin
+  # Shift LE to origin
+  $!AlterData  [|SurfaceSliceZone|] Equation = '{X} = {X} - |X1|'
+  $!AlterData  [|SurfaceSliceZone|] Equation = '{Y} = {Y} - |Y1|'
+  $!AlterData  [|SurfaceSliceZone|] Equation = '{Z} = {Z} - |Z1|'
+
+  # Taylor series expansion to get the arctangent
   $!VarSet |DeltaX| = ( |X2| - |X1| )
   $!VarSet |DeltaY| = ( |Y2| - |Y1| )
   $!VarSet |DeltaZ| = ( |Z2| - |Z1| )
   
-  $!AlterData  [|SurfaceSliceZone|] Equation = '{X} = {X} - |X1|'
-  $!AlterData  [|SurfaceSliceZone|] Equation = '{Y} = {Y} - |Y1|'
-  $!AlterData  [|SurfaceSliceZone|] Equation = '{Z} = {Z} - |Z1|'
-  
-
-  # Taylor series expansion To estimate arctangent
   $!VarSet |TangentValue| = ( |DeltaZ| / |DeltaX| )
   $!VarSet |AlphaSecRad| = ( |TangentValue| - (|TangentValue|**3)/3 + (|TangentValue|**5)/5 - (|TangentValue|**7)/7 + (|TangentValue|**9)/9 - (|TangentValue|**11)/11 + (|TangentValue|**13)/13 )
   $!VarSet |AlphaSecDeg| = ( |AlphaSecRad| * 180 / 3.14159265 )
@@ -370,18 +379,19 @@ $!MACROFUNCTION
   $!AlterData  [|SurfaceSliceZone|] Equation = '{Z} = {Z} / |C|'
   
   $!FieldMap [1-|NUMZONES|] Scatter{Show = No}
-  $!FieldMap [|NUMZONES|]   Mesh   {Show = Yes}
+  $!FieldMap [  |NUMZONES|] Mesh   {Show = Yes}
   $!FieldLayers ShowMesh = Yes
 
   
-
-  #===================================================================
+  
+  # ===================================================================
   # Get coordinates and info at each target x/c value
-  #-------------------------------------
+  # ===================================================================
+  
   $!If '|4|' == 'auto'
-    $!VarSet |NumXoCs| = 1#21
+    $!VarSet |NumXoCs| = 21
   $!Else
-    # Hand work
+    # User-specified x/c
     $!VarSet |NumXoCs| = 1
   $!EndIf
 
@@ -389,17 +399,15 @@ $!MACROFUNCTION
     $!If '|4|' == 'auto'
       $!VarSet |LoopM1|    = ( |LOOP| - 1 )
       $!VarSet |XoCTarget| = ( |LoopM1| / 20 )
-      $!If |LoopM1| == 20
-        $!VarSet |XoCTarget| = 0.995
-      $!EndIf
+     #$!If |LoopM1| == 20
+     #  $!VarSet |XoCTarget| = 0.990
+     #$!EndIf
     $!Else
       # Hand work
       $!VarSet |XoCTarget| = ( "|4|" )
     $!EndIf
     
-    $!VarSet |XoCTarget| = 0.10
-    
-    # Go through each index... get normals and store If it's the nearest To target x/c
+    # Go through each index... get normals and store If it's the nearest to target x/c
     $!VarSet |DXoCus| =  999999
     $!VarSet |DXoCls| =  999999
     $!Loop |MaxI| 
@@ -419,15 +427,15 @@ $!MACROFUNCTION
         Index = |LOOP|
       
       # Find the upper surface
-      # This includes some hand modIfications for the CRM airfoil To account for
-      # the reflexed lower surface
+      # This includes some customizations to account for the reflexed lower surface
       $!VarSet |ZToBlank| = 0.00
       $!If |XoCTarget| > 0.80
         $!VarSet |ZToBlank| = 0.008
       $!EndIf
       
+      # Upper surface?
       $!If |CurrZ| >= |ZToBlank|
-        # Upper surface... how close To the target x/c?
+        # Upper surface... how close to the target x/c?
         $!VarSet |DeltaNow| = ( abs(|CurrX|-|XoCTarget|) )
         $!If |DeltaNow| < |DXoCus|
           $!VarSet |I3|     = |LOOP|
@@ -437,10 +445,11 @@ $!MACROFUNCTION
           $!VarSet |DXoCus|   = |DeltaNow|
          #$!System "printf 'Upper x/c %.2f...  Distance of %.4f... Index %3i   (%.4f, %.4f, %.4f)\n' |XoCTarget| |DeltaNow| |I3| |X3| |Y3| |Z3|"
         $!EndIf # Closer?
-      $!EndIf # Upper Surface?
-
+      $!EndIf
+      
+      # Lower surface?
       $!If |CurrZ| < |ZToBlank|
-        # Lower surface... how close To the target x/c?
+        # Lower surface... how close to the target x/c?
         $!VarSet |DeltaNow| = ( abs(|CurrX|-|XoCTarget|) )
         $!If |DeltaNow| < |DXoCls|
           $!VarSet |I4|     = |LOOP|
@@ -457,74 +466,9 @@ $!MACROFUNCTION
         $!VarSet |I4| = |I3|
       $!EndIf
     $!EndLoop # Checking each point index to get index of closest point
-      
-    # Show airfoil profile with key points
-    $!If 1 == 1
-      $!CreateNewFrame XYPos { X = 1.0 Y = 6.25 } Width = 9 Height = 2.0
-      $!FrameControl ActivateByNumber
-        Frame = 2
-      $!FrameLayout ShowHeader = No
-      $!PlotType = XYLine
-      
-      $!DeleteLineMaps 
-      $!CreateLineMap 
-      $!LineMap [1]  Name = 'Airfoil'
-      $!LineMap [1]  Assign{XAxisVar = 'X' YAxisVar = 'Z' Zone = |SurfaceSliceZone|}
-      $!LineMap [1]  Lines{LineThickness = 1.2}
-      $!LineMap [1]  Symbols{Show = No Size = 2 FillMode = UseLineColor}
-      $!XYLineAxis ViewportPosition{X1 = 10 X2 = 95 Y1 = 10 Y2 = 97 }
     
-      $!XYLineAxis XDetail 1 {RangeMin = -0.01 RangeMax = 1.01 Gridlines{Show = Yes} Title{ShowOnAxisLine = No} TickLabel{TextShape{SizeUnits = Point Height = 14}} Gridlines{LinePattern = Solid} Gridlines{PatternLength = 0.2} }
-      $!XYLineAxis YDetail 1 {RangeMin = -0.07 RangeMax = 0.07 Gridlines{Show = Yes} Title{ShowOnAxisLine = No} TickLabel{TextShape{SizeUnits = Point Height = 14}} Gridlines{LinePattern = Solid} Gridlines{PatternLength = 0.2} }
-      
-      $!CreateLineMap 
-      $!DuplicateLineMap 
-        SourceMap = 1
-        DestinationMap = 2
-      $!CreateLineMap 
-      $!DuplicateLineMap 
-        SourceMap = 1
-        DestinationMap = 3
-      $!DuplicateLineMap 
-        SourceMap = 1
-        DestinationMap = 4
-      $!DuplicateLineMap 
-        SourceMap = 1
-        DestinationMap = 5
-    
-      $!LineMap [2]  Symbols{Show = Yes Color = Green SymbolShape{GeomShape = Square}}
-      $!LineMap [3]  Symbols{Show = Yes Color = Blue  SymbolShape{GeomShape = Diamond}}
-      $!LineMap [4]  Symbols{Show = Yes Color = Black SymbolShape{GeomShape = Del}}
-      $!LineMap [5]  Symbols{Show = Yes Color = Black SymbolShape{GeomShape = Grad}}
-    
-      $!LineMap [2]  Indices{IRange{Min = |I1| Max = |I1|}}
-      $!LineMap [3]  Indices{IRange{Min = |I2| Max = |I2|}}
-      $!LineMap [4]  Indices{IRange{Min = |I3| Max = |I3|}}
-      $!LineMap [5]  Indices{IRange{Min = |I4| Max = |I4|}}
-    
-      $!ActiveLineMaps = [1-|NUMLINEMAPS|]
-      $!LinePlotLayers ShowLines = Yes
-      $!LinePlotLayers ShowSymbols = Yes
-    
-      $!AttachText 
-        AnchorPos { X = 99 Y = 99}
-        TextShape { IsBold = No Height = 12 }
-        Box { BoxType = Filled }
-        Anchor = HeadRight
-        Text = 'US: |X3|'
-      $!AttachText 
-        AnchorPos { X = 99 Y =   1}
-        TextShape { IsBold = No Height = 12 }
-        Box { BoxType = Filled }
-        Anchor = Right
-        Text = 'LS: |X4|'
-      
-      $!RedrawAll
-      $!Pause 'Key points found'
-      $!FrameControl DeleteActive
-    $!EndIf # Show key points or not
-
     # Get full-scale coordinates and normals
+    $!ActiveFieldMaps = [|WingMaps|]
     $!GetFieldValue |X3orig|
       Zone  = |SurfaceSliceZone|
       Var   = |XOrigvar|
@@ -585,15 +529,89 @@ $!MACROFUNCTION
       Zone  = |SurfaceSliceZone|
       Var   = |ZNormvar|
       Index = |I4|
-  
-  
-    #===================================================================
-    # Extract upper surface profile
-    #-------------------------------------
-    $!ActiveFieldMaps = [|VolumeSliceZone|]
+
+
+
+    # ===================================================================
+    # Show key points
+    # ===================================================================
+
+    $!CreateNewFrame XYPos { X = 1.0 Y = 6.25 } Width = 9 Height = 2.0
+    $!FrameControl ActivateByNumber
+      Frame = 2
+    $!FrameLayout ShowHeader = No
+    $!PlotType = XYLine
+    
+    $!DeleteLineMaps 
+    $!CreateLineMap 
+    $!LineMap [1]  Name = 'Airfoil'
+    $!LineMap [1]  Assign{XAxisVar = 'X' YAxisVar = 'Z' Zone = |SurfaceSliceZone|}
+    $!LineMap [1]  Lines{LineThickness = 1.2}
+    $!LineMap [1]  Symbols{Show = No}
+    $!XYLineAxis ViewportPosition{X1 = 10 X2 = 95 Y1 = 10 Y2 = 97 }
+    
+    $!VarSet |ZTop|  = (|MAXZ%.12f| + 0.005)
+    $!VarSet |ZBot|  = (|MINZ%.12f| - 0.005)
+    $!XYLineAxis XDetail 1 {RangeMin = -0.01  RangeMax = 1.01   Gridlines{Show = Yes} Title{ShowOnAxisLine = No} TickLabel{TextShape{SizeUnits = Point Height = 14}} Gridlines{LinePattern = Solid} Gridlines{PatternLength = 0.2} }
+    $!XYLineAxis YDetail 1 {RangeMin = |ZBot| RangeMax = |ZTop| Gridlines{Show = Yes} Title{ShowOnAxisLine = No} TickLabel{TextShape{SizeUnits = Point Height = 14}} Gridlines{LinePattern = Solid} Gridlines{PatternLength = 0.2} }
+   #$!XYLineAxis YDetail 1 {RangeMin = -0.07  RangeMax = 0.07   Gridlines{Show = Yes} Title{ShowOnAxisLine = No} TickLabel{TextShape{SizeUnits = Point Height = 14}} Gridlines{LinePattern = Solid} Gridlines{PatternLength = 0.2} }
+    
+    $!CreateLineMap 
+    $!DuplicateLineMap 
+      SourceMap = 1
+      DestinationMap = 2
+    $!CreateLineMap 
+    $!DuplicateLineMap 
+      SourceMap = 1
+      DestinationMap = 3
+    $!DuplicateLineMap 
+      SourceMap = 1
+      DestinationMap = 4
+    $!DuplicateLineMap 
+      SourceMap = 1
+      DestinationMap = 5
+    
+    $!LineMap [2]  Symbols{Show = Yes Color = Green SymbolShape{GeomShape = Square}}
+    $!LineMap [3]  Symbols{Show = Yes Color = Blue  SymbolShape{GeomShape = Diamond}}
+    $!LineMap [4]  Symbols{Show = Yes Color = Black SymbolShape{GeomShape = Del}}
+    $!LineMap [5]  Symbols{Show = Yes Color = Black SymbolShape{GeomShape = Grad}}
+    
+    $!LineMap [2]  Indices{IRange{Min = |I1| Max = |I1|}}
+    $!LineMap [3]  Indices{IRange{Min = |I2| Max = |I2|}}
+    $!LineMap [4]  Indices{IRange{Min = |I3| Max = |I3|}}
+    $!LineMap [5]  Indices{IRange{Min = |I4| Max = |I4|}}
+    
+    $!ActiveLineMaps = [1-|NUMLINEMAPS|]
+    $!LinePlotLayers ShowLines = Yes
+    $!LinePlotLayers ShowSymbols = Yes
+    
+    $!AttachText 
+      AnchorPos { X = 99 Y = 99}
+      TextShape { IsBold = No Height = 12 }
+      Box { BoxType = Filled }
+      Anchor = HeadRight
+      Text = 'US: |X3|'
+    $!AttachText 
+      AnchorPos { X = 99 Y =   1}
+      TextShape { IsBold = No Height = 12 }
+      Box { BoxType = Filled }
+      Anchor = Right
+      Text = 'LS: |X4|'
+    
     $!RedrawAll
+    $!Pause 'Key points found'
+    $!FrameControl DeleteActive
+  
+  
+  
+    # ===================================================================
+    # Extract upper surface profile
+    # ===================================================================
+  
+    $!ActiveFieldMaps = [|VolumeSliceZone|]
     
     $!VarSet |ZBlank1| = ( |Z3Orig| +     |DeltaZBlank| )
+    # Pizza this needs work
     $!VarSet |ZBlank2| = ( |Z3Orig| - 0.1*|DeltaZBlank| )
     $!Blanking Value{Include = Yes}
     $!Blanking Value{Constraint 1 {Include = Yes VarA = 'Z' Include = Yes RelOp = GreaterThan ValueCutoff = |ZBlank1|}}
@@ -614,6 +632,9 @@ $!MACROFUNCTION
     $!SliceAttributes 1  PrimaryPosition{X = |X3Orig|   Y = |Y3Orig| Z = |Z3Orig|  }
     $!SliceAttributes 1  Normal{         X = |XNormOut| Y = 0        Z = |ZNormOut|}
     $!RedrawAll 
+    
+    $!Pause 'Profile to extract'
+
     $!ExtractSlices 
       Group = 1
       TransientOperationMode = SingleSolutionTime
@@ -627,13 +648,31 @@ $!MACROFUNCTION
       Name = '|ParticipantID| - eta=|EtaStation| - x/c=|XoCTarget| - Upper Surface'
       
       
-    #===================================================================
+    $!FieldMap  [|FirstProfile|-|NUMZONES|]
+      Mesh    { Show = Yes Color = Blue LineThickness = 0.1 }
+      Scatter { Show = Yes Color = Blue } 
+    $!FieldLayers
+      ShowMesh = Yes
+      ShowContour = No
+      ShowShade = Yes
+      ShowEdge = No
+
+    $!ActiveFieldMaps = [|WingMaps|,|FirstProfile|-|NUMZONES|]
+    $!RedrawAll
+        
+    $!Pause 'Upper surface profiles extracted'
+    
+    
+      
+    # ===================================================================
     # Extract lower surface profile
-    #-------------------------------------
+    # ===================================================================
+    
     $!ActiveFieldMaps = [|VolumeSliceZone|]
     $!RedrawAll
     
     $!VarSet |ZBlank1| = ( |Z4Orig| -     |DeltaZBlank| )
+    # Pizza this needs work
     $!VarSet |ZBlank2| = ( |Z4Orig| + 0.1*|DeltaZBlank| )
     $!Blanking Value{Include = Yes}
     $!Blanking Value{Constraint 1 {Include = Yes VarA = 'Z' Include = Yes RelOp = LessThan    ValueCutoff = |ZBlank1|}}
@@ -664,16 +703,30 @@ $!MACROFUNCTION
     
     $!RenameDataSetZone
       Zone = |NUMZONES|
-      Name = '|ParticipantID| - eta=|EtaStation| - x/c=|XoCTarget| - Upper Surface'      
+      Name = '|ParticipantID| - eta=|EtaStation| - x/c=|XoCTarget| - Lower Surface'      
       
+    $!FieldMap  [|FirstProfile|-|NUMZONES|]
+      Mesh    { Show = Yes Color = Blue LineThickness = 0.1 }
+      Scatter { Show = Yes Color = Blue } 
+    $!FieldLayers
+      ShowMesh = Yes
+      ShowContour = No
+      ShowShade = Yes
+      ShowEdge = No
+
     $!ActiveFieldMaps = [|WingMaps|,|FirstProfile|-|NUMZONES|]
+    $!RedrawAll
+        
+    $!Pause 'Lower surface profiles extracted'
   $!EndLoop # |NumXoCs|    going through each x/c
   
   $!DeleteZones  [|SurfaceSliceZone|,|VolumeSliceZone|]
 $!EndMacroFunction
 
 
-#===================================================================
+
+# ===================================================================
+
 $!If "|PlotTime|" != ""
   $!GlobalTime
     SolutionTime = |PlotTime|
@@ -681,17 +734,17 @@ $!EndIf
 
 $!FieldMap  [|BodyMaps|,|WingMaps|]
   Mesh { Show = No Color = Black LineThickness = 0.1 }
-  ConTour
+  Contour
     {
-    ConTourType = BothLinesAndFlood
-    LineConTourGroup = 1
+    ContourType = BothLinesAndFlood
+    LineContourGroup = 1
     FloodColoring = Group1
-    Color = CusTom2
+    Color = Custom2
     UseLightingEffect = Yes
     }
-  VecTor { Color = Black }
+  Vector { Color = Black }
   Scatter { Color = Black }
-  Shade { Color = CusTom2 }
+  Shade { Color = Custom2 }
   EdgeLayer { Show = No Color = Black LineThickness = 0.1 }
   Points { PointsToPlot = SurfaceNodes }
   Surfaces { SurfacesToPlot = KPlanes IRange { Max = 1 } }
@@ -723,7 +776,7 @@ $!GlobalThreeD
     }
   LineLIftFraction = 0.2
   SymbolLIftFraction = 0.6
-  VecTorLIftFraction = 0.7
+  VectorLIftFraction = 0.7
   NearPlaneFraction = 0.1
 
 $!DrawGraphics True
@@ -741,15 +794,13 @@ $!StreamAttributes AddArrows = No
 
 
 
+# ===================================================================
+# Extract the boundary-layer profiles
+# ===================================================================
 
 
-#===================================================================
-# Create Sectional Cuts
-#-------------------------------------
 # WING SECTION  1: ETA = 0.1050, CHORD=466.466
 #$!RunMacroFunction "ProfileCutter" (1342.440, 581.148, 188.658, '0.3040')
-
-
 # Section E (eta = 0.5): x/c=0.3040 and 0.7903
 # Section F (eta = 0.6): x/c=0.3097 and 0.7677
 
@@ -809,20 +860,11 @@ $!RunMacroFunction "ProfileCutter" (1225.822, 427.998, 181.162, 'auto')
 #####...
 
 
-#===================================================================
-# Visualize Sectional Cuts
-#-------------------------------------
-#$!FieldMAP [|NUMZONES1| - |NUMZONES| ] MESH{Show = Yes Color = Green LineThickness = 0.80 }
-#$!FieldLayers ShowMesh = Yes
-
-$!Blanking Value{Include = No}
-$!ActiveFieldMaps = [|WingMaps|,|FirstProfile|-|NUMZONES|]
-
-#===================================================================
+# ===================================================================
 $!WriteDataSet  "|ParticipantID|-|OutputFileName|"
   IncludeText = No
   IncludeGeom = No
-  IncludeCusTomLabels = No
+  IncludeCustomLabels = No
   IncludeDataShareLinkage = Yes
   ZoneList =  [|FirstProfile| - |NUMZONES|]
   VarList =  ['X','Y','Z','CP','M','CP_RMS','M_RMS','H','HoC']
