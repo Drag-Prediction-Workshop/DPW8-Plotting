@@ -1,0 +1,3735 @@
+#!MC 1410
+#-----------------------------
+ $!VarSet |CDymin| = 0.0142
+ $!VarSet |CDymax| = 0.0162
+ $!VarSet |CDyspc| = 0.0002
+#
+ $!VarSet |CDymin| = 0.0148
+ $!VarSet |CDymax| = 0.0158
+ $!VarSet |CDyspc| = 0.0001
+#-----------------------------
+$!VarSet |LFDSFN1| = '"../../../../DPW8-Scatter/TestCase1c/002_Embraer/01_CFD++_CadenceUnstructured-Rev02_SA/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/002_Embraer/02_CFD++_CadenceStructured-Rev02_SA/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/002_Embraer/03_CFD++_HeldenMesh-Rev02_SA/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/003_Boeing/01_OVERFLOW_Cadence_Structured_REV02_SA-neg/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/003_Boeing/02_OVERFLOW_Cadence_Structured_REV02_SA-neg/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/003_Boeing/03_OVERFLOW_Cadence_Structured_REV02_SA-neg/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/003_Boeing/04_FELight_Cadence_Unstructured_REV02_SA-neg/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/003_Boeing/05_FELight_HeldenMesh_Unstructured_REV02_SA-neg/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/011_HEMLAB/01_Structured/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/011_HEMLAB/02_Adaptive/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/011_HEMLAB/03_Unstructured/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/011_HEMLAB/04_HeldenMesh/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/012_NASA_LARC_AB/01_FUN3D_NCFV_Cadence/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/012_NASA_LARC_AB/02_FUN3D_SFE_Cadence/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/012_NASA_LARC_AB/03_FUN3D_NCFV_Helden/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/012_NASA_LARC_AB/04_FUN3D_SFE_Helden/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/012_NASA_LARC_AB/05_FUN3D_NCFV_Adapt/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/012_NASA_LARC_AB/06_FUN3D_SFE_Adapt/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1a/029_MIT_SANS/01_SANS_refine/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1a/029_MIT_SANS/02_SANS_Metris/DPW8-AePW4_ForceMoment_v5.dat"'
+#$!VarSet |LFDSFN1| = '"../../../../DPW8-Scatter/TestCase1c/002_Embraer/01_CFD++_CadenceUnstructured-Rev02_SA/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/002_Embraer/02_CFD++_CadenceStructured-Rev02_SA/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/002_Embraer/03_CFD++_HeldenMesh-Rev02_SA/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/003_Boeing/01_OVERFLOW_Cadence_Structured_REV02_SA-neg/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/003_Boeing/02_OVERFLOW_Cadence_Structured_REV02_SA-neg/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/003_Boeing/03_OVERFLOW_Cadence_Structured_REV02_SA-neg/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/003_Boeing/04_FELight_Cadence_Unstructured_REV02_SA-neg/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/003_Boeing/05_FELight_HeldenMesh_Unstructured_REV02_SA-neg/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/011_HEMLAB/01_Structured/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/011_HEMLAB/02_Adaptive/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/011_HEMLAB/03_Unstructured/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/011_HEMLAB/04_HeldenMesh/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/012_NASA_LARC_AB/01_FUN3D_NCFV_Cadence/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/012_NASA_LARC_AB/02_FUN3D_SFE_Cadence/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/012_NASA_LARC_AB/03_FUN3D_NCFV_Helden/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/012_NASA_LARC_AB/04_FUN3D_SFE_Helden/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/012_NASA_LARC_AB/05_FUN3D_NCFV_Adapt/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1c/012_NASA_LARC_AB/06_FUN3D_SFE_Adapt/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1a/029_MIT_SANS/01_SANS_refine/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1a/029_MIT_SANS/02_SANS_Metris/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1a/002_Embraer/02_CFD++_CadenceUnstructured_SA/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1a/011_HEMLAB/01_Structured/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1a/011_HEMLAB/02_Adaptive/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/01_SFE_SAneg/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/04_NCFV_SAneg/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/05_NCFV_SAneg_2ndOrderTurbConv/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL1| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!SetStyleBase Factory
+$!GlobalPaper 
+  PaperSizeInfo
+    {
+    Letter
+      {
+      Width = 8.5
+      Height = 11
+      LeftHardClipOffset = 0.125
+      RightHardClipOffset = 0.125
+      TopHardClipOffset = 0.125
+      BottomHardClipOffset = 0.125
+      }
+    }
+### Page Number 1 ###
+$!Page 
+  Name = 'CD_Grid'
+  PaperAttributes
+    {
+    BackgroundColor = White
+    IsTransparent = Yes
+    OrientPortrait = No
+    ShowGrid = Yes
+    ShowRuler = No
+    ShowPaper = No
+    PaperSize = Letter
+    RulerSpacing = OneInch
+    PaperGridSpacing = HalfInch
+    RegionInWorkArea
+      {
+      X1 = 1
+      Y1 = 0.25
+      X2 = 10
+      Y2 = 8.25
+      }
+    }
+### Frame Number 1, Page Number 1 ###
+$!ReadDataSet  '|LFDSFN1|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL1|'
+#--------------------------------------------
+# Add Test Case 1a Data
+$!ReadDataSet  '"../../../../DPW8-Scatter/TestCase1a/002_Embraer/02_CFD++_CadenceUnstructured_SA/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1a/011_HEMLAB/01_Structured/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Scatter/TestCase1a/011_HEMLAB/02_Adaptive/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/01_SFE_SAneg/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/04_NCFV_SAneg/DPW8-AePW4_ForceMoment_v5.dat" "../../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/05_NCFV_SAneg_2ndOrderTurbConv/DPW8-AePW4_ForceMoment_v5.dat"'
+  ReadDataOption = Append
+  ResetStyle = No
+  VarLoadMode = ByName
+  AssignStrandIDs = Yes
+  VarNameList = '|LFDSVL1|'
+#--------------------------------------------
+# Add T1EPIC Data
+#$!ReadDataSet  '"../../../../DPW8-Scatter/TestCase1c/003_Boeing/07_T1EPIC_Adjoint_SA-neg/DPW8-AePW4_ForceMoment_v5.dat"'
+#  ReadDataOption = Append
+#  ResetStyle = No
+#  VarLoadMode = ByName
+#  AssignStrandIDs = Yes
+#  VarNameList = '|LFDSVL1|'
+#$!ReadDataSet  '"../../../../DPW8-Scatter/TestCase1c/003_Boeing/08_T1EPIC_Hessian_SA-neg/DPW8-AePW4_ForceMoment_v5.dat"'
+#  ReadDataOption = Append
+#  ResetStyle = No
+#  VarLoadMode = ByName
+#  AssignStrandIDs = Yes
+#  VarNameList = '|LFDSVL1|'
+##-----
+## Rescale T1EPIC GRID_SIZE ?????
+#$!AlterData  [254-255]
+#  IgnoreDivideByZero = Yes
+#  Equation = '{GRID_SIZE}={GRID_SIZE}/10'
+#--------------------------------------------
+$!RemoveVar |LFDSVL1|
+$!RemoveVar |LFDSFN1|
+#--------------------------------------------
+$!AlterData 
+  IgnoreDivideByZero = Yes
+  Equation = 'V3=V2**(-1/2)'
+$!RenameDataSetVar 
+  Var = 3
+  Name = 'DOF<sup>-1/2</sup>'
+#$!AlterData 
+#  IgnoreDivideByZero = Yes
+#  Equation = 'V3=V2**(-1.0)'
+#$!RenameDataSetVar 
+#  Var = 3
+#  Name = 'DOF<sup>-1</sup>'
+# Error from average of finest adaptive results from 011.02/012.06/029.01/029.02
+$!AlterData 
+  IgnoreDivideByZero = Yes
+  Equation = '{CD<sub>"Error"</sub>}=abs(V8 - ( 0.0150006597 +  0.01499117504 +  0.01500363474733333417 +  0.01500238274840000330)/4)'
+$!AlterData 
+  IgnoreDivideByZero = Yes
+  Equation = '{CL<sub>"Error"</sub>}=abs(V7 - ( 0.8137398421 +  0.8134685241  +  0.8137247413633333926  +  0.8137718973980000436 )/4)'
+$!AlterData 
+  IgnoreDivideByZero = Yes
+  Equation = '{CM<sub>"Error"</sub>}=abs(V9 - (-0.1331333629 + -0.1331504792  + -0.1331568908766666837  + -0.1331598992830000106 )/4)'
+$!RenameDataSetVar 
+  Var = 7
+  Name = 'CL<sub>Total</sub>'
+$!RenameDataSetVar 
+  Var = 8
+  Name = 'CD<sub>Total</sub>'
+$!RenameDataSetVar 
+  Var = 9
+  Name = 'CM<sub>Total</sub>'
+$!RenameDataSetVar 
+  Var = 13
+  Name = 'CD<sub>Pressure</sub>'
+$!RenameDataSetVar 
+  Var = 14
+  Name = 'CD<sub>SkinFriction</sub>'
+$!FrameLayout 
+  ShowHeader = No
+  HeaderColor = Red
+  XYPos
+    {
+    X = 1
+    Y = 0.25
+    }
+  Width = 9
+  Height = 8
+$!ThreeDAxis 
+  AspectRatioLimit = 25
+  BoxAspectRatioLimit = 25
+$!PlotType  = XYLine
+$!FrameName  = 'Frame 001'
+$!GlobalTime 
+  SolutionTime = 0
+$!DeleteLineMaps 
+$!ActiveLineMaps  =  [1-22]
+$!GlobalLinePlot 
+  DataLabels
+    {
+    DistanceSkip = 5
+    }
+  Legend
+    {
+    Show = Yes
+    TextShape
+      {
+      Height = 1.5
+      }
+    Box
+      {
+      BoxType = None
+      Margin = 5
+      }
+    RowSpacing = 1
+    XYPos
+      {
+      X = 88
+      Y = 10
+      }
+    AnchorAlignment = BottomLeft
+    }
+$!Blanking 
+  Value
+    {
+    Include = No
+    Constraint 1
+      {
+      Include = Yes
+      ValueCutoff = -100
+      VarA = 13
+      }
+    Constraint 2
+      {
+      Include = Yes
+      ValueCutoff = -100
+      VarA = 14
+      }
+    }
+$!LineMap  [1]
+  Name = '&(ZONENAME[7]%6.6s)'
+  Assign    { Zone = 7 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\A' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [2]
+  Name = '&(ZONENAME[14]%6.6s)'
+  Assign    { Zone = 14 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\a' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [3]
+  Name = '&(ZONENAME[22]%6.6s)'
+  Assign    { Zone = 22 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\A' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [4]
+  Name = '&(ZONENAME[29]%6.6s)'
+  Assign    { Zone = 29 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\B' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [5]
+  Name = '&(ZONENAME[36]%6.6s)'
+  Assign    { Zone = 36 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\b' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [6]
+  Name = '&(ZONENAME[43]%6.6s)'
+  Assign    { Zone = 43 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\B' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [7]
+  Name = '&(ZONENAME[50]%6.6s)'
+  Assign    { Zone = 50 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\C' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [8]
+  Name = '&(ZONENAME[58]%6.6s)'
+  Assign    { Zone = 58 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\c' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [9]
+  Name = '&(ZONENAME[66]%6.6s)'
+  Assign    { Zone = 66 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\D' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [10]
+  Name = '&(ZONENAME[80]%6.6s)'
+  Assign    { Zone = 80 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\d' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [11]
+  Name = '&(ZONENAME[87]%6.6s)'
+  Assign    { Zone = 87 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\D' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [12]
+  Name = '&(ZONENAME[92]%6.6s)'
+  Assign    { Zone = 92 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\d' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [13]
+  Name = '&(ZONENAME[99]%6.6s)'
+  Assign    { Zone = 99 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\E' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [14]
+  Name = '&(ZONENAME[106]%6.6s)'
+  Assign    { Zone = 106 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\F' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [15]
+  Name = '&(ZONENAME[114]%6.6s)'
+  Assign    { Zone = 114 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\e' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [16]
+  Name = '&(ZONENAME[122]%6.6s)'
+  Assign    { Zone = 122 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\f' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [17]
+  Name = '&(ZONENAME[129]%6.6s)'
+  Assign    { Zone = 129 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\E' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [18]
+  Name = '&(ZONENAME[136]%6.6s)'
+  Assign    { Zone = 136 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\F' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [19]
+  Name = '&(ZONENAME[145]%6.6s)'
+  Assign    { Zone = 145 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\G' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [20]
+  Name = '&(ZONENAME[158]%6.6s)'
+  Assign    { Zone = 158 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\g' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [21]
+  Name = '&(ZONENAME[254]%6.6s)'
+  Assign    { Zone = 254 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\H' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [22]
+  Name = '&(ZONENAME[255]%6.6s)'
+  Assign    { Zone = 255 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\h' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!XYLineAxis 
+  DepXToYRatio = 1
+  GridArea { DrawBorder = Yes LineThickness = 0.1 }
+  ViewportPosition { X1 = 15 }
+$!XYLineAxis 
+  XDetail 1
+    {
+    CoordScale = Log
+    RangeMin = 0.00025
+    RangeMax = 0.025
+    GRSpacing = 0.005
+    Gridlines
+      {
+      Show = Yes
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      }
+    Title
+      {
+      Offset = 6
+      }
+    }
+$!XYLineAxis 
+  YDetail 1
+    {
+    CoordScale = Linear
+    RangeMin = |CDymin|
+    RangeMax = |CDymax|
+    GRSpacing = |CDyspc|
+    TickLabel
+      {
+      NumFormat
+        {
+        Formatting = FixedFloat
+        Precision = 4
+        TimeDateFormat = ''
+        }
+      }
+    Gridlines
+      {
+      Show = Yes
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      }
+    Title
+      {
+      Offset = 12
+      }
+    }
+$!LinePlotLayers 
+  ShowSymbols = Yes
+#$!AttachText 
+#  AnchorPos { X = 50 Y = 50 }
+#  TextShape { IsBold = No SizeUnits = Frame Height = 8 }
+#  Color = Custom2
+#  Angle = 45
+#  Anchor = MidCenter
+#  Text = 'Preliminary'
+$!AttachText 
+  AnchorPos { X = 50 Y = 99 }
+  TextShape { IsBold = No Height = 20 }
+  Anchor = HeadCenter
+  Text = 'Test Case 1c: ONERA OAT15A\nGrid Convergence Study\nAngle of Attack 1.50'
+$!AttachText 
+  AnchorPos { X = 75 Y = 99 }
+  TextShape { IsBold = No Height = 12 }
+  Box { BoxType = Filled }
+  Anchor = HeadLeft
+  Text = 'Grid Family:                            \n\n\n\n'
+$!AttachText 
+  AnchorPos { X = 75 Y = 97 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Red
+  Anchor = HeadLeft
+  Text = '     Cadence Structured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 95 }
+  TextShape { IsBold = No Height = 12 }
+  Anchor = HeadLeft
+  Text = '     Cadence Unstructured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 93 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Blue
+  Anchor = HeadLeft
+  Text = '     HeldenMesh Unstructured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 91 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Purple
+  Anchor = HeadLeft
+  Text = '     User Grid Adaptation'
+$!FrameControl ActivateByNumber
+  Frame = 1
+### Page Number 2 ###
+$!PageControl Create
+$!Page 
+  Name = 'CL_Grid'
+  PaperAttributes
+    {
+    BackgroundColor = White
+    IsTransparent = Yes
+    OrientPortrait = No
+    ShowGrid = Yes
+    ShowRuler = No
+    ShowPaper = No
+    PaperSize = Letter
+    RulerSpacing = OneInch
+    PaperGridSpacing = HalfInch
+    RegionInWorkArea
+      {
+      X1 = 1
+      Y1 = 0.25
+      X2 = 10
+      Y2 = 8.25
+      }
+    }
+### Frame Number 1, Page Number 2 ###
+$!AttachDataSet 
+  PageNum = 2
+  Frame = 1
+$!FrameLayout 
+  ShowHeader = No
+  HeaderColor = Red
+  XYPos
+    {
+    X = 1
+    Y = 0.25
+    }
+  Width = 9
+  Height = 8
+$!ThreeDAxis 
+  AspectRatioLimit = 25
+  BoxAspectRatioLimit = 25
+$!PlotType  = XYLine
+$!FrameName  = 'Frame 001'
+$!GlobalTime 
+  SolutionTime = 0
+$!DeleteLineMaps 
+$!ActiveLineMaps  =  [1-22]
+$!GlobalLinePlot 
+  DataLabels
+    {
+    DistanceSkip = 5
+    }
+  Legend
+    {
+    Show = Yes
+    TextShape
+      {
+      Height = 1.5
+      }
+    Box
+      {
+      BoxType = None
+      Margin = 5
+      }
+    RowSpacing = 1
+    XYPos
+      {
+      X = 88
+      Y = 10
+      }
+    AnchorAlignment = BottomLeft
+    }
+$!Blanking 
+  Value
+    {
+    Include = No
+    Constraint 1
+      {
+      Include = Yes
+      ValueCutoff = -100
+      VarA = 13
+      }
+    Constraint 2
+      {
+      Include = Yes
+      ValueCutoff = -100
+      VarA = 14
+      }
+    }
+$!LineMap  [1]
+  Name = '&(ZONENAME[7]%6.6s)'
+  Assign    { Zone = 7 XAxisVar = 3 YAxisVar = 7 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\A' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [2]
+  Name = '&(ZONENAME[14]%6.6s)'
+  Assign    { Zone = 14 XAxisVar = 3 YAxisVar = 7 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\a' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [3]
+  Name = '&(ZONENAME[22]%6.6s)'
+  Assign    { Zone = 22 XAxisVar = 3 YAxisVar = 7 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\A' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [4]
+  Name = '&(ZONENAME[29]%6.6s)'
+  Assign    { Zone = 29 XAxisVar = 3 YAxisVar = 7 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\B' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [5]
+  Name = '&(ZONENAME[36]%6.6s)'
+  Assign    { Zone = 36 XAxisVar = 3 YAxisVar = 7 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\b' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [6]
+  Name = '&(ZONENAME[43]%6.6s)'
+  Assign    { Zone = 43 XAxisVar = 3 YAxisVar = 7 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\B' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [7]
+  Name = '&(ZONENAME[50]%6.6s)'
+  Assign    { Zone = 50 XAxisVar = 3 YAxisVar = 7 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\C' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [8]
+  Name = '&(ZONENAME[58]%6.6s)'
+  Assign    { Zone = 58 XAxisVar = 3 YAxisVar = 7 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\c' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [9]
+  Name = '&(ZONENAME[66]%6.6s)'
+  Assign    { Zone = 66 XAxisVar = 3 YAxisVar = 7 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\D' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [10]
+  Name = '&(ZONENAME[80]%6.6s)'
+  Assign    { Zone = 80 XAxisVar = 3 YAxisVar = 7 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\d' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [11]
+  Name = '&(ZONENAME[87]%6.6s)'
+  Assign    { Zone = 87 XAxisVar = 3 YAxisVar = 7 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\D' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [12]
+  Name = '&(ZONENAME[92]%6.6s)'
+  Assign    { Zone = 92 XAxisVar = 3 YAxisVar = 7 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\d' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [13]
+  Name = '&(ZONENAME[99]%6.6s)'
+  Assign    { Zone = 99 XAxisVar = 3 YAxisVar = 7 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\E' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [14]
+  Name = '&(ZONENAME[106]%6.6s)'
+  Assign    { Zone = 106 XAxisVar = 3 YAxisVar = 7 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\F' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [15]
+  Name = '&(ZONENAME[114]%6.6s)'
+  Assign    { Zone = 114 XAxisVar = 3 YAxisVar = 7 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\e' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [16]
+  Name = '&(ZONENAME[122]%6.6s)'
+  Assign    { Zone = 122 XAxisVar = 3 YAxisVar = 7 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\f' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [17]
+  Name = '&(ZONENAME[129]%6.6s)'
+  Assign    { Zone = 129 XAxisVar = 3 YAxisVar = 7 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\E' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [18]
+  Name = '&(ZONENAME[136]%6.6s)'
+  Assign    { Zone = 136 XAxisVar = 3 YAxisVar = 7 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\F' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [19]
+  Name = '&(ZONENAME[145]%6.6s)'
+  Assign    { Zone = 145 XAxisVar = 3 YAxisVar = 7 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\G' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [20]
+  Name = '&(ZONENAME[158]%6.6s)'
+  Assign    { Zone = 158 XAxisVar = 3 YAxisVar = 7 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\g' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [21]
+  Name = '&(ZONENAME[254]%6.6s)'
+  Assign    { Zone = 254 XAxisVar = 3 YAxisVar = 7 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\H' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [22]
+  Name = '&(ZONENAME[255]%6.6s)'
+  Assign    { Zone = 255 XAxisVar = 3 YAxisVar = 7 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\h' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!XYLineAxis 
+  DepXToYRatio = 1
+  GridArea { DrawBorder = Yes LineThickness = 0.1 }
+  ViewportPosition { X1 = 15 }
+$!XYLineAxis 
+  XDetail 1
+    {
+    CoordScale = Log
+    RangeMin = 0.00025
+    RangeMax = 0.025
+    GRSpacing = 0.005
+    Gridlines
+      {
+      Show = Yes
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      }
+    Title
+      {
+      Offset = 6
+      }
+    }
+$!XYLineAxis 
+  YDetail 1
+    {
+    CoordScale = Linear
+    RangeMin = 0.775
+    RangeMax = 0.825
+    GRSpacing = 0.005
+    TickLabel
+      {
+      NumFormat
+        {
+        Formatting = FixedFloat
+        Precision = 3
+        TimeDateFormat = ''
+        }
+      }
+    Gridlines
+      {
+      Show = Yes
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      }
+    Title
+      {
+      Offset = 12
+      }
+    }
+$!LinePlotLayers 
+  ShowSymbols = Yes
+#$!AttachText 
+#  AnchorPos { X = 50 Y = 50 }
+#  TextShape { IsBold = No SizeUnits = Frame Height = 8 }
+#  Color = Custom2
+#  Angle = 45
+#  Anchor = MidCenter
+#  Text = 'Preliminary'
+$!AttachText 
+  AnchorPos { X = 50 Y = 99 }
+  TextShape { IsBold = No Height = 20 }
+  Anchor = HeadCenter
+  Text = 'Test Case 1c: ONERA OAT15A\nGrid Convergence Study\nAngle of Attack 1.50'
+$!AttachText 
+  AnchorPos { X = 75 Y = 99 }
+  TextShape { IsBold = No Height = 12 }
+  Box { BoxType = Filled }
+  Anchor = HeadLeft
+  Text = 'Grid Family:                            \n\n\n\n'
+$!AttachText 
+  AnchorPos { X = 75 Y = 97 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Red
+  Anchor = HeadLeft
+  Text = '     Cadence Structured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 95 }
+  TextShape { IsBold = No Height = 12 }
+  Anchor = HeadLeft
+  Text = '     Cadence Unstructured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 93 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Blue
+  Anchor = HeadLeft
+  Text = '     HeldenMesh Unstructured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 91 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Purple
+  Anchor = HeadLeft
+  Text = '     User Grid Adaptation'
+$!FrameControl ActivateByNumber
+  Frame = 1
+### Page Number 3 ###
+$!PageControl Create
+$!Page 
+  Name = 'CMy_Grid'
+  PaperAttributes
+    {
+    BackgroundColor = White
+    IsTransparent = Yes
+    OrientPortrait = No
+    ShowGrid = Yes
+    ShowRuler = No
+    ShowPaper = No
+    PaperSize = Letter
+    RulerSpacing = OneInch
+    PaperGridSpacing = HalfInch
+    RegionInWorkArea
+      {
+      X1 = 1
+      Y1 = 0.25
+      X2 = 10
+      Y2 = 8.25
+      }
+    }
+### Frame Number 1, Page Number 3 ###
+$!AttachDataSet 
+  PageNum = 3
+  Frame = 1
+$!FrameLayout 
+  ShowHeader = No
+  HeaderColor = Red
+  XYPos
+    {
+    X = 1
+    Y = 0.25
+    }
+  Width = 9
+  Height = 8
+$!ThreeDAxis 
+  AspectRatioLimit = 25
+  BoxAspectRatioLimit = 25
+$!PlotType  = XYLine
+$!FrameName  = 'Frame 001'
+$!GlobalTime 
+  SolutionTime = 0
+$!DeleteLineMaps 
+$!ActiveLineMaps  =  [1-22]
+$!GlobalLinePlot 
+  DataLabels
+    {
+    DistanceSkip = 5
+    }
+  Legend
+    {
+    Show = Yes
+    TextShape
+      {
+      Height = 1.5
+      }
+    Box
+      {
+      BoxType = None
+      Margin = 5
+      }
+    RowSpacing = 1
+    XYPos
+      {
+      X = 88
+      Y = 10
+      }
+    AnchorAlignment = BottomLeft
+    }
+$!Blanking 
+  Value
+    {
+    Include = No
+    Constraint 1
+      {
+      Include = Yes
+      ValueCutoff = -100
+      VarA = 13
+      }
+    Constraint 2
+      {
+      Include = Yes
+      ValueCutoff = -100
+      VarA = 14
+      }
+    }
+$!LineMap  [1]
+  Name = '&(ZONENAME[7]%6.6s)'
+  Assign    { Zone = 7 XAxisVar = 3 YAxisVar = 9 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\A' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [2]
+  Name = '&(ZONENAME[14]%6.6s)'
+  Assign    { Zone = 14 XAxisVar = 3 YAxisVar = 9 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\a' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [3]
+  Name = '&(ZONENAME[22]%6.6s)'
+  Assign    { Zone = 22 XAxisVar = 3 YAxisVar = 9 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\A' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [4]
+  Name = '&(ZONENAME[29]%6.6s)'
+  Assign    { Zone = 29 XAxisVar = 3 YAxisVar = 9 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\B' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [5]
+  Name = '&(ZONENAME[36]%6.6s)'
+  Assign    { Zone = 36 XAxisVar = 3 YAxisVar = 9 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\b' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [6]
+  Name = '&(ZONENAME[43]%6.6s)'
+  Assign    { Zone = 43 XAxisVar = 3 YAxisVar = 9 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\B' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [7]
+  Name = '&(ZONENAME[50]%6.6s)'
+  Assign    { Zone = 50 XAxisVar = 3 YAxisVar = 9 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\C' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [8]
+  Name = '&(ZONENAME[58]%6.6s)'
+  Assign    { Zone = 58 XAxisVar = 3 YAxisVar = 9 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\c' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [9]
+  Name = '&(ZONENAME[66]%6.6s)'
+  Assign    { Zone = 66 XAxisVar = 3 YAxisVar = 9 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\D' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [10]
+  Name = '&(ZONENAME[80]%6.6s)'
+  Assign    { Zone = 80 XAxisVar = 3 YAxisVar = 9 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\d' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [11]
+  Name = '&(ZONENAME[87]%6.6s)'
+  Assign    { Zone = 87 XAxisVar = 3 YAxisVar = 9 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\D' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [12]
+  Name = '&(ZONENAME[92]%6.6s)'
+  Assign    { Zone = 92 XAxisVar = 3 YAxisVar = 9 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\d' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [13]
+  Name = '&(ZONENAME[99]%6.6s)'
+  Assign    { Zone = 99 XAxisVar = 3 YAxisVar = 9 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\E' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [14]
+  Name = '&(ZONENAME[106]%6.6s)'
+  Assign    { Zone = 106 XAxisVar = 3 YAxisVar = 9 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\F' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [15]
+  Name = '&(ZONENAME[114]%6.6s)'
+  Assign    { Zone = 114 XAxisVar = 3 YAxisVar = 9 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\e' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [16]
+  Name = '&(ZONENAME[122]%6.6s)'
+  Assign    { Zone = 122 XAxisVar = 3 YAxisVar = 9 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\f' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [17]
+  Name = '&(ZONENAME[129]%6.6s)'
+  Assign    { Zone = 129 XAxisVar = 3 YAxisVar = 9 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\E' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [18]
+  Name = '&(ZONENAME[136]%6.6s)'
+  Assign    { Zone = 136 XAxisVar = 3 YAxisVar = 9 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\F' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [19]
+  Name = '&(ZONENAME[145]%6.6s)'
+  Assign    { Zone = 145 XAxisVar = 3 YAxisVar = 9 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\G' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [20]
+  Name = '&(ZONENAME[158]%6.6s)'
+  Assign    { Zone = 158 XAxisVar = 3 YAxisVar = 9 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\g' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [21]
+  Name = '&(ZONENAME[254]%6.6s)'
+  Assign    { Zone = 254 XAxisVar = 3 YAxisVar = 9 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\H' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [22]
+  Name = '&(ZONENAME[255]%6.6s)'
+  Assign    { Zone = 255 XAxisVar = 3 YAxisVar = 9 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\h' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!XYLineAxis 
+  DepXToYRatio = 1
+  GridArea { DrawBorder = Yes LineThickness = 0.1 }
+  ViewportPosition { X1 = 15 }
+$!XYLineAxis 
+  XDetail 1
+    {
+    CoordScale = Log
+    RangeMin = 0.00025
+    RangeMax = 0.025
+    GRSpacing = 0.005
+    Gridlines
+      {
+      Show = Yes
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      }
+    Title
+      {
+      Offset = 6
+      }
+    }
+$!XYLineAxis 
+  YDetail 1
+    {
+    CoordScale = Linear
+    RangeMin = -0.138
+    RangeMax = -0.130
+    GRSpacing = 0.002
+    TickLabel
+      {
+      NumFormat
+        {
+        Formatting = FixedFloat
+        TimeDateFormat = ''
+        }
+      }
+    Gridlines
+      {
+      Show = Yes
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      }
+    Title
+      {
+      Offset = 12
+      }
+    }
+$!LinePlotLayers 
+  ShowSymbols = Yes
+#$!AttachText 
+#  AnchorPos { X = 50 Y = 50 }
+#  TextShape { IsBold = No SizeUnits = Frame Height = 8 }
+#  Color = Custom2
+#  Angle = 45
+#  Anchor = MidCenter
+#  Text = 'Preliminary'
+$!AttachText 
+  AnchorPos { X = 50 Y = 99 }
+  TextShape { IsBold = No Height = 20 }
+  Anchor = HeadCenter
+  Text = 'Test Case 1c: ONERA OAT15A\nGrid Convergence Study\nAngle of Attack 1.50'
+$!AttachText 
+  AnchorPos { X = 75 Y = 99 }
+  TextShape { IsBold = No Height = 12 }
+  Box { BoxType = Filled }
+  Anchor = HeadLeft
+  Text = 'Grid Family:                            \n\n\n\n'
+$!AttachText 
+  AnchorPos { X = 75 Y = 97 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Red
+  Anchor = HeadLeft
+  Text = '     Cadence Structured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 95 }
+  TextShape { IsBold = No Height = 12 }
+  Anchor = HeadLeft
+  Text = '     Cadence Unstructured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 93 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Blue
+  Anchor = HeadLeft
+  Text = '     HeldenMesh Unstructured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 91 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Purple
+  Anchor = HeadLeft
+  Text = '     User Grid Adaptation'
+$!FrameControl ActivateByNumber
+  Frame = 1
+### Page Number 4 ###
+$!PageControl Create
+$!Page 
+  Name = 'CDp_Grid'
+  PaperAttributes
+    {
+    BackgroundColor = White
+    IsTransparent = Yes
+    OrientPortrait = No
+    ShowGrid = Yes
+    ShowRuler = No
+    ShowPaper = No
+    PaperSize = Letter
+    RulerSpacing = OneInch
+    PaperGridSpacing = HalfInch
+    RegionInWorkArea
+      {
+      X1 = 1
+      Y1 = 0.25
+      X2 = 10
+      Y2 = 8.25
+      }
+    }
+### Frame Number 1, Page Number 4 ###
+$!AttachDataSet 
+  PageNum = 4
+  Frame = 1
+$!FrameLayout 
+  ShowHeader = No
+  HeaderColor = Red
+  XYPos
+    {
+    X = 1
+    Y = 0.25
+    }
+  Width = 9
+  Height = 8
+$!ThreeDAxis 
+  AspectRatioLimit = 25
+  BoxAspectRatioLimit = 25
+$!PlotType  = XYLine
+$!FrameName  = 'Frame 001'
+$!GlobalTime 
+  SolutionTime = 0
+$!DeleteLineMaps 
+$!ActiveLineMaps  =  [1-22]
+$!ActiveLineMaps -=  [9-12]
+$!GlobalLinePlot 
+  DataLabels
+    {
+    DistanceSkip = 5
+    }
+  Legend
+    {
+    Show = Yes
+    TextShape
+      {
+      Height = 1.5
+      }
+    Box
+      {
+      BoxType = None
+      Margin = 5
+      }
+    RowSpacing = 1
+    XYPos
+      {
+      X = 88
+      Y = 10
+      }
+    AnchorAlignment = BottomLeft
+    }
+$!Blanking 
+  Value
+    {
+    Include = No
+    Constraint 1
+      {
+      Include = Yes
+      ValueCutoff = -100
+      VarA = 13
+      }
+    Constraint 2
+      {
+      Include = Yes
+      ValueCutoff = -100
+      VarA = 14
+      }
+    }
+$!LineMap  [1]
+  Name = '&(ZONENAME[7]%6.6s)'
+  Assign    { Zone = 7 XAxisVar = 3 YAxisVar = 13 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\A' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [2]
+  Name = '&(ZONENAME[14]%6.6s)'
+  Assign    { Zone = 14 XAxisVar = 3 YAxisVar = 13 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\a' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [3]
+  Name = '&(ZONENAME[22]%6.6s)'
+  Assign    { Zone = 22 XAxisVar = 3 YAxisVar = 13 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\A' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [4]
+  Name = '&(ZONENAME[29]%6.6s)'
+  Assign    { Zone = 29 XAxisVar = 3 YAxisVar = 13 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\B' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [5]
+  Name = '&(ZONENAME[36]%6.6s)'
+  Assign    { Zone = 36 XAxisVar = 3 YAxisVar = 13 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\b' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [6]
+  Name = '&(ZONENAME[43]%6.6s)'
+  Assign    { Zone = 43 XAxisVar = 3 YAxisVar = 13 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\B' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [7]
+  Name = '&(ZONENAME[50]%6.6s)'
+  Assign    { Zone = 50 XAxisVar = 3 YAxisVar = 13 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\C' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [8]
+  Name = '&(ZONENAME[58]%6.6s)'
+  Assign    { Zone = 58 XAxisVar = 3 YAxisVar = 13 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\c' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [9]
+  Name = '&(ZONENAME[66]%6.6s)'
+  Assign    { Zone = 66 XAxisVar = 3 YAxisVar = 13 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\D' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [10]
+  Name = '&(ZONENAME[80]%6.6s)'
+  Assign    { Zone = 80 XAxisVar = 3 YAxisVar = 13 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\d' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [11]
+  Name = '&(ZONENAME[87]%6.6s)'
+  Assign    { Zone = 87 XAxisVar = 3 YAxisVar = 13 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\D' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [12]
+  Name = '&(ZONENAME[92]%6.6s)'
+  Assign    { Zone = 92 XAxisVar = 3 YAxisVar = 13 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\d' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [13]
+  Name = '&(ZONENAME[99]%6.6s)'
+  Assign    { Zone = 99 XAxisVar = 3 YAxisVar = 13 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\E' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [14]
+  Name = '&(ZONENAME[106]%6.6s)'
+  Assign    { Zone = 106 XAxisVar = 3 YAxisVar = 13 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\F' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [15]
+  Name = '&(ZONENAME[114]%6.6s)'
+  Assign    { Zone = 114 XAxisVar = 3 YAxisVar = 13 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\e' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [16]
+  Name = '&(ZONENAME[122]%6.6s)'
+  Assign    { Zone = 122 XAxisVar = 3 YAxisVar = 13 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\f' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [17]
+  Name = '&(ZONENAME[129]%6.6s)'
+  Assign    { Zone = 129 XAxisVar = 3 YAxisVar = 13 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\E' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [18]
+  Name = '&(ZONENAME[136]%6.6s)'
+  Assign    { Zone = 136 XAxisVar = 3 YAxisVar = 13 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\F' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [19]
+  Name = '&(ZONENAME[145]%6.6s)'
+  Assign    { Zone = 145 XAxisVar = 3 YAxisVar = 13 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\G' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [20]
+  Name = '&(ZONENAME[158]%6.6s)'
+  Assign    { Zone = 158 XAxisVar = 3 YAxisVar = 13 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\g' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [21]
+  Name = '&(ZONENAME[254]%6.6s)'
+  Assign    { Zone = 254 XAxisVar = 3 YAxisVar = 13 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\H' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [22]
+  Name = '&(ZONENAME[255]%6.6s)'
+  Assign    { Zone = 255 XAxisVar = 3 YAxisVar = 13 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\h' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!XYLineAxis 
+  DepXToYRatio = 1
+  GridArea { DrawBorder = Yes LineThickness = 0.1 }
+  ViewportPosition { X1 = 15 }
+  XDetail 1
+    {
+    CoordScale = Log
+    RangeMin = 0.00025
+    RangeMax = 0.025
+    GRSpacing = 0.005
+    Gridlines
+      {
+      Show = Yes
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      }
+    Title
+      {
+      Offset = 6
+      }
+    }
+$!XYLineAxis 
+  YDetail 1
+    {
+    CoordScale = Linear
+    RangeMin = 0.00835
+    RangeMax = 0.00885
+    GRSpacing = 5E-05
+    TickLabel
+      {
+      NumFormat
+        {
+        Formatting = FixedFloat
+        Precision = 5
+        TimeDateFormat = ''
+        }
+      }
+    Gridlines
+      {
+      Show = Yes
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      }
+    Title
+      {
+      Offset = 12
+      }
+    }
+$!LinePlotLayers 
+  ShowSymbols = Yes
+#$!AttachText 
+#  AnchorPos { X = 50 Y = 50 }
+#  TextShape { IsBold = No SizeUnits = Frame Height = 8 }
+#  Color = Custom2
+#  Angle = 45
+#  Anchor = MidCenter
+#  Text = 'Preliminary'
+$!AttachText 
+  AnchorPos { X = 50 Y = 99 }
+  TextShape { IsBold = No Height = 20 }
+  Anchor = HeadCenter
+  Text = 'Test Case 1c: ONERA OAT15A\nGrid Convergence Study\nAngle of Attack 1.50'
+$!AttachText 
+  AnchorPos { X = 75 Y = 99 }
+  TextShape { IsBold = No Height = 12 }
+  Box { BoxType = Filled }
+  Anchor = HeadLeft
+  Text = 'Grid Family:                            \n\n\n\n'
+$!AttachText 
+  AnchorPos { X = 75 Y = 97 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Red
+  Anchor = HeadLeft
+  Text = '     Cadence Structured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 95 }
+  TextShape { IsBold = No Height = 12 }
+  Anchor = HeadLeft
+  Text = '     Cadence Unstructured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 93 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Blue
+  Anchor = HeadLeft
+  Text = '     HeldenMesh Unstructured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 91 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Purple
+  Anchor = HeadLeft
+  Text = '     User Grid Adaptation'
+$!FrameControl ActivateByNumber
+  Frame = 1
+### Page Number 5 ###
+$!PageControl Create
+$!Page 
+  Name = 'CDv_Grid'
+  PaperAttributes
+    {
+    BackgroundColor = White
+    IsTransparent = Yes
+    OrientPortrait = No
+    ShowGrid = Yes
+    ShowRuler = No
+    ShowPaper = No
+    PaperSize = Letter
+    RulerSpacing = OneInch
+    PaperGridSpacing = HalfInch
+    RegionInWorkArea
+      {
+      X1 = 1
+      Y1 = 0.25
+      X2 = 10
+      Y2 = 8.25
+      }
+    }
+### Frame Number 1, Page Number 5 ###
+$!AttachDataSet 
+  PageNum = 5
+  Frame = 1
+$!FrameLayout 
+  ShowHeader = No
+  HeaderColor = Red
+  XYPos
+    {
+    X = 1
+    Y = 0.25
+    }
+  Width = 9
+  Height = 8
+$!ThreeDAxis 
+  AspectRatioLimit = 25
+  BoxAspectRatioLimit = 25
+$!PlotType  = XYLine
+$!FrameName  = 'Frame 001'
+$!GlobalTime 
+  SolutionTime = 0
+$!DeleteLineMaps 
+$!ActiveLineMaps  =  [1-22]
+$!ActiveLineMaps -=  [9-12]
+$!GlobalLinePlot 
+  DataLabels
+    {
+    DistanceSkip = 5
+    }
+  Legend
+    {
+    Show = Yes
+    TextShape
+      {
+      Height = 1.5
+      }
+    Box
+      {
+      BoxType = None
+      Margin = 5
+      }
+    RowSpacing = 1
+    XYPos
+      {
+      X = 88
+      Y = 10
+      }
+    AnchorAlignment = BottomLeft
+    }
+$!Blanking 
+  Value
+    {
+    Include = No
+    Constraint 1
+      {
+      Include = Yes
+      ValueCutoff = -100
+      VarA = 13
+      }
+    Constraint 2
+      {
+      Include = Yes
+      ValueCutoff = -100
+      VarA = 14
+      }
+    }
+$!LineMap  [1]
+  Name = '&(ZONENAME[7]%6.6s)'
+  Assign    { Zone = 7 XAxisVar = 3 YAxisVar = 14 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\A' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [2]
+  Name = '&(ZONENAME[14]%6.6s)'
+  Assign    { Zone = 14 XAxisVar = 3 YAxisVar = 14 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\a' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [3]
+  Name = '&(ZONENAME[22]%6.6s)'
+  Assign    { Zone = 22 XAxisVar = 3 YAxisVar = 14 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\A' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [4]
+  Name = '&(ZONENAME[29]%6.6s)'
+  Assign    { Zone = 29 XAxisVar = 3 YAxisVar = 14 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\B' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [5]
+  Name = '&(ZONENAME[36]%6.6s)'
+  Assign    { Zone = 36 XAxisVar = 3 YAxisVar = 14 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\b' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [6]
+  Name = '&(ZONENAME[43]%6.6s)'
+  Assign    { Zone = 43 XAxisVar = 3 YAxisVar = 14 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\B' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [7]
+  Name = '&(ZONENAME[50]%6.6s)'
+  Assign    { Zone = 50 XAxisVar = 3 YAxisVar = 14 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\C' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [8]
+  Name = '&(ZONENAME[58]%6.6s)'
+  Assign    { Zone = 58 XAxisVar = 3 YAxisVar = 14 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\c' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [9]
+  Name = '&(ZONENAME[66]%6.6s)'
+  Assign    { Zone = 66 XAxisVar = 3 YAxisVar = 14 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\D' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [10]
+  Name = '&(ZONENAME[80]%6.6s)'
+  Assign    { Zone = 80 XAxisVar = 3 YAxisVar = 14 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\d' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [11]
+  Name = '&(ZONENAME[87]%6.6s)'
+  Assign    { Zone = 87 XAxisVar = 3 YAxisVar = 14 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\D' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [12]
+  Name = '&(ZONENAME[92]%6.6s)'
+  Assign    { Zone = 92 XAxisVar = 3 YAxisVar = 14 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\d' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [13]
+  Name = '&(ZONENAME[99]%6.6s)'
+  Assign    { Zone = 99 XAxisVar = 3 YAxisVar = 14 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\E' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [14]
+  Name = '&(ZONENAME[106]%6.6s)'
+  Assign    { Zone = 106 XAxisVar = 3 YAxisVar = 14 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\F' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [15]
+  Name = '&(ZONENAME[114]%6.6s)'
+  Assign    { Zone = 114 XAxisVar = 3 YAxisVar = 14 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\e' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [16]
+  Name = '&(ZONENAME[122]%6.6s)'
+  Assign    { Zone = 122 XAxisVar = 3 YAxisVar = 14 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\f' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [17]
+  Name = '&(ZONENAME[129]%6.6s)'
+  Assign    { Zone = 129 XAxisVar = 3 YAxisVar = 14 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\E' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [18]
+  Name = '&(ZONENAME[136]%6.6s)'
+  Assign    { Zone = 136 XAxisVar = 3 YAxisVar = 14 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\F' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [19]
+  Name = '&(ZONENAME[145]%6.6s)'
+  Assign    { Zone = 145 XAxisVar = 3 YAxisVar = 14 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\G' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [20]
+  Name = '&(ZONENAME[158]%6.6s)'
+  Assign    { Zone = 158 XAxisVar = 3 YAxisVar = 14 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\g' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [21]
+  Name = '&(ZONENAME[254]%6.6s)'
+  Assign    { Zone = 254 XAxisVar = 3 YAxisVar = 14 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\H' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [22]
+  Name = '&(ZONENAME[255]%6.6s)'
+  Assign    { Zone = 255 XAxisVar = 3 YAxisVar = 14 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\h' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!XYLineAxis 
+  DepXToYRatio = 1
+  GridArea { DrawBorder = Yes LineThickness = 0.1 }
+  ViewportPosition { X1 = 15 }
+$!XYLineAxis 
+  XDetail 1
+    {
+    CoordScale = Log
+    RangeMin = 0.00025
+    RangeMax = 0.025
+    GRSpacing = 0.005
+    Gridlines
+      {
+      Show = Yes
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      }
+    Title
+      {
+      Offset = 6
+      }
+    }
+$!XYLineAxis 
+  YDetail 1
+    {
+    CoordScale = Linear
+    RangeMin = 0.00615
+    RangeMax = 0.00665
+    GRSpacing = 5E-05
+    TickLabel
+      {
+      NumFormat
+        {
+        Formatting = FixedFloat
+        Precision = 5
+        TimeDateFormat = ''
+        }
+      }
+    Gridlines
+      {
+      Show = Yes
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      }
+    Title
+      {
+      Offset = 12
+      }
+    }
+$!LinePlotLayers 
+  ShowSymbols = Yes
+#$!AttachText 
+#  AnchorPos { X = 50 Y = 50 }
+#  TextShape { IsBold = No SizeUnits = Frame Height = 8 }
+#  Color = Custom2
+#  Angle = 45
+#  Anchor = MidCenter
+#  Text = 'Preliminary'
+$!AttachText 
+  AnchorPos { X = 50 Y = 99 }
+  TextShape { IsBold = No Height = 20 }
+  Anchor = HeadCenter
+  Text = 'Test Case 1c: ONERA OAT15A\nGrid Convergence Study\nAngle of Attack 1.50'
+$!AttachText 
+  AnchorPos { X = 75 Y = 99 }
+  TextShape { IsBold = No Height = 12 }
+  Box { BoxType = Filled }
+  Anchor = HeadLeft
+  Text = 'Grid Family:                            \n\n\n\n'
+$!AttachText 
+  AnchorPos { X = 75 Y = 97 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Red
+  Anchor = HeadLeft
+  Text = '     Cadence Structured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 95 }
+  TextShape { IsBold = No Height = 12 }
+  Anchor = HeadLeft
+  Text = '     Cadence Unstructured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 93 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Blue
+  Anchor = HeadLeft
+  Text = '     HeldenMesh Unstructured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 91 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Purple
+  Anchor = HeadLeft
+  Text = '     User Grid Adaptation'
+$!FrameControl ActivateByNumber
+  Frame = 1
+### Page Number 6 ###
+$!PageControl Create
+$!Page 
+  Name = 'CDerror_Grid'
+  PaperAttributes
+    {
+    BackgroundColor = White
+    IsTransparent = Yes
+    OrientPortrait = No
+    ShowGrid = Yes
+    ShowRuler = No
+    ShowPaper = No
+    PaperSize = Letter
+    RulerSpacing = OneInch
+    PaperGridSpacing = HalfInch
+    RegionInWorkArea
+      {
+      X1 = 1
+      Y1 = 0.25
+      X2 = 10
+      Y2 = 8.25
+      }
+    }
+### Frame Number 1, Page Number 6 ###
+$!AttachDataSet 
+  PageNum = 6
+  Frame = 1
+$!FrameLayout 
+  ShowHeader = No
+  HeaderColor = Red
+  XYPos
+    {
+    X = 1
+    Y = 0.25
+    }
+  Width = 9
+  Height = 8
+$!ThreeDAxis 
+  AspectRatioLimit = 25
+  BoxAspectRatioLimit = 25
+$!PlotType  = XYLine
+$!FrameName  = 'Frame 001'
+$!GlobalTime 
+  SolutionTime = 0
+$!DeleteLineMaps 
+$!ActiveLineMaps  =  [1-22]
+$!GlobalLinePlot 
+  DataLabels
+    {
+    DistanceSkip = 5
+    }
+  Legend
+    {
+    Show = Yes
+    TextShape
+      {
+      Height = 1.5
+      }
+    Box
+      {
+      BoxType = None
+      Margin = 5
+      }
+    RowSpacing = 1
+    XYPos
+      {
+      X = 88
+      Y = 10
+      }
+    AnchorAlignment = BottomLeft
+    }
+$!Blanking 
+  Value
+    {
+    Include = No
+    Constraint 1
+      {
+      Include = Yes
+      ValueCutoff = -100
+      VarA = 13
+      }
+    Constraint 2
+      {
+      Include = Yes
+      ValueCutoff = -100
+      VarA = 14
+      }
+    }
+$!LineMap  [1]
+  Name = '&(ZONENAME[7]%6.6s)'
+  Assign    { Zone = 7 XAxisVar = 3 YAxisVar = 32 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\A' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [2]
+  Name = '&(ZONENAME[14]%6.6s)'
+  Assign    { Zone = 14 XAxisVar = 3 YAxisVar = 32 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\a' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [3]
+  Name = '&(ZONENAME[22]%6.6s)'
+  Assign    { Zone = 22 XAxisVar = 3 YAxisVar = 32 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\A' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [4]
+  Name = '&(ZONENAME[29]%6.6s)'
+  Assign    { Zone = 29 XAxisVar = 3 YAxisVar = 32 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\B' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [5]
+  Name = '&(ZONENAME[36]%6.6s)'
+  Assign    { Zone = 36 XAxisVar = 3 YAxisVar = 32 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\b' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [6]
+  Name = '&(ZONENAME[43]%6.6s)'
+  Assign    { Zone = 43 XAxisVar = 3 YAxisVar = 32 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\B' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [7]
+  Name = '&(ZONENAME[50]%6.6s)'
+  Assign    { Zone = 50 XAxisVar = 3 YAxisVar = 32 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\C' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [8]
+  Name = '&(ZONENAME[58]%6.6s)'
+  Assign    { Zone = 58 XAxisVar = 3 YAxisVar = 32 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\c' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [9]
+  Name = '&(ZONENAME[66]%6.6s)'
+  Assign    { Zone = 66 XAxisVar = 3 YAxisVar = 32 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\D' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [10]
+  Name = '&(ZONENAME[80]%6.6s)'
+  Assign    { Zone = 80 XAxisVar = 3 YAxisVar = 32 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\d' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [11]
+  Name = '&(ZONENAME[87]%6.6s)'
+  Assign    { Zone = 87 XAxisVar = 3 YAxisVar = 32 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\D' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [12]
+  Name = '&(ZONENAME[92]%6.6s)'
+  Assign    { Zone = 92 XAxisVar = 3 YAxisVar = 32 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\d' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [13]
+  Name = '&(ZONENAME[99]%6.6s)'
+  Assign    { Zone = 99 XAxisVar = 3 YAxisVar = 32 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\E' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [14]
+  Name = '&(ZONENAME[106]%6.6s)'
+  Assign    { Zone = 106 XAxisVar = 3 YAxisVar = 32 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\F' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [15]
+  Name = '&(ZONENAME[114]%6.6s)'
+  Assign    { Zone = 114 XAxisVar = 3 YAxisVar = 32 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\e' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [16]
+  Name = '&(ZONENAME[122]%6.6s)'
+  Assign    { Zone = 122 XAxisVar = 3 YAxisVar = 32 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\f' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [17]
+  Name = '&(ZONENAME[129]%6.6s)'
+  Assign    { Zone = 129 XAxisVar = 3 YAxisVar = 32 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\E' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [18]
+  Name = '&(ZONENAME[136]%6.6s)'
+  Assign    { Zone = 136 XAxisVar = 3 YAxisVar = 32 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\F' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [19]
+  Name = '&(ZONENAME[145]%6.6s)'
+  Assign    { Zone = 145 XAxisVar = 3 YAxisVar = 32 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\G' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [20]
+  Name = '&(ZONENAME[158]%6.6s)'
+  Assign    { Zone = 158 XAxisVar = 3 YAxisVar = 32 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\g' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [21]
+  Name = '&(ZONENAME[254]%6.6s)'
+  Assign    { Zone = 254 XAxisVar = 3 YAxisVar = 32 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\H' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [22]
+  Name = '&(ZONENAME[255]%6.6s)'
+  Assign    { Zone = 255 XAxisVar = 3 YAxisVar = 32 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\h' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!XYLineAxis 
+  DepXToYRatio = 1
+  GridArea { DrawBorder = Yes LineThickness = 0.1 }
+  ViewportPosition { X1 = 15 }
+$!XYLineAxis 
+  XDetail 1
+    {
+    CoordScale = Log
+    RangeMin = 0.00025
+    RangeMax = 0.025
+    GRSpacing = 0.005
+    Gridlines
+      {
+      Show = Yes
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      }
+    Title
+      {
+      Offset = 6
+      }
+    }
+$!XYLineAxis 
+  YDetail 1
+    {
+    CoordScale = Log
+    RangeMin = 1E-07
+    RangeMax = 0.1
+    GRSpacing = 0.1
+    TickLabel
+      {
+      NumFormat
+        {
+        Formatting = FixedFloat
+        Precision = 5
+        TimeDateFormat = ''
+        }
+      }
+    Gridlines
+      {
+      Show = Yes
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      }
+    Title
+      {
+      Offset = 12
+      }
+    }
+$!LinePlotLayers 
+  ShowSymbols = Yes
+#$!AttachText 
+#  AnchorPos { X = 50 Y = 50 }
+#  TextShape { IsBold = No SizeUnits = Frame Height = 8 }
+#  Color = Custom2
+#  Angle = 45
+#  Anchor = MidCenter
+#  Text = 'Preliminary'
+$!AttachText 
+  AnchorPos { X = 50 Y = 99 }
+  TextShape { IsBold = No Height = 20 }
+  Anchor = HeadCenter
+  Text = 'Test Case 1c: ONERA OAT15A\nGrid Convergence Study\nAngle of Attack 1.50'
+$!AttachText 
+  AnchorPos { X = 75 Y = 99 }
+  TextShape { IsBold = No Height = 12 }
+  Box { BoxType = Filled }
+  Anchor = HeadLeft
+  Text = 'Grid Family:                            \n\n\n\n'
+$!AttachText 
+  AnchorPos { X = 75 Y = 97 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Red
+  Anchor = HeadLeft
+  Text = '     Cadence Structured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 95 }
+  TextShape { IsBold = No Height = 12 }
+  Anchor = HeadLeft
+  Text = '     Cadence Unstructured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 93 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Blue
+  Anchor = HeadLeft
+  Text = '     HeldenMesh Unstructured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 91 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Purple
+  Anchor = HeadLeft
+  Text = '     User Grid Adaptation'
+$!AttachText 
+  AnchorPos { X = 87.7 Y = 62.70 }
+  TextShape { IsBold = No Height = 10 }
+  Box { BoxType = Hollow }
+  Anchor = Right
+  Text = '<greek>D</greek>CD = 10.0 Cnts'
+$!AttachText 
+  AnchorPos { X = 87.7 Y = 49.90 }
+  TextShape { IsBold = No Height = 10 }
+  Box { BoxType = Hollow }
+  Anchor = Right
+  Text = '<greek>D</greek>CD = 1.0 Count'
+$!AttachText 
+  AnchorPos { X = 87.7 Y = 37.10 }
+  TextShape { IsBold = No Height = 10 }
+  Box { BoxType = Hollow }
+  Anchor = Right
+  Text = '<greek>D</greek>CD = 0.10 Cnts'
+$!AttachText 
+  AnchorPos { X = 87.7 Y = 24.25 }
+  TextShape { IsBold = No Height = 10 }
+  Box { BoxType = Hollow }
+  Anchor = Right
+  Text = '<greek>D</greek>CD = 0.01 Cnts'
+$!FrameControl ActivateByNumber
+  Frame = 1
+### Page Number 7 ###
+$!PageControl Create
+$!Page 
+  Name = 'CLerror_Grid'
+  PaperAttributes
+    {
+    BackgroundColor = White
+    IsTransparent = Yes
+    OrientPortrait = No
+    ShowGrid = Yes
+    ShowRuler = No
+    ShowPaper = No
+    PaperSize = Letter
+    RulerSpacing = OneInch
+    PaperGridSpacing = HalfInch
+    RegionInWorkArea
+      {
+      X1 = 1
+      Y1 = 0.25
+      X2 = 10
+      Y2 = 8.25
+      }
+    }
+### Frame Number 1, Page Number 7 ###
+$!AttachDataSet 
+  PageNum = 7
+  Frame = 1
+$!FrameLayout 
+  ShowHeader = No
+  HeaderColor = Red
+  XYPos
+    {
+    X = 1
+    Y = 0.25
+    }
+  Width = 9
+  Height = 8
+$!ThreeDAxis 
+  AspectRatioLimit = 25
+  BoxAspectRatioLimit = 25
+$!PlotType  = XYLine
+$!FrameName  = 'Frame 001'
+$!GlobalTime 
+  SolutionTime = 0
+$!DeleteLineMaps 
+$!ActiveLineMaps  =  [1-22]
+$!GlobalLinePlot 
+  DataLabels
+    {
+    DistanceSkip = 5
+    }
+  Legend
+    {
+    Show = Yes
+    TextShape
+      {
+      Height = 1.5
+      }
+    Box
+      {
+      BoxType = None
+      Margin = 5
+      }
+    RowSpacing = 1
+    XYPos
+      {
+      X = 88
+      Y = 10
+      }
+    AnchorAlignment = BottomLeft
+    }
+$!Blanking 
+  Value
+    {
+    Include = No
+    Constraint 1
+      {
+      Include = Yes
+      ValueCutoff = -100
+      VarA = 13
+      }
+    Constraint 2
+      {
+      Include = Yes
+      ValueCutoff = -100
+      VarA = 14
+      }
+    }
+$!LineMap  [1]
+  Name = '&(ZONENAME[7]%6.6s)'
+  Assign    { Zone = 7 XAxisVar = 3 YAxisVar = 33 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\A' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [2]
+  Name = '&(ZONENAME[14]%6.6s)'
+  Assign    { Zone = 14 XAxisVar = 3 YAxisVar = 33 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\a' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [3]
+  Name = '&(ZONENAME[22]%6.6s)'
+  Assign    { Zone = 22 XAxisVar = 3 YAxisVar = 33 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\A' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [4]
+  Name = '&(ZONENAME[29]%6.6s)'
+  Assign    { Zone = 29 XAxisVar = 3 YAxisVar = 33 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\B' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [5]
+  Name = '&(ZONENAME[36]%6.6s)'
+  Assign    { Zone = 36 XAxisVar = 3 YAxisVar = 33 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\b' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [6]
+  Name = '&(ZONENAME[43]%6.6s)'
+  Assign    { Zone = 43 XAxisVar = 3 YAxisVar = 33 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\B' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [7]
+  Name = '&(ZONENAME[50]%6.6s)'
+  Assign    { Zone = 50 XAxisVar = 3 YAxisVar = 33 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\C' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [8]
+  Name = '&(ZONENAME[58]%6.6s)'
+  Assign    { Zone = 58 XAxisVar = 3 YAxisVar = 33 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\c' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [9]
+  Name = '&(ZONENAME[66]%6.6s)'
+  Assign    { Zone = 66 XAxisVar = 3 YAxisVar = 33 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\D' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [10]
+  Name = '&(ZONENAME[80]%6.6s)'
+  Assign    { Zone = 80 XAxisVar = 3 YAxisVar = 33 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\d' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [11]
+  Name = '&(ZONENAME[87]%6.6s)'
+  Assign    { Zone = 87 XAxisVar = 3 YAxisVar = 33 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\D' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [12]
+  Name = '&(ZONENAME[92]%6.6s)'
+  Assign    { Zone = 92 XAxisVar = 3 YAxisVar = 33 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\d' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [13]
+  Name = '&(ZONENAME[99]%6.6s)'
+  Assign    { Zone = 99 XAxisVar = 3 YAxisVar = 33 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\E' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [14]
+  Name = '&(ZONENAME[106]%6.6s)'
+  Assign    { Zone = 106 XAxisVar = 3 YAxisVar = 33 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\F' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [15]
+  Name = '&(ZONENAME[114]%6.6s)'
+  Assign    { Zone = 114 XAxisVar = 3 YAxisVar = 33 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\e' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [16]
+  Name = '&(ZONENAME[122]%6.6s)'
+  Assign    { Zone = 122 XAxisVar = 3 YAxisVar = 33 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\f' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [17]
+  Name = '&(ZONENAME[129]%6.6s)'
+  Assign    { Zone = 129 XAxisVar = 3 YAxisVar = 33 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\E' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [18]
+  Name = '&(ZONENAME[136]%6.6s)'
+  Assign    { Zone = 136 XAxisVar = 3 YAxisVar = 33 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\F' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [19]
+  Name = '&(ZONENAME[145]%6.6s)'
+  Assign    { Zone = 145 XAxisVar = 3 YAxisVar = 33 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\G' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [20]
+  Name = '&(ZONENAME[158]%6.6s)'
+  Assign    { Zone = 158 XAxisVar = 3 YAxisVar = 33 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\g' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [21]
+  Name = '&(ZONENAME[254]%6.6s)'
+  Assign    { Zone = 254 XAxisVar = 3 YAxisVar = 33 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\H' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [22]
+  Name = '&(ZONENAME[255]%6.6s)'
+  Assign    { Zone = 255 XAxisVar = 3 YAxisVar = 33 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\h' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!XYLineAxis 
+  DepXToYRatio = 1
+  GridArea { DrawBorder = Yes LineThickness = 0.1 }
+  ViewportPosition { X1 = 15 }
+$!XYLineAxis 
+  XDetail 1
+    {
+    CoordScale = Log
+    RangeMin = 0.00025
+    RangeMax = 0.025
+    GRSpacing = 0.005
+    Gridlines
+      {
+      Show = Yes
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      }
+    Title
+      {
+      Offset = 6
+      }
+    }
+$!XYLineAxis 
+  YDetail 1
+    {
+    CoordScale = Log
+    RangeMin = 1E-06
+    RangeMax = 1.0
+    GRSpacing = 0.1
+    TickLabel
+      {
+      NumFormat
+        {
+        Formatting = FixedFloat
+        Precision = 5
+        TimeDateFormat = ''
+        }
+      }
+    Gridlines
+      {
+      Show = Yes
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      }
+    Title
+      {
+      Offset = 12
+      }
+    }
+$!LinePlotLayers 
+  ShowSymbols = Yes
+#$!AttachText 
+#  AnchorPos { X = 50 Y = 50 }
+#  TextShape { IsBold = No SizeUnits = Frame Height = 8 }
+#  Color = Custom2
+#  Angle = 45
+#  Anchor = MidCenter
+#  Text = 'Preliminary'
+$!AttachText 
+  AnchorPos { X = 50 Y = 99 }
+  TextShape { IsBold = No Height = 20 }
+  Anchor = HeadCenter
+  Text = 'Test Case 1c: ONERA OAT15A\nGrid Convergence Study\nAngle of Attack 1.50'
+$!AttachText 
+  AnchorPos { X = 75 Y = 99 }
+  TextShape { IsBold = No Height = 12 }
+  Box { BoxType = Filled }
+  Anchor = HeadLeft
+  Text = 'Grid Family:                            \n\n\n\n'
+$!AttachText 
+  AnchorPos { X = 75 Y = 97 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Red
+  Anchor = HeadLeft
+  Text = '     Cadence Structured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 95 }
+  TextShape { IsBold = No Height = 12 }
+  Anchor = HeadLeft
+  Text = '     Cadence Unstructured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 93 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Blue
+  Anchor = HeadLeft
+  Text = '     HeldenMesh Unstructured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 91 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Purple
+  Anchor = HeadLeft
+  Text = '     User Grid Adaptation'
+$!AttachText 
+  AnchorPos { X = 87.7 Y = 62.70 }
+  TextShape { IsBold = No Height = 10 }
+  Box { BoxType = Hollow }
+  Anchor = Right
+  Text = '<greek>D</greek>CL = 0.010000'
+$!AttachText 
+  AnchorPos { X = 87.7 Y = 49.90 }
+  TextShape { IsBold = No Height = 10 }
+  Box { BoxType = Hollow }
+  Anchor = Right
+  Text = '<greek>D</greek>CL = 0.001000'
+$!AttachText 
+  AnchorPos { X = 87.7 Y = 37.10 }
+  TextShape { IsBold = No Height = 10 }
+  Box { BoxType = Hollow }
+  Anchor = Right
+  Text = '<greek>D</greek>CL = 0.000100'
+$!AttachText 
+  AnchorPos { X = 87.7 Y = 24.25 }
+  TextShape { IsBold = No Height = 10 }
+  Box { BoxType = Hollow }
+  Anchor = Right
+  Text = '<greek>D</greek>CL = 0.000010'
+$!FrameControl ActivateByNumber
+  Frame = 1
+### Page Number 8 ###
+$!PageControl Create
+$!Page 
+  Name = 'CMerror_Grid'
+  PaperAttributes
+    {
+    BackgroundColor = White
+    IsTransparent = Yes
+    OrientPortrait = No
+    ShowGrid = Yes
+    ShowRuler = No
+    ShowPaper = No
+    PaperSize = Letter
+    RulerSpacing = OneInch
+    PaperGridSpacing = HalfInch
+    RegionInWorkArea
+      {
+      X1 = 1
+      Y1 = 0.25
+      X2 = 10
+      Y2 = 8.25
+      }
+    }
+### Frame Number 1, Page Number 8 ###
+$!AttachDataSet 
+  PageNum = 8
+  Frame = 1
+$!FrameLayout 
+  ShowHeader = No
+  HeaderColor = Red
+  XYPos
+    {
+    X = 1
+    Y = 0.25
+    }
+  Width = 9
+  Height = 8
+$!ThreeDAxis 
+  AspectRatioLimit = 25
+  BoxAspectRatioLimit = 25
+$!PlotType  = XYLine
+$!FrameName  = 'Frame 001'
+$!GlobalTime 
+  SolutionTime = 0
+$!DeleteLineMaps 
+$!ActiveLineMaps  =  [1-22]
+$!GlobalLinePlot 
+  DataLabels
+    {
+    DistanceSkip = 5
+    }
+  Legend
+    {
+    Show = Yes
+    TextShape
+      {
+      Height = 1.5
+      }
+    Box
+      {
+      BoxType = None
+      Margin = 5
+      }
+    RowSpacing = 1
+    XYPos
+      {
+      X = 88
+      Y = 10
+      }
+    AnchorAlignment = BottomLeft
+    }
+$!Blanking 
+  Value
+    {
+    Include = No
+    Constraint 1
+      {
+      Include = Yes
+      ValueCutoff = -100
+      VarA = 13
+      }
+    Constraint 2
+      {
+      Include = Yes
+      ValueCutoff = -100
+      VarA = 14
+      }
+    }
+$!LineMap  [1]
+  Name = '&(ZONENAME[7]%6.6s)'
+  Assign    { Zone = 7 XAxisVar = 3 YAxisVar = 34 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\A' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [2]
+  Name = '&(ZONENAME[14]%6.6s)'
+  Assign    { Zone = 14 XAxisVar = 3 YAxisVar = 34 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\a' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [3]
+  Name = '&(ZONENAME[22]%6.6s)'
+  Assign    { Zone = 22 XAxisVar = 3 YAxisVar = 34 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\A' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [4]
+  Name = '&(ZONENAME[29]%6.6s)'
+  Assign    { Zone = 29 XAxisVar = 3 YAxisVar = 34 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\B' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [5]
+  Name = '&(ZONENAME[36]%6.6s)'
+  Assign    { Zone = 36 XAxisVar = 3 YAxisVar = 34 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\b' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [6]
+  Name = '&(ZONENAME[43]%6.6s)'
+  Assign    { Zone = 43 XAxisVar = 3 YAxisVar = 34 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\B' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [7]
+  Name = '&(ZONENAME[50]%6.6s)'
+  Assign    { Zone = 50 XAxisVar = 3 YAxisVar = 34 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\C' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [8]
+  Name = '&(ZONENAME[58]%6.6s)'
+  Assign    { Zone = 58 XAxisVar = 3 YAxisVar = 34 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\c' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [9]
+  Name = '&(ZONENAME[66]%6.6s)'
+  Assign    { Zone = 66 XAxisVar = 3 YAxisVar = 34 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\D' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [10]
+  Name = '&(ZONENAME[80]%6.6s)'
+  Assign    { Zone = 80 XAxisVar = 3 YAxisVar = 34 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\d' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [11]
+  Name = '&(ZONENAME[87]%6.6s)'
+  Assign    { Zone = 87 XAxisVar = 3 YAxisVar = 34 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\D' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [12]
+  Name = '&(ZONENAME[92]%6.6s)'
+  Assign    { Zone = 92 XAxisVar = 3 YAxisVar = 34 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\d' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [13]
+  Name = '&(ZONENAME[99]%6.6s)'
+  Assign    { Zone = 99 XAxisVar = 3 YAxisVar = 34 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\E' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [14]
+  Name = '&(ZONENAME[106]%6.6s)'
+  Assign    { Zone = 106 XAxisVar = 3 YAxisVar = 34 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\F' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [15]
+  Name = '&(ZONENAME[114]%6.6s)'
+  Assign    { Zone = 114 XAxisVar = 3 YAxisVar = 34 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\e' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [16]
+  Name = '&(ZONENAME[122]%6.6s)'
+  Assign    { Zone = 122 XAxisVar = 3 YAxisVar = 34 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\f' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [17]
+  Name = '&(ZONENAME[129]%6.6s)'
+  Assign    { Zone = 129 XAxisVar = 3 YAxisVar = 34 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\E' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [18]
+  Name = '&(ZONENAME[136]%6.6s)'
+  Assign    { Zone = 136 XAxisVar = 3 YAxisVar = 34 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\F' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [19]
+  Name = '&(ZONENAME[145]%6.6s)'
+  Assign    { Zone = 145 XAxisVar = 3 YAxisVar = 34 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\G' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [20]
+  Name = '&(ZONENAME[158]%6.6s)'
+  Assign    { Zone = 158 XAxisVar = 3 YAxisVar = 34 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\g' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [21]
+  Name = '&(ZONENAME[254]%6.6s)'
+  Assign    { Zone = 254 XAxisVar = 3 YAxisVar = 34 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\H' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [22]
+  Name = '&(ZONENAME[255]%6.6s)'
+  Assign    { Zone = 255 XAxisVar = 3 YAxisVar = 34 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\h' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!XYLineAxis 
+  DepXToYRatio = 1
+  GridArea { DrawBorder = Yes LineThickness = 0.1 }
+  ViewportPosition { X1 = 15 }
+$!XYLineAxis 
+  XDetail 1
+    {
+    CoordScale = Log
+    RangeMin = 0.00025
+    RangeMax = 0.025
+    GRSpacing = 0.005
+    Gridlines
+      {
+      Show = Yes
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      }
+    Title
+      {
+      Offset = 6
+      }
+    }
+$!XYLineAxis 
+  YDetail 1
+    {
+    CoordScale = Log
+    RangeMin = 1E-07
+    RangeMax = 0.1
+    GRSpacing = 0.1
+    TickLabel
+      {
+      NumFormat
+        {
+        Formatting = FixedFloat
+        Precision = 5
+        TimeDateFormat = ''
+        }
+      }
+    Gridlines
+      {
+      Show = Yes
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      }
+    Title
+      {
+      Offset = 12
+      }
+    }
+$!LinePlotLayers 
+  ShowSymbols = Yes
+#$!AttachText 
+#  AnchorPos { X = 50 Y = 50 }
+#  TextShape { IsBold = No SizeUnits = Frame Height = 8 }
+#  Color = Custom2
+#  Angle = 45
+#  Anchor = MidCenter
+#  Text = 'Preliminary'
+$!AttachText 
+  AnchorPos { X = 50 Y = 99 }
+  TextShape { IsBold = No Height = 20 }
+  Anchor = HeadCenter
+  Text = 'Test Case 1c: ONERA OAT15A\nGrid Convergence Study\nAngle of Attack 1.50'
+$!AttachText 
+  AnchorPos { X = 75 Y = 99 }
+  TextShape { IsBold = No Height = 12 }
+  Box { BoxType = Filled }
+  Anchor = HeadLeft
+  Text = 'Grid Family:                            \n\n\n\n'
+$!AttachText 
+  AnchorPos { X = 75 Y = 97 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Red
+  Anchor = HeadLeft
+  Text = '     Cadence Structured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 95 }
+  TextShape { IsBold = No Height = 12 }
+  Anchor = HeadLeft
+  Text = '     Cadence Unstructured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 93 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Blue
+  Anchor = HeadLeft
+  Text = '     HeldenMesh Unstructured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 91 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Purple
+  Anchor = HeadLeft
+  Text = '     User Grid Adaptation'
+$!AttachText 
+  AnchorPos { X = 87.7 Y = 62.70 }
+  TextShape { IsBold = No Height = 10 }
+  Box { BoxType = Hollow }
+  Anchor = Right
+  Text = '<greek>D</greek>CM = 0.001000'
+$!AttachText 
+  AnchorPos { X = 87.7 Y = 49.90 }
+  TextShape { IsBold = No Height = 10 }
+  Box { BoxType = Hollow }
+  Anchor = Right
+  Text = '<greek>D</greek>CM = 0.000100'
+$!AttachText 
+  AnchorPos { X = 87.7 Y = 37.10 }
+  TextShape { IsBold = No Height = 10 }
+  Box { BoxType = Hollow }
+  Anchor = Right
+  Text = '<greek>D</greek>CM = 0.000010'
+$!AttachText 
+  AnchorPos { X = 87.7 Y = 24.25 }
+  TextShape { IsBold = No Height = 10 }
+  Box { BoxType = Hollow }
+  Anchor = Right
+  Text = '<greek>D</greek>CM = 0.000001'
+$!FrameControl ActivateByNumber
+  Frame = 1
+### Page Number 9 ###
+$!PageControl Create
+$!Page 
+  Name = 'CD_Grid_1a'
+  PaperAttributes
+    {
+    BackgroundColor = White
+    IsTransparent = Yes
+    OrientPortrait = No
+    ShowGrid = Yes
+    ShowRuler = No
+    ShowPaper = No
+    PaperSize = Letter
+    RulerSpacing = OneInch
+    PaperGridSpacing = HalfInch
+    RegionInWorkArea
+      {
+      X1 = 1
+      Y1 = 0.25
+      X2 = 10
+      Y2 = 8.25
+      }
+    }
+### Frame Number 1, Page Number 9 ###
+$!AttachDataSet 
+  PageNum = 9
+  Frame = 1
+$!FrameLayout 
+  ShowHeader = No
+  HeaderColor = Red
+  XYPos
+    {
+    X = 1
+    Y = 0.25
+    }
+  Width = 9
+  Height = 8
+$!ThreeDAxis 
+  AspectRatioLimit = 25
+  BoxAspectRatioLimit = 25
+$!PlotType  = XYLine
+$!FrameName  = 'Frame 001'
+$!GlobalTime 
+  SolutionTime = 0
+$!DeleteLineMaps 
+$!ActiveLineMaps  =  [19,20,21-26]
+$!GlobalLinePlot 
+  DataLabels
+    {
+    DistanceSkip = 5
+    }
+  Legend
+    {
+    Show = Yes
+    TextShape
+      {
+      Height = 1.5
+      }
+    Box
+      {
+      BoxType = None
+      Margin = 5
+      }
+    RowSpacing = 1
+    XYPos
+      {
+      X = 88
+      Y = 10
+      }
+    AnchorAlignment = BottomLeft
+    }
+$!Blanking 
+  Value
+    {
+    Include = No
+    Constraint 1
+      {
+      Include = Yes
+      ValueCutoff = -100
+      VarA = 13
+      }
+    Constraint 2
+      {
+      Include = Yes
+      ValueCutoff = -100
+      VarA = 14
+      }
+    }
+$!LineMap  [1]
+  Name = '&(ZONENAME[7]%6.6s)'
+  Assign    { Zone = 7 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\A' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [2]
+  Name = '&(ZONENAME[14]%6.6s)'
+  Assign    { Zone = 14 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\a' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [3]
+  Name = '&(ZONENAME[22]%6.6s)'
+  Assign    { Zone = 22 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\A' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [4]
+  Name = '&(ZONENAME[29]%6.6s)'
+  Assign    { Zone = 29 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\B' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [5]
+  Name = '&(ZONENAME[36]%6.6s)'
+  Assign    { Zone = 36 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\b' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [6]
+  Name = '&(ZONENAME[43]%6.6s)'
+  Assign    { Zone = 43 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\B' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [7]
+  Name = '&(ZONENAME[50]%6.6s)'
+  Assign    { Zone = 50 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\C' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [8]
+  Name = '&(ZONENAME[58]%6.6s)'
+  Assign    { Zone = 58 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\c' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [9]
+  Name = '&(ZONENAME[66]%6.6s)'
+  Assign    { Zone = 66 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\D' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [10]
+  Name = '&(ZONENAME[80]%6.6s)'
+  Assign    { Zone = 80 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\d' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [11]
+  Name = '&(ZONENAME[87]%6.6s)'
+  Assign    { Zone = 87 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\D' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [12]
+  Name = '&(ZONENAME[92]%6.6s)'
+  Assign    { Zone = 92 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\d' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [13]
+  Name = '&(ZONENAME[99]%6.6s)'
+  Assign    { Zone = 99 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\E' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [14]
+  Name = '&(ZONENAME[106]%6.6s)'
+  Assign    { Zone = 106 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\F' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [15]
+  Name = '&(ZONENAME[114]%6.6s)'
+  Assign    { Zone = 114 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\e' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [16]
+  Name = '&(ZONENAME[122]%6.6s)'
+  Assign    { Zone = 122 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\f' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [17]
+  Name = '&(ZONENAME[129]%6.6s)'
+  Assign    { Zone = 129 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\E' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [18]
+  Name = '&(ZONENAME[136]%6.6s)'
+  Assign    { Zone = 136 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\F' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+#--------------------------------------------
+# TestCase 1a: 029.01
+$!LineMap  [19]
+  Name = '&(ZONENAME[145]%6.6s)'
+  Assign    { Zone = 145 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Purple LinePattern = Dashed PatternLength = 0.8 LineThickness = 0.2 }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\G' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+# TestCase 1a: 029.02
+$!LineMap  [20]
+  Name = '&(ZONENAME[158]%6.6s)'
+  Assign    { Zone = 158 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Purple LinePattern = Dashed PatternLength = 0.8 LineThickness = 0.2 }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\g' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [27]
+  Name = '&(ZONENAME[254]%6.6s)'
+  Assign    { Zone = 254 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Purple LinePattern = Dashed PatternLength = 0.8 LineThickness = 0.2 }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\H' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [28]
+  Name = '&(ZONENAME[255]%6.6s)'
+  Assign    { Zone = 255 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Purple LinePattern = Dashed PatternLength = 0.8 LineThickness = 0.2 }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\h' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+#--------------------------------------------
+# TestCase 1a: 002.02
+$!LineMap  [21]
+  Name = '&(ZONENAME[170]%6.6s)'
+  Assign    { Zone = 170 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Black LinePattern = Dashed PatternLength = 0.8 LineThickness = 0.2 }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\H' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+# TestCase 1a: 011.01
+$!LineMap  [22]
+  Name = '&(ZONENAME[185]%6.6s)'
+  Assign    { Zone = 185 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Red LinePattern = Dashed PatternLength = 0.8 LineThickness = 0.2 }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\J' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+# TestCase 1a: 011.02
+$!LineMap  [23]
+  Name = '&(ZONENAME[204]%6.6s)'
+  Assign    { Zone = 204 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Purple LinePattern = Dashed PatternLength = 0.8 LineThickness = 0.2 }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\j' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+# TestCase 1a: 012.01
+$!LineMap  [24]
+  Name = '&(ZONENAME[213]%6.6s)'
+  Assign    { Zone = 213 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Black LinePattern = Dashed PatternLength = 0.8 LineThickness = 0.2 }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\K' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+# TestCase 1a: 012.04
+$!LineMap  [25]
+  Name = '&(ZONENAME[229]%6.6s)'
+  Assign    { Zone = 229 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Black LinePattern = Dashed PatternLength = 0.8 LineThickness = 0.2 }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\M' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+# TestCase 1a: 012.05
+$!LineMap  [26]
+  Name = '&(ZONENAME[245]%6.6s)'
+  Assign    { Zone = 245 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Black LinePattern = Dashed PatternLength = 0.8 LineThickness = 0.2 }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\m' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+#--------------------------------------------
+$!XYLineAxis 
+  DepXToYRatio = 1
+  GridArea { DrawBorder = Yes LineThickness = 0.1 }
+  ViewportPosition { X1 = 15 }
+$!XYLineAxis 
+  XDetail 1
+    {
+    CoordScale = Log
+    RangeMin = 0.00025
+    RangeMax = 0.025
+    GRSpacing = 0.005
+    Gridlines
+      {
+      Show = Yes
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      }
+    Title
+      {
+      Offset = 6
+      }
+    }
+$!XYLineAxis 
+  YDetail 1
+    {
+    CoordScale = Linear
+    RangeMin = |CDymin|
+    RangeMax = |CDymax|
+    GRSpacing = |CDyspc|
+    TickLabel
+      {
+      NumFormat
+        {
+        Formatting = FixedFloat
+        Precision = 4
+        TimeDateFormat = ''
+        }
+      }
+    Gridlines
+      {
+      Show = Yes
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      }
+    Title
+      {
+      Offset = 12
+      }
+    }
+$!LinePlotLayers 
+  ShowSymbols = Yes
+#$!AttachText 
+#  AnchorPos { X = 50 Y = 50 }
+#  TextShape { IsBold = No SizeUnits = Frame Height = 8 }
+#  Color = Custom2
+#  Angle = 45
+#  Anchor = MidCenter
+#  Text = 'Preliminary'
+$!AttachText 
+  AnchorPos { X = 50 Y = 99 }
+  TextShape { IsBold = No Height = 20 }
+  Anchor = HeadCenter
+  Text = 'Test Case 1c: ONERA OAT15A\nGrid Convergence Study\nAngle of Attack 1.50'
+$!AttachText 
+  AnchorPos { X = 75 Y = 99 }
+  TextShape { IsBold = No Height = 12 }
+  Box { BoxType = Filled }
+  Anchor = HeadLeft
+  Text = 'Grid Family:                            \n\n\n\n'
+$!AttachText 
+  AnchorPos { X = 75 Y = 97 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Red
+  Anchor = HeadLeft
+  Text = '     Cadence Structured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 95 }
+  TextShape { IsBold = No Height = 12 }
+  Anchor = HeadLeft
+  Text = '     Cadence Unstructured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 93 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Blue
+  Anchor = HeadLeft
+  Text = '     HeldenMesh Unstructured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 91 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Purple
+  Anchor = HeadLeft
+  Text = '     User Grid Adaptation'
+$!AttachGeom 
+  AnchorPos { X = 0.000450 Y = 0.014995 }
+  Color = Custom3
+  LineThickness = 0.4
+  DrawOrder = BeforeData
+  RawData
+1
+4
+0.00005 0.00000
+0.00000 0.00000
+0.00000 0.00051
+0.00005 0.00051
+$!AttachText 
+  PositionCoordSys = Grid
+  AnchorPos { X = 0.00042 Y = 0.01525 }
+  TextShape { IsBold = Yes Height = 14 }
+  Color = Custom3
+  Angle = 90
+  Anchor = Center
+  Text = '1a'
+$!FrameControl ActivateByNumber
+  Frame = 1
+### Page Number 10 ###
+$!PageControl Create
+$!Page 
+  Name = 'CD_Grid_1a_1c'
+  PaperAttributes
+    {
+    BackgroundColor = White
+    IsTransparent = Yes
+    OrientPortrait = No
+    ShowGrid = Yes
+    ShowRuler = No
+    ShowPaper = No
+    PaperSize = Letter
+    RulerSpacing = OneInch
+    PaperGridSpacing = HalfInch
+    RegionInWorkArea
+      {
+      X1 = 1
+      Y1 = 0.25
+      X2 = 10
+      Y2 = 8.25
+      }
+    }
+### Frame Number 1, Page Number 10 ###
+$!AttachDataSet 
+  PageNum = 10
+  Frame = 1
+$!FrameLayout 
+  ShowHeader = No
+  HeaderColor = Red
+  XYPos
+    {
+    X = 1
+    Y = 0.25
+    }
+  Width = 9
+  Height = 8
+$!ThreeDAxis 
+  AspectRatioLimit = 25
+  BoxAspectRatioLimit = 25
+$!PlotType  = XYLine
+$!FrameName  = 'Frame 001'
+$!GlobalTime 
+  SolutionTime = 0
+$!DeleteLineMaps 
+$!ActiveLineMaps  =  [1-26]
+$!GlobalLinePlot 
+  DataLabels
+    {
+    DistanceSkip = 5
+    }
+  Legend
+    {
+    Show = Yes
+    TextShape
+      {
+      Height = 1.5
+      }
+    Box
+      {
+      BoxType = None
+      Margin = 5
+      }
+    RowSpacing = 1
+    XYPos
+      {
+      X = 88
+      Y = 10
+      }
+    AnchorAlignment = BottomLeft
+    }
+$!Blanking 
+  Value
+    {
+    Include = No
+    Constraint 1
+      {
+      Include = Yes
+      ValueCutoff = -100
+      VarA = 13
+      }
+    Constraint 2
+      {
+      Include = Yes
+      ValueCutoff = -100
+      VarA = 14
+      }
+    }
+$!LineMap  [1]
+  Name = '&(ZONENAME[7]%6.6s)'
+  Assign    { Zone = 7 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\A' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [2]
+  Name = '&(ZONENAME[14]%6.6s)'
+  Assign    { Zone = 14 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\a' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [3]
+  Name = '&(ZONENAME[22]%6.6s)'
+  Assign    { Zone = 22 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\A' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [4]
+  Name = '&(ZONENAME[29]%6.6s)'
+  Assign    { Zone = 29 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\B' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [5]
+  Name = '&(ZONENAME[36]%6.6s)'
+  Assign    { Zone = 36 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\b' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [6]
+  Name = '&(ZONENAME[43]%6.6s)'
+  Assign    { Zone = 43 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\B' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [7]
+  Name = '&(ZONENAME[50]%6.6s)'
+  Assign    { Zone = 50 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\C' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [8]
+  Name = '&(ZONENAME[58]%6.6s)'
+  Assign    { Zone = 58 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\c' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [9]
+  Name = '&(ZONENAME[66]%6.6s)'
+  Assign    { Zone = 66 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Red }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\D' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+$!LineMap  [10]
+  Name = '&(ZONENAME[80]%6.6s)'
+  Assign    { Zone = 80 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\d' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [11]
+  Name = '&(ZONENAME[87]%6.6s)'
+  Assign    { Zone = 87 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\D' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [12]
+  Name = '&(ZONENAME[92]%6.6s)'
+  Assign    { Zone = 92 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\d' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [13]
+  Name = '&(ZONENAME[99]%6.6s)'
+  Assign    { Zone = 99 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\E' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [14]
+  Name = '&(ZONENAME[106]%6.6s)'
+  Assign    { Zone = 106 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Black }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\F' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+$!LineMap  [15]
+  Name = '&(ZONENAME[114]%6.6s)'
+  Assign    { Zone = 114 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\e' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [16]
+  Name = '&(ZONENAME[122]%6.6s)'
+  Assign    { Zone = 122 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Blue }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\f' } } Color = Blue FillColor = Blue Size = 1.25 }
+  BarCharts { Color = Blue FillColor = Blue }
+  ErrorBars { Color = Blue }
+$!LineMap  [17]
+  Name = '&(ZONENAME[129]%6.6s)'
+  Assign    { Zone = 129 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\E' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [18]
+  Name = '&(ZONENAME[136]%6.6s)'
+  Assign    { Zone = 136 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { UseBaseFont = No FontOverride = Greek ASCIIChar = '\F' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [19]
+  Name = '&(ZONENAME[145]%6.6s)'
+  Assign    { Zone = 145 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\G' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [20]
+  Name = '&(ZONENAME[158]%6.6s)'
+  Assign    { Zone = 158 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\g' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [27]
+  Name = '&(ZONENAME[254]%6.6s)'
+  Assign    { Zone = 254 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\H' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+$!LineMap  [28]
+  Name = '&(ZONENAME[255]%6.6s)'
+  Assign    { Zone = 255 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Purple }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\h' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+#--------------------------------------------
+# TestCase 1a: 002.02
+$!LineMap  [21]
+  Name = '&(ZONENAME[170]%6.6s)'
+  Assign    { Zone = 170 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Black LinePattern = Dashed PatternLength = 0.8 LineThickness = 0.2 }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\H' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+# TestCase 1a: 011.01
+$!LineMap  [22]
+  Name = '&(ZONENAME[185]%6.6s)'
+  Assign    { Zone = 185 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Red LinePattern = Dashed PatternLength = 0.8 LineThickness = 0.2 }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\J' } } Color = Red FillColor = Red Size = 1.25 }
+  BarCharts { Color = Red FillColor = Red }
+  ErrorBars { Color = Red }
+# TestCase 1a: 011.02
+$!LineMap  [23]
+  Name = '&(ZONENAME[204]%6.6s)'
+  Assign    { Zone = 204 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Purple LinePattern = Dashed PatternLength = 0.8 LineThickness = 0.2 }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\j' } } Color = Purple FillColor = Purple Size = 1.25 }
+  BarCharts { Color = Purple FillColor = Purple }
+  ErrorBars { Color = Purple }
+# TestCase 1a: 012.01
+$!LineMap  [24]
+  Name = '&(ZONENAME[213]%6.6s)'
+  Assign    { Zone = 213 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Black LinePattern = Dashed PatternLength = 0.8 LineThickness = 0.2 }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\K' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+# TestCase 1a: 012.04
+$!LineMap  [25]
+  Name = '&(ZONENAME[229]%6.6s)'
+  Assign    { Zone = 229 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Black LinePattern = Dashed PatternLength = 0.8 LineThickness = 0.2 }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\M' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+# TestCase 1a: 012.05
+$!LineMap  [26]
+  Name = '&(ZONENAME[245]%6.6s)'
+  Assign    { Zone = 245 XAxisVar = 3 YAxisVar = 8 }
+  Lines     { Color = Black LinePattern = Dashed PatternLength = 0.8 LineThickness = 0.2 }
+  Symbols   { SymbolShape { IsASCII = Yes ASCIIShape { ASCIIChar = '\m' } } Color = Black FillColor = Black Size = 1.25 }
+  BarCharts { Color = Black FillColor = Black }
+  ErrorBars { Color = Black }
+#--------------------------------------------
+$!XYLineAxis 
+  DepXToYRatio = 1
+  GridArea { DrawBorder = Yes LineThickness = 0.1 }
+  ViewportPosition { X1 = 15 }
+$!XYLineAxis 
+  XDetail 1
+    {
+    CoordScale = Log
+    RangeMin = 0.00025
+    RangeMax = 0.025
+    GRSpacing = 0.005
+    Gridlines
+      {
+      Show = Yes
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      }
+    Title
+      {
+      Offset = 6
+      }
+    }
+$!XYLineAxis 
+  YDetail 1
+    {
+    CoordScale = Linear
+    RangeMin = |CDymin|
+    RangeMax = |CDymax|
+    GRSpacing = |CDyspc|
+    TickLabel
+      {
+      NumFormat
+        {
+        Formatting = FixedFloat
+        Precision = 4
+        TimeDateFormat = ''
+        }
+      }
+    Gridlines
+      {
+      Show = Yes
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      }
+    Title
+      {
+      Offset = 12
+      }
+    }
+$!LinePlotLayers 
+  ShowSymbols = Yes
+#$!AttachText 
+#  AnchorPos { X = 50 Y = 50 }
+#  TextShape { IsBold = No SizeUnits = Frame Height = 8 }
+#  Color = Custom2
+#  Angle = 45
+#  Anchor = MidCenter
+#  Text = 'Preliminary'
+$!AttachText 
+  AnchorPos { X = 50 Y = 99 }
+  TextShape { IsBold = No Height = 20 }
+  Anchor = HeadCenter
+  Text = 'Test Case 1c: ONERA OAT15A\nGrid Convergence Study\nAngle of Attack 1.50'
+$!AttachText 
+  AnchorPos { X = 75 Y = 99 }
+  TextShape { IsBold = No Height = 12 }
+  Box { BoxType = Filled }
+  Anchor = HeadLeft
+  Text = 'Grid Family:                            \n\n\n\n'
+$!AttachText 
+  AnchorPos { X = 75 Y = 97 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Red
+  Anchor = HeadLeft
+  Text = '     Cadence Structured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 95 }
+  TextShape { IsBold = No Height = 12 }
+  Anchor = HeadLeft
+  Text = '     Cadence Unstructured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 93 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Blue
+  Anchor = HeadLeft
+  Text = '     HeldenMesh Unstructured'
+$!AttachText 
+  AnchorPos { X = 75 Y = 91 }
+  TextShape { IsBold = No Height = 12 }
+  Color = Purple
+  Anchor = HeadLeft
+  Text = '     User Grid Adaptation'
+$!AttachGeom 
+  AnchorPos { X = 0.000450 Y = 0.014995 }
+  Color = Custom3
+  LineThickness = 0.4
+  DrawOrder = BeforeData
+  RawData
+1
+4
+0.00005 0.00000
+0.00000 0.00000
+0.00000 0.00051
+0.00005 0.00051
+$!AttachText 
+  PositionCoordSys = Grid
+  AnchorPos { X = 0.00042 Y = 0.01525 }
+  TextShape { IsBold = Yes Height = 14 }
+  Color = Custom3
+  Angle = 90
+  Anchor = Center
+  Text = '1a'
+$!AttachText 
+  PositionCoordSys = Grid
+  AnchorPos { X = 0.00033 Y = 0.01504 }
+  TextShape { IsBold = Yes Height = 14 }
+  Color = Green
+  Angle = 90
+  Anchor = Center
+  Text = '1c'
+$!AttachGeom 
+  AnchorPos { X = 0.000350 Y = 0.014955 }
+  Color = Green
+  LineThickness = 0.4
+  DrawOrder = BeforeData
+  RawData
+1
+4
+0.00005 0.00000
+0.00000 0.00000
+0.00000 0.00017
+0.00005 0.00017
+$!FrameControl ActivateByNumber
+  Frame = 1
+$!SetStyleBase Config

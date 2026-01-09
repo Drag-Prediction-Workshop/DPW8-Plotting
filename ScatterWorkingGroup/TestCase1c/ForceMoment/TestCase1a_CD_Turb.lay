@@ -1,0 +1,8164 @@
+#!MC 1410
+#-----------------------------
+ $!VarSet |CDymin| = 0.0142
+ $!VarSet |CDymax| = 0.0162
+ $!VarSet |CDyspc| = 0.0002
+#
+ $!VarSet |CDymin| = 0.0148
+ $!VarSet |CDymax| = 0.0158
+ $!VarSet |CDyspc| = 0.0001
+#-----------------------------
+$!VarSet |LFDSFN1| = '"../../../../DPW8-Scatter/TestCase1a/002_Embraer/01_CFD++_CadenceUnstructured_SA-RC-QCR/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL1| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN2| = '"../../../../DPW8-Scatter/TestCase1a/002_Embraer/02_CFD++_CadenceUnstructured_SA/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL2| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN3| = '"../../../../DPW8-Scatter/TestCase1a/002_Embraer/03_CFD++_CadenceUnstructured_SST/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL3| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN4| = '"../../../../DPW8-Scatter/TestCase1a/002_Embraer/04_CFD++_CadenceStructured_SA-RC-QCR/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL4| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN5| = '"../../../../DPW8-Scatter/TestCase1a/002_Embraer/05_CFD++_HeldenMesh_SA-RC-QCR/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL5| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN6| = '"../../../../DPW8-Buffet/TestCase1a/004_NASALangleyCAB/01_SA/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL6| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN7| = '"../../../../DPW8-Buffet/TestCase1a/004_NASALangleyCAB/02_SAR/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL7| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN8| = '"../../../../DPW8-Buffet/TestCase1a/004_NASALangleyCAB/03_SAQCR/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL8| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN9| = '"../../../../DPW8-Buffet/TestCase1a/005_LAVA_SteadyRANS_Results/01_SAneg/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL9| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN10| = '"../../../../DPW8-Buffet/TestCase1a/005_LAVA_SteadyRANS_Results/02_SARC_CC/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL10| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN11| = '"../../../../DPW8-Scatter/TestCase1a/006/01_LociChem/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL11| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN12| = '"../../../../DPW8-Buffet/TestCase1a/007_JAXA/01_FaSTAR_Cadence-Structured_SA-noft2/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL12| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN13| = '"../../../../DPW8-Buffet/TestCase1a/007_JAXA/02_FaSTAR_Cadence-Structured_SA-noft2-R-QCR2000/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL13| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN14| = '"../../../../DPW8-Buffet/TestCase1a/007_JAXA/03_FaSTAR_Cadence-Structured_SST-2003sust/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL14| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN15| = '"../../../../DPW8-Buffet/TestCase1a/008_Metacomp/01_CFD++_Cadence_Structured/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL15| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN16| = '"../../../../DPW8-Buffet/TestCase1a/009_ONERA/01_elsA_Cadence-structured_SA/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL16| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN17| = '"../../../../DPW8-Buffet/TestCase1a/009_ONERA/02_elsA_Cadence-unstructured_SA/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL17| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN18| = '"../../../../DPW8-Buffet/TestCase1a/009_ONERA/03_elsA_Helden-unstructured_SA/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL18| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN19| = '"../../../../DPW8-Buffet/TestCase1a/009_ONERA/04_elsA_ONERA-Structured_SA/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL19| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN20| = '"../../../../DPW8-Buffet/TestCase1a/009_ONERA/05_elsA_Cadence-structured_kwSST/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL20| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN21| = '"../../../../DPW8-Buffet/TestCase1a/009_ONERA/06_elsA_Cadence-unstructured_kwSST/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL21| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN22| = '"../../../../DPW8-Buffet/TestCase1a/009_ONERA/07_elsA_Helden-unstructured_kwSST/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL22| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN23| = '"../../../../DPW8-Buffet/TestCase1a/009_ONERA/08_elsA_ONERA-structured_kwSST/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL23| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN24| = '"../../../../DPW8-Scatter/TestCase1a/011_HEMLAB/01_Structured/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL24| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN25| = '"../../../../DPW8-Scatter/TestCase1a/011_HEMLAB/02_Adaptive/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL25| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN26| = '"../../../../DPW8-Buffet/TestCase1a/014_IISc/01_SU2_Symmetric_BC/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL26| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN27| = '"../../../../DPW8-Buffet/TestCase1a/014_IISc/02_SU2_Periodic_BC/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL27| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN28| = '"../../../../DPW8-Static-Deform/TestCase1a/015_USArmySRD/01_FUN3D/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL28| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN29| = '"../../../../DPW8-Static-Deform/TestCase1a/015_USArmySRD/02_FUN3D/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL29| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN30| = '"../../../../DPW8-Buffet/TestCase1a/018_zCFD_steadyRANS/01_SAneg/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL30| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN31| = '"../../../../DPW8-Buffet/TestCase1a/018_zCFD_steadyRANS/02_SST-V-2003/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL31| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN32| = '"../../../../DPW8-Buffet/TestCase1a/020_DukeUniversity/01_Fluent_CadenceStructured_SA/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL32| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN33| = '"../../../../DPW8-Buffet/TestCase1a/020_DukeUniversity/02_Fluent_CadenceUnstructured_SA/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL33| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN34| = '"../../../../DPW8-Buffet/TestCase1a/020_DukeUniversity/03_FUN3D_CadenceStructured_SAneg/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL34| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN35| = '"../../../../DPW8-Buffet/TestCase1a/020_DukeUniversity/04_FUN3D_CadenceUnstructured_SAneg/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL35| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN36| = '"../../../../DPW8-Buffet/TestCase1a/023_PolytechniqueMontreal/01_SA/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL36| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN37| = '"../../../../DPW8-Buffet/TestCase1a/024_UniversityofLiverpool/01_SAneg/DPW8-AePW4_ForceMoment_v5.dat.txt"'
+$!VarSet |LFDSVL37| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN38| = '"../../../../DPW8-Static-Deform/TestCase1a/025_TLGAerospace/01_STARCCM_CadenceUnstr_SA/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL38| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN39| = '"../../../../DPW8-Buffet/TestCase1a/026_CorvidTechnologies/01_SA/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL39| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN40| = '"../../../../DPW8-Buffet/TestCase1a/026_CorvidTechnologies/02_SA_comp/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL40| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN41| = '"../../../../DPW8-Buffet/TestCase1a/027_RMIT/01_SST/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL41| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN42| = '"../../../../DPW8-Buffet/TestCase1a/027_RMIT/02_SA/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL42| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN43| = '"../../../../DPW8-Scatter/TestCase1a/029_MIT_SANS/01_SANS_refine/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL43| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN44| = '"../../../../DPW8-Scatter/TestCase1a/029_MIT_SANS/02_SANS_Metris/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL44| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
+$!VarSet |LFDSFN45| = '"../../../../DPW8-Buffet/TestCase1b/010_Boeing/010_DPW8-AePW4_UnsteadyForceMoment_v5.dat"'
+$!VarSet |LFDSVL45| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E" "CL_AVG" "CD_AVG" "CM_AVG" "CL_RMS" "CD_RMS" "CM_RMS"'
+$!VarSet |LFDSFN46| = '"../../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/01_SFE_SAneg/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL46| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E" "CL_AVG" "CD_AVG" "CM_AVG" "CL_RMS" "CD_RMS" "CM_RMS"'
+$!VarSet |LFDSFN47| = '"../../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/02_SFE_SAneg_CC/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL47| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E" "CL_AVG" "CD_AVG" "CM_AVG" "CL_RMS" "CD_RMS" "CM_RMS"'
+$!VarSet |LFDSFN48| = '"../../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/03_SFE_SAneg_QCR_CC/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL48| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E" "CL_AVG" "CD_AVG" "CM_AVG" "CL_RMS" "CD_RMS" "CM_RMS"'
+$!VarSet |LFDSFN49| = '"../../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/04_NCFV_SAneg/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL49| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E" "CL_AVG" "CD_AVG" "CM_AVG" "CL_RMS" "CD_RMS" "CM_RMS"'
+$!VarSet |LFDSFN50| = '"../../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/05_NCFV_SAneg_2ndOrderTurbConv/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL50| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E" "CL_AVG" "CD_AVG" "CM_AVG" "CL_RMS" "CD_RMS" "CM_RMS"'
+$!VarSet |LFDSFN51| = '"../../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/06_NCFV_SAneg_CC/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL51| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E" "CL_AVG" "CD_AVG" "CM_AVG" "CL_RMS" "CD_RMS" "CM_RMS"'
+$!VarSet |LFDSFN52| = '"../../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/07_NCFV_SAneg_CC_2ndOrderTurbConv/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL52| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E" "CL_AVG" "CD_AVG" "CM_AVG" "CL_RMS" "CD_RMS" "CM_RMS"'
+$!VarSet |LFDSFN53| = '"../../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/08_NCFV_SAneg_QCR/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL53| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E" "CL_AVG" "CD_AVG" "CM_AVG" "CL_RMS" "CD_RMS" "CM_RMS"'
+$!VarSet |LFDSFN54| = '"../../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/09_NCFV_SAneg_QCR_CC_2ndOrderTurbConv/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL54| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E" "CL_AVG" "CD_AVG" "CM_AVG" "CL_RMS" "CD_RMS" "CM_RMS"'
+$!VarSet |LFDSFN55| = '"../../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/10_NCFV_SAneg_QCR_RC_CC/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL55| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E" "CL_AVG" "CD_AVG" "CM_AVG" "CL_RMS" "CD_RMS" "CM_RMS"'
+$!VarSet |LFDSFN56| = '"../../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/11_NCFV_SAneg_QCR_RC_CC_2ndOrderTurbConv/DPW8-AePW4_ForceMoment_v5.dat"'
+$!VarSet |LFDSVL56| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E" "CL_AVG" "CD_AVG" "CM_AVG" "CL_RMS" "CD_RMS" "CM_RMS"'
+$!VarSet |LFDSFN57| = '"../../../../DPW8-Buffet/TestCase1b/005_LAVA_Curvilinear/03_ZDES_SAneg/DPW8-AePW4_UnsteadyForceMoment_LAVA_OAT15A_ZDES_SAneg_005.03.dat"'
+$!VarSet |LFDSVL57| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E" "CL_AVG" "CD_AVG" "CM_AVG" "CL_RMS" "CD_RMS" "CM_RMS"'
+$!VarSet |LFDSFN58| = '"../../../../DPW8-Buffet/TestCase1b/005_LAVA_Curvilinear/04_ZDES_SAneg_blend2/DPW8-AePW4_UnsteadyForceMoment_LAVA_OAT15A_ZDES_SAneg_005.04.dat"'
+$!VarSet |LFDSVL58| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E" "CL_AVG" "CD_AVG" "CM_AVG" "CL_RMS" "CD_RMS" "CM_RMS"'
+$!VarSet |LFDSFN59| = '"../../../../DPW8-Buffet/TestCase1b/005_LAVA_Curvilinear/05_URANS_SARCcomp/DPW8-AePW4_UnsteadyForceMoment_LAVA_OAT15A_URANS_SARC_CC_005.05.dat"'
+$!VarSet |LFDSVL59| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E" "CL_AVG" "CD_AVG" "CM_AVG" "CL_RMS" "CD_RMS" "CM_RMS"'
+$!VarSet |LFDSFN60| = '"../../../../DPW8-Buffet/TestCase1b/008_Metacomp/02_CFD++_Deck/DPW8-AePW4_UnsteadyForceMoment_008.02.dat"'
+$!VarSet |LFDSVL60| = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E" "CL_AVG" "CD_AVG" "CM_AVG" "CL_RMS" "CD_RMS" "CM_RMS"'
+$!SetStyleBase Factory
+$!GlobalPaper 
+  PaperSizeInfo
+    {
+    Letter
+      {
+      Width = 8.5
+      Height = 11
+      LeftHardClipOffset = 0.125
+      RightHardClipOffset = 0.125
+      TopHardClipOffset = 0.125
+      BottomHardClipOffset = 0.125
+      }
+    }
+### Page Number 1 ###
+$!Page 
+  Name = 'CD_Turb'
+  PaperAttributes
+    {
+    BackgroundColor = White
+    IsTransparent = Yes
+    OrientPortrait = No
+    ShowGrid = Yes
+    ShowRuler = No
+    ShowPaper = No
+    PaperSize = Letter
+    RulerSpacing = OneInch
+    PaperGridSpacing = HalfInch
+    RegionInWorkArea
+      {
+      X1 = 1
+      Y1 = 0.25
+      X2 = 10
+      Y2 = 8.25
+      }
+    }
+### Frame Number 1, Page Number 1 ###
+$!ReadDataSet  '|LFDSFN1|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL1|'
+$!RemoveVar |LFDSVL1|
+$!RemoveVar |LFDSFN1|
+$!DeleteZones  [7]
+$!ReadDataSet  '|LFDSFN2|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL2|'
+$!RemoveVar |LFDSVL2|
+$!RemoveVar |LFDSFN2|
+$!DeleteZones  [23]
+$!ReadDataSet  '|LFDSFN3|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL3|'
+$!RemoveVar |LFDSVL3|
+$!RemoveVar |LFDSFN3|
+$!DeleteZones  [39]
+$!ReadDataSet  '|LFDSFN4|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL4|'
+$!RemoveVar |LFDSVL4|
+$!RemoveVar |LFDSFN4|
+$!DeleteZones  [55]
+$!ReadDataSet  '|LFDSFN5|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL5|'
+$!RemoveVar |LFDSVL5|
+$!RemoveVar |LFDSFN5|
+$!DeleteZones  [71]
+$!ReadDataSet  '|LFDSFN6|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL6|'
+$!RemoveVar |LFDSVL6|
+$!RemoveVar |LFDSFN6|
+$!ReadDataSet  '|LFDSFN7|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL7|'
+$!RemoveVar |LFDSVL7|
+$!RemoveVar |LFDSFN7|
+$!ReadDataSet  '|LFDSFN8|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL8|'
+$!RemoveVar |LFDSVL8|
+$!RemoveVar |LFDSFN8|
+$!ReadDataSet  '|LFDSFN9|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL9|'
+$!RemoveVar |LFDSVL9|
+$!RemoveVar |LFDSFN9|
+$!ReadDataSet  '|LFDSFN10|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL10|'
+$!RemoveVar |LFDSVL10|
+$!RemoveVar |LFDSFN10|
+$!ReadDataSet  '|LFDSFN11|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL11|'
+$!RemoveVar |LFDSVL11|
+$!RemoveVar |LFDSFN11|
+$!ReadDataSet  '|LFDSFN12|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL12|'
+$!RemoveVar |LFDSVL12|
+$!RemoveVar |LFDSFN12|
+$!ReadDataSet  '|LFDSFN13|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL13|'
+$!RemoveVar |LFDSVL13|
+$!RemoveVar |LFDSFN13|
+$!ReadDataSet  '|LFDSFN14|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL14|'
+$!RemoveVar |LFDSVL14|
+$!RemoveVar |LFDSFN14|
+$!ReadDataSet  '|LFDSFN15|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL15|'
+$!RemoveVar |LFDSVL15|
+$!RemoveVar |LFDSFN15|
+$!ReadDataSet  '|LFDSFN16|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL16|'
+$!RemoveVar |LFDSVL16|
+$!RemoveVar |LFDSFN16|
+$!ReadDataSet  '|LFDSFN17|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL17|'
+$!RemoveVar |LFDSVL17|
+$!RemoveVar |LFDSFN17|
+$!ReadDataSet  '|LFDSFN18|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL18|'
+$!RemoveVar |LFDSVL18|
+$!RemoveVar |LFDSFN18|
+$!ReadDataSet  '|LFDSFN19|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL19|'
+$!RemoveVar |LFDSVL19|
+$!RemoveVar |LFDSFN19|
+$!ReadDataSet  '|LFDSFN20|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL20|'
+$!RemoveVar |LFDSVL20|
+$!RemoveVar |LFDSFN20|
+$!ReadDataSet  '|LFDSFN21|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL21|'
+$!RemoveVar |LFDSVL21|
+$!RemoveVar |LFDSFN21|
+$!ReadDataSet  '|LFDSFN22|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL22|'
+$!RemoveVar |LFDSVL22|
+$!RemoveVar |LFDSFN22|
+$!ReadDataSet  '|LFDSFN23|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL23|'
+$!RemoveVar |LFDSVL23|
+$!RemoveVar |LFDSFN23|
+$!ReadDataSet  '|LFDSFN24|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL24|'
+$!RemoveVar |LFDSVL24|
+$!RemoveVar |LFDSFN24|
+$!ReadDataSet  '|LFDSFN25|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL25|'
+$!RemoveVar |LFDSVL25|
+$!RemoveVar |LFDSFN25|
+$!ReadDataSet  '|LFDSFN26|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL26|'
+$!RemoveVar |LFDSVL26|
+$!RemoveVar |LFDSFN26|
+$!ReadDataSet  '|LFDSFN27|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL27|'
+$!RemoveVar |LFDSVL27|
+$!RemoveVar |LFDSFN27|
+$!ReadDataSet  '|LFDSFN28|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL28|'
+$!RemoveVar |LFDSVL28|
+$!RemoveVar |LFDSFN28|
+$!ReadDataSet  '|LFDSFN29|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL29|'
+$!RemoveVar |LFDSVL29|
+$!RemoveVar |LFDSFN29|
+$!ReadDataSet  '|LFDSFN30|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL30|'
+$!RemoveVar |LFDSVL30|
+$!RemoveVar |LFDSFN30|
+$!ReadDataSet  '|LFDSFN31|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL31|'
+$!RemoveVar |LFDSVL31|
+$!RemoveVar |LFDSFN31|
+$!ReadDataSet  '|LFDSFN32|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL32|'
+$!RemoveVar |LFDSVL32|
+$!RemoveVar |LFDSFN32|
+$!ReadDataSet  '|LFDSFN33|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL33|'
+$!RemoveVar |LFDSVL33|
+$!RemoveVar |LFDSFN33|
+$!ReadDataSet  '|LFDSFN34|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL34|'
+$!RemoveVar |LFDSVL34|
+$!RemoveVar |LFDSFN34|
+$!ReadDataSet  '|LFDSFN35|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL35|'
+$!RemoveVar |LFDSVL35|
+$!RemoveVar |LFDSFN35|
+$!ReadDataSet  '|LFDSFN36|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL36|'
+$!RemoveVar |LFDSVL36|
+$!RemoveVar |LFDSFN36|
+$!AlterData  [498-513]
+  IgnoreDivideByZero = Yes
+  Equation = 'V9 = -1*V9'
+$!ReadDataSet  '|LFDSFN37|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL37|'
+$!RemoveVar |LFDSVL37|
+$!RemoveVar |LFDSFN37|
+$!ReadDataSet  '|LFDSFN38|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL38|'
+$!RemoveVar |LFDSVL38|
+$!RemoveVar |LFDSFN38|
+$!ReadDataSet  '|LFDSFN39|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL39|'
+$!RemoveVar |LFDSVL39|
+$!RemoveVar |LFDSFN39|
+$!ReadDataSet  '|LFDSFN40|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL40|'
+$!RemoveVar |LFDSVL40|
+$!RemoveVar |LFDSFN40|
+$!ReadDataSet  '|LFDSFN41|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL41|'
+$!RemoveVar |LFDSVL41|
+$!RemoveVar |LFDSFN41|
+$!AlterData  [573-580]
+  IgnoreDivideByZero = Yes
+  Equation = 'V9 = -1*V9'
+$!ReadDataSet  '|LFDSFN42|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL42|'
+$!RemoveVar |LFDSVL42|
+$!RemoveVar |LFDSFN42|
+$!AlterData  [581-589]
+  IgnoreDivideByZero = Yes
+  Equation = 'V9 = -1*V9'
+$!ReadDataSet  '|LFDSFN43|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL43|'
+$!RemoveVar |LFDSVL43|
+$!RemoveVar |LFDSFN43|
+$!ReadDataSet  '|LFDSFN44|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL44|'
+$!RemoveVar |LFDSVL44|
+$!RemoveVar |LFDSFN44|
+$!ReadDataSet  '|LFDSFN45|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL45|'
+$!RemoveVar |LFDSVL45|
+$!RemoveVar |LFDSFN45|
+$!AlterData  [615-617]
+  IgnoreDivideByZero = Yes
+  Equation = 'V7 = {CL_AVG}'
+$!AlterData  [615-617]
+  IgnoreDivideByZero = Yes
+  Equation = 'V8 = {CD_AVG}'
+$!AlterData  [615-617]
+  IgnoreDivideByZero = Yes
+  Equation = 'V9 = {CM_AVG}'
+$!ReadDataSet  '|LFDSFN46|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL46|'
+$!RemoveVar |LFDSVL46|
+$!RemoveVar |LFDSFN46|
+$!ReadDataSet  '|LFDSFN47|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL47|'
+$!RemoveVar |LFDSVL47|
+$!RemoveVar |LFDSFN47|
+$!ReadDataSet  '|LFDSFN48|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL48|'
+$!RemoveVar |LFDSVL48|
+$!RemoveVar |LFDSFN48|
+$!ReadDataSet  '|LFDSFN49|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL49|'
+$!RemoveVar |LFDSVL49|
+$!RemoveVar |LFDSFN49|
+$!ReadDataSet  '|LFDSFN50|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL50|'
+$!RemoveVar |LFDSVL50|
+$!RemoveVar |LFDSFN50|
+$!ReadDataSet  '|LFDSFN51|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL51|'
+$!RemoveVar |LFDSVL51|
+$!RemoveVar |LFDSFN51|
+$!ReadDataSet  '|LFDSFN52|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL52|'
+$!RemoveVar |LFDSVL52|
+$!RemoveVar |LFDSFN52|
+$!ReadDataSet  '|LFDSFN53|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL53|'
+$!RemoveVar |LFDSVL53|
+$!RemoveVar |LFDSFN53|
+$!ReadDataSet  '|LFDSFN54|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL54|'
+$!RemoveVar |LFDSVL54|
+$!RemoveVar |LFDSFN54|
+$!ReadDataSet  '|LFDSFN55|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL55|'
+$!RemoveVar |LFDSVL55|
+$!RemoveVar |LFDSFN55|
+$!ReadDataSet  '|LFDSFN56|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL56|'
+$!RemoveVar |LFDSVL56|
+$!RemoveVar |LFDSFN56|
+$!ReadDataSet  '|LFDSFN57|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL57|'
+$!RemoveVar |LFDSVL57|
+$!RemoveVar |LFDSFN57|
+$!AlterData  [794]
+  IgnoreDivideByZero = Yes
+  Equation = 'V7 = {CL_AVG}'
+$!AlterData  [794]
+  IgnoreDivideByZero = Yes
+  Equation = 'V8 = {CD_AVG}'
+$!AlterData  [794]
+  IgnoreDivideByZero = Yes
+  Equation = 'V9 = {CM_AVG}'
+$!ReadDataSet  '|LFDSFN58|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL58|'
+$!RemoveVar |LFDSVL58|
+$!RemoveVar |LFDSFN58|
+$!AlterData  [795]
+  IgnoreDivideByZero = Yes
+  Equation = 'V7 = {CL_AVG}'
+$!AlterData  [795]
+  IgnoreDivideByZero = Yes
+  Equation = 'V8 = {CD_AVG}'
+$!AlterData  [795]
+  IgnoreDivideByZero = Yes
+  Equation = 'V9 = {CM_AVG}'
+$!ReadDataSet  '|LFDSFN59|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL59|'
+$!RemoveVar |LFDSVL59|
+$!RemoveVar |LFDSFN59|
+$!AlterData  [796]
+  IgnoreDivideByZero = Yes
+  Equation = 'V7 = {CL_AVG}'
+$!AlterData  [796]
+  IgnoreDivideByZero = Yes
+  Equation = 'V8 = {CD_AVG}'
+$!AlterData  [796]
+  IgnoreDivideByZero = Yes
+  Equation = 'V9 = {CM_AVG}'
+$!ReadDataSet  '|LFDSFN60|'
+  InitialPlotType = XYLine
+  IncludeText = No
+  IncludeGeom = No
+  ReadDataOption = Append
+  ResetStyle = No
+  AssignStrandIDs = Yes
+  VarLoadMode = ByName
+  VarNameList = '|LFDSVL60|'
+$!RemoveVar |LFDSVL60|
+$!RemoveVar |LFDSFN60|
+$!AlterData  [797]
+  IgnoreDivideByZero = Yes
+  Equation = 'V7 = {CL_AVG}'
+$!AlterData  [797]
+  IgnoreDivideByZero = Yes
+  Equation = 'V8 = {CD_AVG}'
+$!AlterData  [797]
+  IgnoreDivideByZero = Yes
+  Equation = 'V9 = {CM_AVG}'
+$!AlterData 
+  IgnoreDivideByZero = Yes
+  Equation = '{1/h} = 1/({GRID_SIZE}**(1/2))'
+$!AlterData 
+  IgnoreDivideByZero = Yes
+  Equation = '{1/h<sup>2</sup>} = 1/({GRID_SIZE}**(1/2))'
+$!AlterData 
+  IgnoreDivideByZero = Yes
+  Equation = '{1/h<sup>2/3</sup>} = 1/({GRID_SIZE}**(2/3))'
+$!RenameDataSetVar 
+  Var = 6
+  Name = 'AoA'
+$!RenameDataSetVar 
+  Var = 7
+  Name = 'CL<sub>Total</sub>'
+$!RenameDataSetVar 
+  Var = 8
+  Name = 'CD<sub>Total</sub>'
+$!RenameDataSetVar 
+  Var = 9
+  Name = 'CMy<sub>Total</sub>'
+$!RenameDataSetVar 
+  Var = 10
+  Name = 'CL<sub>Wing</sub>'
+$!RenameDataSetVar 
+  Var = 11
+  Name = 'CD<sub>Wing</sub>'
+$!RenameDataSetVar 
+  Var = 12
+  Name = 'CMy<sub>Wing</sub>'
+$!RenameDataSetVar 
+  Var = 13
+  Name = 'CD<sub>Pressure</sub>'
+$!RenameDataSetVar 
+  Var = 14
+  Name = 'CD<sub>SkinFriction</sub>'
+$!RenameDataSetVar 
+  Var = 15
+  Name = 'CL<sub>Tail</sub>'
+$!RenameDataSetVar 
+  Var = 16
+  Name = 'CD<sub>Tail</sub>'
+$!RenameDataSetVar 
+  Var = 17
+  Name = 'CMy<sub>Tail</sub>'
+$!RenameDataSetVar 
+  Var = 18
+  Name = 'CL<sub>Fuselage</sub>'
+$!RenameDataSetVar 
+  Var = 19
+  Name = 'CD<sub>Fuselage</sub>'
+$!RenameDataSetVar 
+  Var = 20
+  Name = 'CMy<sub>Fuselage</sub>'
+$!RenameDataSetVar 
+  Var = 18
+  Name = 'CL<sub>Nacelle</sub>'
+$!RenameDataSetVar 
+  Var = 19
+  Name = 'CD<sub>Nacelle</sub>'
+$!RenameDataSetVar 
+  Var = 20
+  Name = 'CMy<sub>Nacelle</sub>'
+$!RenameDataSetVar 
+  Var = 18
+  Name = 'CL<sub>Pylon</sub>'
+$!RenameDataSetVar 
+  Var = 19
+  Name = 'CD<sub>Pylon</sub>'
+$!RenameDataSetVar 
+  Var = 20
+  Name = 'CMy<sub>Pylon</sub>'
+$!FrameLayout 
+  ShowHeader = No
+  HeaderColor = Red
+  XYPos
+    {
+    X = 1
+    Y = 0.25
+    }
+  Width = 9
+  Height = 8
+$!ThreeDAxis 
+  AspectRatioLimit = 25
+  BoxAspectRatioLimit = 25
+$!PlotType  = XYLine
+$!FrameName  = 'Frame 001'
+$!GlobalTime 
+  SolutionTime = 0
+$!DeleteLineMaps 
+$!ActiveLineMaps  =  [2,6,9,12,16-19,24-25,28,30,34-39,42-44,46-47,49-52]
+$!GlobalLinePlot 
+  DataLabels
+    {
+    DistanceSkip = 5
+    }
+  Legend
+    {
+    Show = Yes
+    TextShape
+      {
+      Height = 1.2
+      }
+    Box
+      {
+      BoxType = None
+      Margin = 5
+      }
+    RowSpacing = 1
+    XYPos
+      {
+      X = 88
+      Y = 10
+      }
+    AnchorAlignment = BottomLeft
+    }
+$!Blanking 
+  Value
+    {
+    Include = Yes
+    Constraint 1
+      {
+      Include = Yes
+      ValueCutoff = 1
+      VarA = 6
+      }
+    }
+$!LineMap  [1]
+  Name = '&(ZONENAME[8]%6.6s)'
+  Assign
+    {
+    Zone = 8
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\A'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [2]
+  Name = '&(ZONENAME[24]%6.6s)'
+  Assign
+    {
+    Zone = 24
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\a'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [3]
+  Name = '&(ZONENAME[40]%6.6s)'
+  Assign
+    {
+    Zone = 40
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\A'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [4]
+  Name = '&(ZONENAME[56]%6.6s)'
+  Assign
+    {
+    Zone = 56
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\a'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [5]
+  Name = '&(ZONENAME[72]%6.6s)'
+  Assign
+    {
+    Zone = 72
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        ASCIIChar = '\A'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [6]
+  Name = '&(ZONENAME[88]%6.6s)'
+  Assign
+    {
+    Zone = 88
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\B'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!LineMap  [7]
+  Name = '&(ZONENAME[104]%6.6s)'
+  Assign
+    {
+    Zone = 104
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\b'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [8]
+  Name = '&(ZONENAME[120]%6.6s)'
+  Assign
+    {
+    Zone = 120
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\B'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [9]
+  Name = '&(ZONENAME[136]%6.6s)'
+  Assign
+    {
+    Zone = 136
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\C'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [10]
+  Name = '&(ZONENAME[152]%6.6s)'
+  Assign
+    {
+    Zone = 152
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\c'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [11]
+  Name = '&(ZONENAME[168]%6.6s)'
+  Assign
+    {
+    Zone = 168
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\D'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [12]
+  Name = '&(ZONENAME[183]%6.6s)'
+  Assign
+    {
+    Zone = 183
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\E'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!LineMap  [13]
+  Name = '&(ZONENAME[190]%6.6s)'
+  Assign
+    {
+    Zone = 190
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\e'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [14]
+  Name = '&(ZONENAME[197]%6.6s)'
+  Assign
+    {
+    Zone = 197
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\E'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [15]
+  Name = '&(ZONENAME[205]%6.6s)'
+  Assign
+    {
+    Zone = 205
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\F'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [16]
+  Name = '&(ZONENAME[221]%6.6s)'
+  Assign
+    {
+    Zone = 221
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\G'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [17]
+  Name = '&(ZONENAME[237]%6.6s)'
+  Assign
+    {
+    Zone = 237
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\g'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [18]
+  Name = '&(ZONENAME[252]%6.6s)'
+  Assign
+    {
+    Zone = 252
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\G'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!LineMap  [19]
+  Name = '&(ZONENAME[271]%6.6s)'
+  Assign
+    {
+    Zone = 271
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\g'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [20]
+  Name = '&(ZONENAME[287]%6.6s)'
+  Assign
+    {
+    Zone = 287
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        ASCIIChar = '\G'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [21]
+  Name = '&(ZONENAME[303]%6.6s)'
+  Assign
+    {
+    Zone = 303
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        ASCIIChar = '\g'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [22]
+  Name = '&(ZONENAME[319]%6.6s)'
+  Assign
+    {
+    Zone = 319
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\H'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [23]
+  Name = '&(ZONENAME[338]%6.6s)'
+  Assign
+    {
+    Zone = 338
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\h'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [24]
+  Name = '&(ZONENAME[353]%6.6s)'
+  Assign
+    {
+    Zone = 353
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\I'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!LineMap  [25]
+  Name = '&(ZONENAME[372]%6.6s)'
+  Assign
+    {
+    Zone = 372
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\i'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [26]
+  Name = '&(ZONENAME[379]%6.6s)'
+  Assign
+    {
+    Zone = 379
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\J'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [27]
+  Name = '&(ZONENAME[388]%6.6s)'
+  Assign
+    {
+    Zone = 388
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\j'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [28]
+  Name = '&(ZONENAME[399]%6.6s)'
+  Assign
+    {
+    Zone = 399
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\K'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [29]
+  Name = '&(ZONENAME[410]%6.6s)'
+  Assign
+    {
+    Zone = 410
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\k'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [30]
+  Name = '&(ZONENAME[420]%6.6s)'
+  Assign
+    {
+    Zone = 420
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\L'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!LineMap  [31]
+  Name = '&(ZONENAME[435]%6.6s)'
+  Assign
+    {
+    Zone = 435
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\l'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [32]
+  Name = '&(ZONENAME[451]%6.6s)'
+  Assign
+    {
+    Zone = 451
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\M'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [33]
+  Name = '&(ZONENAME[464]%6.6s)'
+  Assign
+    {
+    Zone = 464
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\m'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [34]
+  Name = '&(ZONENAME[473]%6.6s)'
+  Assign
+    {
+    Zone = 473
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\M'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [35]
+  Name = '&(ZONENAME[489]%6.6s)'
+  Assign
+    {
+    Zone = 489
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\m'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [36]
+  Name = '&(ZONENAME[505]%6.6s)'
+  Assign
+    {
+    Zone = 505
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\N'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!LineMap  [37]
+  Name = '&(ZONENAME[521]%6.6s)'
+  Assign
+    {
+    Zone = 521
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\O'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [38]
+  Name = '&(ZONENAME[537]%6.6s)'
+  Assign
+    {
+    Zone = 537
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\P'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [39]
+  Name = '&(ZONENAME[548]%6.6s)'
+  Assign
+    {
+    Zone = 548
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\Q'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [40]
+  Name = '&(ZONENAME[564]%6.6s)'
+  Assign
+    {
+    Zone = 564
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\q'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [41]
+  Name = '&(ZONENAME[577]%6.6s)'
+  Assign
+    {
+    Zone = 577
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\R'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [42]
+  Name = '&(ZONENAME[586]%6.6s)'
+  Assign
+    {
+    Zone = 586
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\r'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!LineMap  [43]
+  Name = '&(ZONENAME[598]%6.6s)'
+  Assign
+    {
+    Zone = 598
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\S'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [44]
+  Name = '&(ZONENAME[611]%6.6s)'
+  Assign
+    {
+    Zone = 611
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\s'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [45]
+  Name = '&(ZONENAME[617]%6.6s)'
+  Assign
+    {
+    Zone = 617
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Cyan
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\T'
+        }
+      }
+    Color = Cyan
+    FillColor = Cyan
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [46]
+  Name = '&(ZONENAME[625]%6.6s)'
+  Assign
+    {
+    Zone = 625
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\U'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [47]
+  Name = '&(ZONENAME[641]%6.6s)'
+  Assign
+    {
+    Zone = 641
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\u'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [48]
+  Name = '&(ZONENAME[657]%6.6s)'
+  Assign
+    {
+    Zone = 657
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\U'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!LineMap  [49]
+  Name = '&(ZONENAME[673]%6.6s)'
+  Assign
+    {
+    Zone = 673
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\u'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [50]
+  Name = '&(ZONENAME[689]%6.6s)'
+  Assign
+    {
+    Zone = 689
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        ASCIIChar = '\U'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [51]
+  Name = '&(ZONENAME[705]%6.6s)'
+  Assign
+    {
+    Zone = 705
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        ASCIIChar = '\u'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [52]
+  Name = '&(ZONENAME[721]%6.6s)'
+  Assign
+    {
+    Zone = 721
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\V'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [53]
+  Name = '&(ZONENAME[737]%6.6s)'
+  Assign
+    {
+    Zone = 737
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\v'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [54]
+  Name = '&(ZONENAME[753]%6.6s)'
+  Assign
+    {
+    Zone = 753
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\V'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!LineMap  [55]
+  Name = '&(ZONENAME[769]%6.6s)'
+  Assign
+    {
+    Zone = 769
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\v'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [56]
+  Name = '&(ZONENAME[785]%6.6s)'
+  Assign
+    {
+    Zone = 785
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        ASCIIChar = '\V'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [57]
+  Name = '&(ZONENAME[794]%6.6s)'
+  Assign
+    {
+    Zone = 794
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\W'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [58]
+  Name = '&(ZONENAME[795]%6.6s)'
+  Assign
+    {
+    Zone = 795
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\w'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [59]
+  Name = '&(ZONENAME[796]%6.6s)'
+  Assign
+    {
+    Zone = 796
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\W'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [60]
+  Name = '&(ZONENAME[797]%6.6s)'
+  Assign
+    {
+    Zone = 797
+    XAxisVar = 38
+    YAxisVar = 8
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\X'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!XYLineAxis 
+  DepXToYRatio = 1
+  GridArea
+    {
+    DrawBorder = Yes
+    LineThickness = 0.1
+    }
+  ViewportPosition
+    {
+    X1 = 15
+    }
+$!XYLineAxis 
+  XDetail 1
+    {
+    CoordScale = Log
+    RangeMin = 0.0002500000000000000052
+    RangeMax = 0.025000000000000001388
+    GRSpacing = 0.005
+    Gridlines
+      {
+      Show = Yes
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      }
+    Title
+      {
+      Offset = 6
+      }
+    }
+$!XYLineAxis 
+  YDetail 1
+    {
+    CoordScale = Linear
+    RangeMin = |CDymin|
+    RangeMax = |CDymax|
+    GRSpacing = |CDyspc|
+    TickLabel
+      {
+      NumFormat
+        {
+        Formatting = FixedFloat
+        TimeDateFormat = ''
+        }
+      }
+    Gridlines
+      {
+      Show = Yes
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      }
+    Title
+      {
+      Offset = 12
+      }
+    }
+$!LinePlotLayers 
+  ShowSymbols = Yes
+$!AttachText 
+  AnchorPos
+    {
+    X = 50
+    Y = 99
+    }
+  TextShape
+    {
+    IsBold = No
+    Height = 20
+    }
+  Anchor = HeadCenter
+  Text = 'Test Case 1a: ONERA OAT15A\nGrid Convergence Study\nAngle of Attack 1.50'
+$!AttachText 
+  AnchorPos
+    {
+    X = 76
+    Y = 99
+    }
+  TextShape
+    {
+    Height = 12
+    }
+  Box
+    {
+    BoxType = Filled
+    }
+  Anchor = HeadLeft
+  Text = 'Turbulence Model:    \n\n\n\n'
+$!AttachText 
+  AnchorPos
+    {
+    X = 76
+    Y = 97
+    }
+  TextShape
+    {
+    IsBold = No
+    Height = 12
+    }
+  Color = Red
+  Anchor = HeadLeft
+  Text = '     SA (+R/RC/CC)'
+$!AttachText 
+  AnchorPos
+    {
+    X = 76
+    Y = 95
+    }
+  TextShape
+    {
+    IsBold = No
+    Height = 12
+    }
+  Color = Green
+  Anchor = HeadLeft
+  Text = '     SA + QCR'
+$!AttachText 
+  AnchorPos
+    {
+    X = 76
+    Y = 93
+    }
+  TextShape
+    {
+    IsBold = No
+    Height = 12
+    }
+  Anchor = HeadLeft
+  Text = '     SST'
+$!AttachText 
+  AnchorPos
+    {
+    X = 76
+    Y = 91
+    }
+  TextShape
+    {
+    IsBold = No
+    Height = 12
+    }
+  Color = Cyan
+  Anchor = HeadLeft
+  Text = '     WMLES'
+$!AttachGeom 
+  AnchorPos { X = 0.000470 Y = 0.014890 }
+  Color = Custom3
+  LineThickness = 0.4
+  DrawOrder = BeforeData
+  RawData
+1
+4
+0.00005 0.00000
+0.00000 0.00000
+0.00000 0.00075
+0.00005 0.00075
+$!AttachText 
+  AnchorPos { X = 23.0 Y = 51.5 }
+  TextShape { IsBold = Yes Height = 14 }
+  Color = Custom3
+  Angle = 90
+  Anchor = Center
+  Text = '1a'
+$!FrameControl ActivateByNumber
+  Frame = 1
+### Page Number 2 ###
+$!PageControl Create
+$!Page 
+  Name = 'CL_Turb'
+  PaperAttributes
+    {
+    BackgroundColor = White
+    IsTransparent = Yes
+    OrientPortrait = No
+    ShowGrid = Yes
+    ShowRuler = No
+    ShowPaper = No
+    PaperSize = Letter
+    RulerSpacing = OneInch
+    PaperGridSpacing = HalfInch
+    RegionInWorkArea
+      {
+      X1 = 1
+      Y1 = 0.25
+      X2 = 10
+      Y2 = 8.25
+      }
+    }
+### Frame Number 1, Page Number 2 ###
+$!AttachDataSet 
+  PageNum = 2
+  Frame = 1
+$!FrameLayout 
+  ShowHeader = No
+  HeaderColor = Red
+  XYPos
+    {
+    X = 1
+    Y = 0.25
+    }
+  Width = 9
+  Height = 8
+$!ThreeDAxis 
+  AspectRatioLimit = 25
+  BoxAspectRatioLimit = 25
+$!PlotType  = XYLine
+$!FrameName  = 'Frame 001'
+$!GlobalTime 
+  SolutionTime = 0
+$!DeleteLineMaps 
+$!ActiveLineMaps  =  [1-31,34-56]
+$!GlobalLinePlot 
+  DataLabels
+    {
+    DistanceSkip = 5
+    }
+  Legend
+    {
+    Show = Yes
+    TextShape
+      {
+      Height = 1.2
+      }
+    Box
+      {
+      BoxType = None
+      Margin = 5
+      }
+    RowSpacing = 1
+    XYPos
+      {
+      X = 88
+      Y = 10
+      }
+    AnchorAlignment = BottomLeft
+    }
+$!Blanking 
+  Value
+    {
+    Include = Yes
+    Constraint 1
+      {
+      Include = Yes
+      ValueCutoff = 1
+      VarA = 6
+      }
+    }
+$!LineMap  [1]
+  Name = '&(ZONENAME[8]%6.6s)'
+  Assign
+    {
+    Zone = 8
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\A'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [2]
+  Name = '&(ZONENAME[24]%6.6s)'
+  Assign
+    {
+    Zone = 24
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\a'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [3]
+  Name = '&(ZONENAME[40]%6.6s)'
+  Assign
+    {
+    Zone = 40
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\A'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [4]
+  Name = '&(ZONENAME[56]%6.6s)'
+  Assign
+    {
+    Zone = 56
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\a'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [5]
+  Name = '&(ZONENAME[72]%6.6s)'
+  Assign
+    {
+    Zone = 72
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        ASCIIChar = '\A'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [6]
+  Name = '&(ZONENAME[88]%6.6s)'
+  Assign
+    {
+    Zone = 88
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\B'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!LineMap  [7]
+  Name = '&(ZONENAME[104]%6.6s)'
+  Assign
+    {
+    Zone = 104
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\b'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [8]
+  Name = '&(ZONENAME[120]%6.6s)'
+  Assign
+    {
+    Zone = 120
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\B'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [9]
+  Name = '&(ZONENAME[136]%6.6s)'
+  Assign
+    {
+    Zone = 136
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\C'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [10]
+  Name = '&(ZONENAME[152]%6.6s)'
+  Assign
+    {
+    Zone = 152
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\c'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [11]
+  Name = '&(ZONENAME[168]%6.6s)'
+  Assign
+    {
+    Zone = 168
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\D'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [12]
+  Name = '&(ZONENAME[183]%6.6s)'
+  Assign
+    {
+    Zone = 183
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\E'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!LineMap  [13]
+  Name = '&(ZONENAME[190]%6.6s)'
+  Assign
+    {
+    Zone = 190
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\e'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [14]
+  Name = '&(ZONENAME[197]%6.6s)'
+  Assign
+    {
+    Zone = 197
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\E'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [15]
+  Name = '&(ZONENAME[205]%6.6s)'
+  Assign
+    {
+    Zone = 205
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\F'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [16]
+  Name = '&(ZONENAME[221]%6.6s)'
+  Assign
+    {
+    Zone = 221
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\G'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [17]
+  Name = '&(ZONENAME[237]%6.6s)'
+  Assign
+    {
+    Zone = 237
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\g'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [18]
+  Name = '&(ZONENAME[252]%6.6s)'
+  Assign
+    {
+    Zone = 252
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\G'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!LineMap  [19]
+  Name = '&(ZONENAME[271]%6.6s)'
+  Assign
+    {
+    Zone = 271
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\g'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [20]
+  Name = '&(ZONENAME[287]%6.6s)'
+  Assign
+    {
+    Zone = 287
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        ASCIIChar = '\G'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [21]
+  Name = '&(ZONENAME[303]%6.6s)'
+  Assign
+    {
+    Zone = 303
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        ASCIIChar = '\g'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [22]
+  Name = '&(ZONENAME[319]%6.6s)'
+  Assign
+    {
+    Zone = 319
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\H'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [23]
+  Name = '&(ZONENAME[338]%6.6s)'
+  Assign
+    {
+    Zone = 338
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\h'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [24]
+  Name = '&(ZONENAME[353]%6.6s)'
+  Assign
+    {
+    Zone = 353
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\I'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!LineMap  [25]
+  Name = '&(ZONENAME[372]%6.6s)'
+  Assign
+    {
+    Zone = 372
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\i'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [26]
+  Name = '&(ZONENAME[379]%6.6s)'
+  Assign
+    {
+    Zone = 379
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\J'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [27]
+  Name = '&(ZONENAME[388]%6.6s)'
+  Assign
+    {
+    Zone = 388
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\j'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [28]
+  Name = '&(ZONENAME[399]%6.6s)'
+  Assign
+    {
+    Zone = 399
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\K'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [29]
+  Name = '&(ZONENAME[410]%6.6s)'
+  Assign
+    {
+    Zone = 410
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\k'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [30]
+  Name = '&(ZONENAME[420]%6.6s)'
+  Assign
+    {
+    Zone = 420
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\L'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!LineMap  [31]
+  Name = '&(ZONENAME[435]%6.6s)'
+  Assign
+    {
+    Zone = 435
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\l'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [32]
+  Name = '&(ZONENAME[451]%6.6s)'
+  Assign
+    {
+    Zone = 451
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\M'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [33]
+  Name = '&(ZONENAME[464]%6.6s)'
+  Assign
+    {
+    Zone = 464
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\m'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [34]
+  Name = '&(ZONENAME[473]%6.6s)'
+  Assign
+    {
+    Zone = 473
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\M'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [35]
+  Name = '&(ZONENAME[489]%6.6s)'
+  Assign
+    {
+    Zone = 489
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\m'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [36]
+  Name = '&(ZONENAME[505]%6.6s)'
+  Assign
+    {
+    Zone = 505
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\N'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!LineMap  [37]
+  Name = '&(ZONENAME[521]%6.6s)'
+  Assign
+    {
+    Zone = 521
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\O'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [38]
+  Name = '&(ZONENAME[537]%6.6s)'
+  Assign
+    {
+    Zone = 537
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\P'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [39]
+  Name = '&(ZONENAME[548]%6.6s)'
+  Assign
+    {
+    Zone = 548
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\Q'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [40]
+  Name = '&(ZONENAME[564]%6.6s)'
+  Assign
+    {
+    Zone = 564
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\q'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [41]
+  Name = '&(ZONENAME[577]%6.6s)'
+  Assign
+    {
+    Zone = 577
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\R'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [42]
+  Name = '&(ZONENAME[586]%6.6s)'
+  Assign
+    {
+    Zone = 586
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\r'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!LineMap  [43]
+  Name = '&(ZONENAME[598]%6.6s)'
+  Assign
+    {
+    Zone = 598
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\S'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [44]
+  Name = '&(ZONENAME[611]%6.6s)'
+  Assign
+    {
+    Zone = 611
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\s'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [45]
+  Name = '&(ZONENAME[617]%6.6s)'
+  Assign
+    {
+    Zone = 617
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Cyan
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\T'
+        }
+      }
+    Color = Cyan
+    FillColor = Cyan
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [46]
+  Name = '&(ZONENAME[625]%6.6s)'
+  Assign
+    {
+    Zone = 625
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\U'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [47]
+  Name = '&(ZONENAME[641]%6.6s)'
+  Assign
+    {
+    Zone = 641
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\u'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [48]
+  Name = '&(ZONENAME[657]%6.6s)'
+  Assign
+    {
+    Zone = 657
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\U'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!LineMap  [49]
+  Name = '&(ZONENAME[673]%6.6s)'
+  Assign
+    {
+    Zone = 673
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\u'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [50]
+  Name = '&(ZONENAME[689]%6.6s)'
+  Assign
+    {
+    Zone = 689
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        ASCIIChar = '\U'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [51]
+  Name = '&(ZONENAME[705]%6.6s)'
+  Assign
+    {
+    Zone = 705
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        ASCIIChar = '\u'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [52]
+  Name = '&(ZONENAME[721]%6.6s)'
+  Assign
+    {
+    Zone = 721
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\V'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [53]
+  Name = '&(ZONENAME[737]%6.6s)'
+  Assign
+    {
+    Zone = 737
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\v'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [54]
+  Name = '&(ZONENAME[753]%6.6s)'
+  Assign
+    {
+    Zone = 753
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\V'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!LineMap  [55]
+  Name = '&(ZONENAME[769]%6.6s)'
+  Assign
+    {
+    Zone = 769
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\v'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [56]
+  Name = '&(ZONENAME[785]%6.6s)'
+  Assign
+    {
+    Zone = 785
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        ASCIIChar = '\V'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [57]
+  Name = '&(ZONENAME[794]%6.6s)'
+  Assign
+    {
+    Zone = 794
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\W'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [58]
+  Name = '&(ZONENAME[795]%6.6s)'
+  Assign
+    {
+    Zone = 795
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\w'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [59]
+  Name = '&(ZONENAME[796]%6.6s)'
+  Assign
+    {
+    Zone = 796
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\W'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [60]
+  Name = '&(ZONENAME[797]%6.6s)'
+  Assign
+    {
+    Zone = 797
+    XAxisVar = 38
+    YAxisVar = 7
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\X'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!XYLineAxis 
+  DepXToYRatio = 1
+  GridArea
+    {
+    DrawBorder = Yes
+    LineThickness = 0.1
+    }
+$!XYLineAxis 
+  XDetail 1
+    {
+    CoordScale = Log
+    RangeMin = 0.0002500000000000000052
+    RangeMax = 0.025000000000000001388
+    GRSpacing = 0.005
+    Gridlines
+      {
+      Show = Yes
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      }
+    Title
+      {
+      Offset = 6
+      }
+    }
+$!XYLineAxis 
+  YDetail 1
+    {
+    CoordScale = Linear
+    RangeMin = 0.64999999999999924505
+    RangeMax = 0.99999999999999933387
+    GRSpacing = 0.05
+    Gridlines
+      {
+      Show = Yes
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      }
+    Title
+      {
+      Offset = 9
+      }
+    }
+$!LinePlotLayers 
+  ShowSymbols = Yes
+$!AttachText 
+  AnchorPos
+    {
+    X = 50
+    Y = 50
+    }
+  TextShape
+    {
+    IsBold = No
+    SizeUnits = Frame
+    Height = 8
+    }
+  Color = Custom2
+  Angle = 45
+  Anchor = MidCenter
+  Text = 'Preliminary'
+$!AttachText 
+  AnchorPos
+    {
+    X = 50
+    Y = 99
+    }
+  TextShape
+    {
+    IsBold = No
+    Height = 20
+    }
+  Anchor = HeadCenter
+  Text = 'Test Case 1a: ONERA OAT15A\nGrid Convergence Study\nAngle of Attack 1.50'
+$!AttachText 
+  AnchorPos
+    {
+    X = 76
+    Y = 99
+    }
+  TextShape
+    {
+    Height = 12
+    }
+  Box
+    {
+    BoxType = Filled
+    }
+  Anchor = HeadLeft
+  Text = 'Turbulence Model:    \n\n\n\n'
+$!AttachText 
+  AnchorPos
+    {
+    X = 76
+    Y = 97
+    }
+  TextShape
+    {
+    IsBold = No
+    Height = 12
+    }
+  Color = Red
+  Anchor = HeadLeft
+  Text = '     SA (+R/RC/CC)'
+$!AttachText 
+  AnchorPos
+    {
+    X = 76
+    Y = 95
+    }
+  TextShape
+    {
+    IsBold = No
+    Height = 12
+    }
+  Color = Green
+  Anchor = HeadLeft
+  Text = '     SA + QCR'
+$!AttachText 
+  AnchorPos
+    {
+    X = 76
+    Y = 93
+    }
+  TextShape
+    {
+    IsBold = No
+    Height = 12
+    }
+  Anchor = HeadLeft
+  Text = '     SST'
+$!AttachText 
+  AnchorPos
+    {
+    X = 76
+    Y = 91
+    }
+  TextShape
+    {
+    IsBold = No
+    Height = 12
+    }
+  Color = Cyan
+  Anchor = HeadLeft
+  Text = '     WMLES'
+$!FrameControl ActivateByNumber
+  Frame = 1
+### Page Number 3 ###
+$!PageControl Create
+$!Page 
+  Name = 'CMy_Turb'
+  PaperAttributes
+    {
+    BackgroundColor = White
+    IsTransparent = Yes
+    OrientPortrait = No
+    ShowGrid = Yes
+    ShowRuler = No
+    ShowPaper = No
+    PaperSize = Letter
+    RulerSpacing = OneInch
+    PaperGridSpacing = HalfInch
+    RegionInWorkArea
+      {
+      X1 = 1
+      Y1 = 0.25
+      X2 = 10
+      Y2 = 8.25
+      }
+    }
+### Frame Number 1, Page Number 3 ###
+$!AttachDataSet 
+  PageNum = 3
+  Frame = 1
+$!FrameLayout 
+  ShowHeader = No
+  HeaderColor = Red
+  XYPos
+    {
+    X = 1
+    Y = 0.25
+    }
+  Width = 9
+  Height = 8
+$!ThreeDAxis 
+  AspectRatioLimit = 25
+  BoxAspectRatioLimit = 25
+$!PlotType  = XYLine
+$!FrameName  = 'Frame 001'
+$!GlobalTime 
+  SolutionTime = 0
+$!DeleteLineMaps 
+$!ActiveLineMaps  =  [1-31,34-56]
+$!GlobalLinePlot 
+  DataLabels
+    {
+    DistanceSkip = 5
+    }
+  Legend
+    {
+    Show = Yes
+    TextShape
+      {
+      Height = 1.2
+      }
+    Box
+      {
+      BoxType = None
+      Margin = 5
+      }
+    RowSpacing = 1
+    XYPos
+      {
+      X = 88
+      Y = 10
+      }
+    AnchorAlignment = BottomLeft
+    }
+$!Blanking 
+  Value
+    {
+    Include = Yes
+    Constraint 1
+      {
+      Include = Yes
+      ValueCutoff = 1
+      VarA = 6
+      }
+    }
+$!LineMap  [1]
+  Name = '&(ZONENAME[8]%6.6s)'
+  Assign
+    {
+    Zone = 8
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\A'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [2]
+  Name = '&(ZONENAME[24]%6.6s)'
+  Assign
+    {
+    Zone = 24
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\a'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [3]
+  Name = '&(ZONENAME[40]%6.6s)'
+  Assign
+    {
+    Zone = 40
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\A'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [4]
+  Name = '&(ZONENAME[56]%6.6s)'
+  Assign
+    {
+    Zone = 56
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\a'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [5]
+  Name = '&(ZONENAME[72]%6.6s)'
+  Assign
+    {
+    Zone = 72
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        ASCIIChar = '\A'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [6]
+  Name = '&(ZONENAME[88]%6.6s)'
+  Assign
+    {
+    Zone = 88
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\B'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!LineMap  [7]
+  Name = '&(ZONENAME[104]%6.6s)'
+  Assign
+    {
+    Zone = 104
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\b'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [8]
+  Name = '&(ZONENAME[120]%6.6s)'
+  Assign
+    {
+    Zone = 120
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\B'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [9]
+  Name = '&(ZONENAME[136]%6.6s)'
+  Assign
+    {
+    Zone = 136
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\C'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [10]
+  Name = '&(ZONENAME[152]%6.6s)'
+  Assign
+    {
+    Zone = 152
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\c'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [11]
+  Name = '&(ZONENAME[168]%6.6s)'
+  Assign
+    {
+    Zone = 168
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\D'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [12]
+  Name = '&(ZONENAME[183]%6.6s)'
+  Assign
+    {
+    Zone = 183
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\E'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!LineMap  [13]
+  Name = '&(ZONENAME[190]%6.6s)'
+  Assign
+    {
+    Zone = 190
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\e'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [14]
+  Name = '&(ZONENAME[197]%6.6s)'
+  Assign
+    {
+    Zone = 197
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\E'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [15]
+  Name = '&(ZONENAME[205]%6.6s)'
+  Assign
+    {
+    Zone = 205
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\F'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [16]
+  Name = '&(ZONENAME[221]%6.6s)'
+  Assign
+    {
+    Zone = 221
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\G'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [17]
+  Name = '&(ZONENAME[237]%6.6s)'
+  Assign
+    {
+    Zone = 237
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\g'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [18]
+  Name = '&(ZONENAME[252]%6.6s)'
+  Assign
+    {
+    Zone = 252
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\G'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!LineMap  [19]
+  Name = '&(ZONENAME[271]%6.6s)'
+  Assign
+    {
+    Zone = 271
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\g'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [20]
+  Name = '&(ZONENAME[287]%6.6s)'
+  Assign
+    {
+    Zone = 287
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        ASCIIChar = '\G'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [21]
+  Name = '&(ZONENAME[303]%6.6s)'
+  Assign
+    {
+    Zone = 303
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        ASCIIChar = '\g'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [22]
+  Name = '&(ZONENAME[319]%6.6s)'
+  Assign
+    {
+    Zone = 319
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\H'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [23]
+  Name = '&(ZONENAME[338]%6.6s)'
+  Assign
+    {
+    Zone = 338
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\h'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [24]
+  Name = '&(ZONENAME[353]%6.6s)'
+  Assign
+    {
+    Zone = 353
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\I'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!LineMap  [25]
+  Name = '&(ZONENAME[372]%6.6s)'
+  Assign
+    {
+    Zone = 372
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\i'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [26]
+  Name = '&(ZONENAME[379]%6.6s)'
+  Assign
+    {
+    Zone = 379
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\J'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [27]
+  Name = '&(ZONENAME[388]%6.6s)'
+  Assign
+    {
+    Zone = 388
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\j'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [28]
+  Name = '&(ZONENAME[399]%6.6s)'
+  Assign
+    {
+    Zone = 399
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\K'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [29]
+  Name = '&(ZONENAME[410]%6.6s)'
+  Assign
+    {
+    Zone = 410
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\k'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [30]
+  Name = '&(ZONENAME[420]%6.6s)'
+  Assign
+    {
+    Zone = 420
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\L'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!LineMap  [31]
+  Name = '&(ZONENAME[435]%6.6s)'
+  Assign
+    {
+    Zone = 435
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\l'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [32]
+  Name = '&(ZONENAME[451]%6.6s)'
+  Assign
+    {
+    Zone = 451
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\M'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [33]
+  Name = '&(ZONENAME[464]%6.6s)'
+  Assign
+    {
+    Zone = 464
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\m'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [34]
+  Name = '&(ZONENAME[473]%6.6s)'
+  Assign
+    {
+    Zone = 473
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\M'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [35]
+  Name = '&(ZONENAME[489]%6.6s)'
+  Assign
+    {
+    Zone = 489
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\m'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [36]
+  Name = '&(ZONENAME[505]%6.6s)'
+  Assign
+    {
+    Zone = 505
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\N'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!LineMap  [37]
+  Name = '&(ZONENAME[521]%6.6s)'
+  Assign
+    {
+    Zone = 521
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\O'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [38]
+  Name = '&(ZONENAME[537]%6.6s)'
+  Assign
+    {
+    Zone = 537
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\P'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [39]
+  Name = '&(ZONENAME[548]%6.6s)'
+  Assign
+    {
+    Zone = 548
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\Q'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [40]
+  Name = '&(ZONENAME[564]%6.6s)'
+  Assign
+    {
+    Zone = 564
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\q'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [41]
+  Name = '&(ZONENAME[577]%6.6s)'
+  Assign
+    {
+    Zone = 577
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Black
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\R'
+        }
+      }
+    Color = Black
+    FillColor = Black
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [42]
+  Name = '&(ZONENAME[586]%6.6s)'
+  Assign
+    {
+    Zone = 586
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\r'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!LineMap  [43]
+  Name = '&(ZONENAME[598]%6.6s)'
+  Assign
+    {
+    Zone = 598
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\S'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [44]
+  Name = '&(ZONENAME[611]%6.6s)'
+  Assign
+    {
+    Zone = 611
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\s'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [45]
+  Name = '&(ZONENAME[617]%6.6s)'
+  Assign
+    {
+    Zone = 617
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Cyan
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\T'
+        }
+      }
+    Color = Cyan
+    FillColor = Cyan
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [46]
+  Name = '&(ZONENAME[625]%6.6s)'
+  Assign
+    {
+    Zone = 625
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\U'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [47]
+  Name = '&(ZONENAME[641]%6.6s)'
+  Assign
+    {
+    Zone = 641
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\u'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [48]
+  Name = '&(ZONENAME[657]%6.6s)'
+  Assign
+    {
+    Zone = 657
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\U'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!LineMap  [49]
+  Name = '&(ZONENAME[673]%6.6s)'
+  Assign
+    {
+    Zone = 673
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\u'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [50]
+  Name = '&(ZONENAME[689]%6.6s)'
+  Assign
+    {
+    Zone = 689
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        ASCIIChar = '\U'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [51]
+  Name = '&(ZONENAME[705]%6.6s)'
+  Assign
+    {
+    Zone = 705
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        ASCIIChar = '\u'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [52]
+  Name = '&(ZONENAME[721]%6.6s)'
+  Assign
+    {
+    Zone = 721
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\V'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [53]
+  Name = '&(ZONENAME[737]%6.6s)'
+  Assign
+    {
+    Zone = 737
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\v'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [54]
+  Name = '&(ZONENAME[753]%6.6s)'
+  Assign
+    {
+    Zone = 753
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\V'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!LineMap  [55]
+  Name = '&(ZONENAME[769]%6.6s)'
+  Assign
+    {
+    Zone = 769
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\v'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Red
+    FillColor = Red
+    }
+  ErrorBars
+    {
+    Color = Red
+    }
+$!LineMap  [56]
+  Name = '&(ZONENAME[785]%6.6s)'
+  Assign
+    {
+    Zone = 785
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        ASCIIChar = '\V'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Green
+    FillColor = Green
+    }
+  ErrorBars
+    {
+    Color = Green
+    }
+$!LineMap  [57]
+  Name = '&(ZONENAME[794]%6.6s)'
+  Assign
+    {
+    Zone = 794
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\W'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Blue
+    FillColor = Blue
+    }
+  ErrorBars
+    {
+    Color = Blue
+    }
+$!LineMap  [58]
+  Name = '&(ZONENAME[795]%6.6s)'
+  Assign
+    {
+    Zone = 795
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\w'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom1
+    FillColor = Custom1
+    }
+  ErrorBars
+    {
+    Color = Custom1
+    }
+$!LineMap  [59]
+  Name = '&(ZONENAME[796]%6.6s)'
+  Assign
+    {
+    Zone = 796
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Red
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        UseBaseFont = No
+        FontOverride = Greek
+        ASCIIChar = '\W'
+        }
+      }
+    Color = Red
+    FillColor = Red
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Custom3
+    FillColor = Custom3
+    }
+  ErrorBars
+    {
+    Color = Custom3
+    }
+$!LineMap  [60]
+  Name = '&(ZONENAME[797]%6.6s)'
+  Assign
+    {
+    Zone = 797
+    XAxisVar = 38
+    YAxisVar = 9
+    }
+  Lines
+    {
+    Color = Green
+    }
+  Symbols
+    {
+    SymbolShape
+      {
+      IsASCII = Yes
+      ASCIIShape
+        {
+        FontOverride = UserDef
+        ASCIIChar = '\X'
+        }
+      }
+    Color = Green
+    FillColor = Green
+    Size = 1
+    }
+  BarCharts
+    {
+    Color = Purple
+    FillColor = Purple
+    }
+  ErrorBars
+    {
+    Color = Purple
+    }
+$!XYLineAxis 
+  DepXToYRatio = 1
+  GridArea
+    {
+    DrawBorder = Yes
+    LineThickness = 0.1
+    }
+$!XYLineAxis 
+  XDetail 1
+    {
+    CoordScale = Log
+    RangeMin = 0.0002500000000000000052
+    RangeMax = 0.025000000000000001388
+    GRSpacing = 0.005
+    Gridlines
+      {
+      Show = Yes
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      }
+    Title
+      {
+      Offset = 6
+      }
+    }
+$!XYLineAxis 
+  YDetail 1
+    {
+    CoordScale = Linear
+    RangeMin = -0.14499999999999999001
+    RangeMax = -0.11500000000000001887
+    GRSpacing = 0.005
+    Gridlines
+      {
+      Show = Yes
+      }
+    MinorGridlines
+      {
+      Show = Yes
+      }
+    Title
+      {
+      Offset = 9
+      }
+    }
+$!LinePlotLayers 
+  ShowSymbols = Yes
+$!AttachText 
+  AnchorPos
+    {
+    X = 50
+    Y = 50
+    }
+  TextShape
+    {
+    IsBold = No
+    SizeUnits = Frame
+    Height = 8
+    }
+  Color = Custom2
+  Angle = 45
+  Anchor = MidCenter
+  Text = 'Preliminary'
+$!AttachText 
+  AnchorPos
+    {
+    X = 50
+    Y = 99
+    }
+  TextShape
+    {
+    IsBold = No
+    Height = 20
+    }
+  Anchor = HeadCenter
+  Text = 'Test Case 1a: ONERA OAT15A\nGrid Convergence Study\nAngle of Attack 1.50'
+$!AttachText 
+  AnchorPos
+    {
+    X = 76
+    Y = 99
+    }
+  TextShape
+    {
+    Height = 12
+    }
+  Box
+    {
+    BoxType = Filled
+    }
+  Anchor = HeadLeft
+  Text = 'Turbulence Model:    \n\n\n\n'
+$!AttachText 
+  AnchorPos
+    {
+    X = 76
+    Y = 97
+    }
+  TextShape
+    {
+    IsBold = No
+    Height = 12
+    }
+  Color = Red
+  Anchor = HeadLeft
+  Text = '     SA (+R/RC/CC)'
+$!AttachText 
+  AnchorPos
+    {
+    X = 76
+    Y = 95
+    }
+  TextShape
+    {
+    IsBold = No
+    Height = 12
+    }
+  Color = Green
+  Anchor = HeadLeft
+  Text = '     SA + QCR'
+$!AttachText 
+  AnchorPos
+    {
+    X = 76
+    Y = 93
+    }
+  TextShape
+    {
+    IsBold = No
+    Height = 12
+    }
+  Anchor = HeadLeft
+  Text = '     SST'
+$!AttachText 
+  AnchorPos
+    {
+    X = 76
+    Y = 91
+    }
+  TextShape
+    {
+    IsBold = No
+    Height = 12
+    }
+  Color = Cyan
+  Anchor = HeadLeft
+  Text = '     WMLES'
+$!FrameControl ActivateByNumber
+  Frame = 1
+$!SetStyleBase Config
