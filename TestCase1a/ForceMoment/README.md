@@ -8,6 +8,11 @@ Modify Grids.mcr and Alphas.mcr to specify up to 2 output file formats (i.e. eps
     tecplot -b -p Alphas.mcr
 
 
+Note that you can enable or disable the "Preliminary" Label in Grids.mcr/Alphas.mcr
+
+Note that you can enable or disable the TestCase1b Unsteady Buffet Results in Grids.mcr/Alphas.mcr
+
+
 Convert eps to pdf
 --------------------
 
