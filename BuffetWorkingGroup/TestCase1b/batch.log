@@ -42,17 +42,27 @@ ACTION: LoadAddOn
 ACTION: LoadAddOn
 ACTION: LoadAddOn
 ACTION: LoadAddOn
-ACTION: OpenLayout: /Users/bwpomero/crm/hs/dpw-8/github/DPW8-Plotting/BuffetWorkingGroup/TestCase1b/fandm.lay
+ACTION: OpenLayout: /Users/bwpomero/crm/hs/dpw-8/github/DPW8-Plotting/BuffetWorkingGroup/TestCase1b/cuts.lay
 ACTION: DrawGraphics: YES
-ACTION: ReadStyleSheet: sty/fandm/alpha-cm.sty
+ACTION: ReadStyleSheet: sty/cuts/alpha1.36.sty
 ACTION: Export
-ACTION: ReadStyleSheet: sty/fandm/cl-alpha.sty
+ACTION: ReadStyleSheet: sty/cuts/alpha1.50.sty
 ACTION: Export
-ACTION: ReadStyleSheet: sty/fandm/cl-cm.sty
+ACTION: ReadStyleSheet: sty/cuts/alpha2.50.sty
 ACTION: Export
-ACTION: ReadStyleSheet: sty/fandm/alpha-cm.sty
+ACTION: ReadStyleSheet: sty/cuts/alpha3.00.sty
 ACTION: Export
-ACTION: ReadStyleSheet: sty/fandm/cl-alpha.sty
+ACTION: ReadStyleSheet: sty/cuts/alpha3.10.sty
 ACTION: Export
-ACTION: ReadStyleSheet: sty/fandm/cl-cm.sty
+ACTION: ReadStyleSheet: sty/cuts/alpha3.25.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/alpha3.40.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/alpha3.50.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/alpha3.60.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/alpha3.90.sty
+ACTION: Export
+ACTION: ReadStyleSheet: sty/cuts/rans_sa_alpha3.10.sty
 ACTION: Export

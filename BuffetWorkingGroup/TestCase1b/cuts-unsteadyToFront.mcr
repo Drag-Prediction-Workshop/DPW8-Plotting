@@ -1,0 +1,10 @@
+#!MC 1410
+$!ShiftLineMapsToBottom  [601-630]
+$!ShiftLineMapsToBottom  [601-840]
+$!ShiftLineMapsToBottom  [715-780]
+$!ShiftLineMapsToBottom  [715-744]
+$!ShiftLineMapsToBottom  [1375-1477]
+$!ShiftLineMapsToBottom  [1415-1417]
+$!ShiftLineMapsToBottom  [2099-2122]
+$!ShiftLineMapsToBottom  [2099]
+$!ShiftLineMapsToBottom  [2129-2140]

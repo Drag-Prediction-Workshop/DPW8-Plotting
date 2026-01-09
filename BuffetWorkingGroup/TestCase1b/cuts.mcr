@@ -49,8 +49,14 @@ $!EndMacroFunction
 ######################################################
 # Call Macro
 ######################################################
-$!RunMacroFunction "PngLooper" ('cp',2400)
-$!RunMacroFunction "PngLooper" ('cprms',2400)
-
-$!RunMacroFunction "EpsLooper" ('cp')
-$!RunMacroFunction "EpsLooper" ('cprms')
+$!RunMacroFunction "PngLooper" ('alpha1.36',2400)
+$!RunMacroFunction "PngLooper" ('alpha1.50',2400)
+$!RunMacroFunction "PngLooper" ('alpha2.50',2400)
+$!RunMacroFunction "PngLooper" ('alpha3.00',2400)
+$!RunMacroFunction "PngLooper" ('alpha3.10',2400)
+$!RunMacroFunction "PngLooper" ('alpha3.25',2400)
+$!RunMacroFunction "PngLooper" ('alpha3.40',2400)
+$!RunMacroFunction "PngLooper" ('alpha3.50',2400)
+$!RunMacroFunction "PngLooper" ('alpha3.60',2400)
+$!RunMacroFunction "PngLooper" ('alpha3.90',2400)
+$!RunMacroFunction "PngLooper" ('rans_sa_alpha3.10',2400)
