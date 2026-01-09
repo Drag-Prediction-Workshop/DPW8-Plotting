@@ -552,6 +552,8 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SST_Maps" "CadenceUnS_Maps" )
 $!VarSet |Z| = ( |NumZones| + |Increment| )
 $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../DPW8-Buffet/TestCase1a/020_DukeUniversity/01_Fluent_CadenceStructured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceStr_Maps" )
+  # CUSTOM: 020.01 data needs updated.
+  $!ActiveLineMaps -= [|NumLineMaps|]
 #-------------------------------------------------
 # Map33: 020.02
 $!VarSet |Z| = ( |NumZones| + |Increment| )
@@ -990,6 +992,59 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps" "OneraStruc_Maps" )
   $!ENDIF
 $!ENDIF
 #==================================================================================================
+#-------------------------------------------------
+# Map61: 028.01
+$!VarSet |Z| = ( |NumZones| + |Increment| )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../DPW8-Scatter/TestCase1a/028_BRT/01_BCFD_CadenceUnstructured_SA-noft2-RC-QCR/DPW8-AePW4_ForceMoment_v5.dat"' )
+  #-------------------------------------------------
+  # CUSTOM: Alpha (only 1 Grid Zones)
+  $!IF |Increment| > 6
+    $!VarSet |Z| = ( |Z| - (6-1) )
+  $!ENDIF
+  $!IF "|GRID|" == "N"
+    $!VarSet |Z| = ( |Z| - (6-1) )
+  $!ENDIF
+$!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps"  "CadenceUnS_Maps" )
+#-------------------------------------------------
+# Map62: 028.02
+$!VarSet |Z| = ( |NumZones| + |Increment| )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../DPW8-Scatter/TestCase1a/028_BRT/02_BCFD_CadenceUnstructured_SA-noft2/DPW8-AePW4_ForceMoment_v5.dat"' )
+  #-------------------------------------------------
+  # CUSTOM: Alpha (only 1 Grid Zones)
+  $!IF |Increment| > 6
+    $!VarSet |Z| = ( |Z| - (6-1) )
+  $!ENDIF
+  $!IF "|GRID|" == "N"
+    $!VarSet |Z| = ( |Z| - (6-1) )
+  $!ENDIF
+$!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" )
+#-------------------------------------------------
+# Map63: 028.03
+$!VarSet |Z| = ( |NumZones| + |Increment| )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../DPW8-Scatter/TestCase1a/028_BRT/03_BCFD_HeldenMesh_SA-noft2-RC-QCR/DPW8-AePW4_ForceMoment_v5.dat"' )
+  #-------------------------------------------------
+  # CUSTOM: Alpha (only 1 Grid Zones)
+  $!IF |Increment| > 6
+    $!VarSet |Z| = ( |Z| - (6-1) )
+  $!ENDIF
+  $!IF "|GRID|" == "N"
+    $!VarSet |Z| = ( |Z| - (6-1) )
+  $!ENDIF
+$!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps" "HeldenUnSt_Maps" )
+#-------------------------------------------------
+# Map64: 028.04
+$!VarSet |Z| = ( |NumZones| + |Increment| )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../DPW8-Scatter/TestCase1a/028_BRT/04_BCFD_HeldenMesh_SA-noft2/DPW8-AePW4_ForceMoment_v5.dat"' )
+  #-------------------------------------------------
+  # CUSTOM: Alpha (only 1 Grid Zones)
+  $!IF |Increment| > 6
+    $!VarSet |Z| = ( |Z| - (6-1) )
+  $!ENDIF
+  $!IF "|GRID|" == "N"
+    $!VarSet |Z| = ( |Z| - (6-1) )
+  $!ENDIF
+$!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "HeldenUnSt_Maps" )
+#==================================================================================================
 
 #==================================================================================================
 $!LineMap  [1]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\A'}}}
@@ -1057,6 +1112,10 @@ $!IF |IncludeTestCase1b| == 1
  $!LineMap [60] Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\X'}}}
 $!ENDIF
 #==============================
+$!LineMap [61]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\Y'}}}
+$!LineMap [62]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\y'}}}
+$!LineMap [63]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Greek   ASCIIChar = '\Y'}}}
+$!LineMap [64]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Greek   ASCIIChar = '\y'}}}
 
 #==================================================================================================
 # Data Alterations
