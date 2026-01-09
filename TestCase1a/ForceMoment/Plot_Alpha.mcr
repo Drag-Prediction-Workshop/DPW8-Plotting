@@ -31,23 +31,23 @@ $!IF 1 == 1
     $!AttachText AnchorPos { X = 50 Y = 99 } TextShape { Height = 20 IsBold = No } Color = Black  Anchor = HeadCenter Text = "Test Case 1a: ONERA OAT15A\nGrid Convergence Study\nAngle of Attack |ALPHA|"
   $!ENDIF
   $!AttachText AnchorPos { X = 76 Y = 99 } TextShape { Height = 12 IsBold = Yes } Color = Black  Anchor = HeadLeft Text = 'Turbulence Model:    \n\n\n\n' Box { BoxType = Filled }
-  $!AttachText AnchorPos { X = 76 Y = 97 } TextShape { Height = 12 IsBold = No } Color = Red    Anchor = HeadLeft Text = '     SA (+R/RC/CC)'
-  $!AttachText AnchorPos { X = 76 Y = 95 } TextShape { Height = 12 IsBold = No } Color = Green  Anchor = HeadLeft Text = '     SA + QCR'
-  $!AttachText AnchorPos { X = 76 Y = 93 } TextShape { Height = 12 IsBold = No } Color = Black  Anchor = HeadLeft Text = '     SST'
+  $!AttachText AnchorPos { X = 76 Y = 97 } TextShape { Height = 12 IsBold = No  } Color = Red    Anchor = HeadLeft Text = '     SA (+R/RC/CC)'
+  $!AttachText AnchorPos { X = 76 Y = 95 } TextShape { Height = 12 IsBold = No  } Color = Green  Anchor = HeadLeft Text = '     SA + QCR'
+  $!AttachText AnchorPos { X = 76 Y = 93 } TextShape { Height = 12 IsBold = No  } Color = Black  Anchor = HeadLeft Text = '     SST'
 #==================================================================================================
 # Include TestCase1b Data?
 $!IF |IncludeTestCase1b| == 0
   $!AttachText AnchorPos { X = 76 Y = 99 } TextShape { Height = 12 IsBold = Yes } Color = Black  Anchor = HeadLeft Text = 'Turbulence Model:    \n\n\n' Box { BoxType = Filled }
-  $!AttachText AnchorPos { X = 76 Y = 97 } TextShape { Height = 12 IsBold = No } Color = Red    Anchor = HeadLeft Text = '     SA (+R/RC/CC)'
-  $!AttachText AnchorPos { X = 76 Y = 95 } TextShape { Height = 12 IsBold = No } Color = Green  Anchor = HeadLeft Text = '     SA + QCR'
-  $!AttachText AnchorPos { X = 76 Y = 93 } TextShape { Height = 12 IsBold = No } Color = Black  Anchor = HeadLeft Text = '     SST'
+  $!AttachText AnchorPos { X = 76 Y = 97 } TextShape { Height = 12 IsBold = No  } Color = Red    Anchor = HeadLeft Text = '     SA (+R/RC/CC)'
+  $!AttachText AnchorPos { X = 76 Y = 95 } TextShape { Height = 12 IsBold = No  } Color = Green  Anchor = HeadLeft Text = '     SA + QCR'
+  $!AttachText AnchorPos { X = 76 Y = 93 } TextShape { Height = 12 IsBold = No  } Color = Black  Anchor = HeadLeft Text = '     SST'
 $!ELSE
   $!LineMap  [|WMLES_Maps|] Lines   { Color = Cyan  } Symbols { Color = Cyan  FillColor = Cyan  }
   $!AttachText AnchorPos { X = 76 Y = 99 } TextShape { Height = 12 IsBold = Yes } Color = Black  Anchor = HeadLeft Text = 'Turbulence Model:    \n\n\n\n' Box { BoxType = Filled }
-  $!AttachText AnchorPos { X = 76 Y = 97 } TextShape { Height = 12 IsBold = No } Color = Red    Anchor = HeadLeft Text = '     SA (+R/RC/CC)'
-  $!AttachText AnchorPos { X = 76 Y = 95 } TextShape { Height = 12 IsBold = No } Color = Green  Anchor = HeadLeft Text = '     SA + QCR'
-  $!AttachText AnchorPos { X = 76 Y = 93 } TextShape { Height = 12 IsBold = No } Color = Black  Anchor = HeadLeft Text = '     SST'
-  $!AttachText AnchorPos { X = 76 Y = 91 } TextShape { Height = 12 IsBold = No } Color = Cyan   Anchor = HeadLeft Text = '     WMLES'
+  $!AttachText AnchorPos { X = 76 Y = 97 } TextShape { Height = 12 IsBold = No  } Color = Red    Anchor = HeadLeft Text = '     SA (+R/RC/CC)'
+  $!AttachText AnchorPos { X = 76 Y = 95 } TextShape { Height = 12 IsBold = No  } Color = Green  Anchor = HeadLeft Text = '     SA + QCR'
+  $!AttachText AnchorPos { X = 76 Y = 93 } TextShape { Height = 12 IsBold = No  } Color = Black  Anchor = HeadLeft Text = '     SST'
+  $!AttachText AnchorPos { X = 76 Y = 91 } TextShape { Height = 12 IsBold = No  } Color = Cyan   Anchor = HeadLeft Text = '     WMLES'
 $!ENDIF
 #==================================================================================================
 
