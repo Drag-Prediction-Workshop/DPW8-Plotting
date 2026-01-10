@@ -4,7 +4,7 @@
 Modify SectionalCuts.mcr to specify up to 2 output file formats (i.e. eps & png) 
 --------------------
 
-    mkdir -p eps lay pdf png
+    mkdir -p eps pdf png lay
 
     tecplot -b -p SectionalCuts.mcr
 
