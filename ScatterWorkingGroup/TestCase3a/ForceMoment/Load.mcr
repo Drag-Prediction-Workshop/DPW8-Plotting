@@ -324,17 +324,6 @@ $!LineMap [18]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                
 
 $!LineMap [19]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\E'}}}
 $!LineMap [20]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\E'}}}
-
-#-------------------------------------------------
-# Map02: 003.02-v2
-$!VarSet |Z| = ( |NumZones| + |Increment| - 1 )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase3a/003_Boeing/02_FELight_Cadence_Unstructured_HexTrex_TetFF_REV00-v2_SA-neg/DPW8-AePW4_ForceMoment_v6.dat"' )
-$!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "CadenceUnSTet_Maps" "WING1" )
-$!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\f'}}}
-$!VarSet |Z| = ( |Z| + |Increment| )
-$!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "CadenceUnSTet_Maps" "WING2" )
-$!LineMap [|NumLineMaps|]  Assign{ShowInLegend = Never}
-$!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\f'}}}
 #-------------------------------------------------
 
 #==================================================================================================
