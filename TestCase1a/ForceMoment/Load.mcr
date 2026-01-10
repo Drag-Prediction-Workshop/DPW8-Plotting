@@ -995,7 +995,7 @@ $!ENDIF
 #-------------------------------------------------
 # Map61: 028.01
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../DPW8-Scatter/TestCase1a/028_BRT/01_BCFD_CadenceUnstructured_SA-noft2-RC-QCR/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../DPW8-Scatter/TestCase1a/028_BTI/01_BCFD_CadenceUnstructured_SA-noft2-RC-QCR/DPW8-AePW4_ForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: Alpha (only 1 Grid Zones)
   $!IF |Increment| > 6
@@ -1008,7 +1008,7 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps"  "CadenceUnS_Maps" )
 #-------------------------------------------------
 # Map62: 028.02
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../DPW8-Scatter/TestCase1a/028_BRT/02_BCFD_CadenceUnstructured_SA-noft2/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../DPW8-Scatter/TestCase1a/028_BTI/02_BCFD_CadenceUnstructured_SA-noft2/DPW8-AePW4_ForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: Alpha (only 1 Grid Zones)
   $!IF |Increment| > 6
@@ -1021,7 +1021,7 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" )
 #-------------------------------------------------
 # Map63: 028.03
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../DPW8-Scatter/TestCase1a/028_BRT/03_BCFD_HeldenMesh_SA-noft2-RC-QCR/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../DPW8-Scatter/TestCase1a/028_BTI/03_BCFD_HeldenMesh_SA-noft2-RC-QCR/DPW8-AePW4_ForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: Alpha (only 1 Grid Zones)
   $!IF |Increment| > 6
@@ -1034,7 +1034,7 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps" "HeldenUnSt_Maps" )
 #-------------------------------------------------
 # Map64: 028.04
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../DPW8-Scatter/TestCase1a/028_BRT/04_BCFD_HeldenMesh_SA-noft2/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../DPW8-Scatter/TestCase1a/028_BTI/04_BCFD_HeldenMesh_SA-noft2/DPW8-AePW4_ForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: Alpha (only 1 Grid Zones)
   $!IF |Increment| > 6
