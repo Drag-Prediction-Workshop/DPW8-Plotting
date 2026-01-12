@@ -134,12 +134,14 @@ $!IF 1 == 1
   $!LineMap  [|CadenceUnSTet_Maps|] Lines   { Color = Red    } Symbols { Color = Red    FillColor = Red    }
   $!LineMap  [|CadenceUnSVox_Maps|] Lines   { Color = Black  } Symbols { Color = Black  FillColor = Black  }
   $!LineMap  [|HeldenUnSt_Maps|]    Lines   { Color = Blue   } Symbols { Color = Blue   FillColor = Blue   }
-  $!LineMap  [|CstmUsrAdp_Maps|] Lines   { Color = Purple } Symbols { Color = Purple FillColor = Purple }
- #$!LineMap  [|CstmUsrUns_Maps|] Lines   { Color = Cyan   } Symbols { Color = Cyan   FillColor = Cyan   }
- #$!LineMap  [|CstmUsrStr_Maps|] Lines   { Color = Yellow } Symbols { Color = Yellow FillColor = Yellow }
+  $!LineMap  [|CstmUsrAdp_Maps|]    Lines   { Color = Purple } Symbols { Color = Purple FillColor = Purple }
+ #$!LineMap  [|CstmUsrUns_Maps|]    Lines   { Color = Cyan   } Symbols { Color = Cyan   FillColor = Cyan   }
+ #$!LineMap  [|CstmUsrStr_Maps|]    Lines   { Color = Yellow } Symbols { Color = Yellow FillColor = Yellow }
 
-  $!LineMap  [|WING1_Maps|] Lines   { LinePattern = Solid  }
-  $!LineMap  [|WING2_Maps|] Lines   { LinePattern = Dashed }
+  $!LineMap  [|WING1_Maps|]         Lines   { LinePattern = Solid  }
+  $!LineMap  [|WING2_Maps|]         Lines   { LinePattern = Dashed }
+
+  $!LineMap  [|DPW3_Maps|]          Lines   { LineThickness = 0.20 } Symbols { Size = 1.5 }
 
   $!Pick AddAll
      SELECTTEXT=YES

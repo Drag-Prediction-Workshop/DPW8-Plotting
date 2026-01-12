@@ -29,6 +29,10 @@ $!VarSet |CstmUsrStr_Maps| = ''
 $!VarSet |WING1_Maps| = ''
 $!VarSet |WING2_Maps| = ''
 #-------------------------------------------------
+# DPW3 Variants
+#------------------------------
+$!VarSet |DPW3_Maps| = ''
+#-------------------------------------------------
 
 #===================================================================
 #$!RUNMACROFUNCTION "LoadAndPlotGrid" ( '|GRID|', '|IMG1|', '|IMG2|' )
@@ -133,6 +137,8 @@ $!MACROFUNCTION
      $!VarSet |CstmUsrUns_Maps|    = '|CstmUsrUns_Maps|    |NumLineMaps|,'
   $!ELSEIF '|2|' == 'CstmUsrAdp_Maps'
      $!VarSet |CstmUsrStr_Maps|    = '|CstmUsrStr_Maps|    |NumLineMaps|,'
+  $!ELSEIF '|2|' == 'DPW3_Maps'
+     $!VarSet |DPW3_Maps|          = '|DPW3_Maps|          |NumLineMaps|,'
   $!ENDIF
   # Assign LineMap to Wing Type Label
   $!IF     '|3|' == 'WING1'
@@ -201,10 +207,9 @@ $!MACROFUNCTION
 # Map00:
 #$!VarSet |Z| = ( 0 + |Increment| )
 #$!ReadDataSet  '"|MACROFILEPATH|/000_00_DPW8-AePW4_ForceMoment_v5.dat"'
-#-------------------------------------------------
-# Map01: 003.01
-$!VarSet |Z| = ( 0 + |Increment| )
-$!ReadDataSet  '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase3a/003_Boeing/01_FELight_HeldenMesh_Unstructured_REV00_SA-neg/DPW8-AePW4_ForceMoment_v6.dat"'
+#==================================================================================================
+# Dataset: 301.01
+$!ReadDataSet  '"|MACROFILEPATH|/DPW3/301_FUN3D_Lee-Rausch_Rumsey/01_SA/DPW8-AePW4_ForceMoment_v6.dat"'
   ReadDataOption = New
   ResetStyle = No
   VarLoadMode = ByName
@@ -212,8 +217,95 @@ $!ReadDataSet  '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase3a/003_Boeing/
   VarNameList = '"GRID_LEVEL" "GRID_SIZE" "GRID_FAC" "MACH" "REY" "ALPHA" "CL_TOT" "CD_TOT" "CM_TOT" "CL_WING" "CD_WING" "CM_WING" "CD_PR" "CD_SF" "CL_TAIL" "CD_TAIL" "CM_TAIL" "CL_FUS" "CD_FUS" "CM_FUS" "CL_NAC" "CD_NAC" "CM_NAC" "CL_PY" "CD_PY" "CM_PY" "CPU_Hours" "DELTAT" "CTUSTART" "CTUAVG" "Q/E"'
 $!ActiveLineMaps -= [1-|NumLineMaps|]
 $!DeleteLineMaps    [1-|NumLineMaps|]
+$!VarSet |Z| = (  0  + 1 )
+$!RUNMACROFUNCTION "AddLineMap" ( "DPW3_Maps" "DPW3_Maps" "WING1" )
+$!VarSet |Z| = ( |Z| + 1 )
+$!RUNMACROFUNCTION "AddLineMap" ( "DPW3_Maps" "DPW3_Maps" "WING2" )
+$!LineMap [|NumLineMaps|]  Assign{ShowInLegend = Never}
 #
-$!VarSet |Z| = ( 0 + 8 )
+$!VarSet |N0| = ( |NumLineMaps| - 1 )
+$!LineMap [|N0|-|NumLineMaps|]  Lines   { Color = Red    } Symbols {Color = Red    FillColor = Red    SymbolShape {IsASCII = Yes ASCIIShape {FontOverride = UserDef ASCIIChar = '\1'}}}
+#-------------------------------------------------
+# Dataset: 302.01
+$!VarSet |Z| = ( |NumZones| + 1 )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/DPW3/302_NSU3D_Mavriplis/01_SA/DPW8-AePW4_ForceMoment_v6.dat"' )
+$!RUNMACROFUNCTION "AddLineMap" ( "DPW3_Maps" "DPW3_Maps" "WING1" )
+$!VarSet |Z| = ( |Z| + 1 )
+$!RUNMACROFUNCTION "AddLineMap" ( "DPW3_Maps" "DPW3_Maps" "WING2" )
+$!LineMap [|NumLineMaps|]  Assign{ShowInLegend = Never}
+#
+$!VarSet |N0| = ( |NumLineMaps| - 1 )
+$!LineMap [|N0|-|NumLineMaps|]  Lines   { Color = Green  } Symbols {Color = Green  FillColor = Green  SymbolShape {IsASCII = Yes ASCIIShape {FontOverride = UserDef ASCIIChar = '\2'}}}
+#-------------------------------------------------
+# Dataset: 303.01
+$!VarSet |Z| = ( |NumZones| + 1 )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/DPW3/303_OVERFLOW_Sclafani/01_SA/DPW8-AePW4_ForceMoment_v6.dat"' )
+$!RUNMACROFUNCTION "AddLineMap" ( "DPW3_Maps" "DPW3_Maps" "WING1" )
+$!VarSet |Z| = ( |Z| + 1 )
+$!RUNMACROFUNCTION "AddLineMap" ( "DPW3_Maps" "DPW3_Maps" "WING2" )
+$!LineMap [|NumLineMaps|]  Assign{ShowInLegend = Never}
+#
+$!VarSet |N0| = ( |NumLineMaps| - 1 )
+$!LineMap [|N0|-|NumLineMaps|]  Lines   { Color = Blue   } Symbols {Color = Blue   FillColor = Blue   SymbolShape {IsASCII = Yes ASCIIShape {FontOverride = UserDef ASCIIChar = '\3'}}}
+#-------------------------------------------------
+# Dataset: 305.01
+$!VarSet |Z| = ( |NumZones| + 1 )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/DPW3/305_NSU3D_Zickuhr/01_SA/DPW8-AePW4_ForceMoment_v6.dat"' )
+$!RUNMACROFUNCTION "AddLineMap" ( "DPW3_Maps" "DPW3_Maps" "WING1" )
+$!VarSet |Z| = ( |Z| + 1 )
+$!RUNMACROFUNCTION "AddLineMap" ( "DPW3_Maps" "DPW3_Maps" "WING2" )
+$!LineMap [|NumLineMaps|]  Assign{ShowInLegend = Never}
+#
+$!VarSet |N0| = ( |NumLineMaps| - 1 )
+$!LineMap [|N0|-|NumLineMaps|]  Lines   { Color = Purple } Symbols {Color = Purple FillColor = Purple SymbolShape {IsASCII = Yes ASCIIShape {FontOverride = UserDef ASCIIChar = '\5'}}}
+#-------------------------------------------------
+# Dataset: 306.01
+$!VarSet |Z| = ( |NumZones| + 1 )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/DPW3/306_CFL3D_Tinoco/01_SA/DPW8-AePW4_ForceMoment_v6.dat"' )
+$!RUNMACROFUNCTION "AddLineMap" ( "DPW3_Maps" "DPW3_Maps" "WING1" )
+$!VarSet |Z| = ( |Z| + 1 )
+$!RUNMACROFUNCTION "AddLineMap" ( "DPW3_Maps" "DPW3_Maps" "WING2" )
+$!LineMap [|NumLineMaps|]  Assign{ShowInLegend = Never}
+#
+$!VarSet |N0| = ( |NumLineMaps| - 1 )
+$!LineMap [|N0|-|NumLineMaps|]  Lines   { Color = Custom3  } Symbols {Color = Custom3  FillColor = Custom3  SymbolShape {IsASCII = Yes ASCIIShape {FontOverride = UserDef ASCIIChar = '\6'}}}
+#-------------------------------------------------
+# Dataset: 306.02
+$!VarSet |Z| = ( |NumZones| + 1 )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/DPW3/306_CFL3D_Tinoco/02_SST/DPW8-AePW4_ForceMoment_v6.dat"' )
+$!RUNMACROFUNCTION "AddLineMap" ( "DPW3_Maps" "DPW3_Maps" "WING1" )
+$!VarSet |Z| = ( |Z| + 1 )
+$!RUNMACROFUNCTION "AddLineMap" ( "DPW3_Maps" "DPW3_Maps" "WING2" )
+$!LineMap [|NumLineMaps|]  Assign{ShowInLegend = Never}
+#
+$!VarSet |N0| = ( |NumLineMaps| - 1 )
+$!LineMap [|N0|-|NumLineMaps|]  Lines   { Color = Custom32 } Symbols {Color = Custom32 FillColor = Custom32 SymbolShape {IsASCII = Yes ASCIIShape {FontOverride = UserDef ASCIIChar = '\7'}}}
+#-------------------------------------------------
+# Dataset: 307.01
+$!VarSet |Z| = ( |NumZones| + 1 )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/DPW3/307_TAU_Brodersen/01_SA/DPW8-AePW4_ForceMoment_v6.dat"' )
+$!RUNMACROFUNCTION "AddLineMap" ( "DPW3_Maps" "DPW3_Maps" "WING1" )
+$!VarSet |Z| = ( |Z| + 1 )
+$!RUNMACROFUNCTION "AddLineMap" ( "DPW3_Maps" "DPW3_Maps" "WING2" )
+$!LineMap [|NumLineMaps|]  Assign{ShowInLegend = Never}
+#
+$!VarSet |N0| = ( |NumLineMaps| - 1 )
+$!LineMap [|N0|-|NumLineMaps|]  Lines   { Color = Custom29 } Symbols {Color = Custom29 FillColor = Custom29 SymbolShape {IsASCII = Yes ASCIIShape {FontOverride = UserDef ASCIIChar = '\8'}}}
+#-------------------------------------------------
+# Dataset: 308.01
+$!VarSet |Z| = ( |NumZones| + 1 )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/DPW3/308_FLUENT_Scheidegger/01_KE/DPW8-AePW4_ForceMoment_v6.dat"' )
+$!RUNMACROFUNCTION "AddLineMap" ( "DPW3_Maps" "DPW3_Maps" "WING1" )
+$!VarSet |Z| = ( |Z| + 1 )
+$!RUNMACROFUNCTION "AddLineMap" ( "DPW3_Maps" "DPW3_Maps" "WING2" )
+$!LineMap [|NumLineMaps|]  Assign{ShowInLegend = Never}
+#
+$!VarSet |N0| = ( |NumLineMaps| - 1 )
+$!LineMap [|N0|-|NumLineMaps|]  Lines   { Color = Custom15 } Symbols {Color = Custom15 FillColor = Custom15 SymbolShape {IsASCII = Yes ASCIIShape {FontOverride = UserDef ASCIIChar = '\9'}}}
+#==================================================================================================
+# Map01: 003.01
+$!VarSet |Z| = ( |NumZones| + |Increment| - 1 )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase3a/003_Boeing/01_FELight_HeldenMesh_Unstructured_REV00_SA-neg/DPW8-AePW4_ForceMoment_v6.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "HeldenUnSt_Maps" "WING1" )
 $!VarSet |Z| = ( |Z| + 8 )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "HeldenUnSt_Maps" "WING2")
@@ -235,12 +327,12 @@ $!VarSet |Z| = ( |Z| + |Increment| )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "CadenceUnSVox_Maps" "WING2" )
 $!LineMap [|NumLineMaps|]  Assign{ShowInLegend = Never}
 #-------------------------------------------------
-$!LineMap  [1]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\A'}}}
-$!LineMap  [2]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\A'}}}
-$!LineMap  [3]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\a'}}}
-$!LineMap  [4]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\a'}}}
-$!LineMap  [5]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Greek   ASCIIChar = '\A'}}}
-$!LineMap  [6]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Greek   ASCIIChar = '\A'}}}
+$!LineMap [17]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\A'}}}
+$!LineMap [18]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\A'}}}
+$!LineMap [19]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\a'}}}
+$!LineMap [20]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\a'}}}
+$!LineMap [21]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Greek   ASCIIChar = '\A'}}}
+$!LineMap [22]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Greek   ASCIIChar = '\A'}}}
 #-------------------------------------------------
 # Map04: 003.04
 $!VarSet |Z| = ( |NumZones| + 1 )
@@ -274,14 +366,14 @@ $!VarSet |Z| = ( |Z| + 1 )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "CadenceUnSVox_Maps" "WING2" )
 $!LineMap [|NumLineMaps|]  Assign{ShowInLegend = Never}
 #-------------------------------------------------
-$!LineMap  [7]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\B'}}}
-$!LineMap  [8]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\B'}}}
-$!LineMap  [9]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\b'}}}
-$!LineMap [10]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\b'}}}
-$!LineMap [11]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Greek   ASCIIChar = '\B'}}}
-$!LineMap [12]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Greek   ASCIIChar = '\B'}}}
-$!LineMap [13]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Greek   ASCIIChar = '\b'}}}
-$!LineMap [14]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Greek   ASCIIChar = '\b'}}}
+$!LineMap [23]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\B'}}}
+$!LineMap [24]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\B'}}}
+$!LineMap [25]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\b'}}}
+$!LineMap [26]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\b'}}}
+$!LineMap [27]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Greek   ASCIIChar = '\B'}}}
+$!LineMap [28]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Greek   ASCIIChar = '\B'}}}
+$!LineMap [29]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Greek   ASCIIChar = '\b'}}}
+$!LineMap [30]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Greek   ASCIIChar = '\b'}}}
 #-------------------------------------------------
 # Map08: 011.01
 $!VarSet |Z1| = (|NumZones|+1)
@@ -307,7 +399,7 @@ $!LineMap [|NumLineMaps|]  Assign{ShowInLegend = Never}
 #-------------------------------------------------
 # Map10: 003.08
 $!VarSet |Z| = ( |NumZones| + 1 )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase3a/003_Boeing/04_GGNS.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase3a/003_Boeing/08_GGNST1_Epic_DragAdjoint_SA-neg/DPW8-AePW4_ForceMoment_v6.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "CstmUsrAdp_Maps" "WING1" )
 $!VarSet |Z| = ( |Z| + 1 )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "CstmUsrAdp_Maps" "WING2" )
@@ -316,14 +408,14 @@ $!LineMap [|NumLineMaps|]  Assign{ShowInLegend = Never}
 #==================================================================================================
 
 #==================================================================================================
-$!LineMap [15]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\C'}}}
-$!LineMap [16]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\C'}}}
+$!LineMap [31]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\C'}}}
+$!LineMap [32]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\C'}}}
 
-$!LineMap [17]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\D'}}}
-$!LineMap [18]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\D'}}}
+$!LineMap [33]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\D'}}}
+$!LineMap [34]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\D'}}}
 
-$!LineMap [19]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\E'}}}
-$!LineMap [20]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\E'}}}
+$!LineMap [35]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\E'}}}
+$!LineMap [36]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\E'}}}
 #-------------------------------------------------
 
 #==================================================================================================
@@ -423,15 +515,15 @@ $!RenameDataSetVar Var = |dCDv| Name = '<greek>D</greek>CD<sub>SkinFriction</sub
 #-------------------------------------------------
 # Calculate deltas between Wing1/Wing2 (HARDCODED)
 #----------------------------
-$!RUNMACROFUNCTION "CalculateDeltas" (  8, 16 )
-$!RUNMACROFUNCTION "CalculateDeltas" ( 23, 30 )
-$!RUNMACROFUNCTION "CalculateDeltas" ( 37, 44 )
-$!RUNMACROFUNCTION "CalculateDeltas" ( 45, 46 )
-$!RUNMACROFUNCTION "CalculateDeltas" ( 47, 48 )
-$!RUNMACROFUNCTION "CalculateDeltas" ( 49, 50 )
-$!RUNMACROFUNCTION "CalculateDeltas" ( 51, 52 )
-$!RUNMACROFUNCTION "CalculateDeltas" ( 64, 75 )
-$!RUNMACROFUNCTION "CalculateDeltas" ( 82, 89 )
+$!RUNMACROFUNCTION "CalculateDeltas" ( 24, 32 )
+$!RUNMACROFUNCTION "CalculateDeltas" ( 39, 46 )
+$!RUNMACROFUNCTION "CalculateDeltas" ( 53, 60 )
+$!RUNMACROFUNCTION "CalculateDeltas" ( 61, 62 )
+$!RUNMACROFUNCTION "CalculateDeltas" ( 63, 64 )
+$!RUNMACROFUNCTION "CalculateDeltas" ( 65, 66 )
+$!RUNMACROFUNCTION "CalculateDeltas" ( 67, 68 )
+$!RUNMACROFUNCTION "CalculateDeltas" ( 80, 91 )
+$!RUNMACROFUNCTION "CalculateDeltas" ( 98,105 )
 $!RenameDataSetVar Var = |dCD|  Name = '<greek>D</greek>CD<sub>Total (cnts)</sub>'
 $!RenameDataSetVar Var = |dCDp| Name = '<greek>D</greek>CD<sub>Pressure (cnts)</sub>'
 $!RenameDataSetVar Var = |dCDv| Name = '<greek>D</greek>CD<sub>SkinFriction (cnts)</sub>'
@@ -450,9 +542,9 @@ $!GlobalLinePlot
   DataLabels { DistanceSkip = 5 }
   Legend {
     Show = Yes
-    TextShape { Height = 1.20 }
+    TextShape { Height = 1.2 }
     Box { BoxType = None Margin = 5 }
-    RowSpacing = 1
+    RowSpacing = 1.2
     XYPos { X = 88 Y = 10 }
     AnchorAlignment = BottomLeft
     }
