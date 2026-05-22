@@ -1,19 +1,21 @@
-Submission  |              Scheme              | Grid             | Turb Model
-------------|----------------------------------|------------------|--------------|
-002.01      | WMLES            Gold Circle     | Hex              | Gold Circle  | 
-005.01      | LES              Blue Circle     | Multiblock       | Blue Circle  |
-007.10      | URANS-SA-QCR     Red Circle      | Helden           | Red Circle   |
-007.11      | URANS-SA-QCR     Red x           | Helden           | Red x        |
-007.12      | URANS-SA-QCR     Red +           | Cadence          | Blue Circle  |
-007.13      | URANS-SA-QCR     Red Square      | Cadence          | Blue x       |
-010.02      | WMLES            Gold Circle     | Custom Voroni    | Green Circle |
-013.01      | Lattice Boltzman Brown Circle    | Custom Cartesian | Brown Circle |
-013.02      | Lattice Boltzman Brown x         | Custom Cartesian | Brown x      |
-021.02      | URANS-SA-QCR     Red diamond     | Cadence          | Blue +       |
-021.03      | DDES             Green Circle    | Cadence          | Blue Square| |
-027.05      | RSM              Lavender Circle | Cadence          | Blue Diamond |
+Submission  | Scheme                           | Grid                                   | Turb Model                           |
+------------|----------------------------------|----------------------------------------|--------------------------------------|
+002.01      | WMLES            Gold Circle     | Hex                    Gold Circle     | Dynamic Smagorinsky  Gold Circle     |
+005.01      | LES              Blue Circle     | Multiblock             Blue Circle     | SA-neg               Blue Circle     |
+007.10      | URANS-SA-QCR     Red Circle      | Helden                 Red Circle      | SA-QCR               Red Circle      |
+007.11      | URANS-SA-QCR     Red x           | Helden                 Red x           | SA-QCR               Red x           |
+007.12      | URANS-SA-QCR     Red +           | Cadence                Blue Circle     | SA-QCR               Red +           |
+007.13      | URANS-SA-QCR     Red Square      | Cadence                Blue x          | SA-QCR               Red Square      |
+010.02      | WMLES            Gold Circle     | Custom Voroni          Green Circle    | Dynamic Smagorinsky  Gold x          |
+013.01      | Lattice Boltzman Brown Circle    | Custom Cartesian       Brown Circle    | ke LBM               Green Circle    |
+013.02      | Lattice Boltzman Brown x         | Custom Cartesian       Brown x         | ke-LBM               Green x         |
+021.02      | URANS-SA-QCR     Red diamond     | Cadence                Blue +          | SST                  Brown Circle    |
+021.03      | DDES             Green Circle    | Cadence                Blue Square|    | SST                  Brown x         |
+027.05      | RSM              Lavender Circle | Cadence                Blue Diamond    | RSM                  Lavender Circle |
+032.01      | Adaptive Euler   Fuschia Circle  | Custom Mixed Element   Lavender Circle | Euler                Fuschia Circle  |
+041.02      | DDES             Green x         | Cadence                Blue <          | SA-neg               Blue x          |
 
-Gold  Blue  Red  Green  Brown
-o x + s (all hollow)
+Gold  Blue  Red  Green  Brown  Lavender  Fuschia
+o x + s d < (all hollow)
 
 Experiment is plotted last as filled black squares
