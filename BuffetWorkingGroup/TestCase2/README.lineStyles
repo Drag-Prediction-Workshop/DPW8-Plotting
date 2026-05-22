@@ -1,0 +1,19 @@
+Submission  |              Scheme              | Grid             | Turb Model
+------------|----------------------------------|------------------|--------------|
+002.01      | WMLES            Gold Circle     | Hex              | Gold Circle  | 
+005.01      | LES              Blue Circle     | Multiblock       | Blue Circle  |
+007.10      | URANS-SA-QCR     Red Circle      | Helden           | Red Circle   |
+007.11      | URANS-SA-QCR     Red x           | Helden           | Red x        |
+007.12      | URANS-SA-QCR     Red +           | Cadence          | Blue Circle  |
+007.13      | URANS-SA-QCR     Red Square      | Cadence          | Blue x       |
+010.02      | WMLES            Gold Circle     | Custom Voroni    | Green Circle |
+013.01      | Lattice Boltzman Brown Circle    | Custom Cartesian | Brown Circle |
+013.02      | Lattice Boltzman Brown x         | Custom Cartesian | Brown x      |
+021.02      | URANS-SA-QCR     Red diamond     | Cadence          | Blue +       |
+021.03      | DDES             Green Circle    | Cadence          | Blue Square| |
+027.05      | RSM              Lavender Circle | Cadence          | Blue Diamond |
+
+Gold  Blue  Red  Green  Brown
+o x + s (all hollow)
+
+Experiment is plotted last as filled black squares
