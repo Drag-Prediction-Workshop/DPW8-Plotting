@@ -1,5 +1,3 @@
-Stinkhead
-
 data(1)
    participantid       002
    submissiondate      January 07, 2026
@@ -128,7 +126,7 @@ data(3)
    solvername          FaSTAR
    basicalgorithm      URANS
    turbulencemodel     SA-R(Crot=2)-comp-QCR2000
-   gridid              Hexahedra
+   gridid              Helden
    notes               Warm start (Restart from RANS solution), sub iterations=30
 
    alldata(14)  -->  data(3).zones(1)
@@ -156,7 +154,7 @@ data(4)
    solvername          FaSTAR
    basicalgorithm      URANS
    turbulencemodel     SA-R(Crot=2)-comp-QCR2000
-   gridid              Hexahedra
+   gridid              Helden
    notes               Warm start (Restart from RANS solution), sub iterations=30, The turbulence equations are first-order accuracy. The CPU time corresponds to the statistics collection time only.
 
    alldata(16)  -->  data(4).zones(1)
@@ -219,7 +217,7 @@ data(5)
    solvername          FaSTAR
    basicalgorithm      URANS
    turbulencemodel     SA-R(Crot=2)-comp-QCR2000
-   gridid              Hexahedra
+   gridid              Cadence
    notes               Warm start (Restart from RANS solution), sub iterations=30
 
    alldata(23)  -->  data(5).zones(1)
@@ -247,7 +245,7 @@ data(6)
    solvername          FaSTAR
    basicalgorithm      URANS
    turbulencemodel     SA-R(Crot=2)-comp-QCR2000
-   gridid              Hexahedra
+   gridid              Cadence
    notes               Warm start (Restart from RANS solution), sub iterations=30, The turbulence equations are first-order accuracy. The CPU time corresponds to the statistics collection time only.
 
    alldata(25)  -->  data(6).zones(1)
@@ -542,4 +540,17 @@ data(12)
       Zone gridfilename  wbh_aoa589_buffet_deformed_Level-3-2_16%_mm.pw
       Zone misc          SHEAR FLOW CORRECTION OFF
 
+Error using hello (line 13)
+
+Hello!
+
+Stack trace:
+   [1] hello at /Users/bwpomero/bin/matlab/hello.m:3
+   [2] fandm at
+   /Users/bwpomero/crm/hs/dpw-8/github/DPW8-Plotting/BuffetWorkingGroup/TestCase2/fandm/fandm.m:107
+
+Error in fandm (line 107)
+hello
+^^^^^
+ 
 >> 
