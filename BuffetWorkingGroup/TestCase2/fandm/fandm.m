@@ -405,9 +405,13 @@ if makeplots == 1
    hold on
    grid minor
    plot(tunnel.alpha,tunnel.cl,'k-o','markerfacecolor','k')
-   plot(tunnel.alphainteresting,tunnel.clinteresting,'ro','markerfacecolor','r');
    xlabel('\alpha (deg)')
    ylabel('C_L')
+   if saveall == 1
+      exportgraphics(gcf,'pdf/cl-alpha-exp-black.pdf','ContentType','vector')
+      exportgraphics(gcf,'png/cl-alpha-exp-black.png','Resolution',250)
+   end
+   plot(tunnel.alphainteresting,tunnel.clinteresting,'ro','markerfacecolor','r');
    if saveall == 1
       exportgraphics(gcf,'pdf/cl-alpha-exp.pdf','ContentType','vector')
       exportgraphics(gcf,'png/cl-alpha-exp.png','Resolution',250)
@@ -418,10 +422,14 @@ if makeplots == 1
    hold on
    grid minor
    plot(tunnel.cd,tunnel.cl,'k-o','markerfacecolor','k')
-   plot(tunnel.cdinteresting,tunnel.clinteresting,'ro','markerfacecolor','r');
    xlabel('\alpha (deg)')
    ylabel('C_D')
    set(gca,'xlim',[0.015 0.085])
+   if saveall == 1
+      exportgraphics(gcf,'pdf/cl-cd-exp-black.pdf','ContentType','vector')
+      exportgraphics(gcf,'png/cl-cd-exp-black.png','Resolution',250)
+   end
+   plot(tunnel.cdinteresting,tunnel.clinteresting,'ro','markerfacecolor','r');
    if saveall == 1
       exportgraphics(gcf,'pdf/cl-cd-exp.pdf','ContentType','vector')
       exportgraphics(gcf,'png/cl-cd-exp.png','Resolution',250)
@@ -432,10 +440,14 @@ if makeplots == 1
    hold on
    grid minor
    plot(tunnel.alpha,tunnel.mach,'k-o','markerfacecolor','k')
-   plot(tunnel.alphainteresting,tunnel.machinteresting,'ro','markerfacecolor','r');
    xlabel('\alpha (deg)')
    ylabel('Mach')
    set(gca,'ylim',[0.846 0.854])
+   if saveall == 1
+      exportgraphics(gcf,'pdf/mach-alpha-exp-black.pdf','ContentType','vector')
+      exportgraphics(gcf,'png/mach-alpha-exp-black.png','Resolution',250)
+   end
+   plot(tunnel.alphainteresting,tunnel.machinteresting,'ro','markerfacecolor','r');
    if saveall == 1
       exportgraphics(gcf,'pdf/mach-alpha-exp.pdf','ContentType','vector')
       exportgraphics(gcf,'png/mach-alpha-exp.png','Resolution',250)
@@ -446,11 +458,15 @@ if makeplots == 1
    hold on
    grid minor
    plot(tunnel.alpha,tunnel.rey,'k-o','markerfacecolor','k')
-   plot(tunnel.alphainteresting,tunnel.reyinteresting,'ro','markerfacecolor','r');
    xlabel('\alpha (deg)')
    ylabel('Re (million)')
    set(gca,'ylim',[1.51 1.52])
    set(gca,'ytick',[1.51 1.515 1.52])
+   if saveall == 1
+      exportgraphics(gcf,'pdf/re-alpha-exp-black.pdf','ContentType','vector')
+      exportgraphics(gcf,'png/re-alpha-exp-black.png','Resolution',250)
+   end
+   plot(tunnel.alphainteresting,tunnel.reyinteresting,'ro','markerfacecolor','r');
    if saveall == 1
       exportgraphics(gcf,'pdf/re-alpha-exp.pdf','ContentType','vector')
       exportgraphics(gcf,'png/re-alpha-exp.png','Resolution',250)
@@ -461,11 +477,15 @@ if makeplots == 1
    hold on
    grid minor
    plot(tunnel.cm,tunnel.cl,'k-o','markerfacecolor','k')
-   plot(tunnel.cminteresting,tunnel.clinteresting,'ro','markerfacecolor','r');
    xlabel('C_M')
    ylabel('C_L')
    set(gca,'xdir','reverse')
    set(gca,'xlim',[-0.05 0.25])
+   if saveall == 1
+      exportgraphics(gcf,'pdf/cl-cm-exp-black.pdf','ContentType','vector')
+      exportgraphics(gcf,'png/cl-cm-exp-black.png','Resolution',250)
+   end
+   plot(tunnel.cminteresting,tunnel.clinteresting,'ro','markerfacecolor','r');
    if saveall == 1
       exportgraphics(gcf,'pdf/cl-cm-exp.pdf','ContentType','vector')
       exportgraphics(gcf,'png/cl-cm-exp.png','Resolution',250)
@@ -476,11 +496,15 @@ if makeplots == 1
    hold on
    grid minor
    plot(tunnel.cm,tunnel.alpha,'k-o','markerfacecolor','k')
-   plot(tunnel.cminteresting,tunnel.alphainteresting,'ro','markerfacecolor','r');
    xlabel('C_M')
    ylabel('\alpha (deg)')
    set(gca,'xdir','reverse')
    set(gca,'xlim',[-0.05 0.25])
+   if saveall == 1
+      exportgraphics(gcf,'pdf/alpha-cm-exp-black.pdf','ContentType','vector')
+      exportgraphics(gcf,'png/alpha-cm-exp-black.png','Resolution',250)
+   end
+   plot(tunnel.cminteresting,tunnel.alphainteresting,'ro','markerfacecolor','r');
    if saveall == 1
       exportgraphics(gcf,'pdf/alpha-cm-exp.pdf','ContentType','vector')
       exportgraphics(gcf,'png/alpha-cm-exp.png','Resolution',250)
@@ -682,6 +706,68 @@ if saveall == 1
 end
 
 
+%% By turbulence model... alpha sweeps at lines of constant grids
+
+% Get constant-grid zones
+datasets = sort([g{1} g{2} g{3} g{4} g{5} g{6} g999]); % Zone number
+
+% CL-alpha
+hl = plotdata(alldata, datasets, 'turb', 'alpha', 'clavg');
+hp1 = plot(tunnel.alphainteresting,tunnel.clinteresting,'-ks','markerfacecolor','k','markersize',12); hp1.DisplayName = 'Tunnel'; uistack(hp1, 'bottom');
+hp2 = plot(tunnel.alpha,tunnel.cl,'-s','color',[tunnelcolor tunnelcolor tunnelcolor],'markerfacecolor',[tunnelcolor tunnelcolor tunnelcolor],'markeredgecolor',[tunnelcolor tunnelcolor tunnelcolor],'handlevisibility','off'); uistack(hp2, 'bottom');
+xlabel('\alpha (deg)')
+ylabel('C_{L}')
+axis([1 6 0.2 0.8])
+anchorx = 1.02; anchory = -0.13;
+dy = 0.06;
+text(anchorx,anchory,'Brown: SST', 'fontname','fixedwidth','fontweight','bold',  'color', [141,91,47]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Green: k\epsilon',    'fontname','fixedwidth','fontweight','bold','color', [0,170,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Red:   SA-QCR',    'fontname','fixedwidth','fontweight','bold','color', [255,0,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Blue:  SA-neg',   'fontname','fixedwidth','fontweight','bold', 'color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Gold:  DS',       'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+if saveall == 1
+   exportgraphics(gcf,'pdf/cl-alpha-grid.pdf','ContentType','vector')
+   exportgraphics(gcf,'png/cl-alpha-grid.png','Resolution',250)
+end
+
+% Polar
+hl = plotdata(alldata, datasets, 'grid', 'cdavg', 'clavg');
+hp1 = plot(tunnel.cdinteresting,tunnel.clinteresting,'-ks','markerfacecolor','k','markersize',12); hp1.DisplayName = 'Tunnel'; uistack(hp1, 'bottom');
+hp2 = plot(tunnel.cd,tunnel.cl,'-s','color',[tunnelcolor tunnelcolor tunnelcolor],'markerfacecolor',[tunnelcolor tunnelcolor tunnelcolor],'markeredgecolor',[tunnelcolor tunnelcolor tunnelcolor],'handlevisibility','off'); uistack(hp2, 'bottom');
+xlabel('C_{D}')
+ylabel('C_{L}')
+axis([0.02 0.09 0.2 0.8])
+anchorx = 1.05; anchory = -0.13;
+dy = 0.06;
+text(anchorx,anchory,'Brown: SST', 'fontname','fixedwidth','fontweight','bold',  'color', [141,91,47]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Green: k\epsilon',    'fontname','fixedwidth','fontweight','bold','color', [0,170,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Red:   SA-QCR',    'fontname','fixedwidth','fontweight','bold','color', [255,0,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Blue:  SA-neg',   'fontname','fixedwidth','fontweight','bold', 'color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Gold:  DS',       'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+if saveall == 1
+   exportgraphics(gcf,'pdf/cl-cd-grid.pdf','ContentType','vector')
+   exportgraphics(gcf,'png/cl-cd-grid.pdf','Resolution',250)
+end
+
+% CM-CL
+hl = plotdata(alldata, datasets, 'grid', 'cmavg', 'clavg');
+hp1 = plot(tunnel.cminteresting,tunnel.clinteresting,'-ks','markerfacecolor','k','markersize',12); hp1.DisplayName = 'Tunnel'; uistack(hp1, 'bottom');
+hp2 = plot(tunnel.cm,tunnel.cl,'-s','color',[tunnelcolor tunnelcolor tunnelcolor],'markerfacecolor',[tunnelcolor tunnelcolor tunnelcolor],'markeredgecolor',[tunnelcolor tunnelcolor tunnelcolor],'handlevisibility','off'); uistack(hp2, 'bottom');
+xlabel('C_{M}')
+ylabel('C_{L}')
+set(gca,'xdir','reverse')
+axis([-0.1 0.1 0.2 0.8])
+anchorx = 1.05; anchory = -0.13;
+dy = 0.06;
+text(anchorx,anchory,'Brown: SST', 'fontname','fixedwidth','fontweight','bold',  'color', [141,91,47]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Green: k\epsilon',    'fontname','fixedwidth','fontweight','bold','color', [0,170,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Red:   SA-QCR',    'fontname','fixedwidth','fontweight','bold','color', [255,0,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Blue:  SA-neg',   'fontname','fixedwidth','fontweight','bold', 'color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Gold:  DS',       'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+if saveall == 1
+   exportgraphics(gcf,'pdf/cl-cm-grid.pdf','ContentType','vector')
+   exportgraphics(gcf,'png/cl-cm-grid.png','Resolution',250)
+end
 
 %%
 
