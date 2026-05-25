@@ -424,6 +424,7 @@ if makeplots == 1
    set(gca,'xlim',[0.015 0.085])
    if saveall == 1
       exportgraphics(gcf,'pdf/cl-cd-exp.pdf','ContentType','vector')
+      exportgraphics(gcf,'png/cl-cd-exp.png','Resolution',250)
    end
    
    % Mach-Alpha
@@ -437,6 +438,7 @@ if makeplots == 1
    set(gca,'ylim',[0.846 0.854])
    if saveall == 1
       exportgraphics(gcf,'pdf/mach-alpha-exp.pdf','ContentType','vector')
+      exportgraphics(gcf,'png/mach-alpha-exp.png','Resolution',250)
    end
    
    % Re-Alpha
@@ -451,6 +453,7 @@ if makeplots == 1
    set(gca,'ytick',[1.51 1.515 1.52])
    if saveall == 1
       exportgraphics(gcf,'pdf/re-alpha-exp.pdf','ContentType','vector')
+      exportgraphics(gcf,'png/re-alpha-exp.png','Resolution',250)
    end
    
    % CM-CL
@@ -465,6 +468,7 @@ if makeplots == 1
    set(gca,'xlim',[-0.05 0.25])
    if saveall == 1
       exportgraphics(gcf,'pdf/cl-cm-exp.pdf','ContentType','vector')
+      exportgraphics(gcf,'png/cl-cm-exp.png','Resolution',250)
    end
    
    % CM-alpha
@@ -479,6 +483,7 @@ if makeplots == 1
    set(gca,'xlim',[-0.05 0.25])
    if saveall == 1
       exportgraphics(gcf,'pdf/alpha-cm-exp.pdf','ContentType','vector')
+      exportgraphics(gcf,'png/alpha-cm-exp.png','Resolution',250)
    end
 end %if makeplots == 1
 
@@ -503,6 +508,7 @@ text(anchorx,anchory,'Blue:  LES',  'fontname','fixedwidth','fontweight','bold',
 text(anchorx,anchory,'Gold:  WMLES','fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
    exportgraphics(gcf,'pdf/cl-alpha-scheme.pdf','ContentType','vector')
+   exportgraphics(gcf,'png/cl-alpha-scheme.png','Resolution',250)
 end
 
 % Polar
@@ -521,6 +527,7 @@ text(anchorx,anchory,'Blue:  LES',  'fontname','fixedwidth','fontweight','bold',
 text(anchorx,anchory,'Gold:  WMLES','fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
    exportgraphics(gcf,'pdf/cl-cd-scheme.pdf','ContentType','vector')
+   exportgraphics(gcf,'png/cl-cd-scheme.png','Resolution',250)
 end
 
 % CM-CL
@@ -540,6 +547,7 @@ text(anchorx,anchory,'Blue:  LES',  'fontname','fixedwidth','fontweight','bold',
 text(anchorx,anchory,'Gold:  WMLES','fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
    exportgraphics(gcf,'pdf/cl-cm-scheme.pdf','ContentType','vector')
+   exportgraphics(gcf,'png/cl-cm-scheme.png','Resolution',250)
 end
 
 
@@ -567,6 +575,7 @@ text(anchorx,anchory,'Blue:  Cadence',   'fontname','fixedwidth','fontweight','b
 text(anchorx,anchory,'Gold:  Hex',       'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
    exportgraphics(gcf,'pdf/cl-alpha-grid.pdf','ContentType','vector')
+   exportgraphics(gcf,'png/cl-alpha-grid.png','Resolution',250)
 end
 
 % Polar
@@ -585,6 +594,7 @@ text(anchorx,anchory,'Blue:  Cadence',   'fontname','fixedwidth','fontweight','b
 text(anchorx,anchory,'Gold:  Hex',       'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
    exportgraphics(gcf,'pdf/cl-cd-grid.pdf','ContentType','vector')
+   exportgraphics(gcf,'png/cl-cd-grid.pdf','Resolution',250)
 end
 
 % CM-CL
@@ -604,6 +614,7 @@ text(anchorx,anchory,'Blue:  Cadence',   'fontname','fixedwidth','fontweight','b
 text(anchorx,anchory,'Gold:  Hex',       'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
    exportgraphics(gcf,'pdf/cl-cm-grid.pdf','ContentType','vector')
+   exportgraphics(gcf,'png/cl-cm-grid.png','Resolution',250)
 end
 
 
@@ -627,6 +638,7 @@ text(anchorx,anchory,'Blue:  L2', 'fontname','fixedwidth','fontweight','bold','c
 text(anchorx,anchory,'Gold:  L1', 'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
    exportgraphics(gcf,'pdf/cl-alpha-gridLevel.pdf','ContentType','vector')
+   exportgraphics(gcf,'png/cl-alpha-gridLevel.png','Resolution',250)
 end
 
 % Polar
@@ -645,6 +657,7 @@ text(anchorx,anchory,'Blue:  L2', 'fontname','fixedwidth','fontweight','bold','c
 text(anchorx,anchory,'Gold:  L1', 'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
    exportgraphics(gcf,'pdf/cl-cd-gridLevel.pdf','ContentType','vector')
+   exportgraphics(gcf,'png/cl-cd-gridLevel.png','Resolution',250)
 end
 
 
@@ -665,6 +678,7 @@ text(anchorx,anchory,'Blue:  L2', 'fontname','fixedwidth','fontweight','bold','c
 text(anchorx,anchory,'Gold:  L1', 'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
    exportgraphics(gcf,'pdf/cl-cd-gridLevel.pdf','ContentType','vector')
+   exportgraphics(gcf,'png/cl-cd-gridLevel.png','Resolution',250)
 end
 
 
