@@ -1,4 +1,4 @@
-function plotdata(alldata, datasets, style, variable1, variable2)
+function [hl] = plotdata(alldata, datasets, style, variable1, variable2)
 % PLOTDATA Plots specified variables from a structure array.
 %
 % Inputs:
@@ -13,17 +13,21 @@ figure;
 grid minor
 hold on
 set(gcf,'position',[1 86 765 430])
-set(gca,'position',[0.12 0.14 0.84 0.8])
+set(gca,'position',[0.10 0.14 0.82 0.8])
+hx = xlabel('x');
+hy = ylabel('y');
+posorig = get(hy,'position');
+set(hy,'position',[posorig(1)
 
 ax = gca;
 
 % Customize the minor grid lines
 set(gca,'GridLineWidth',1.5)
 set(gca,'MinorGridLineStyle','--')
-set(gca,'MinorGridColor',[0.7 ])
-set(gca,'MinorGridAlpha',0.75)
+%set(gca,'MinorGridColor',[0.3 0.3 0.3])
+%set(gca,'MinorGridAlpha',0.75)
 set(gca,'MinorGridColor','k')
-set(gca,'MinorGridLineWidth',0.5)
+set(gca,'MinorGridLineWidth',1)
 
 
 legendtext = {};
@@ -81,7 +85,7 @@ end
 hx = xlabel(variable1,'units','normalized','position',[0.5 -0.07 0]);
 hy = ylabel(variable2,'units','normalized');
 
-legend(legendtext{:},'location','northeastoutside','fontsize',14)
+hl = legend(legendtext{:},'location','northeastoutside','fontsize',14);
 set(gca,'fontsize',14)
 
 %% Add the text
