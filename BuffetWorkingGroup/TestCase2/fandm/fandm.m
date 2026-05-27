@@ -3,7 +3,7 @@ tic
 
 makeplots = 1; % Tunnel data
 saveall = 1;
-pauselength = 0.01;
+pauselength = 1.0;
 baselineanchorx = 1.06;
 
 mother = pwd;
