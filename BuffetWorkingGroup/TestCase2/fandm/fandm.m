@@ -1,7 +1,7 @@
 clc; clear all; close all;
 
-makeplots = 0; % Tunnel data
-saveall = 0;
+makeplots = 1; % Tunnel data
+saveall = 1;
 
 mother = pwd;
 gitdir = '/Users/bwpomero/crm/hs/dpw-8/github/DPW8-Buffet/TestCase2';
@@ -147,10 +147,10 @@ for ii = 3:16
    switch lower(styles(count).scheme.shapename)
       case 'circle'
          styles(count).scheme.shape = '-o';
-      case 'x'
-         styles(count).scheme.shape = '-x';
-      case '+'
-         styles(count).scheme.shape = '-+';
+      case 'p'
+         styles(count).scheme.shape = '-*';
+      case 'h'
+         styles(count).scheme.shape = '-h';
       case 'square'
          styles(count).scheme.shape = '-s';
       case 'diamond'
@@ -160,7 +160,7 @@ for ii = 3:16
       otherwise
          error('Problem')
    end % Scheme shape name
-   
+
    % Grid info
    styles(count).grid.name = parts{7};
    styles(count).grid.colorname = parts{8};
@@ -187,10 +187,10 @@ for ii = 3:16
    switch lower(styles(count).grid.shapename)
       case 'circle'
          styles(count).grid.shape = '-o';
-      case 'x'
-         styles(count).grid.shape = '-x';
-      case '+'
-         styles(count).grid.shape = '-+';
+      case 'p'
+         styles(count).grid.shape = '-*';
+      case 'h'
+         styles(count).grid.shape = '-h';
       case 'square'
          styles(count).grid.shape = '-s';
       case 'diamond'
@@ -227,10 +227,10 @@ for ii = 3:16
    switch lower(styles(count).turb.shapename)
       case 'circle'
          styles(count).turb.shape = '-o';
-      case 'x'
-         styles(count).turb.shape = '-x';
-      case '+'
-         styles(count).turb.shape = '-+';
+      case 'p'
+         styles(count).turb.shape = '-*';
+      case 'h'
+         styles(count).turb.shape = '-h';
       case 'square'
          styles(count).turb.shape = '-s';
       case 'diamond'
