@@ -410,13 +410,13 @@ if makeplots == 1
    ylabel('C_L')
    set(gca,'fontsize',14)
    if saveall == 1
-      pause(2) ; exportgraphics(gcf,'pdf/cl-alpha-exp-black.pdf','ContentType','vector')
-      pause(2) ; exportgraphics(gcf,'png/cl-alpha-exp-black.png','Resolution',250)
+      pause(1) ; exportgraphics(gcf,'pdf/cl-alpha-exp-black.pdf','ContentType','vector')
+      pause(1) ; exportgraphics(gcf,'png/cl-alpha-exp-black.png','Resolution',250)
    end
    plot(tunnel.alphainteresting,tunnel.clinteresting,'ro','markerfacecolor','r');
    if saveall == 1
-      pause(2) ; exportgraphics(gcf,'pdf/cl-alpha-exp.pdf','ContentType','vector')
-      pause(2) ; exportgraphics(gcf,'png/cl-alpha-exp.png','Resolution',250)
+      pause(1) ; exportgraphics(gcf,'pdf/cl-alpha-exp.pdf','ContentType','vector')
+      pause(1) ; exportgraphics(gcf,'png/cl-alpha-exp.png','Resolution',250)
    end
    
    % CL-CD
@@ -429,13 +429,13 @@ if makeplots == 1
    set(gca,'fontsize',14)
    set(gca,'xlim',[0.015 0.085])
    if saveall == 1
-      pause(2) ; exportgraphics(gcf,'pdf/cl-cd-exp-black.pdf','ContentType','vector')
-      pause(2) ; exportgraphics(gcf,'png/cl-cd-exp-black.png','Resolution',250)
+      pause(1) ; exportgraphics(gcf,'pdf/cl-cd-exp-black.pdf','ContentType','vector')
+      pause(1) ; exportgraphics(gcf,'png/cl-cd-exp-black.png','Resolution',250)
    end
    plot(tunnel.cdinteresting,tunnel.clinteresting,'ro','markerfacecolor','r');
    if saveall == 1
-      pause(2) ; exportgraphics(gcf,'pdf/cl-cd-exp.pdf','ContentType','vector')
-      pause(2) ; exportgraphics(gcf,'png/cl-cd-exp.png','Resolution',250)
+      pause(1) ; exportgraphics(gcf,'pdf/cl-cd-exp.pdf','ContentType','vector')
+      pause(1) ; exportgraphics(gcf,'png/cl-cd-exp.png','Resolution',250)
    end
    
    % Mach-Alpha
@@ -448,13 +448,13 @@ if makeplots == 1
    set(gca,'fontsize',14)
    set(gca,'ylim',[0.846 0.854])
    if saveall == 1
-      pause(2) ; exportgraphics(gcf,'pdf/mach-alpha-exp-black.pdf','ContentType','vector')
-      pause(2) ; exportgraphics(gcf,'png/mach-alpha-exp-black.png','Resolution',250)
+      pause(1) ; exportgraphics(gcf,'pdf/mach-alpha-exp-black.pdf','ContentType','vector')
+      pause(1) ; exportgraphics(gcf,'png/mach-alpha-exp-black.png','Resolution',250)
    end
    plot(tunnel.alphainteresting,tunnel.machinteresting,'ro','markerfacecolor','r');
    if saveall == 1
-      pause(2) ; exportgraphics(gcf,'pdf/mach-alpha-exp.pdf','ContentType','vector')
-      pause(2) ; exportgraphics(gcf,'png/mach-alpha-exp.png','Resolution',250)
+      pause(1) ; exportgraphics(gcf,'pdf/mach-alpha-exp.pdf','ContentType','vector')
+      pause(1) ; exportgraphics(gcf,'png/mach-alpha-exp.png','Resolution',250)
    end
    
    % Re-Alpha
@@ -468,13 +468,13 @@ if makeplots == 1
    set(gca,'ylim',[1.51 1.52])
    set(gca,'ytick',[1.51 1.515 1.52])
    if saveall == 1
-      pause(2) ; exportgraphics(gcf,'pdf/re-alpha-exp-black.pdf','ContentType','vector')
-      pause(2) ; exportgraphics(gcf,'png/re-alpha-exp-black.png','Resolution',250)
+      pause(1) ; exportgraphics(gcf,'pdf/re-alpha-exp-black.pdf','ContentType','vector')
+      pause(1) ; exportgraphics(gcf,'png/re-alpha-exp-black.png','Resolution',250)
    end
    plot(tunnel.alphainteresting,tunnel.reyinteresting,'ro','markerfacecolor','r');
    if saveall == 1
-      pause(2) ; exportgraphics(gcf,'pdf/re-alpha-exp.pdf','ContentType','vector')
-      pause(2) ; exportgraphics(gcf,'png/re-alpha-exp.png','Resolution',250)
+      pause(1) ; exportgraphics(gcf,'pdf/re-alpha-exp.pdf','ContentType','vector')
+      pause(1) ; exportgraphics(gcf,'png/re-alpha-exp.png','Resolution',250)
    end
    
    % CM-CL
@@ -488,13 +488,13 @@ if makeplots == 1
    set(gca,'xdir','reverse')
    set(gca,'xlim',[-0.05 0.25])
    if saveall == 1
-      pause(2) ; exportgraphics(gcf,'pdf/cl-cm-exp-black.pdf','ContentType','vector')
-      pause(2) ; exportgraphics(gcf,'png/cl-cm-exp-black.png','Resolution',250)
+      pause(1) ; exportgraphics(gcf,'pdf/cl-cm-exp-black.pdf','ContentType','vector')
+      pause(1) ; exportgraphics(gcf,'png/cl-cm-exp-black.png','Resolution',250)
    end
    plot(tunnel.cminteresting,tunnel.clinteresting,'ro','markerfacecolor','r');
    if saveall == 1
-      pause(2) ; exportgraphics(gcf,'pdf/cl-cm-exp.pdf','ContentType','vector')
-      pause(2) ; exportgraphics(gcf,'png/cl-cm-exp.png','Resolution',250)
+      pause(1) ; exportgraphics(gcf,'pdf/cl-cm-exp.pdf','ContentType','vector')
+      pause(1) ; exportgraphics(gcf,'png/cl-cm-exp.png','Resolution',250)
    end
    
    % CM-alpha
@@ -508,13 +508,13 @@ if makeplots == 1
    set(gca,'xdir','reverse')
    set(gca,'xlim',[-0.05 0.25])
    if saveall == 1
-      pause(2) ; exportgraphics(gcf,'pdf/alpha-cm-exp-black.pdf','ContentType','vector')
-      pause(2) ; exportgraphics(gcf,'png/alpha-cm-exp-black.png','Resolution',250)
+      pause(1) ; exportgraphics(gcf,'pdf/alpha-cm-exp-black.pdf','ContentType','vector')
+      pause(1) ; exportgraphics(gcf,'png/alpha-cm-exp-black.png','Resolution',250)
    end
    plot(tunnel.cminteresting,tunnel.alphainteresting,'ro','markerfacecolor','r');
    if saveall == 1
-      pause(2) ; exportgraphics(gcf,'pdf/alpha-cm-exp.pdf','ContentType','vector')
-      pause(2) ; exportgraphics(gcf,'png/alpha-cm-exp.png','Resolution',250)
+      pause(1) ; exportgraphics(gcf,'pdf/alpha-cm-exp.pdf','ContentType','vector')
+      pause(1) ; exportgraphics(gcf,'png/alpha-cm-exp.png','Resolution',250)
    end
 end %if makeplots == 1
 
@@ -537,8 +537,8 @@ text(anchorx,anchory,'Red:    URANS','fontname','fixedwidth','fontweight','bold'
 text(anchorx,anchory,'Blue:   HRLES','fontname','fixedwidth','fontweight','bold','color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Gold:   WMLES','fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
-   pause(2) ; exportgraphics(gcf,'pdf/cl-alpha-scheme.pdf','ContentType','vector')
-   pause(2) ; exportgraphics(gcf,'png/cl-alpha-scheme.png','Resolution',250)
+   pause(1) ; exportgraphics(gcf,'pdf/cl-alpha-scheme.pdf','ContentType','vector')
+   pause(1) ; exportgraphics(gcf,'png/cl-alpha-scheme.png','Resolution',250)
 end
 
 % Polar
@@ -555,8 +555,8 @@ text(anchorx,anchory,'Red:    URANS','fontname','fixedwidth','fontweight','bold'
 text(anchorx,anchory,'Blue:   HRLES','fontname','fixedwidth','fontweight','bold','color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Gold:   WMLES','fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
-   pause(2) ; exportgraphics(gcf,'pdf/cl-cd-scheme.pdf','ContentType','vector')
-   pause(2) ; exportgraphics(gcf,'png/cl-cd-scheme.png','Resolution',250)
+   pause(1) ; exportgraphics(gcf,'pdf/cl-cd-scheme.pdf','ContentType','vector')
+   pause(1) ; exportgraphics(gcf,'png/cl-cd-scheme.png','Resolution',250)
 end
 
 % CM-CL
@@ -574,8 +574,8 @@ text(anchorx,anchory,'Red:    URANS','fontname','fixedwidth','fontweight','bold'
 text(anchorx,anchory,'Blue:   HRLES','fontname','fixedwidth','fontweight','bold','color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Gold:   WMLES','fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
-   pause(2) ; exportgraphics(gcf,'pdf/cl-cm-scheme.pdf','ContentType','vector')
-   pause(2) ; exportgraphics(gcf,'png/cl-cm-scheme.png','Resolution',250)
+   pause(1) ; exportgraphics(gcf,'pdf/cl-cm-scheme.pdf','ContentType','vector')
+   pause(1) ; exportgraphics(gcf,'png/cl-cm-scheme.png','Resolution',250)
 end
 
 % CLrms-alpha
@@ -590,8 +590,8 @@ text(anchorx,anchory,'Red:    URANS','fontname','fixedwidth','fontweight','bold'
 text(anchorx,anchory,'Blue:   HRLES','fontname','fixedwidth','fontweight','bold','color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Gold:   WMLES','fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
-   pause(2) ; exportgraphics(gcf,'pdf/clrms-alpha-scheme.pdf','ContentType','vector')
-   pause(2) ; exportgraphics(gcf,'png/clrms-alpha-scheme.png','Resolution',250)
+   pause(1) ; exportgraphics(gcf,'pdf/clrms-alpha-scheme.pdf','ContentType','vector')
+   pause(1) ; exportgraphics(gcf,'png/clrms-alpha-scheme.png','Resolution',250)
 end
 
 % CDrms-alpha
@@ -606,8 +606,8 @@ text(anchorx,anchory,'Red:    URANS','fontname','fixedwidth','fontweight','bold'
 text(anchorx,anchory,'Blue:   HRLES','fontname','fixedwidth','fontweight','bold','color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Gold:   WMLES','fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
-   pause(2) ; exportgraphics(gcf,'pdf/cdrms-alpha-scheme.pdf','ContentType','vector')
-   pause(2) ; exportgraphics(gcf,'png/cdrms-alpha-scheme.png','Resolution',250)
+   pause(1) ; exportgraphics(gcf,'pdf/cdrms-alpha-scheme.pdf','ContentType','vector')
+   pause(1) ; exportgraphics(gcf,'png/cdrms-alpha-scheme.png','Resolution',250)
 end
 
 % CMrms-alpha
@@ -622,8 +622,8 @@ text(anchorx,anchory,'Red:    URANS','fontname','fixedwidth','fontweight','bold'
 text(anchorx,anchory,'Blue:   HRLES','fontname','fixedwidth','fontweight','bold','color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Gold:   WMLES','fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
-   pause(2) ; exportgraphics(gcf,'pdf/cmrms-alpha-scheme.pdf','ContentType','vector')
-   pause(2) ; exportgraphics(gcf,'png/cmrms-alpha-scheme.png','Resolution',250)
+   pause(1) ; exportgraphics(gcf,'pdf/cmrms-alpha-scheme.pdf','ContentType','vector')
+   pause(1) ; exportgraphics(gcf,'png/cmrms-alpha-scheme.png','Resolution',250)
 end
 
 
@@ -649,8 +649,8 @@ text(anchorx,anchory,'Red:    Helden', 'fontname','fixedwidth','fontweight','bol
 text(anchorx,anchory,'Blue:   Multi',  'fontname','fixedwidth','fontweight','bold', 'color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Gold:   Hex',    'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
-   pause(2) ; exportgraphics(gcf,'pdf/cl-alpha-grid.pdf','ContentType','vector')
-   pause(2) ; exportgraphics(gcf,'png/cl-alpha-grid.png','Resolution',250)
+   pause(1) ; exportgraphics(gcf,'pdf/cl-alpha-grid.pdf','ContentType','vector')
+   pause(1) ; exportgraphics(gcf,'png/cl-alpha-grid.png','Resolution',250)
 end
 
 % Polar
@@ -669,8 +669,8 @@ text(anchorx,anchory,'Red:    Helden', 'fontname','fixedwidth','fontweight','bol
 text(anchorx,anchory,'Blue:   Multi',  'fontname','fixedwidth','fontweight','bold', 'color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Gold:   Hex',    'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
-   pause(2) ; exportgraphics(gcf,'pdf/cl-cd-grid.pdf','ContentType','vector')
-   pause(2) ; exportgraphics(gcf,'png/cl-cd-grid.png','Resolution',250)
+   pause(1) ; exportgraphics(gcf,'pdf/cl-cd-grid.pdf','ContentType','vector')
+   pause(1) ; exportgraphics(gcf,'png/cl-cd-grid.png','Resolution',250)
 end
 
 % CM-CL
@@ -690,8 +690,8 @@ text(anchorx,anchory,'Red:    Helden', 'fontname','fixedwidth','fontweight','bol
 text(anchorx,anchory,'Blue:   Multi',  'fontname','fixedwidth','fontweight','bold', 'color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Gold:   Hex',    'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
-   pause(2) ; exportgraphics(gcf,'pdf/cl-cm-grid.pdf','ContentType','vector')
-   pause(2) ; exportgraphics(gcf,'png/cl-cm-grid.png','Resolution',250)
+   pause(1) ; exportgraphics(gcf,'pdf/cl-cm-grid.pdf','ContentType','vector')
+   pause(1) ; exportgraphics(gcf,'png/cl-cm-grid.png','Resolution',250)
 end
 
 % CLrms-alpha
@@ -708,8 +708,8 @@ text(anchorx,anchory,'Red:    Helden', 'fontname','fixedwidth','fontweight','bol
 text(anchorx,anchory,'Blue:   Multi',  'fontname','fixedwidth','fontweight','bold', 'color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Gold:   Hex',    'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
-   pause(2) ; exportgraphics(gcf,'pdf/clrms-alpha-grid.pdf','ContentType','vector')
-   pause(2) ; exportgraphics(gcf,'png/clrms-alpha-grid.png','Resolution',250)
+   pause(1) ; exportgraphics(gcf,'pdf/clrms-alpha-grid.pdf','ContentType','vector')
+   pause(1) ; exportgraphics(gcf,'png/clrms-alpha-grid.png','Resolution',250)
 end
 
 % CDrms-alpha
@@ -726,8 +726,8 @@ text(anchorx,anchory,'Red:    Helden', 'fontname','fixedwidth','fontweight','bol
 text(anchorx,anchory,'Blue:   Multi',  'fontname','fixedwidth','fontweight','bold', 'color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Gold:   Hex',    'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
-   pause(2) ; exportgraphics(gcf,'pdf/cdrms-alpha-grid.pdf','ContentType','vector')
-   pause(2) ; exportgraphics(gcf,'png/cdrms-alpha-grid.png','Resolution',250)
+   pause(1) ; exportgraphics(gcf,'pdf/cdrms-alpha-grid.pdf','ContentType','vector')
+   pause(1) ; exportgraphics(gcf,'png/cdrms-alpha-grid.png','Resolution',250)
 end
 
 % CMrms-alpha
@@ -744,8 +744,8 @@ text(anchorx,anchory,'Red:    Helden', 'fontname','fixedwidth','fontweight','bol
 text(anchorx,anchory,'Blue:   Multi',  'fontname','fixedwidth','fontweight','bold', 'color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Gold:   Hex',    'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
-   pause(2) ; exportgraphics(gcf,'pdf/cmrms-alpha-grid.pdf','ContentType','vector')
-   pause(2) ; exportgraphics(gcf,'png/cmrms-alpha-grid.png','Resolution',250)
+   pause(1) ; exportgraphics(gcf,'pdf/cmrms-alpha-grid.pdf','ContentType','vector')
+   pause(1) ; exportgraphics(gcf,'png/cmrms-alpha-grid.png','Resolution',250)
 end
 
 
@@ -771,8 +771,8 @@ text(anchorx,anchory,'Red:    L3', 'fontname','fixedwidth','fontweight','bold','
 text(anchorx,anchory,'Blue:   L2', 'fontname','fixedwidth','fontweight','bold','color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Gold:   L1', 'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
-   pause(2) ; exportgraphics(gcf,'pdf/cl-alpha-gridLevel.pdf','ContentType','vector')
-   pause(2) ; exportgraphics(gcf,'png/cl-alpha-gridLevel.png','Resolution',250)
+   pause(1) ; exportgraphics(gcf,'pdf/cl-alpha-gridLevel.pdf','ContentType','vector')
+   pause(1) ; exportgraphics(gcf,'png/cl-alpha-gridLevel.png','Resolution',250)
 end
 
 % Polar
@@ -792,8 +792,8 @@ text(anchorx,anchory,'Red:    L3', 'fontname','fixedwidth','fontweight','bold','
 text(anchorx,anchory,'Blue:   L2', 'fontname','fixedwidth','fontweight','bold','color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Gold:   L1', 'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
-   pause(2) ; exportgraphics(gcf,'pdf/cl-cd-gridLevel.pdf','ContentType','vector')
-   pause(2) ; exportgraphics(gcf,'png/cl-cd-gridLevel.png','Resolution',250)
+   pause(1) ; exportgraphics(gcf,'pdf/cl-cd-gridLevel.pdf','ContentType','vector')
+   pause(1) ; exportgraphics(gcf,'png/cl-cd-gridLevel.png','Resolution',250)
 end
 
 
@@ -815,8 +815,8 @@ text(anchorx,anchory,'Red:    L3', 'fontname','fixedwidth','fontweight','bold','
 text(anchorx,anchory,'Blue:   L2', 'fontname','fixedwidth','fontweight','bold','color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Gold:   L1', 'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
-   pause(2) ; exportgraphics(gcf,'pdf/cl-cd-gridLevel.pdf','ContentType','vector')
-   pause(2) ; exportgraphics(gcf,'png/cl-cd-gridLevel.png','Resolution',250)
+   pause(1) ; exportgraphics(gcf,'pdf/cl-cd-gridLevel.pdf','ContentType','vector')
+   pause(1) ; exportgraphics(gcf,'png/cl-cd-gridLevel.png','Resolution',250)
 end
 
 % CLrms-alpha
@@ -834,8 +834,8 @@ text(anchorx,anchory,'Red:    L3', 'fontname','fixedwidth','fontweight','bold','
 text(anchorx,anchory,'Blue:   L2', 'fontname','fixedwidth','fontweight','bold','color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Gold:   L1', 'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
-   pause(2) ; exportgraphics(gcf,'pdf/clrms-alpha-gridLevel.pdf','ContentType','vector')
-   pause(2) ; exportgraphics(gcf,'png/clrms-alpha-gridLevel.png','Resolution',250)
+   pause(1) ; exportgraphics(gcf,'pdf/clrms-alpha-gridLevel.pdf','ContentType','vector')
+   pause(1) ; exportgraphics(gcf,'png/clrms-alpha-gridLevel.png','Resolution',250)
 end
 
 % CDrms-alpha
@@ -853,8 +853,8 @@ text(anchorx,anchory,'Red:    L3', 'fontname','fixedwidth','fontweight','bold','
 text(anchorx,anchory,'Blue:   L2', 'fontname','fixedwidth','fontweight','bold','color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Gold:   L1', 'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
-   pause(2) ; exportgraphics(gcf,'pdf/cdrms-alpha-gridLevel.pdf','ContentType','vector')
-   pause(2) ; exportgraphics(gcf,'png/cdrms-alpha-gridLevel.png','Resolution',250)
+   pause(1) ; exportgraphics(gcf,'pdf/cdrms-alpha-gridLevel.pdf','ContentType','vector')
+   pause(1) ; exportgraphics(gcf,'png/cdrms-alpha-gridLevel.png','Resolution',250)
 end
 
 % CMrms-alpha
@@ -872,8 +872,8 @@ text(anchorx,anchory,'Red:    L3', 'fontname','fixedwidth','fontweight','bold','
 text(anchorx,anchory,'Blue:   L2', 'fontname','fixedwidth','fontweight','bold','color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Gold:   L1', 'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
-   pause(2) ; exportgraphics(gcf,'pdf/cmrms-alpha-gridLevel.pdf','ContentType','vector')
-   pause(2) ; exportgraphics(gcf,'png/cmrms-alpha-gridLevel.png','Resolution',250)
+   pause(1) ; exportgraphics(gcf,'pdf/cmrms-alpha-gridLevel.pdf','ContentType','vector')
+   pause(1) ; exportgraphics(gcf,'png/cmrms-alpha-gridLevel.png','Resolution',250)
 end
 
 
@@ -901,8 +901,8 @@ text(anchorx,anchory,'Red:    SA-RC-QCR','fontname','fixedwidth','fontweight','b
 text(anchorx,anchory,'Blue:   SA-neg',   'fontname','fixedwidth','fontweight','bold', 'color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Gold:   DS',       'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
-   pause(2) ; exportgraphics(gcf,'pdf/cl-alpha-turb.pdf','ContentType','vector')
-   pause(2) ; exportgraphics(gcf,'png/cl-alpha-turb.png','Resolution',250)
+   pause(1) ; exportgraphics(gcf,'pdf/cl-alpha-turb.pdf','ContentType','vector')
+   pause(1) ; exportgraphics(gcf,'png/cl-alpha-turb.png','Resolution',250)
 end
 
 % Polar
@@ -923,8 +923,8 @@ text(anchorx,anchory,'Red:    SA-QCR',    'fontname','fixedwidth','fontweight','
 text(anchorx,anchory,'Blue:   SA-neg',   'fontname','fixedwidth','fontweight','bold', 'color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Gold:   DS',       'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
-   pause(2) ; exportgraphics(gcf,'pdf/cl-cd-turb.pdf','ContentType','vector')
-   pause(2) ; exportgraphics(gcf,'png/cl-cd-turb.png','Resolution',250)
+   pause(1) ; exportgraphics(gcf,'pdf/cl-cd-turb.pdf','ContentType','vector')
+   pause(1) ; exportgraphics(gcf,'png/cl-cd-turb.png','Resolution',250)
 end
 
 % CM-CL
@@ -945,8 +945,8 @@ text(anchorx,anchory,'Red:    SA-QCR',    'fontname','fixedwidth','fontweight','
 text(anchorx,anchory,'Blue:   SA-neg',   'fontname','fixedwidth','fontweight','bold', 'color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Gold:   DS',       'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
-   pause(2) ; exportgraphics(gcf,'pdf/cl-cm-turb.pdf','ContentType','vector')
-   pause(2) ; exportgraphics(gcf,'png/cl-cm-turb.png','Resolution',250)
+   pause(1) ; exportgraphics(gcf,'pdf/cl-cm-turb.pdf','ContentType','vector')
+   pause(1) ; exportgraphics(gcf,'png/cl-cm-turb.png','Resolution',250)
 end
 
 % CLrms-alpha
@@ -964,8 +964,8 @@ text(anchorx,anchory,'Red:    SA-QCR',    'fontname','fixedwidth','fontweight','
 text(anchorx,anchory,'Blue:   SA-neg',   'fontname','fixedwidth','fontweight','bold', 'color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Gold:   DS',       'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
-   pause(2) ; exportgraphics(gcf,'pdf/clrms-alpha-turb.pdf','ContentType','vector')
-   pause(2) ; exportgraphics(gcf,'png/clrms-alpha-turb.png','Resolution',250)
+   pause(1) ; exportgraphics(gcf,'pdf/clrms-alpha-turb.pdf','ContentType','vector')
+   pause(1) ; exportgraphics(gcf,'png/clrms-alpha-turb.png','Resolution',250)
 end
 
 % CDrms-alpha
@@ -983,8 +983,8 @@ text(anchorx,anchory,'Red:    SA-QCR',    'fontname','fixedwidth','fontweight','
 text(anchorx,anchory,'Blue:   SA-neg',   'fontname','fixedwidth','fontweight','bold', 'color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Gold:   DS',       'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
-   pause(2) ; exportgraphics(gcf,'pdf/cdrms-alpha-turb.pdf','ContentType','vector')
-   pause(2) ; exportgraphics(gcf,'png/cdrms-alpha-turb.png','Resolution',250)
+   pause(1) ; exportgraphics(gcf,'pdf/cdrms-alpha-turb.pdf','ContentType','vector')
+   pause(1) ; exportgraphics(gcf,'png/cdrms-alpha-turb.png','Resolution',250)
 end
 
 % CMrms-alpha
@@ -1002,8 +1002,8 @@ text(anchorx,anchory,'Red:    SA-QCR',    'fontname','fixedwidth','fontweight','
 text(anchorx,anchory,'Blue:   SA-neg',   'fontname','fixedwidth','fontweight','bold', 'color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Gold:   DS',       'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
-   pause(2) ; exportgraphics(gcf,'pdf/clrms-alpha-turb.pdf','ContentType','vector')
-   pause(2) ; exportgraphics(gcf,'png/clrms-alpha-turb.png','Resolution',250)
+   pause(1) ; exportgraphics(gcf,'pdf/clrms-alpha-turb.pdf','ContentType','vector')
+   pause(1) ; exportgraphics(gcf,'png/clrms-alpha-turb.png','Resolution',250)
 end
 
 
