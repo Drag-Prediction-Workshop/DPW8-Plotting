@@ -1,5 +1,5 @@
 clc; clear all; close all;
-
+tic
 makeplots = 1; % Tunnel data
 saveall = 1;
 
@@ -320,13 +320,13 @@ for ii = 1:length(alldata)
                alldata(ii).sweep.type = 'ConstantAlpha';
                alldata(ii).sweep.metric = 2.29;
                alldata(ii).constantalpha.color = [0,0,255]/255;
-               alldata(ii).constantalpha.shape = '-x';
+               alldata(ii).constantalpha.shape = '-p';
             case 4.84
                a{4} = [a{4} ii];
                alldata(ii).sweep.type = 'ConstantAlpha';
                alldata(ii).sweep.metric = 4.84;
                alldata(ii).constantalpha.color = [255,0,0]/255;
-               alldata(ii).constantalpha.shape = '-+';
+               alldata(ii).constantalpha.shape = '-h';
             case 5.89
                a{5} = [a{5} ii];
                alldata(ii).sweep.type = 'ConstantAlpha';
@@ -349,13 +349,13 @@ for ii = 1:length(alldata)
                alldata(ii).sweep.type = 'ConstantGrid';
                alldata(ii).sweep.metric = 2;
                alldata(ii).constantgrid.color = [0,0,255]/255;
-               alldata(ii).constantgrid.shape = '-x';
+               alldata(ii).constantgrid.shape = '-p';
             case '3'
                g{3} = [g{3} ii];
                alldata(ii).sweep.type = 'ConstantGrid';
                alldata(ii).sweep.metric = 3;
                alldata(ii).constantgrid.color = [255,0,0]/255;
-               alldata(ii).constantgrid.shape = '-+';
+               alldata(ii).constantgrid.shape = '-h';
             case '4'
                g{4} = [g{4} ii];
                alldata(ii).sweep.type = 'ConstantGrid';
@@ -408,6 +408,7 @@ if makeplots == 1
    plot(tunnel.alpha,tunnel.cl,'k-o','markerfacecolor','k')
    xlabel('\alpha (deg)')
    ylabel('C_L')
+   set(gca,'fontsize',14)
    if saveall == 1
       pause(2) ; exportgraphics(gcf,'pdf/cl-alpha-exp-black.pdf','ContentType','vector')
       pause(2) ; exportgraphics(gcf,'png/cl-alpha-exp-black.png','Resolution',250)
@@ -425,6 +426,7 @@ if makeplots == 1
    plot(tunnel.cd,tunnel.cl,'k-o','markerfacecolor','k')
    xlabel('\alpha (deg)')
    ylabel('C_D')
+   set(gca,'fontsize',14)
    set(gca,'xlim',[0.015 0.085])
    if saveall == 1
       pause(2) ; exportgraphics(gcf,'pdf/cl-cd-exp-black.pdf','ContentType','vector')
@@ -443,6 +445,7 @@ if makeplots == 1
    plot(tunnel.alpha,tunnel.mach,'k-o','markerfacecolor','k')
    xlabel('\alpha (deg)')
    ylabel('Mach')
+   set(gca,'fontsize',14)
    set(gca,'ylim',[0.846 0.854])
    if saveall == 1
       pause(2) ; exportgraphics(gcf,'pdf/mach-alpha-exp-black.pdf','ContentType','vector')
@@ -461,6 +464,7 @@ if makeplots == 1
    plot(tunnel.alpha,tunnel.rey,'k-o','markerfacecolor','k')
    xlabel('\alpha (deg)')
    ylabel('Re (million)')
+   set(gca,'fontsize',14)
    set(gca,'ylim',[1.51 1.52])
    set(gca,'ytick',[1.51 1.515 1.52])
    if saveall == 1
@@ -480,6 +484,7 @@ if makeplots == 1
    plot(tunnel.cm,tunnel.cl,'k-o','markerfacecolor','k')
    xlabel('C_M')
    ylabel('C_L')
+   set(gca,'fontsize',14)
    set(gca,'xdir','reverse')
    set(gca,'xlim',[-0.05 0.25])
    if saveall == 1
@@ -499,6 +504,7 @@ if makeplots == 1
    plot(tunnel.cm,tunnel.alpha,'k-o','markerfacecolor','k')
    xlabel('C_M')
    ylabel('\alpha (deg)')
+   set(gca,'fontsize',14)
    set(gca,'xdir','reverse')
    set(gca,'xlim',[-0.05 0.25])
    if saveall == 1
@@ -758,6 +764,8 @@ ylabel('C_{L}')
 axis([1 6 0.2 0.8])
 anchorx = 1.02; anchory = -0.13;
 dy = 0.055;
+text(anchorx,anchory,'Purple: L6', 'fontname','fixedwidth','fontweight','bold',  'color', [131,131,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Brown:  L5', 'fontname','fixedwidth','fontweight','bold',  'color', [141,91,47]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Green:  L4', 'fontname','fixedwidth','fontweight','bold','color', [0,170,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Red:    L3', 'fontname','fixedwidth','fontweight','bold','color', [255,0,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Blue:   L2', 'fontname','fixedwidth','fontweight','bold','color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
@@ -777,6 +785,8 @@ ylabel('C_{L}')
 axis([0.02 0.09 0.2 0.8])
 anchorx = 1.05; anchory = -0.13;
 dy = 0.055;
+text(anchorx,anchory,'Purple: L6', 'fontname','fixedwidth','fontweight','bold',  'color', [131,131,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Brown:  L5', 'fontname','fixedwidth','fontweight','bold',  'color', [141,91,47]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Green:  L4', 'fontname','fixedwidth','fontweight','bold','color', [0,170,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Red:    L3', 'fontname','fixedwidth','fontweight','bold','color', [255,0,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Blue:   L2', 'fontname','fixedwidth','fontweight','bold','color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
@@ -798,6 +808,8 @@ axis([-0.1 0.1 0.2 0.8])
 set(gca,'xdir','reverse')
 anchorx = 1.05; anchory = -0.13;
 dy = 0.055;
+text(anchorx,anchory,'Purple: L6', 'fontname','fixedwidth','fontweight','bold',  'color', [131,131,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Brown:  L5', 'fontname','fixedwidth','fontweight','bold',  'color', [141,91,47]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Green:  L4', 'fontname','fixedwidth','fontweight','bold','color', [0,170,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Red:    L3', 'fontname','fixedwidth','fontweight','bold','color', [255,0,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Blue:   L2', 'fontname','fixedwidth','fontweight','bold','color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
@@ -815,6 +827,8 @@ ylabel('C_{L,rms}')
 axis([1 6 0 0.02])
 anchorx = 1.02; anchory = -0.13;
 dy = 0.055;
+text(anchorx,anchory,'Purple: L6', 'fontname','fixedwidth','fontweight','bold',  'color', [131,131,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Brown:  L5', 'fontname','fixedwidth','fontweight','bold',  'color', [141,91,47]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Green:  L4', 'fontname','fixedwidth','fontweight','bold','color', [0,170,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Red:    L3', 'fontname','fixedwidth','fontweight','bold','color', [255,0,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Blue:   L2', 'fontname','fixedwidth','fontweight','bold','color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
@@ -832,6 +846,8 @@ ylabel('C_{D,rms} (counts)')
 axis([1 6 0 20])
 anchorx = 1.02; anchory = -0.13;
 dy = 0.055;
+text(anchorx,anchory,'Purple: L6', 'fontname','fixedwidth','fontweight','bold',  'color', [131,131,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Brown:  L5', 'fontname','fixedwidth','fontweight','bold',  'color', [141,91,47]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Green:  L4', 'fontname','fixedwidth','fontweight','bold','color', [0,170,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Red:    L3', 'fontname','fixedwidth','fontweight','bold','color', [255,0,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Blue:   L2', 'fontname','fixedwidth','fontweight','bold','color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
@@ -849,6 +865,8 @@ ylabel('C_{M,rms}')
 axis([1 6 0 0.03])
 anchorx = 1.02; anchory = -0.13;
 dy = 0.055;
+text(anchorx,anchory,'Purple: L6', 'fontname','fixedwidth','fontweight','bold',  'color', [131,131,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Brown:  L5', 'fontname','fixedwidth','fontweight','bold',  'color', [141,91,47]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Green:  L4', 'fontname','fixedwidth','fontweight','bold','color', [0,170,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Red:    L3', 'fontname','fixedwidth','fontweight','bold','color', [255,0,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Blue:   L2', 'fontname','fixedwidth','fontweight','bold','color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
@@ -1004,3 +1022,4 @@ end
 [131,131,255]/255  % Lavender
 [255,26,184]/255   % Fuschia
 %}
+toc
