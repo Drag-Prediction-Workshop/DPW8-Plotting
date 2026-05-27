@@ -7,12 +7,12 @@ Submission  | Scheme                           | Grid                           
 007.12      | URANS            Red h           | Cadence                Green Circle    | SA-QCR               Red h           |
 007.13      | URANS            Red Square      | Cadence                Green p         | SA-QCR               Red Square      |
 010.02      | WMLES            Gold p          | CustomVoroni           Brown Circle    | DynamicSmagorinsky   Gold p          |
-013.01      | LatticeBoltzman  Brown Circle    | CustomCartesian        Purple Circle   | ke-LBM               Green Circle    |
-013.02      | LatticeBoltzman  Brown p         | CustomCartesian        Purple p        | ke-LBM               Green p         |
+013.01      | LatticeBoltzman  Brown Circle    | CustomCartesian        Fuschia Circle  | ke-LBM               Green Circle    |
+013.02      | LatticeBoltzman  Brown p         | CustomCartesian        Fuschia p       | ke-LBM               Green p         |
 021.02      | URANS            Red diamond     | Cadence                Green h         | SST                  Brown Circle    |
 021.03      | DDES             Green Circle    | Cadence                Green Square    | SST                  Brown p         |
 027.05      | URANS            Red <           | Cadence                Green Diamond   | RSM                  Lavender Circle |
-032.01      | AdaptiveEuler    Fuschia Circle  | CustomMixedElement     Pink Circle     | Euler                Fuschia Circle  |
+032.01      | AdaptiveEuler    Fuschia Circle  | CustomMixedElement     Fuschia Circle  | Euler                Fuschia Circle  |
 041.02      | DDES             Green p         | Cadence                Green <         | SA-neg               Blue p          |
 
 Gold  Blue  Red  Green  Brown  Lavender  Fuschia
