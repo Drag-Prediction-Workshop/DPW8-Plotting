@@ -1,7 +1,7 @@
 clc; clear all; close all;
 tic
-makeplots = 1; % Tunnel data
-saveall = 1;
+makeplots = 0; % Tunnel data
+saveall = 0;
 
 mother = pwd;
 gitdir = '/Users/bwpomero/crm/hs/dpw-8/github/DPW8-Buffet/TestCase2';
@@ -719,12 +719,11 @@ ylabel('C_{D,rms} (counts)')
 axis([1 6 0 20])
 anchorx = 1.02; anchory = -0.13;
 dy = 0.055;
-text(anchorx,anchory,'Purple: Cart',   'fontname','fixedwidth','fontweight','bold',  'color', [131,131,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
-text(anchorx,anchory,'Brown:  Voroni', 'fontname','fixedwidth','fontweight','bold',  'color', [141,91,47]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
-text(anchorx,anchory,'Green:  Cadence', 'fontname','fixedwidth','fontweight','bold','color', [0,170,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
-text(anchorx,anchory,'Red:    Helden', 'fontname','fixedwidth','fontweight','bold','color', [255,0,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
-text(anchorx,anchory,'Blue:   Multi',  'fontname','fixedwidth','fontweight','bold', 'color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
-text(anchorx,anchory,'Gold:   Hex',    'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Brown:  Cart',      'fontname','fixedwidth','fontweight','bold',  'color', [141,91,47]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Green:  Voroni',    'fontname','fixedwidth','fontweight','bold','color', [0,170,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Red:    Helden',    'fontname','fixedwidth','fontweight','bold','color', [255,0,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Blue:   Cadence',   'fontname','fixedwidth','fontweight','bold', 'color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Gold:   Hex',       'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
    pause(2) ; exportgraphics(gcf,'pdf/cdrms-alpha-grid.pdf','ContentType','vector')
    pause(2) ; exportgraphics(gcf,'png/cdrms-alpha-grid.png','Resolution',250)
@@ -737,12 +736,11 @@ ylabel('C_{M,rms}')
 axis([1 6 0 0.03])
 anchorx = 1.02; anchory = -0.13;
 dy = 0.055;
-text(anchorx,anchory,'Purple: Cart',   'fontname','fixedwidth','fontweight','bold',  'color', [131,131,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
-text(anchorx,anchory,'Brown:  Voroni', 'fontname','fixedwidth','fontweight','bold',  'color', [141,91,47]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
-text(anchorx,anchory,'Green:  Cadence', 'fontname','fixedwidth','fontweight','bold','color', [0,170,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
-text(anchorx,anchory,'Red:    Helden', 'fontname','fixedwidth','fontweight','bold','color', [255,0,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
-text(anchorx,anchory,'Blue:   Multi',  'fontname','fixedwidth','fontweight','bold', 'color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
-text(anchorx,anchory,'Gold:   Hex',    'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Brown:  Cart',      'fontname','fixedwidth','fontweight','bold',  'color', [141,91,47]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Green:  Voroni',    'fontname','fixedwidth','fontweight','bold','color', [0,170,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Red:    Helden',    'fontname','fixedwidth','fontweight','bold','color', [255,0,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Blue:   Cadence',   'fontname','fixedwidth','fontweight','bold', 'color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Gold:   Hex',       'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1
    pause(2) ; exportgraphics(gcf,'pdf/cmrms-alpha-grid.pdf','ContentType','vector')
    pause(2) ; exportgraphics(gcf,'png/cmrms-alpha-grid.png','Resolution',250)
@@ -892,12 +890,12 @@ ylabel('C_{L}')
 axis([1 6 0.2 0.8])
 anchorx = 1.02; anchory = -0.13;
 dy = 0.055;
-text(anchorx,anchory,'Purple: RSM',      'fontname','fixedwidth','fontweight','bold',  'color', [131,131,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
-text(anchorx,anchory,'Brown:  SST',      'fontname','fixedwidth','fontweight','bold',  'color', [141,91,47]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
-%text(anchorx,anchory,'Green:  k-e',     'fontname','fixedwidth','fontweight','bold','color', [0,170,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
-text(anchorx,anchory,'Green:  k-',       'fontname','fixedwidth','fontweight','bold','color', [0,170,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left');
+text(anchorx,anchory,'Purple: RSM', 'fontname','fixedwidth','fontweight','bold',  'color', [131,131,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Brown:  SST', 'fontname','fixedwidth','fontweight','bold',  'color', [141,91,47]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+%text(anchorx,anchory,'Green:  k-e',    'fontname','fixedwidth','fontweight','bold','color', [0,170,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Green:  k-',    'fontname','fixedwidth','fontweight','bold','color', [0,170,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left');
 text(anchorx+0.22,anchory,'\epsilon',    'fontname','fixedwidth','fontweight','bold','color', [0,170,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
-text(anchorx,anchory,'Red:    SA-RC-QCR','fontname','fixedwidth','fontweight','bold','color', [255,0,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
+text(anchorx,anchory,'Red:    SA-QCR',    'fontname','fixedwidth','fontweight','bold','color', [255,0,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Blue:   SA-neg',   'fontname','fixedwidth','fontweight','bold', 'color', [0,0,255]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 text(anchorx,anchory,'Gold:   DS',       'fontname','fixedwidth','fontweight','bold','color', [228,190,0]/255,'units','normalized','fontsize',14,'horizontalalignment','left'); anchory = anchory + dy;
 if saveall == 1

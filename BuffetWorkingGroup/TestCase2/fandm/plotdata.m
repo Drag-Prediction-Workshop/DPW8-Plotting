@@ -13,7 +13,7 @@ figure;
 grid minor
 hold on
 set(gcf,'position',[1 86 765 430])
-set(gca,'position',[0.11 0.14 0.81 0.8])
+set(gca,'position',[0.11 0.14 0.78 0.8])
 
 ax = gca;
 
