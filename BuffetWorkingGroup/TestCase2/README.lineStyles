@@ -1,22 +1,22 @@
 Submission  | Scheme                           | Grid                                   | Turb Model                           |
 ------------|----------------------------------|----------------------------------------|--------------------------------------|
 002.01      | WMLES            Gold Circle     | Hex                    Gold Circle     | DynamicSmagorinsky   Gold Circle     |
-005.01      | LES              Blue Circle     | Multiblock             Blue Circle     | SA-neg               Blue Circle     |
-007.10      | URANS            Red Circle      | Helden                 Red Circle      | SA-QCR               Red Circle      |
-007.11      | URANS            Red p           | Helden                 Red p           | SA-QCR               Red p           |
-007.12      | URANS            Red h           | Cadence                Green Circle    | SA-QCR               Red h           |
-007.13      | URANS            Red Square      | Cadence                Green p         | SA-QCR               Red Square      |
+005.01      | HRLES            Blue Circle     | Multiblock             Blue Circle     | SA-neg               Blue Circle     |
+007.10      | URANS            Red Circle      | Helden                 Red Circle      | SA-RC-QCR            Red Circle      |
+007.11      | URANS            Red p           | Helden                 Red p           | SA-RC-QCR            Red p           |
+007.12      | URANS            Red h           | Cadence                Green Circle    | SA-RC-QCR            Red h           |
+007.13      | URANS            Red Square      | Cadence                Green p         | SA-RC-QCR            Red Square      |
 010.02      | WMLES            Gold p          | CustomVoroni           Brown Circle    | DynamicSmagorinsky   Gold p          |
-013.01      | LatticeBoltzman  Brown Circle    | CustomCartesian        Fuschia Circle  | ke-LBM               Green Circle    |
-013.02      | LatticeBoltzman  Brown p         | CustomCartesian        Fuschia p       | ke-LBM               Green p         |
+013.01      | LatticeBoltzman  Green Circle    | CustomCartesian        Lavender Circle | ke-LBM               Green Circle    |
+013.02      | LatticeBoltzman  Green p         | CustomCartesian        Lavender p      | ke-LBM               Green p         |
 021.02      | URANS            Red diamond     | Cadence                Green h         | SST                  Brown Circle    |
-021.03      | DDES             Green Circle    | Cadence                Green Square    | SST                  Brown p         |
+021.03      | HRLES            Blue p          | Cadence                Green Square    | SST                  Brown p         |
 027.05      | URANS            Red <           | Cadence                Green Diamond   | RSM                  Lavender Circle |
-032.01      | AdaptiveEuler    Fuschia Circle  | CustomMixedElement     Fuschia Circle  | Euler                Fuschia Circle  |
-041.02      | DDES             Green p         | Cadence                Green <         | SA-neg               Blue p          |
+032.01      | AdaptiveEuler    Lavender Circle | CustomMixedElement     Fuschia Circle  | Euler                Fuschia Circle  |
+041.02      | HRLES            Blue h          | Cadence                Green <         | SA-neg               Blue p          |
 
 Gold  Blue  Red  Green  Brown  Lavender  Fuschia
-o p h s d < (all hollow)
+o     p     h    s      d      <
 
 Experiment is plotted as filled black squares
 
