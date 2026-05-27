@@ -1,0 +1,39 @@
+Submission  | Scheme                           | Grid                                   | Turb Model                           |
+------------|----------------------------------|----------------------------------------|--------------------------------------|
+002.01      | WMLES            Gold Circle     | Hex                    Gold Circle     | DynamicSmagorinsky   Gold Circle     |
+005.01      | LES              Blue Circle     | Multiblock             Blue Circle     | SA-neg               Blue Circle     |
+007.10      | URANS            Red Circle      | Helden                 Red Circle      | SA-QCR               Red Circle      |
+007.11      | URANS            Red p           | Helden                 Red p           | SA-QCR               Red p           |
+007.12      | URANS            Red h           | Cadence                Green Circle    | SA-QCR               Red h           |
+007.13      | URANS            Red Square      | Cadence                Green p         | SA-QCR               Red Square      |
+010.02      | WMLES            Gold p          | CustomVoroni           Brown Circle    | DynamicSmagorinsky   Gold p          |
+013.01      | LatticeBoltzman  Brown Circle    | CustomCartesian        Purple Circle   | ke-LBM               Green Circle    |
+013.02      | LatticeBoltzman  Brown p         | CustomCartesian        Purple p        | ke-LBM               Green p         |
+021.02      | URANS            Red diamond     | Cadence                Green h         | SST                  Brown Circle    |
+021.03      | DDES             Green Circle    | Cadence                Green Square    | SST                  Brown p         |
+027.05      | URANS            Red <           | Cadence                Green Diamond   | RSM                  Lavender Circle |
+032.01      | AdaptiveEuler    Fuschia Circle  | CustomMixedElement     Pink Circle     | Euler                Fuschia Circle  |
+041.02      | DDES             Green p         | Cadence                Green <         | SA-neg               Blue p          |
+
+Gold  Blue  Red  Green  Brown  Lavender  Fuschia
+o p h s d < (all hollow)
+
+Experiment is plotted as filled black squares
+
+
+-----------------------------------------------------------
+Constant alpha
+1.22   [228,190,0]/255   -o      Gold
+2.29   [0,0,255]/255     -p      Blue
+4.84   [255,0,0]/255     -h      Red
+5.89   [0,170,0]/255     -s      Green
+
+
+Constant grid level
+L1              [228,190,0]/255    -o     Gold
+L2              [0,0,255]/255      -p     Blue
+L3              [255,0,0]/255      -h     Red
+L4              [0,170,0]/255      -s     Green
+L5              [141,91,47]/255    -d     Brown
+L6              [131,131,255]/255  -<     Lavender
+Strand L10-L12  [255,26,184]/255   -^     Fuschia
