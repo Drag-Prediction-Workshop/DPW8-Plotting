@@ -12,8 +12,11 @@ function [hl] = plotdata(alldata, datasets, style, variable1, variable2)
 figure;
 grid minor
 hold on
-set(gcf,'position',[1 86 765 430])
-set(gca,'position',[0.11 0.14 0.78 0.8])
+%set(gcf,'position',[1 86 765 430])
+%set(gca,'position',[0.11 0.14 0.78 0.8])
+
+set(gcf,'position',[1 86 780 430])
+set(gca,'position',[0.11 0.14 0.75 0.8])
 
 ax = gca;
 
@@ -82,7 +85,7 @@ hx = xlabel(variable1,'units','normalized','position',[0.5 -0.07 0]);
 hy = ylabel(variable2,'units','normalized');
 
 hl = legend(legendtext{:},'location','northeastoutside','fontsize',14);
-set(gca,'fontsize',14)
+set(gca,'fontsize',16)
 
 %% Add the text
 %anchorx = 0.7;
