@@ -11,7 +11,7 @@ Submission  | Scheme                           | Grid                           
 013.02      | LatticeBoltzman  Brown p         | CustomCartesian        Purple p        | ke-LBM               Green p         |
 021.02      | URANS            Red diamond     | Cadence                Green h         | SST                  Brown Circle    |
 021.03      | DDES             Green Circle    | Cadence                Green Square    | SST                  Brown p         |
-027.05      | URANS            Red Diamond     | Cadence                Green Diamond   | RSM                  Lavender Circle |
+027.05      | URANS            Red <           | Cadence                Green Diamond   | RSM                  Lavender Circle |
 032.01      | AdaptiveEuler    Fuschia Circle  | CustomMixedElement     Pink Circle     | Euler                Fuschia Circle  |
 041.02      | DDES             Green p         | Cadence                Green <         | SA-neg               Blue p          |
 
