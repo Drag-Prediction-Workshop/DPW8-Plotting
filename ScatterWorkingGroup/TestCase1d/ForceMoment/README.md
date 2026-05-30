@@ -4,7 +4,7 @@
 Modify Alphas.mcr to specify up to 2 output file formats (i.e. eps & png) 
 --------------------
 
-    tecplot -b -p Alphas.mcr
+    tecplot -b -p TestCase1d.mcr
 
 
 Note that you can enable or disable the "Preliminary" Label in Grids.mcr/Alphas.mcr
