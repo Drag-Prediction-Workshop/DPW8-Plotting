@@ -49,8 +49,10 @@ $!IF 1 == 1
     $!VarSet |xRngMax| = 6.0E-05
   $!ELSEIF 1 == 1
     $!VarSet |xAxis| = |1_h1o2|
-    $!VarSet |xRngMin| = 2.0E-04
-    $!VarSet |xRngMax| = 6.0E-02
+   #$!VarSet |xRngMin| = 2.0E-04
+   #$!VarSet |xRngMax| = 6.0E-02
+    $!VarSet |xRngMin| = 6.0E-05
+    $!VarSet |xRngMax| = 9.0E-02
   $!ELSEIF 0 == 1
     $!VarSet |xAxis| = |1_h1o3|
     $!VarSet |xRngMin| = 5.0E-04
@@ -212,7 +214,8 @@ $!IF 1 == 1
   $!XYLineAxis XDetail 1 {RangeMin = |xRngMin| RangeMax = |xRngMax|}
   $!XYLineAxis XDetail 1 {CoordScale = Log}
  #$!XYLineAxis XDetail 1 {AutoGrid = No GRSpacing = 0.01}
-  $!XYLineAxis YDetail 1 {RangeMin = -0.0010  RangeMax = 0.0010}
+ #$!XYLineAxis YDetail 1 {RangeMin = -0.0010  RangeMax = 0.0010}
+  $!XYLineAxis YDetail 1 {RangeMin = -0.0010  RangeMax = 0.0005}
   $!XYLineAxis YDetail 1 {TickLabel {NumFormat {Formatting = FixedFloat Precision = 4}}}
   $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
 
@@ -232,7 +235,8 @@ $!IF 1 == 1
   $!View MakeCurrentViewNice
   $!XYLineAxis XDetail 1 {RangeMin = |xRngMin| RangeMax = |xRngMax|}
   $!XYLineAxis XDetail 1 {CoordScale = Log}
-  $!XYLineAxis YDetail 1 {RangeMin = -0.0010  RangeMax = 0.0010}
+ #$!XYLineAxis YDetail 1 {RangeMin = -0.0010  RangeMax = 0.0010}
+  $!XYLineAxis YDetail 1 {RangeMin = -0.0005  RangeMax = 0.0010}
   $!XYLineAxis YDetail 1 {TickLabel {NumFormat {Formatting = FixedFloat Precision = 4}}}
   $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
 
@@ -248,8 +252,10 @@ $!IF 1 == 1
   $!View MakeCurrentViewNice
   $!XYLineAxis XDetail 1 {RangeMin = |xRngMin| RangeMax = |xRngMax|}
   $!XYLineAxis XDetail 1 {CoordScale = Log}
-  $!XYLineAxis YDetail 1 {RangeMin = 0.0070   RangeMax = 0.0300}
-  $!XYLineAxis YDetail 1 {TickLabel {NumFormat {Formatting = FixedFloat Precision = 4}}}
+ #$!XYLineAxis YDetail 1 {RangeMin = 70.0   RangeMax = 300.0}
+  $!XYLineAxis YDetail 1 {RangeMin = 70.0   RangeMax = 170.0}
+ #$!XYLineAxis YDetail 1 {TickLabel {NumFormat {Formatting = FixedFloat Precision = 1}}}
+  $!XYLineAxis YDetail 1 {TickLabel{NumFormat { Formatting = Integer }}}
   $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
 
  # CDzoom
@@ -264,10 +270,11 @@ $!IF 1 == 1
   $!View MakeCurrentViewNice
   $!XYLineAxis XDetail 1 {RangeMin = |xRngMin| RangeMax = |xRngMax|}
   $!XYLineAxis XDetail 1 {CoordScale = Log}
-  $!XYLineAxis YDetail 1 {RangeMin = 0.0078925 RangeMax = 0.00796}
-  $!XYLineAxis YDetail 1 {TickLabel {NumFormat {Formatting = FixedFloat Precision = 5}}}
+  $!XYLineAxis YDetail 1 {RangeMin = 78.925 RangeMax = 79.6}
+  $!XYLineAxis YDetail 1 {TickLabel {NumFormat {Formatting = FixedFloat Precision = 1}}}
+ #$!XYLineAxis YDetail 1 {TickLabel{NumFormat { Formatting = Integer }}}
   $!XYLineAxis YDetail 1 {AutoGrid = No}
-  $!XYLineAxis YDetail 1 {GRSpacing = 2E-05}
+  $!XYLineAxis YDetail 1 {GRSpacing = 2E-01}
   $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
 
  $!IF 1 == 1
@@ -286,10 +293,11 @@ $!IF 1 == 1
   $!View MakeCurrentViewNice
   $!XYLineAxis XDetail 1 {RangeMin = |xRngMin| RangeMax = |xRngMax|}
   $!XYLineAxis XDetail 1 {CoordScale = Log}
-  $!XYLineAxis YDetail 1 {RangeMin = 0.0000   RangeMax = 0.0050}
-  $!XYLineAxis YDetail 1 {TickLabel {NumFormat {Formatting = FixedFloat Precision = 4}}}
+  $!XYLineAxis YDetail 1 {RangeMin = 0   RangeMax = 50.0}
+ #$!XYLineAxis YDetail 1 {TickLabel {NumFormat {Formatting = FixedFloat Precision = 1}}}
+  $!XYLineAxis YDetail 1 {TickLabel{NumFormat { Formatting = Integer }}}
   $!XYLineAxis YDetail 1 {AutoGrid = No}
-  $!XYLineAxis YDetail 1 {GRSpacing = 1E-03}
+  $!XYLineAxis YDetail 1 {GRSpacing = 10.0}
   $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
  #$!Blanking Value { Include = No }
 
@@ -308,10 +316,11 @@ $!IF 1 == 1
   $!View MakeCurrentViewNice
   $!XYLineAxis XDetail 1 {RangeMin = |xRngMin| RangeMax = |xRngMax|}
   $!XYLineAxis XDetail 1 {CoordScale = Log}
-  $!XYLineAxis YDetail 1 {RangeMin = 0.0050   RangeMax = 0.0100}
-  $!XYLineAxis YDetail 1 {TickLabel {NumFormat {Formatting = FixedFloat Precision = 4}}}
+  $!XYLineAxis YDetail 1 {RangeMin = 50.0   RangeMax = 100.0}
+ #$!XYLineAxis YDetail 1 {TickLabel {NumFormat {Formatting = FixedFloat Precision = 1}}}
+  $!XYLineAxis YDetail 1 {TickLabel{NumFormat { Formatting = Integer }}}
   $!XYLineAxis YDetail 1 {AutoGrid = No}
-  $!XYLineAxis YDetail 1 {GRSpacing = 1E-03}
+  $!XYLineAxis YDetail 1 {GRSpacing = 10}
   $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
  #$!Blanking Value { Include = No }
  $!ENDIF
@@ -329,7 +338,7 @@ $!IF 1 == 1
   $!View MakeCurrentViewNice
   $!XYLineAxis XDetail 1 {RangeMin = |xRngMin| RangeMax = |xRngMax|}
   $!XYLineAxis XDetail 1 {CoordScale = Log}
-  $!XYLineAxis YDetail 1 {RangeMin = 1E-07   RangeMax = 0.1}
+  $!XYLineAxis YDetail 1 {RangeMin = 1E-03   RangeMax = 100.0}
   $!XYLineAxis YDetail 1 {CoordScale = Log}
   $!XYLineAxis YDetail 1 {AutoGrid = Yes}
   #--------------------------------------------------------
@@ -338,40 +347,40 @@ $!IF 1 == 1
     #-----------
     # 2nd Order
     #-----------
-    # 0.00045 0.00015
-    # 0.00450 0.01500
+    # 0.00045 0.00015   1.5
+    # 0.00450 0.01500 150.0
     #-----------
     $!AttachGeom 
-      AnchorPos { X = 4.5E-04 Y = 1.5E-04 }
+      AnchorPos { X = 4.5E-04 Y = 1.5 }
       Color = Custom24
       LineThickness = 0.3
       RawData
       1
       2
       0    0 
-      0.00405 0.01485
+      0.00405 148.5
     $!AttachText 
-      AnchorPos { X = 30.0 Y = 60.0 }
+      AnchorPos { X = 36.0 Y = 62.0 }
       TextShape { IsBold = Yes Height = 14 }
       Color = Custom24
       Text = '2'
     #-----------
     # 4th Order
     #-----------
-    # 0.0025  0.0000015
-    # 0.0250  0.0150000
+    # 0.0025  0.0000015    0.015
+    # 0.0250  0.0150000  150.000
     #-----------
     $!AttachGeom 
-      AnchorPos { X = 2.50E-03 Y = 1.50E-06 }
+      AnchorPos { X = 2.50E-03 Y = 0.015 }
       Color = Custom24
       LineThickness = 0.3
       RawData
       1
       2
       0    0 
-      0.0225 0.0149985
+      0.0225 149.985
     $!AttachText 
-      AnchorPos { X = 55.5 Y = 45.0 }
+      AnchorPos { X = 54.5 Y = 30.0 }
       TextShape { IsBold = Yes Height = 14 }
       Color = Custom24
       Text = '4'

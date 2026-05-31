@@ -320,6 +320,19 @@ $!AlterData
   IgnoreDivideByZero = Yes
   Equation = '{h = N<sup>-2/3</sup>} = 1/({GRID_SIZE}**(2/3))'
 $!VarSet |1_h2o3| = |NumVars|
+
+#----------------------------
+# Convert drag quantities into counts
+$!AlterData 
+  IgnoreDivideByZero = Yes
+  Equation = '{CD_TOT} = {CD_TOT} * 10000.0'
+$!AlterData 
+  IgnoreDivideByZero = Yes
+  Equation = '{CD_PR} = {CD_PR}   * 10000.0'
+$!AlterData 
+  IgnoreDivideByZero = Yes
+  Equation = '{CD_SF} = {CD_SF}   * 10000.0'
+
 #----------------------------
 # Error from average of finest adaptive results from 011.02/012.06/029.01
 #                    Level NODES  GRIDFAC                MACH REY        ALPHA  CL_TOT          CD_TOT           CM_TOT          CL_WNG CD_WNG CM_WNG  CD_PR          CD_SF
@@ -331,8 +344,8 @@ $!VarSet |1_h2o3| = |NumVars|
 # Use 029.01 or an average of a few???
 $!AlterData 
   IgnoreDivideByZero = Yes
-  Equation = '{CD<sub>"Error"</sub>}=abs({CD_TOT} - ( 0.007906634606680000565 ))'
-#  Equation = '{CD<sub>"Error"</sub>}=abs({CD_TOT} - ( 0.007908593900 +  0.007907217300 +  0.007908687129 +  0.007903909975 +  0.007906634607)/5)'
+  Equation = '{CD<sub>"Error"</sub>}=abs({CD_TOT} - ( 79.06634606680000565 ))'
+#  Equation = '{CD<sub>"Error"</sub>}=abs({CD_TOT} - ( 79.08593900 +  79.07217300 +  79.08687129 +  79.03909975 +  79.06634607)/5)'
 $!VarSet |CDerror| = |NumVars|
 $!AlterData 
   IgnoreDivideByZero = Yes
@@ -379,10 +392,16 @@ $!RenameDataSetVar Var = 28     Name = '<greek>D</greek>T'
 $!RenameDataSetVar Var = 29     Name = 'CTU<sub>Start</sub>'
 $!RenameDataSetVar Var = 30     Name = 'Q/E'
 
+# Convert drag quantities into counts
+$!RenameDataSetVar Var = 8      Name = 'CD<sub>Total </sub>x<sub> </sub>10<sup>4</sup>'
+$!RenameDataSetVar Var = 13     Name = 'CD<sub>Pressure </sub>x<sub> </sub>10<sup>4</sup>'
+$!RenameDataSetVar Var = 14     Name = 'CD<sub>SkinFriction </sub>x<sub> </sub>10<sup>4</sup>'
+$!RenameDataSetVar Var = |CDerror| Name = 'CD<sub>"Error" </sub>x<sub> </sub>10<sup>4</sup>'
+
 #==================================================================================================
 $!LineMap [1-|NumLineMaps|]  Symbols { Size = 1.0 }
 $!XYLineAxis XDetail 1 { CoordScale = Linear Gridlines { Show = Yes } MinorGridlines { Show = Yes } Title { Offset =  6 } }
-$!XYLineAxis YDetail 1 { CoordScale = Linear Gridlines { Show = Yes } MinorGridlines { Show = Yes } Title { Offset = 10 } }
+$!XYLineAxis YDetail 1 { CoordScale = Linear Gridlines { Show = Yes } MinorGridlines { Show = Yes } Title { Offset =  9 } }
 $!XYLineAxis GridArea  { DrawBorder = Yes LineThickness = 0.1 }
 
 $!LineMap  [1-|NumLineMaps|]      Lines   { LineThickness = 0.25 LinePattern = Solid  } Symbols { Size = 1.0 } Assign  { ShowInLegend = Auto }
