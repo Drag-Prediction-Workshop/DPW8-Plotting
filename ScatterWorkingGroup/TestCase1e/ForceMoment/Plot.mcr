@@ -158,7 +158,7 @@ $!IF 1 == 1
   $!LineMap  [|CadenceUnSVox1_Maps|] Lines  { Color = Green   } Symbols { Color = Green   FillColor = Green   }
 
   $!LineMap  [|WING1_Maps|]         Lines   { LineThickness = 0.25 LinePattern = Solid  } Symbols { Size = 1.0 } Assign  { ShowInLegend = Auto }
-  $!LineMap  [|WING2_Maps|]         Lines   { LineThickness = 0.25 LinePattern = Dashed } Symbols { Size = 1.0 } Assign  { ShowInLegend = Never }
+  $!LineMap  [|WING2_Maps|]         Lines   { LineThickness = 0.25 LinePattern = LongDash PatternLength = 0.8 } Symbols { Size = 1.0 } Assign  { ShowInLegend = Never }
 
  # Turn off all Wing2 lines
  #$!ActiveLineMaps -= [|WING2_Maps|]
@@ -317,7 +317,7 @@ $!IF 1 == 1
   $!Blanking Value { Constraint 2 { Include = Yes RelOp = EqualTo ValueCutoff = 0.00 VarA = |dCL| } }
   $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Grid|GRID|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
   $!IF 1 == 1
-    $!LineMap  [|DPW3_Maps|]          Lines   { LinePattern = Dashed }
+    $!LineMap  [|DPW3_Maps|]          Lines   { LinePattern = LongDash PatternLength = 0.8 }
     $!ActiveLineMaps += [|DPW3_Maps|]
     $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Grid|GRID|_|PlotName|_DPW3' '|ImageFormat|' '|ImageFormat2|' )
     $!ActiveLineMaps -= [|DPW3_Maps|]
@@ -357,7 +357,7 @@ $!IF 1 == 1
   $!Blanking Value { Constraint 2 { Include = Yes RelOp = EqualTo ValueCutoff = 0.00 VarA = |dCMy| } }
   $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Grid|GRID|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
   $!IF 1 == 1
-    $!LineMap  [|DPW3_Maps|]          Lines   { LinePattern = Dashed }
+    $!LineMap  [|DPW3_Maps|]          Lines   { LinePattern = LongDash PatternLength = 0.8 }
     $!ActiveLineMaps += [|DPW3_Maps|]
     $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Grid|GRID|_|PlotName|_DPW3' '|ImageFormat|' '|ImageFormat2|' )
     $!ActiveLineMaps -= [|DPW3_Maps|]
@@ -400,7 +400,7 @@ $!IF 1 == 1
   $!Blanking Value { Constraint 2 { Include = Yes RelOp = EqualTo ValueCutoff = 0.00 VarA = |dCD| } }
   $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Grid|GRID|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
   $!IF 1 == 1
-    $!LineMap  [|DPW3_Maps|]          Lines   { LinePattern = Dashed }
+    $!LineMap  [|DPW3_Maps|]          Lines   { LinePattern = LongDash PatternLength = 0.8 }
     $!ActiveLineMaps += [|DPW3_Maps|]
     $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Grid|GRID|_|PlotName|_DPW3' '|ImageFormat|' '|ImageFormat2|' )
     $!ActiveLineMaps -= [|DPW3_Maps|]
@@ -443,7 +443,7 @@ $!IF 1 == 1
   $!Blanking Value { Constraint 2 { Include = Yes RelOp = EqualTo ValueCutoff = 0.00 VarA = |dCDp| } }
   $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Grid|GRID|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
   $!IF 1 == 1
-    $!LineMap  [|DPW3_Maps|]          Lines   { LinePattern = Dashed }
+    $!LineMap  [|DPW3_Maps|]          Lines   { LinePattern = LongDash PatternLength = 0.8 }
     $!ActiveLineMaps += [|DPW3_Maps|]
     $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Grid|GRID|_|PlotName|_DPW3' '|ImageFormat|' '|ImageFormat2|' )
     $!ActiveLineMaps -= [|DPW3_Maps|]
@@ -486,7 +486,7 @@ $!IF 1 == 1
   $!Blanking Value { Constraint 2 { Include = Yes RelOp = EqualTo ValueCutoff = 0.00 VarA = |dCDv| } }
   $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Grid|GRID|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
   $!IF 1 == 1
-    $!LineMap  [|DPW3_Maps|]          Lines   { LinePattern = Dashed }
+    $!LineMap  [|DPW3_Maps|]          Lines   { LinePattern = LongDash PatternLength = 0.8 }
     $!ActiveLineMaps += [|DPW3_Maps|]
     $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Grid|GRID|_|PlotName|_DPW3' '|ImageFormat|' '|ImageFormat2|' )
     $!ActiveLineMaps -= [|DPW3_Maps|]
