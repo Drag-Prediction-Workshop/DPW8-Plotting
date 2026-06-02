@@ -39,6 +39,24 @@ $!VarSet |DPW3_Map1| = ''
 #-------------------------------------------------
 
 #===================================================================
+#$!RUNMACROFUNCTION "LoadAndPlotAlpha" ( '|ALPHA|', '|IMG1|', '|IMG2|' )
+##################################################
+$!MACROFUNCTION
+  NAME = "LoadAndPlotAlpha"
+  $!NewLayout
+  $!VarSet |GRID|  =  '0'
+  $!VarSet |ALPHA| = '|1|'
+  $!VarSet |IMG1|  = '|2|'
+  $!VarSet |IMG2|  = '|3|'
+  $!IF     |ALPHA| == 0.50
+    $!VarSet |Increment| = 8
+  $!ELSEIF |ALPHA| == 1.50
+    $!VarSet |Increment| = 8
+  $!ENDIF
+  $!RUNMACROFUNCTION "LoadData"
+  $!INCLUDEMACRO "|MACROFILEPATH|/Plot.mcr"
+$!ENDMACROFUNCTION
+#===================================================================
 #$!RUNMACROFUNCTION "LoadAndPlotGrid" ( '|GRID|', '|IMG1|', '|IMG2|' )
 ##################################################
 $!MACROFUNCTION
@@ -390,69 +408,91 @@ $!VarSet |Z| = ( |Z| + 8 )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "HeldenUnSt_Maps" "WING2")
 $!VarSet |Z2| = |Z|
 #
+$!VarSet |N0| = ( |NumLineMaps| - 1 )
+$!LineMap [|N0|-|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\A'}}}
+#
 $!RUNMACROFUNCTION "CalculateDeltas" ( |Z1|, |Z2| )
 #-------------------------------------------------
 # Map02: 003.02
 #-------------------------------------------------
-$!VarSet |Z| = ( |NumZones| + 3 )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1d/003_Boeing/02_FELight_Cadence_Unstructured_HexTrex_TetFF_REV00_SA-neg/DPW8-AePW4_ForceMoment_v6.dat"' )
-$!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "CadenceUnSTet_Maps" "WING1" )
-$!ActiveLineMaps -= [|NumLineMaps|]
-$!VarSet |Z1| = |Z|
-$!VarSet |Z| = ( |Z| + 7 )
-$!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "CadenceUnSTet_Maps" "WING2" )
-$!ActiveLineMaps -= [|NumLineMaps|]
-$!VarSet |Z2| = |Z|
-#
-$!RUNMACROFUNCTION "CalculateDeltas" ( |Z1|, |Z2| )
+$!IF 0 == 1
+  $!VarSet |Z| = ( |NumZones| + 3 )
+  $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1d/003_Boeing/02_FELight_Cadence_Unstructured_HexTrex_TetFF_REV00_SA-neg/DPW8-AePW4_ForceMoment_v6.dat"' )
+  $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "CadenceUnSTet_Maps" "WING1" )
+ #$!ActiveLineMaps -= [|NumLineMaps|]
+  $!VarSet |Z1| = |Z|
+  $!VarSet |Z| = ( |Z| + 7 )
+  $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "CadenceUnSTet_Maps" "WING2" )
+ #$!ActiveLineMaps -= [|NumLineMaps|]
+  $!VarSet |Z2| = |Z|
+ #
+  $!VarSet |N0| = ( |NumLineMaps| - 1 )
+  $!LineMap [|N0|-|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\a'}}}
+ #
+  $!RUNMACROFUNCTION "CalculateDeltas" ( |Z1|, |Z2| )
+$!ENDIF
 #-------------------------------------------------
 # Map03: 003.03
 #-------------------------------------------------
-$!VarSet |Z| = ( |NumZones| + 3 )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1d/003_Boeing/03_FELight_Cadence_Unstructured_HexTrex_VoxFF_REV00_SA-neg/DPW8-AePW4_ForceMoment_v6.dat"' )
-$!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "CadenceUnSVox_Maps" "WING1" )
-$!ActiveLineMaps -= [|NumLineMaps|]
-$!VarSet |Z1| = |Z|
-$!VarSet |Z| = ( |Z| + 7 )
-$!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "CadenceUnSVox_Maps" "WING2" )
-$!ActiveLineMaps -= [|NumLineMaps|]
-$!VarSet |Z2| = |Z|
-#
-$!RUNMACROFUNCTION "CalculateDeltas" ( |Z1|, |Z2| )
+$!IF 0 == 1
+  $!VarSet |Z| = ( |NumZones| + 3 )
+  $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1d/003_Boeing/03_FELight_Cadence_Unstructured_HexTrex_VoxFF_REV00_SA-neg/DPW8-AePW4_ForceMoment_v6.dat"' )
+  $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "CadenceUnSVox_Maps" "WING1" )
+ #$!ActiveLineMaps -= [|NumLineMaps|]
+  $!VarSet |Z1| = |Z|
+  $!VarSet |Z| = ( |Z| + 7 )
+  $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "CadenceUnSVox_Maps" "WING2" )
+ #$!ActiveLineMaps -= [|NumLineMaps|]
+  $!VarSet |Z2| = |Z|
+  #
+  $!VarSet |N0| = ( |NumLineMaps| - 1 )
+  $!LineMap [|N0|-|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Greek   ASCIIChar = '\A'}}}
+  #
+  $!RUNMACROFUNCTION "CalculateDeltas" ( |Z1|, |Z2| )
+$!ENDIF
 #-------------------------------------------------
 # Map13: 002.03
 #-------------------------------------------------
 $!VarSet |Z| = ( |NumZones| + 1 )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1e/002_Embraer/03_CFD++_HeldenMesh-Rev00_SA/DPW8-AePW4_ForceMoment_v6.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1e/002_Embraer/03_CFD++_HeldenMesh-Rev00_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "HeldenUnSt_Maps" "WING1" )
 $!VarSet |Z1| = |Z|
 $!VarSet |Z| = ( |Z| + 9 )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "HeldenUnSt_Maps" "WING2" )
 $!VarSet |Z2| = |Z|
 #
+$!VarSet |N0| = ( |NumLineMaps| - 1 )
+$!LineMap [|N0|-|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\B'}}}
+#
 $!RUNMACROFUNCTION "CalculateDeltas" ( |Z1|, |Z2| )
 #-------------------------------------------------
 # Map11: 002.04
 #-------------------------------------------------
 $!VarSet |Z| = ( |NumZones| + 1 )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1e/002_Embraer/04_CFD++_CadenceTetFF-Rev01_SA/DPW8-AePW4_ForceMoment_v6.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1e/002_Embraer/04_CFD++_CadenceTetFF-Rev01_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "CadenceUnSTet1_Maps" "WING1" )
 $!VarSet |Z1| = |Z|
 $!VarSet |Z| = ( |Z| + 9 )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "CadenceUnSTet1_Maps" "WING2" )
 $!VarSet |Z2| = |Z|
 #
+$!VarSet |N0| = ( |NumLineMaps| - 1 )
+$!LineMap [|N0|-|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\b'}}}
+#
 $!RUNMACROFUNCTION "CalculateDeltas" ( |Z1|, |Z2| )
 #-------------------------------------------------
 # Map12: 002.05
 #-------------------------------------------------
 $!VarSet |Z| = ( |NumZones| + 1 )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1e/002_Embraer/05_CFD++_CadenceVoxFF-Rev01_SA/DPW8-AePW4_ForceMoment_v6.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1e/002_Embraer/05_CFD++_CadenceVoxFF-Rev01_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "CadenceUnSVox1_Maps" "WING1" )
 $!VarSet |Z1| = |Z|
 $!VarSet |Z| = ( |Z| + 9 )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "CadenceUnSVox1_Maps" "WING2" )
 $!VarSet |Z2| = |Z|
+#
+$!VarSet |N0| = ( |NumLineMaps| - 1 )
+$!LineMap [|N0|-|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Greek   ASCIIChar = '\B'}}}
 #
 $!RUNMACROFUNCTION "CalculateDeltas" ( |Z1|, |Z2| )
 #-------------------------------------------------
@@ -466,6 +506,9 @@ $!VarSet |Z| = ( |Z| + 7 )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "CadenceUnSTet1_Maps" "WING2" )
 $!VarSet |Z2| = |Z|
 #
+$!VarSet |N0| = ( |NumLineMaps| - 1 )
+$!LineMap [|N0|-|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\C'}}}
+#
 $!RUNMACROFUNCTION "CalculateDeltas" ( |Z1|, |Z2| )
 #-------------------------------------------------
 # Map03: 003.10
@@ -478,30 +521,11 @@ $!VarSet |Z| = ( |Z| + 7 )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "CadenceUnSVox1_Maps" "WING2" )
 $!VarSet |Z2| = |Z|
 #
+$!VarSet |N0| = ( |NumLineMaps| - 1 )
+$!LineMap [|N0|-|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\c'}}}
+#
 $!RUNMACROFUNCTION "CalculateDeltas" ( |Z1|, |Z2| )
 #-------------------------------------------------
-#==================================================================================================
-
-#==================================================================================================
-# 003.01-03
-$!LineMap [17]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\A'}}}
-$!LineMap [18]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\A'}}}
-$!LineMap [19]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\a'}}}
-$!LineMap [20]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\a'}}}
-$!LineMap [21]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Greek   ASCIIChar = '\A'}}}
-$!LineMap [22]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Greek   ASCIIChar = '\A'}}}
-## 002.03-05
-$!LineMap [23]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\B'}}}
-$!LineMap [24]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\B'}}}
-$!LineMap [25]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\b'}}}
-$!LineMap [26]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\b'}}}
-$!LineMap [27]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Greek   ASCIIChar = '\B'}}}
-$!LineMap [28]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Greek   ASCIIChar = '\B'}}}
-# 003.09-10
-$!LineMap [29]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\C'}}}
-$!LineMap [30]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\C'}}}
-$!LineMap [31]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\c'}}}
-$!LineMap [32]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\c'}}}
 #==================================================================================================
 
 #==================================================================================================
@@ -600,26 +624,6 @@ $!RenameDataSetVar Var = 28     Name = '<greek>D</greek>T'
 $!RenameDataSetVar Var = 29     Name = 'CTU<sub>Start</sub>'
 $!RenameDataSetVar Var = 30     Name = 'Q/E'
 
-##-------------------------------------------------
-## Calculate deltas between Wing1/Wing2 (HARDCODED)
-##----------------------------
-# $!RUNMACROFUNCTION "CalculateDeltas" (  2,  4 ) # 301.01
-# $!RUNMACROFUNCTION "CalculateDeltas" (  6,  8 ) # 302.01
-# $!RUNMACROFUNCTION "CalculateDeltas" ( 10, 12 ) # 303.01
-# $!RUNMACROFUNCTION "CalculateDeltas" ( 14, 16 ) # 305.01
-# $!RUNMACROFUNCTION "CalculateDeltas" ( 18, 20 ) # 306.01
-# $!RUNMACROFUNCTION "CalculateDeltas" ( 22, 24 ) # 306.02
-# $!RUNMACROFUNCTION "CalculateDeltas" ( 26, 28 ) # 307.01
-# $!RUNMACROFUNCTION "CalculateDeltas" ( 30, 32 ) # 308.01
-# $!RUNMACROFUNCTION "CalculateDeltas" ( 36, 44 ) # 003.01
-# $!RUNMACROFUNCTION "CalculateDeltas" ( 51, 58 ) # 003.02
-# $!RUNMACROFUNCTION "CalculateDeltas" ( 65, 72 ) # 003.03
-# $!RUNMACROFUNCTION "CalculateDeltas" ( 77, 86 ) # 002.03
-# $!RUNMACROFUNCTION "CalculateDeltas" ( 95,104 ) # 002.04
-# $!RUNMACROFUNCTION "CalculateDeltas" (113,122 ) # 002.05
-# $!RUNMACROFUNCTION "CalculateDeltas" (134,141 ) # 003.09
-# $!RUNMACROFUNCTION "CalculateDeltas" (148,155 ) # 003.10
-
 # Convert drag quantities into counts
 $!RenameDataSetVar Var = 8      Name = 'CD<sub>Total </sub>x<sub> </sub>10<sup>4</sup>'
 $!RenameDataSetVar Var = 13     Name = 'CD<sub>Pressure </sub>x<sub> </sub>10<sup>4</sup>'
@@ -637,7 +641,7 @@ $!XYLineAxis GridArea  { DrawBorder = Yes LineThickness = 0.1 }
 
 # Remove DPW3 data?
 $!IF 1 == 1
-   $!ActiveLineMaps -= [1-16]
+   $!ActiveLineMaps -= [|DPW3_Maps|]
 $!ENDIF
 
 #-------------------------------------------------

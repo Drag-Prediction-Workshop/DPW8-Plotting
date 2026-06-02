@@ -7,6 +7,9 @@ $!LinePlotLayers
 $!VarSet |ImageFormat|  = '|IMG1|'
 $!VarSet |ImageFormat2| = '|IMG2|'
 
+$!VarSet |PlotLabel| = 'Alpha|ALPHA|'
+#$!VarSet |PlotLabel| = 'TestCase1d'
+
 #==================================================================================================
 # Plots colored by turbulence model variations
 #-----------------------------------
@@ -75,7 +78,7 @@ $!IF 0 == 1
   $!XYLineAxis XDetail 1 {RangeMin = |xRngMin| RangeMax = |xRngMax|}
   $!XYLineAxis XDetail 1 {CoordScale = Log}
  #$!XYLineAxis YDetail 1 {TickLabel {NumFormat {Formatting = FixedFloat Precision = 4}}}
-  $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
+  $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
 
  # CMy
   $!VarSet |PlotName|  = 'CMy_Turb'
@@ -91,7 +94,7 @@ $!IF 0 == 1
   $!XYLineAxis XDetail 1 {CoordScale = Log}
  #$!XYLineAxis YDetail 1 {RangeMin = 0.0115   RangeMax = 0.0165}
  #$!XYLineAxis YDetail 1 {TickLabel {NumFormat {Formatting = FixedFloat Precision = 4}}}
-  $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
+  $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
 
  # CD
   $!VarSet |PlotName|  = 'CD_Turb'
@@ -107,7 +110,7 @@ $!IF 0 == 1
   $!XYLineAxis XDetail 1 {CoordScale = Log}
  #$!XYLineAxis YDetail 1 {RangeMin = 0.0125   RangeMax = 0.0175}
   $!XYLineAxis YDetail 1 {TickLabel {NumFormat {Formatting = FixedFloat Precision = 1}}}
-  $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
+  $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
 $!ENDIF
 
 $!ENDIF
@@ -190,10 +193,12 @@ $!IF 1 == 1
  #$!XYLineAxis XDetail 1 {AutoGrid = No GRSpacing = 0.01}
   $!XYLineAxis YDetail 1 {RangeMin = 0.465   RangeMax = 0.505}
   $!XYLineAxis YDetail 1 {TickLabel {NumFormat {Formatting = FixedFloat Precision = 3}}}
-  $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
+  $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
   $!IF 1 == 1
-    $!ActiveLineMaps += [|DPW3_Maps|]
-    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|_DPW3' '|ImageFormat|' '|ImageFormat2|' )
+    $!ActiveLineMaps = [|DPW3_Maps|]
+    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|_Only_DPW3' '|ImageFormat|' '|ImageFormat2|' )
+    $!ActiveLineMaps = [1-|NumLineMaps|]
+    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|_DPW3' '|ImageFormat|' '|ImageFormat2|' )
     $!ActiveLineMaps -= [|DPW3_Maps|]
   $!ENDIF
 
@@ -215,10 +220,12 @@ $!IF 1 == 1
   $!XYLineAxis XDetail 1 {CoordScale = Log}
   $!XYLineAxis YDetail 1 {RangeMin = -0.0690   RangeMax = -0.0640}
   $!XYLineAxis YDetail 1 {TickLabel {NumFormat {Formatting = FixedFloat Precision = 3}}}
-  $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
+  $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
   $!IF 1 == 1
-    $!ActiveLineMaps += [|DPW3_Maps|]
-    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|_DPW3' '|ImageFormat|' '|ImageFormat2|' )
+    $!ActiveLineMaps = [|DPW3_Maps|]
+    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|_Only_DPW3' '|ImageFormat|' '|ImageFormat2|' )
+    $!ActiveLineMaps = [1-|NumLineMaps|]
+    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|_DPW3' '|ImageFormat|' '|ImageFormat2|' )
     $!ActiveLineMaps -= [|DPW3_Maps|]
   $!ENDIF
 
@@ -239,10 +246,12 @@ $!IF 1 == 1
   $!XYLineAxis YDetail 1 {TickLabel{NumFormat { Formatting = Integer }}}
   $!XYLineAxis YDetail 1 {AutoGrid = No}
   $!XYLineAxis YDetail 1 {GRSpacing = 2}
-  $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
+  $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
   $!IF 1 == 1
-    $!ActiveLineMaps += [|DPW3_Maps|]
-    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|_DPW3' '|ImageFormat|' '|ImageFormat2|' )
+    $!ActiveLineMaps = [|DPW3_Maps|]
+    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|_Only_DPW3' '|ImageFormat|' '|ImageFormat2|' )
+    $!ActiveLineMaps = [1-|NumLineMaps|]
+    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|_DPW3' '|ImageFormat|' '|ImageFormat2|' )
     $!ActiveLineMaps -= [|DPW3_Maps|]
   $!ENDIF
 
@@ -266,11 +275,13 @@ $!IF 1 == 1
   $!XYLineAxis YDetail 1 {TickLabel{NumFormat { Formatting = Integer }}}
   $!XYLineAxis YDetail 1 {AutoGrid = No}
   $!XYLineAxis YDetail 1 {GRSpacing = 2}
-  $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
+  $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
   $!Blanking Value { Include = No }
   $!IF 1 == 1
-    $!ActiveLineMaps += [|DPW3_Maps|]
-    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|_DPW3' '|ImageFormat|' '|ImageFormat2|' )
+    $!ActiveLineMaps = [|DPW3_Maps|]
+    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|_Only_DPW3' '|ImageFormat|' '|ImageFormat2|' )
+    $!ActiveLineMaps = [1-|NumLineMaps|]
+    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|_DPW3' '|ImageFormat|' '|ImageFormat2|' )
     $!ActiveLineMaps -= [|DPW3_Maps|]
   $!ENDIF
 
@@ -294,11 +305,13 @@ $!IF 1 == 1
   $!XYLineAxis YDetail 1 {TickLabel{NumFormat { Formatting = Integer }}}
   $!XYLineAxis YDetail 1 {AutoGrid = No}
   $!XYLineAxis YDetail 1 {GRSpacing = 1}
-  $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
+  $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
   $!Blanking Value { Include = No }
   $!IF 1 == 1
-    $!ActiveLineMaps += [|DPW3_Maps|]
-    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|_DPW3' '|ImageFormat|' '|ImageFormat2|' )
+    $!ActiveLineMaps = [|DPW3_Maps|]
+    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|_Only_DPW3' '|ImageFormat|' '|ImageFormat2|' )
+    $!ActiveLineMaps = [1-|NumLineMaps|]
+    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|_DPW3' '|ImageFormat|' '|ImageFormat2|' )
     $!ActiveLineMaps -= [|DPW3_Maps|]
   $!ENDIF
 
@@ -333,11 +346,13 @@ $!IF 1 == 1
   $!XYLineAxis YDetail 1 {TickLabel {NumFormat {Formatting = FixedFloat Precision = 3}}}
   $!Blanking Value { Include = Yes }
   $!Blanking Value { Constraint 2 { Include = Yes RelOp = EqualTo ValueCutoff = 0.00 VarA = |dCL| } }
-  $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
+  $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
   $!IF 1 == 1
     $!LineMap  [|DPW3_Maps|]          Lines   { LinePattern = LongDash PatternLength = 0.8 }
-    $!ActiveLineMaps += [|DPW3_Maps|]
-    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|_DPW3' '|ImageFormat|' '|ImageFormat2|' )
+    $!ActiveLineMaps = [|DPW3_Maps|]
+    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|_Only_DPW3' '|ImageFormat|' '|ImageFormat2|' )
+    $!ActiveLineMaps = [1-|NumLineMaps|]
+    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|_DPW3' '|ImageFormat|' '|ImageFormat2|' )
     $!ActiveLineMaps -= [|DPW3_Maps|]
   $!ENDIF
 
@@ -373,11 +388,13 @@ $!IF 1 == 1
   $!Blanking Value { Include = Yes }
   $!Blanking Value { Constraint 1 { Include = No } }
   $!Blanking Value { Constraint 2 { Include = Yes RelOp = EqualTo ValueCutoff = 0.00 VarA = |dCMy| } }
-  $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
+  $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
   $!IF 1 == 1
     $!LineMap  [|DPW3_Maps|]          Lines   { LinePattern = LongDash PatternLength = 0.8 }
-    $!ActiveLineMaps += [|DPW3_Maps|]
-    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|_DPW3' '|ImageFormat|' '|ImageFormat2|' )
+    $!ActiveLineMaps = [|DPW3_Maps|]
+    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|_Only_DPW3' '|ImageFormat|' '|ImageFormat2|' )
+    $!ActiveLineMaps = [1-|NumLineMaps|]
+    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|_DPW3' '|ImageFormat|' '|ImageFormat2|' )
     $!ActiveLineMaps -= [|DPW3_Maps|]
   $!ENDIF
 
@@ -415,11 +432,13 @@ $!IF 1 == 1
   $!XYLineAxis YDetail 1 {GRSpacing = 1}
   $!Blanking Value { Include = Yes }
   $!Blanking Value { Constraint 2 { Include = Yes RelOp = EqualTo ValueCutoff = 0.00 VarA = |dCD| } }
-  $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
+  $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
   $!IF 1 == 1
     $!LineMap  [|DPW3_Maps|]          Lines   { LinePattern = LongDash PatternLength = 0.8 }
-    $!ActiveLineMaps += [|DPW3_Maps|]
-    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|_DPW3' '|ImageFormat|' '|ImageFormat2|' )
+    $!ActiveLineMaps = [|DPW3_Maps|]
+    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|_Only_DPW3' '|ImageFormat|' '|ImageFormat2|' )
+    $!ActiveLineMaps = [1-|NumLineMaps|]
+    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|_DPW3' '|ImageFormat|' '|ImageFormat2|' )
     $!ActiveLineMaps -= [|DPW3_Maps|]
   $!ENDIF
 
@@ -457,11 +476,13 @@ $!IF 1 == 1
   $!XYLineAxis YDetail 1 {GRSpacing = 1}
   $!Blanking Value { Include = Yes }
   $!Blanking Value { Constraint 2 { Include = Yes RelOp = EqualTo ValueCutoff = 0.00 VarA = |dCDp| } }
-  $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
+  $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
   $!IF 1 == 1
     $!LineMap  [|DPW3_Maps|]          Lines   { LinePattern = LongDash PatternLength = 0.8 }
-    $!ActiveLineMaps += [|DPW3_Maps|]
-    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|_DPW3' '|ImageFormat|' '|ImageFormat2|' )
+    $!ActiveLineMaps = [|DPW3_Maps|]
+    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|_Only_DPW3' '|ImageFormat|' '|ImageFormat2|' )
+    $!ActiveLineMaps = [1-|NumLineMaps|]
+    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|_DPW3' '|ImageFormat|' '|ImageFormat2|' )
     $!ActiveLineMaps -= [|DPW3_Maps|]
   $!ENDIF
 
@@ -499,11 +520,13 @@ $!IF 1 == 1
   $!XYLineAxis YDetail 1 {GRSpacing = 1}
   $!Blanking Value { Include = Yes }
   $!Blanking Value { Constraint 2 { Include = Yes RelOp = EqualTo ValueCutoff = 0.00 VarA = |dCDv| } }
-  $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
+  $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
   $!IF 1 == 1
     $!LineMap  [|DPW3_Maps|]          Lines   { LinePattern = LongDash PatternLength = 0.8 }
-    $!ActiveLineMaps += [|DPW3_Maps|]
-    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|_DPW3' '|ImageFormat|' '|ImageFormat2|' )
+    $!ActiveLineMaps = [|DPW3_Maps|]
+    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|_Only_DPW3' '|ImageFormat|' '|ImageFormat2|' )
+    $!ActiveLineMaps = [1-|NumLineMaps|]
+    $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' '|PlotLabel|_|PlotName|_DPW3' '|ImageFormat|' '|ImageFormat2|' )
     $!ActiveLineMaps -= [|DPW3_Maps|]
   $!ENDIF
 $!ENDIF
