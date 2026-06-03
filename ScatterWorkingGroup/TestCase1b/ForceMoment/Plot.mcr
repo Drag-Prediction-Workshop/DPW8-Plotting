@@ -340,7 +340,7 @@ $!IF 1 == 1
   $!View MakeCurrentViewNice
   $!XYLineAxis XDetail 1 {RangeMin = |xRngMin| RangeMax = |xRngMax|}
   $!XYLineAxis XDetail 1 {CoordScale = Log}
-  $!XYLineAxis YDetail 1 {RangeMin = 1E-03   RangeMax = 100.0}
+  $!XYLineAxis YDetail 1 {RangeMin = 1E-03   RangeMax = 1000.0}
   $!XYLineAxis YDetail 1 {CoordScale = Log}
   $!XYLineAxis YDetail 1 {AutoGrid = Yes}
   #--------------------------------------------------------
@@ -371,7 +371,7 @@ $!IF 1 == 1
       0    0 
       0.00405 148.5
     $!AttachText 
-      AnchorPos { X = 36.0 Y = 62.0 }
+      AnchorPos { X = 36.0 Y = 57.0 }
       TextShape { IsBold = Yes Height = 14 }
       Color = Custom24
       Text = '2'
