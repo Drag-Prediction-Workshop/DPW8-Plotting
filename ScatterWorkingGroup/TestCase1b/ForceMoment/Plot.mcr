@@ -120,7 +120,8 @@ $!IF 0 == 1
   $!View MakeCurrentViewNice
   $!XYLineAxis XDetail 1 {RangeMin = |xRngMin| RangeMax = |xRngMax|}
   $!XYLineAxis XDetail 1 {CoordScale = Log}
-  $!XYLineAxis YDetail 1 {RangeMin = 0.0078925 RangeMax = 0.00796}
+ #$!XYLineAxis YDetail 1 {RangeMin = 0.0078925 RangeMax = 0.00796}
+  $!XYLineAxis YDetail 1 {RangeMin = 0.0078800 RangeMax = 0.00802}
   $!XYLineAxis YDetail 1 {TickLabel {NumFormat {Formatting = FixedFloat Precision = 5}}}
   $!XYLineAxis YDetail 1 {AutoGrid = No}
   $!XYLineAxis YDetail 1 {GRSpacing = 2E-05}
@@ -270,7 +271,8 @@ $!IF 1 == 1
   $!View MakeCurrentViewNice
   $!XYLineAxis XDetail 1 {RangeMin = |xRngMin| RangeMax = |xRngMax|}
   $!XYLineAxis XDetail 1 {CoordScale = Log}
-  $!XYLineAxis YDetail 1 {RangeMin = 78.925 RangeMax = 79.6}
+ #$!XYLineAxis YDetail 1 {RangeMin = 78.925 RangeMax = 79.6}
+  $!XYLineAxis YDetail 1 {RangeMin = 78.8   RangeMax = 80.2}
   $!XYLineAxis YDetail 1 {TickLabel {NumFormat {Formatting = FixedFloat Precision = 1}}}
  #$!XYLineAxis YDetail 1 {TickLabel{NumFormat { Formatting = Integer }}}
   $!XYLineAxis YDetail 1 {AutoGrid = No}
@@ -341,6 +343,15 @@ $!IF 1 == 1
   $!XYLineAxis YDetail 1 {RangeMin = 1E-03   RangeMax = 100.0}
   $!XYLineAxis YDetail 1 {CoordScale = Log}
   $!XYLineAxis YDetail 1 {AutoGrid = Yes}
+  #--------------------------------------------------------
+  # Add Error labels?
+  $!IF 1 == 1
+    $!RUNMACROFUNCTION "ClearLabels"
+    $!RUNMACROFUNCTION "AddLabel" ( 'CD' '10.0 Cnts' '87.7' '72.90' )
+    $!RUNMACROFUNCTION "AddLabel" ( 'CD' '1.0 Count' '87.7' '57.50' )
+    $!RUNMACROFUNCTION "AddLabel" ( 'CD' '0.10 Cnts' '87.7' '42.20' )
+    $!RUNMACROFUNCTION "AddLabel" ( 'CD' '0.01 Cnts' '87.7' '26.80' )
+  $!ENDIF
   #--------------------------------------------------------
   # Add 2nd/4th order curves?
   $!IF 1 == 1

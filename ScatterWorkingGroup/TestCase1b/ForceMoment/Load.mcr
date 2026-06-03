@@ -23,6 +23,41 @@ $!VarSet |CstmUsrAdp_Maps| = ''
 #-------------------------------------------------
 
 #===================================================================
+#$!RUNMACROFUNCTION "ClearLabels"
+##################################################
+$!MACROFUNCTION
+  NAME = "ClearLabels"
+  $!AttachText 
+    AnchorPos { X = 87.7 Y = 62.70 }
+    TextShape { IsBold = No Height = 10 }
+    Box { BoxType = Hollow }
+    Anchor = Right
+    Text = 'tmp'
+  $!Pick AddAllInRect
+    SelectText = Yes
+    SelectGeoms = No
+    SelectMaps = No
+    ConsiderStyle = Yes
+    X1 = 7.6
+    X2 = 9.0
+    Y1 = 2.9
+    Y2 = 6.6
+  $!Pick Clear
+$!ENDMACROFUNCTION
+#===================================================================
+#$!RUNMACROFUNCTION "AddLabel" ( 'VAR' 'PAR' 'X' 'Y' )
+##################################################
+$!MACROFUNCTION
+  NAME = "AddLabel"
+  $!AttachText 
+    AnchorPos { X = |3| Y = |4| }
+    TextShape { IsBold = No Height = 10 }
+    Box { BoxType = Hollow }
+    Anchor = Right
+    Text = '<greek>D</greek>|1| = |2|'
+$!ENDMACROFUNCTION
+#===================================================================
+#===================================================================
 #$!RUNMACROFUNCTION "LoadAndPlotAlpha" ( '|ALPHA|', '|IMG1|', '|IMG2|' )
 ##################################################
 $!MACROFUNCTION
