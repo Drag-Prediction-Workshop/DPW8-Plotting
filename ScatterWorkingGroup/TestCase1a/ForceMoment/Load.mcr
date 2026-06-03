@@ -7,6 +7,10 @@ $!PrintSetup Palette = Color
 $!ExportSetup UseSuperSampleAntiAliasing = Yes
 $!ExportSetup ImageWidth = 2000
 
+$!VarSet |ScatterRepo|   = 'DPW8-Scatter'
+$!VarSet |BuffetRepo|    = 'DPW8-Buffet'
+$!VarSet |StaticDefRepo| = 'DPW8-Static-Deform'
+
 #===================================================================
 #$!RUNMACROFUNCTION "Initialize"
 ##################################################
@@ -332,13 +336,13 @@ $!ENDMACROFUNCTION
 $!MACROFUNCTION
   NAME = "LoadData"
 #-------------------------------------------------
-# Map00:
+# Map??:
 #$!VarSet |Z| = ( 0 + |Increment| )
 #$!ReadDataSet  '"|MACROFILEPATH|/000_00_DPW8-AePW4_ForceMoment_v5.dat"'
 #-------------------------------------------------
-# Map01: 002.01
+# Map??: 002.01
 $!VarSet |Z| = ( 0 + |Increment| )
-$!ReadDataSet  '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1a/002_Embraer/01_CFD++_CadenceUnstructured_SA-RC-QCR/DPW8-AePW4_ForceMoment_v5.dat"'
+$!ReadDataSet  '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/002_Embraer/01_CFD++_CadenceUnstructured_SA-RC-QCR/DPW8-AePW4_ForceMoment_v5.dat"'
   ReadDataOption = New
   ResetStyle = No
   VarLoadMode = ByName
@@ -357,71 +361,71 @@ $!ActiveLineMaps -= [1-|NumLineMaps|]
 $!DeleteLineMaps    [1-|NumLineMaps|]
 $!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps" "CadenceUnS_Maps" "1a" )
 #-------------------------------------------------
-# Map02: 002.02
+# Map??: 002.02
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1a/002_Embraer/02_CFD++_CadenceUnstructured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/002_Embraer/02_CFD++_CadenceUnstructured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
   # CUSTOM: Alpha (Includes ALPHA=0.00 ... either skip that zone by incrementing |Z| or delete the zone)
   $!VarSet |Zdel| = ( |Z| - |Increment| + 7 )
   $!DeleteZones  [|Zdel|]
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
 #-------------------------------------------------
-# Map03: 002.03
+# Map??: 002.03
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1a/002_Embraer/03_CFD++_CadenceUnstructured_SST/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/002_Embraer/03_CFD++_CadenceUnstructured_SST/DPW8-AePW4_ForceMoment_v5.dat"' )
   # CUSTOM: Alpha (Includes ALPHA=0.00 ... either skip that zone by incrementing |Z| or delete the zone)
   $!VarSet |Zdel| = ( |Z| - |Increment| + 7 )
   $!DeleteZones  [|Zdel|]
 $!RUNMACROFUNCTION "AddLineMap" ( "SST_Maps" "CadenceUnS_Maps" "1a" )
 #-------------------------------------------------
-# Map04: 002.04
+# Map??: 002.04
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1a/002_Embraer/04_CFD++_CadenceStructured_SA-RC-QCR/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/002_Embraer/04_CFD++_CadenceStructured_SA-RC-QCR/DPW8-AePW4_ForceMoment_v5.dat"' )
   # CUSTOM: Alpha (Includes ALPHA=0.00 ... either skip that zone by incrementing |Z| or delete the zone)
   $!VarSet |Zdel| = ( |Z| - |Increment| + 7 )
   $!DeleteZones  [|Zdel|]
 $!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps" "CadenceStr_Maps" "1a" )
 #-------------------------------------------------
-# Map05: 002.05
+# Map??: 002.05
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1a/002_Embraer/05_CFD++_HeldenMesh_SA-RC-QCR/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/002_Embraer/05_CFD++_HeldenMesh_SA-RC-QCR/DPW8-AePW4_ForceMoment_v5.dat"' )
   # CUSTOM: Alpha (Includes ALPHA=0.00 ... either skip that zone by incrementing |Z| or delete the zone)
   $!VarSet |Zdel| = ( |Z| - |Increment| + 7 )
   $!DeleteZones  [|Zdel|]
 $!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps" "HeldenUnSt_Maps" "1a" )
 #-------------------------------------------------
-# Map06: 004.01
+# Map??: 004.01
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/004_NASALangleyCAB/01_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/004_NASALangleyCAB/01_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
 #-------------------------------------------------
-# Map07: 004.02
+# Map??: 004.02
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/004_NASALangleyCAB/02_SAR/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/004_NASALangleyCAB/02_SAR/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps" "CadenceUnS_Maps" "1a" )
 #-------------------------------------------------
-# Map08: 004.03
+# Map??: 004.03
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/004_NASALangleyCAB/03_SAQCR/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/004_NASALangleyCAB/03_SAQCR/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps" "CadenceUnS_Maps" "1a" )
 #-------------------------------------------------
-# Map09: 005.01
+# Map??: 005.01
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/005_LAVA_SteadyRANS_Results/01_SAneg/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/005_LAVA_SteadyRANS_Results/01_SAneg/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceStr_Maps" "1a" )
 #-------------------------------------------------
-# Map10: 005.02
+# Map??: 005.02
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/005_LAVA_SteadyRANS_Results/02_SARC_CC/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/005_LAVA_SteadyRANS_Results/02_SARC_CC/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceStr_Maps" "1a" )
 #-------------------------------------------------
-# Map11: 006.01
+# Map??: 006.01
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1a/006/01_LociChem/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/006/01_LociChem/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SST_Maps" "CadenceUnS_Maps" "1a" )
 #-------------------------------------------------
-# Map12: 007.01
+# Map??: 007.01
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/007_JAXA/01_FaSTAR_Cadence-Structured_SA-noft2/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/007_JAXA/01_FaSTAR_Cadence-Structured_SA-noft2/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceStr_Maps" "1a" )
   # CUSTOM: Alpha (only ALPHA=1.50 submitted)
   $!IF |Increment| > 6
@@ -433,9 +437,9 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceStr_Maps" "1a" )
     $!ENDIF
   $!ENDIF
 #-------------------------------------------------
-# Map13: 007.02
+# Map??: 007.02
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/007_JAXA/02_FaSTAR_Cadence-Structured_SA-noft2-R-QCR2000/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/007_JAXA/02_FaSTAR_Cadence-Structured_SA-noft2-R-QCR2000/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps" "CadenceStr_Maps" "1a" )
   # CUSTOM: Alpha (only ALPHA=1.50 submitted)
   $!IF |Increment| > 6
@@ -447,9 +451,9 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps" "CadenceStr_Maps" "1a" )
     $!ENDIF
   $!ENDIF
 #-------------------------------------------------
-# Map14: 007.03
+# Map??: 007.03
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/007_JAXA/03_FaSTAR_Cadence-Structured_SST-2003sust/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/007_JAXA/03_FaSTAR_Cadence-Structured_SST-2003sust/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SST_Maps" "CadenceStr_Maps" "1a" )
   # CUSTOM: Alpha (only ALPHA=1.50 submitted)
   $!IF |Increment| > 6
@@ -461,24 +465,24 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SST_Maps" "CadenceStr_Maps" "1a" )
     $!ENDIF
   $!ENDIF
 #-------------------------------------------------
-# Map15: 008.01
+# Map??: 008.01
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/008_Metacomp/01_CFD++_Cadence_Structured/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/008_Metacomp/01_CFD++_Cadence_Structured/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps" "CadenceStr_Maps" "1a" )
 #-------------------------------------------------
-# Map16: 009.01
+# Map??: 009.01
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/009_ONERA/01_elsA_Cadence-structured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/009_ONERA/01_elsA_Cadence-structured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceStr_Maps" "1a" )
 #-------------------------------------------------
-# Map17: 009.02
+# Map??: 009.02
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/009_ONERA/02_elsA_Cadence-unstructured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/009_ONERA/02_elsA_Cadence-unstructured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
 #-------------------------------------------------
-# Map18: 009.03
+# Map??: 009.03
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/009_ONERA/03_elsA_Helden-unstructured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/009_ONERA/03_elsA_Helden-unstructured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
   # CUSTOM: Alpha (only 5 Grid Zones)
   $!IF |Increment| > 6
     $!VarSet |Z| = ( |Z| - (6-5) )
@@ -500,9 +504,9 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "HeldenUnSt_Maps" "1a" )
     $!ActiveLineMaps += [|NumLineMaps|]
   $!ENDIF
 #-------------------------------------------------
-# Map19: 009.04
+# Map??: 009.04
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/009_ONERA/04_elsA_ONERA_O-structured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/009_ONERA/04_elsA_ONERA_O-structured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
   # CUSTOM: Alpha (9 Grid Zones)
   $!IF |Increment| > 6
     $!VarSet |Z| = ( |Z| - (6-9) )
@@ -512,24 +516,24 @@ $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buff
   $!ENDIF
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "OneraStruc_Maps" "1a" )
 #-------------------------------------------------
-# Map20: 009.05
+# Map??: 009.05
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/009_ONERA/05_elsA_ONERA_O-unstructured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/009_ONERA/05_elsA_ONERA_O-unstructured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "CadenceStr_Maps" "1a" )
 #-------------------------------------------------
-# Map21: 009.06
+# Map??: 009.06
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/009_ONERA/06_elsA_ONERA-Structured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/009_ONERA/06_elsA_ONERA-Structured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "CadenceUnS_Maps" "1a" )
 #-------------------------------------------------
-# Map22: 009.07
+# Map??: 009.07
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/009_ONERA/07_CODA_ONERA-Structured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/009_ONERA/07_CODA_ONERA-Structured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "HeldenUnSt_Maps" "1a" )
 #-------------------------------------------------
-# Map24: 011.01
+# Map??: 011.01
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1a/011_HEMLAB/01_Structured/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/011_HEMLAB/01_Structured/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceStr_Maps" "1a" )
   # CUSTOM: Alpha (only ALPHA=1.50 submitted)
   $!IF |Increment| > 6
@@ -541,9 +545,9 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceStr_Maps" "1a" )
     $!ENDIF
   $!ENDIF
 #-------------------------------------------------
-# Map25: 011.02
+# Map??: 011.02
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1a/011_HEMLAB/02_Adaptive/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/011_HEMLAB/02_Adaptive/DPW8-AePW4_ForceMoment_v5.dat"' )
   # CUSTOM: Alpha (18 Grid Zones)
   $!IF |Increment| > 6
     $!VarSet |Z| = ( |Z| - (6-18) )
@@ -573,9 +577,9 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CstmUsrAdp_Maps" "1a" )
     $!ENDIF
   $!ENDIF
 #-------------------------------------------------
-# Map26: 014.01
+# Map??: 014.01
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/014_IISc/01_SU2_Symmetric_BC/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/014_IISc/01_SU2_Symmetric_BC/DPW8-AePW4_ForceMoment_v5.dat"' )
   # CUSTOM: Alpha (only 4 Grid Zones)
   $!IF |Increment| > 6
     $!VarSet |Z| = ( |Z| - (6-4) )
@@ -605,9 +609,9 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
     $!ActiveLineMaps += [|NumLineMaps|]
   $!ENDIF
 #-------------------------------------------------
-# Map27: 014.02
+# Map??: 014.02
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/014_IISc/02_SU2_Periodic_BC/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/014_IISc/02_SU2_Periodic_BC/DPW8-AePW4_ForceMoment_v5.dat"' )
   # CUSTOM: Alpha (only 4 Grid Zones)
   $!IF |Increment| > 6
     $!VarSet |Z| = ( |Z| - (6-4) )
@@ -635,9 +639,9 @@ $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buff
     $!ActiveLineMaps += [|NumLineMaps|]
   $!ENDIF
 #-------------------------------------------------
-# Map28: 015.01
+# Map??: 015.01
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Static-Deform/TestCase1a/015_USArmySRD/01_FUN3D/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|StaticDefRepo|/TestCase1a/015_USArmySRD/01_FUN3D/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
   # CUSTOM: Alpha (only ALPHA<=3.10)
   $!IF |Increment| > 6
@@ -649,9 +653,9 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
     $!ENDIF
   $!ENDIF
 #-------------------------------------------------
-# Map29: 015.02
+# Map??: 015.02
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Static-Deform/TestCase1a/015_USArmySRD/02_FUN3D/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|StaticDefRepo|/TestCase1a/015_USArmySRD/02_FUN3D/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SST_Maps" "CadenceUnS_Maps" "1a" )
   # CUSTOM: Alpha (only ALPHA<=3.10)
   $!IF |Increment| > 6
@@ -663,9 +667,9 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SST_Maps" "CadenceUnS_Maps" "1a" )
     $!ENDIF
   $!ENDIF
 #-------------------------------------------------
-# Map30: 018.01
+# Map??: 018.01
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/018_zCFD_steadyRANS/01_SAneg/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/018_zCFD_steadyRANS/01_SAneg/DPW8-AePW4_ForceMoment_v5.dat"' )
   # CUSTOM: Alpha (only 5 Grid Zones)
   $!IF |Increment| > 6
     $!VarSet |Z| = ( |Z| - (6-5) )
@@ -684,9 +688,9 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
     $!ActiveLineMaps += [|NumLineMaps|]
   $!ENDIF
 #-------------------------------------------------
-# Map31: 018.02
+# Map??: 018.02
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/018_zCFD_steadyRANS/02_SST-V-2003/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/018_zCFD_steadyRANS/02_SST-V-2003/DPW8-AePW4_ForceMoment_v5.dat"' )
   # CUSTOM: Alpha (only 5 Grid Zones)
   $!IF |Increment| > 6
     $!VarSet |Z| = ( |Z| - (6-5) )
@@ -705,9 +709,9 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SST_Maps" "CadenceUnS_Maps" "1a" )
     $!ActiveLineMaps += [|NumLineMaps|]
   $!ENDIF
 #-------------------------------------------------
-# Map32: 020.01
+# Map??: 020.01
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/020_DukeUniversity/01_Fluent_CadenceStructured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/020_DukeUniversity/01_Fluent_CadenceStructured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceStr_Maps" "1a" )
   # CUSTOM: 020.01 data needs updated (for Alpha=1.50).
   $!IF |ALPHA| == 1.50
@@ -715,9 +719,9 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceStr_Maps" "1a" )
     $!VarSet |Inactive_Maps| = '|Inactive_Maps| |NumLineMaps|,'
   $!ENDIF
 #-------------------------------------------------
-# Map33: 020.02
+# Map??: 020.02
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/020_DukeUniversity/02_Fluent_CadenceUnstructured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/020_DukeUniversity/02_Fluent_CadenceUnstructured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
   # CUSTOM: Alpha (only 3 Grid Zones)
   $!IF |Increment| > 6
     $!VarSet |Z| = ( |Z| - (6-3) )
@@ -743,19 +747,19 @@ $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buff
   $!ActiveLineMaps -= [|NumLineMaps|]
   $!VarSet |Inactive_Maps| = '|Inactive_Maps| |NumLineMaps|,'
 #-------------------------------------------------
-# Map34: 020.03
+# Map??: 020.03
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/020_DukeUniversity/03_FUN3D_CadenceStructured_SAneg/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/020_DukeUniversity/03_FUN3D_CadenceStructured_SAneg/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceStr_Maps" "1a" )
 #-------------------------------------------------
-# Map35: 020.04
+# Map??: 020.04
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/020_DukeUniversity/04_FUN3D_CadenceUnstructured_SAneg/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/020_DukeUniversity/04_FUN3D_CadenceUnstructured_SAneg/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
 #-------------------------------------------------
-# Map36: 023.01
+# Map??: 023.01
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/023_PolytechniqueMontreal/01_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/023_PolytechniqueMontreal/01_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: (KLUDGE) CM = -1 * CM because it appears to have the wrong sign
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -764,14 +768,14 @@ $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buff
     Equation = 'V9 = -1*V9'
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
 #-------------------------------------------------
-# Map37: 024.01
+# Map??: 024.01
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/024_UniversityofLiverpool/01_SAneg/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/024_UniversityofLiverpool/01_SAneg/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "CadenceUnS_Maps" "1a" )
 #-------------------------------------------------
-# Map38: 025.01
+# Map??: 025.01
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Static-Deform/TestCase1a/025_TLGAerospace/01_STARCCM_CadenceUnstr_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|StaticDefRepo|/TestCase1a/025_TLGAerospace/01_STARCCM_CadenceUnstr_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
   # CUSTOM: Alpha (only ALPHA<=3.10)
   $!IF |Increment| > 6
@@ -783,19 +787,19 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
     $!ENDIF
   $!ENDIF
 #-------------------------------------------------
-# Map39: 026.01
+# Map??: 026.01
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/026_CorvidTechnologies/01_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/026_CorvidTechnologies/01_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
 #-------------------------------------------------
-# Map40: 026.02
+# Map??: 026.02
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/026_CorvidTechnologies/02_SA_comp/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/026_CorvidTechnologies/02_SA_comp/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
 #-------------------------------------------------
-# Map41: 027.01
+# Map??: 027.01
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/027_RMIT/01_SST/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/027_RMIT/01_SST/DPW8-AePW4_ForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: (KLUDGE) CM = -1 * CM because it appears to have the wrong sign
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -830,9 +834,9 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SST_Maps" "CadenceStr_Maps" "1a" )
     $!ActiveLineMaps += [|NumLineMaps|]
   $!ENDIF
 #-------------------------------------------------
-# Map42: 027.02
+# Map??: 027.02
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/027_RMIT/02_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/027_RMIT/02_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: (KLUDGE) CM = -1 * CM because it appears to have the wrong sign
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -866,9 +870,9 @@ $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buff
     $!ActiveLineMaps += [|NumLineMaps|]
   $!ENDIF
 #-------------------------------------------------
-# Map43: 029.01
+# Map??: 029.01
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1a/029_MIT_SANS/01_SANS_refine/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/029_MIT_SANS/01_SANS_refine/DPW8-AePW4_ForceMoment_v5.dat"' )
   # CUSTOM: Alpha (7 Grid Zones)
   $!IF |Increment| > 6
     $!VarSet |Z| = ( |Z| - (6-7) )
@@ -887,9 +891,9 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CstmUsrAdp_Maps" "1a" )
     $!ENDIF
   $!ENDIF
 #-------------------------------------------------
-# Map44: 029.02
+# Map??: 029.02
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1a/029_MIT_SANS/02_SANS_Metris/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/029_MIT_SANS/02_SANS_Metris/DPW8-AePW4_ForceMoment_v5.dat"' )
   # CUSTOM: Alpha (8 Grid Zones)
   $!IF |Increment| > 6
     $!VarSet |Z| = ( |Z| - (6-8) )
@@ -911,9 +915,9 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CstmUsrAdp_Maps" "1a" )
 # Include TestCase1b Data?
 $!IF |IncludeTestCase1b| == 1
 #-------------------------------------------------
-# Map45: 010.01 (TestCase1b)
+# Map??: 010.01 (TestCase1b)
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1b/010_Boeing/010_DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1b/010_Boeing/010_DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: Assign TestCase1b CL_AVG/CD_AVG/CM_AVG from unsteady datafile to CL/CD/CM from steady datafile
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -955,67 +959,67 @@ $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buff
 $!ENDIF
 #==================================================================================================
 #-------------------------------------------------
-# Map46: 012.01
+# Map??: 012.01
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/01_SFE_SAneg/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/012_NASA_LARC_AB/01_SFE_SAneg/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
 #-------------------------------------------------
-# Map47: 012.02
+# Map??: 012.02
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/02_SFE_SAneg_CC/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/012_NASA_LARC_AB/02_SFE_SAneg_CC/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
 #-------------------------------------------------
-# Map48: 012.03
+# Map??: 012.03
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/03_SFE_SAneg_QCR_CC/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/012_NASA_LARC_AB/03_SFE_SAneg_QCR_CC/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps" "CadenceUnS_Maps" "1a" )
 #-------------------------------------------------
-# Map49: 012.04
+# Map??: 012.04
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/04_NCFV_SAneg/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/012_NASA_LARC_AB/04_NCFV_SAneg/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
 #-------------------------------------------------
-# Map50: 012.05
+# Map??: 012.05
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/05_NCFV_SAneg_2ndOrderTurbConv/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/012_NASA_LARC_AB/05_NCFV_SAneg_2ndOrderTurbConv/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
 #-------------------------------------------------
-# Map51: 012.06
+# Map??: 012.06
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/06_NCFV_SAneg_CC/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/012_NASA_LARC_AB/06_NCFV_SAneg_CC/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
 #-------------------------------------------------
-# Map52: 012.07
+# Map??: 012.07
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/07_NCFV_SAneg_CC_2ndOrderTurbConv/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/012_NASA_LARC_AB/07_NCFV_SAneg_CC_2ndOrderTurbConv/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
 #-------------------------------------------------
-# Map53: 012.08
+# Map??: 012.08
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/08_NCFV_SAneg_QCR/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/012_NASA_LARC_AB/08_NCFV_SAneg_QCR/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps" "CadenceUnS_Maps" "1a" )
 #-------------------------------------------------
-# Map54: 012.09
+# Map??: 012.09
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/09_NCFV_SAneg_QCR_CC_2ndOrderTurbConv/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/012_NASA_LARC_AB/09_NCFV_SAneg_QCR_CC_2ndOrderTurbConv/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps" "CadenceUnS_Maps" "1a" )
 #-------------------------------------------------
-# Map55: 012.10
+# Map??: 012.10
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/10_NCFV_SAneg_QCR_RC_CC/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/012_NASA_LARC_AB/10_NCFV_SAneg_QCR_RC_CC/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps" "CadenceUnS_Maps" "1a" )
 #-------------------------------------------------
-# Map56: 012.11
+# Map??: 012.11
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/012_NASA_LARC_AB/11_NCFV_SAneg_QCR_RC_CC_2ndOrderTurbConv/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/012_NASA_LARC_AB/11_NCFV_SAneg_QCR_RC_CC_2ndOrderTurbConv/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps" "CadenceUnS_Maps" "1a" )
 #==================================================================================================
 # Include TestCase1b Data?
 $!IF |IncludeTestCase1b| == 1
 #-------------------------------------------------
-# Map57: 005.03 (TestCase1b)
+# Map??: 005.03 (TestCase1b)
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1b/005_LAVA_Curvilinear/03_ZDES_SAneg/DPW8-AePW4_UnsteadyForceMoment_LAVA_OAT15A_ZDES_SAneg_005.03.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1b/005_LAVA_Curvilinear/03_ZDES_SAneg/DPW8-AePW4_UnsteadyForceMoment_LAVA_OAT15A_ZDES_SAneg_005.03.dat"' )
   #-------------------------------------------------
   # CUSTOM: Assign TestCase1b CL_AVG/CD_AVG/CM_AVG from unsteady datafile to CL/CD/CM from steady datafile
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -1052,9 +1056,9 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "OneraStruc_Maps" "1b" )
     $!VarSet |Inactive_Maps| = '|Inactive_Maps| |NumLineMaps|,'
   $!ENDIF
 #-------------------------------------------------
-# Map58: 005.04 (TestCase1b)
+# Map??: 005.04 (TestCase1b)
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1b/005_LAVA_Curvilinear/04_ZDES_SAneg_blend2/DPW8-AePW4_UnsteadyForceMoment_LAVA_OAT15A_ZDES_SAneg_005.04.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1b/005_LAVA_Curvilinear/04_ZDES_SAneg_blend2/DPW8-AePW4_UnsteadyForceMoment_LAVA_OAT15A_ZDES_SAneg_005.04.dat"' )
   #-------------------------------------------------
   # CUSTOM: Assign TestCase1b CL_AVG/CD_AVG/CM_AVG from unsteady datafile to CL/CD/CM from steady datafile
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -1091,9 +1095,9 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "OneraStruc_Maps" "1b" )
     $!VarSet |Inactive_Maps| = '|Inactive_Maps| |NumLineMaps|,'
   $!ENDIF
 #-------------------------------------------------
-# Map59: 005.05 (TestCase1b)
+# Map??: 005.05 (TestCase1b)
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1b/005_LAVA_Curvilinear/05_URANS_SARCcomp/DPW8-AePW4_UnsteadyForceMoment_LAVA_OAT15A_URANS_SARC_CC_005.05.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1b/005_LAVA_Curvilinear/05_URANS_SARCcomp/DPW8-AePW4_UnsteadyForceMoment_LAVA_OAT15A_URANS_SARC_CC_005.05.dat"' )
   #-------------------------------------------------
   # CUSTOM: Assign TestCase1b CL_AVG/CD_AVG/CM_AVG from unsteady datafile to CL/CD/CM from steady datafile
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -1130,9 +1134,9 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "OneraStruc_Maps" "1b" )
     $!VarSet |Inactive_Maps| = '|Inactive_Maps| |NumLineMaps|,'
   $!ENDIF
 #-------------------------------------------------
-# Map60: 008.02 (TestCase1b)
+# Map??: 008.02 (TestCase1b)
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1b/008_Metacomp/02_CFD++_Deck/DPW8-AePW4_UnsteadyForceMoment_008.02.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1b/008_Metacomp/02_CFD++_Deck/DPW8-AePW4_UnsteadyForceMoment_008.02.dat"' )
   #-------------------------------------------------
   # CUSTOM: Assign TestCase1b CL_AVG/CD_AVG/CM_AVG from unsteady datafile to CL/CD/CM from steady datafile
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -1171,9 +1175,9 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps" "OneraStruc_Maps" "1b" )
 $!ENDIF
 #==================================================================================================
 #-------------------------------------------------
-# Map61: 028.01
+# Map??: 028.01
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1a/028_BTI/01_BCFD_CadenceUnstructured_SA-noft2-RC-QCR/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/028_BTI/01_BCFD_CadenceUnstructured_SA-noft2-RC-QCR/DPW8-AePW4_ForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: Alpha (only 1 Grid Zones)
   $!IF |Increment| > 6
@@ -1187,9 +1191,9 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps"  "CadenceUnS_Maps" "1a" )
      $!VarSet |Inactive_Maps| = '|Inactive_Maps| |NumLineMaps|,'
   $!ENDIF
 #-------------------------------------------------
-# Map62: 028.02
+# Map??: 028.02
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1a/028_BTI/02_BCFD_CadenceUnstructured_SA-noft2/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/028_BTI/02_BCFD_CadenceUnstructured_SA-noft2/DPW8-AePW4_ForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: Alpha (only 1 Grid Zones)
   $!IF |Increment| > 6
@@ -1203,9 +1207,9 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
      $!VarSet |Inactive_Maps| = '|Inactive_Maps| |NumLineMaps|,'
   $!ENDIF
 #-------------------------------------------------
-# Map63: 028.03
+# Map??: 028.03
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1a/028_BTI/03_BCFD_HeldenMesh_SA-noft2-RC-QCR/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/028_BTI/03_BCFD_HeldenMesh_SA-noft2-RC-QCR/DPW8-AePW4_ForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: Alpha (only 1 Grid Zones)
   $!IF |Increment| > 6
@@ -1219,9 +1223,9 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps" "HeldenUnSt_Maps" "1a" )
      $!VarSet |Inactive_Maps| = '|Inactive_Maps| |NumLineMaps|,'
   $!ENDIF
 #-------------------------------------------------
-# Map64: 028.04
+# Map??: 028.04
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1a/028_BTI/04_BCFD_HeldenMesh_SA-noft2/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/028_BTI/04_BCFD_HeldenMesh_SA-noft2/DPW8-AePW4_ForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: Alpha (only 1 Grid Zones)
   $!IF |Increment| > 6
@@ -1308,41 +1312,41 @@ $!LineMap [63]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No
 $!LineMap [64]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Greek   ASCIIChar = '\y'}}}
 
 #-------------------------------------------------
-# Map65: 003.02
+# Map??: 003.02
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1a/003_Boeing/02_OVERFLOW_Cadence_Structured_REV01_Grid3_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/003_Boeing/02_OVERFLOW_Cadence_Structured_REV01_Grid3_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceStr_Maps" "1a" )
   $!IF |ALPHA| != 1.50
      $!VarSet |Inactive_Maps| = '|Inactive_Maps| |NumLineMaps|,'
   $!ENDIF
 #-------------------------------------------------
-# Map66: 003.03
+# Map??: 003.03
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1a/003_Boeing/03_OVERFLOW_Cadence_Structured_REV01_Grid4_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/003_Boeing/03_OVERFLOW_Cadence_Structured_REV01_Grid4_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceStr_Maps" "1a" )
   $!IF |ALPHA| != 1.50
      $!VarSet |Inactive_Maps| = '|Inactive_Maps| |NumLineMaps|,'
   $!ENDIF
 #-------------------------------------------------
-# Map67: 003.04
+# Map??: 003.04
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1a/003_Boeing/04_OVERFLOW_UserCustom_Structured_SA_FSOT3/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/003_Boeing/04_OVERFLOW_UserCustom_Structured_SA_FSOT3/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CstmUsrStr_Maps" "1a" )
   $!IF |ALPHA| != 1.50
      $!VarSet |Inactive_Maps| = '|Inactive_Maps| |NumLineMaps|,'
   $!ENDIF
 #-------------------------------------------------
-# Map68: 003.05
+# Map??: 003.05
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1a/003_Boeing/05_OVERFLOW_UserCustom_Structured_SA_FSOT1/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/003_Boeing/05_OVERFLOW_UserCustom_Structured_SA_FSOT1/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CstmUsrStr_Maps" "1a" )
   $!IF |ALPHA| != 1.50
      $!VarSet |Inactive_Maps| = '|Inactive_Maps| |NumLineMaps|,'
   $!ENDIF
 #-------------------------------------------------
-# Map69: 003.07
+# Map??: 003.07
 $!VarSet |Z| = ( |NumZones| + 1 )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1a/003_Boeing/07_T1EPIC_Adjoint_SA-neg/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/003_Boeing/07_T1EPIC_Adjoint_SA-neg/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CstmUsrAdp_Maps" "1a" )
   $!AlterData  [|Z|]
      IgnoreDivideByZero = Yes
@@ -1351,9 +1355,9 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CstmUsrAdp_Maps" "1a" )
      $!VarSet |Inactive_Maps| = '|Inactive_Maps| |NumLineMaps|,'
   $!ENDIF
 #-------------------------------------------------
-# Map70: 003.08
+# Map??: 003.08
 $!VarSet |Z| = ( |NumZones| + 1 )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1a/003_Boeing/08_T1EPIC_Hessian_SA-neg/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/003_Boeing/08_T1EPIC_Hessian_SA-neg/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CstmUsrAdp_Maps" "1a" )
   $!AlterData  [|Z|]
      IgnoreDivideByZero = Yes
@@ -1370,45 +1374,45 @@ $!LineMap [69]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                
 $!LineMap [70]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Greek   ASCIIChar = '\1'}}}
 
 #-------------------------------------------------
-# Map11: 006.02
+# Map??: 006.02
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1a/006/02_LociChem_URANS/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/006/02_LociChem_URANS/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SST_Maps" "CadenceUnS_Maps" "1a" )
 $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Math    ASCIIChar = '\1'}}}
 #-------------------------------------------------
-# Map11: 006.03
+# Map??: 006.03
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1a/006/03_LociChen_HybridRANSLES/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/006/03_LociChen_HybridRANSLES/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SST_Maps" "CadenceUnS_Maps" "1a" )
 $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\2'}}}
 #-------------------------------------------------
-# Map11: 006.04
+# Map??: 006.04
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1a/006/04_LociChem_DHRL/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/006/04_LociChem_DHRL/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SST_Maps" "CadenceUnS_Maps" "1a" )
 $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Greek   ASCIIChar = '\2'}}}
 #-------------------------------------------------
-# Map11: 007.04
+# Map??: 007.04
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/007_JAXA/04_FaSTAR_JAXA-Custom-Structured_SA-noft2/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/007_JAXA/04_FaSTAR_JAXA-Custom-Structured_SA-noft2/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "CadenceUnS_Maps" "1a" )
 $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Math    ASCIIChar = '\2'}}}
 #-------------------------------------------------
-# Map11: 007.05
+# Map??: 007.05
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/007_JAXA/05_FaSTAR_JAXA-Custom-Structured_SA-noft2-R/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/007_JAXA/05_FaSTAR_JAXA-Custom-Structured_SA-noft2-R/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "CadenceUnS_Maps" "1a" )
 $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\3'}}}
 #-------------------------------------------------
-# Map11: 007.06
+# Map??: 007.06
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/007_JAXA/06_FaSTAR_JAXA-Custom-Structured_SA-noft2-R-QCR2000/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/007_JAXA/06_FaSTAR_JAXA-Custom-Structured_SA-noft2-R-QCR2000/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps" "CadenceUnS_Maps" "1a" )
 $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Greek   ASCIIChar = '\3'}}}
 #-------------------------------------------------
-# Map36: 013.01
+# Map??: 013.01
 $!VarSet |Z| = ( |NumZones| + |Increment| + 2 )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/013_Technion/01_SU2_EW-MC-QCR/DPW8-AePW4_ForceMoment_v5_013.01.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/013_Technion/01_SU2_EW-MC-QCR/DPW8-AePW4_ForceMoment_v5_013.01.dat"' )
   #-------------------------------------------------
   # CUSTOM: (KLUDGE) CM = -1 * CM because it appears to have the wrong sign
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -1418,9 +1422,9 @@ $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buff
 $!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps"  "CadenceUnS_Maps" "1a" )
 $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Math    ASCIIChar = '\3'}}}
 #-------------------------------------------------
-# Map36: 013.02
+# Map??: 013.02
 $!VarSet |Z| = ( |NumZones| + |Increment| - 2 )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/013_Technion/02_SU2_EW-MC/DPW8-AePW4_ForceMoment_v5_013.02.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/013_Technion/02_SU2_EW-MC/DPW8-AePW4_ForceMoment_v5_013.02.dat"' )
   #-------------------------------------------------
   # CUSTOM: (KLUDGE) CM = -1 * CM because it appears to have the wrong sign
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -1430,49 +1434,49 @@ $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buff
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
 $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\4'}}}
 #-------------------------------------------------
-## Map36: 013.03
+## Map??: 013.03
 #$!VarSet |Z| = ( |NumZones| + |Increment| )
-#$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/013_Technion/03_SU2_EW-MC_HLLC/DPW8-AePW4_ForceMoment_v5_013.03.dat"' )
+#$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/013_Technion/03_SU2_EW-MC_HLLC/DPW8-AePW4_ForceMoment_v5_013.03.dat"' )
 #$!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
 ##-------------------------------------------------
-## Map36: 013.04
+## Map??: 013.04
 #$!VarSet |Z| = ( |NumZones| + |Increment| )
-#$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/013_Technion/04_SU2_EW-MC_HLLC2nd/DPW8-AePW4_ForceMoment_v5_013.04.dat"' )
+#$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/013_Technion/04_SU2_EW-MC_HLLC2nd/DPW8-AePW4_ForceMoment_v5_013.04.dat"' )
 #$!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
 ##-------------------------------------------------
-## Map36: 013.05
+## Map??: 013.05
 #$!VarSet |Z| = ( |NumZones| + |Increment| )
-#$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/013_Technion/05_SU2_EW-MC_Roe2nd/DPW8-AePW4_ForceMoment_v5_013.05.dat"' )
+#$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/013_Technion/05_SU2_EW-MC_Roe2nd/DPW8-AePW4_ForceMoment_v5_013.05.dat"' )
 #$!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
 ##-------------------------------------------------
-## Map36: 013.06
+## Map??: 013.06
 #$!VarSet |Z| = ( |NumZones| + |Increment| )
-#$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/013_Technion/06_SU2_EW-MC_lowDispJST/DPW8-AePW4_ForceMoment_v5_013.06.dat"' )
+#$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/013_Technion/06_SU2_EW-MC_lowDispJST/DPW8-AePW4_ForceMoment_v5_013.06.dat"' )
 #$!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
 ##-------------------------------------------------
-## Map36: 013.07
+## Map??: 013.07
 #$!VarSet |Z| = ( |NumZones| + |Increment| )
-#$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/013_Technion/07_SU2_EW-MC_HLLC2nc_VanAlbada/DPW8-AePW4_ForceMoment_v5_013.07.dat"' )
+#$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/013_Technion/07_SU2_EW-MC_HLLC2nc_VanAlbada/DPW8-AePW4_ForceMoment_v5_013.07.dat"' )
 #$!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
 ##-------------------------------------------------
-## Map36: 013.08
+## Map??: 013.08
 #$!VarSet |Z| = ( |NumZones| + |Increment| )
-#$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/013_Technion/08_SU2_EW-MC_Roe2nd_VanAlbada/DPW8-AePW4_ForceMoment_v5_013.08.dat"' )
+#$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/013_Technion/08_SU2_EW-MC_Roe2nd_VanAlbada/DPW8-AePW4_ForceMoment_v5_013.08.dat"' )
 #$!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
 ##-------------------------------------------------
-## Map36: 013.09
+## Map??: 013.09
 #$!VarSet |Z| = ( |NumZones| + |Increment| )
-#$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/013_Technion/09_SU2_NEG-MC_HLLC2nd/DPW8-AePW4_ForceMoment_v5_013.09.dat"' )
+#$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/013_Technion/09_SU2_NEG-MC_HLLC2nd/DPW8-AePW4_ForceMoment_v5_013.09.dat"' )
 #$!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
 ##-------------------------------------------------
-## Map36: 013.10
+## Map??: 013.10
 #$!VarSet |Z| = ( |NumZones| + |Increment| )
-#$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/013_Technion/10_SU2_SST_HLLC2nd/DPW8-AePW4_ForceMoment_v5_013.10.dat"' )
+#$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/013_Technion/10_SU2_SST_HLLC2nd/DPW8-AePW4_ForceMoment_v5_013.10.dat"' )
 #$!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
 ##-------------------------------------------------
-# Map36: 021.01
+# Map??: 021.01
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/021_CREATE/01_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/021_CREATE/01_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: (KLUDGE) CM = -1 * CM because it appears to have the wrong sign
   #$!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -1482,21 +1486,21 @@ $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buff
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
 $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Greek   ASCIIChar = '\4'}}}
 #-------------------------------------------------
-# Map36: 023.02
+# Map??: 023.02
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/023_PolytechniqueMontreal/02_SA_BestPractice/DPW8-AePW4_ForceMoment_v5_mesh.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/023_PolytechniqueMontreal/02_SA_BestPractice/DPW8-AePW4_ForceMoment_v5_mesh.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
 $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Math    ASCIIChar = '\4'}}}
 #-------------------------------------------------
-# Map36: 041.01
+# Map??: 041.01
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/041_L3Harris/DPW8-AePW4_ForceMoment_v4_041.01.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/041_L3Harris/DPW8-AePW4_ForceMoment_v4_041.01.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
 $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {                 FontOverride = UserDef ASCIIChar = '\5'}}}
 #-------------------------------------------------
-# Map36: 042.01
+# Map??: 042.01
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1a/042_Gulfstream/01_FUN3D_SA-NEG_QCR2000_Custom/SteadyFnM_042.01.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/042_Gulfstream/01_FUN3D_SA-NEG_QCR2000_Custom/SteadyFnM_042.01.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps"  "CadenceUnS_Maps" "1a" )
 $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = No FontOverride = Greek   ASCIIChar = '\5'}}}
 #-------------------------------------------------
@@ -1508,7 +1512,7 @@ $!IF 0 == 1
 #-------------------------------------------------
 # Map??: 005.12
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1b/005_LAVA_Unstructured/12_WMLES_L3C/005_12_DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1b/005_LAVA_Unstructured/12_WMLES_L3C/005_12_DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: Assign TestCase1b CL_AVG/CD_AVG/CM_AVG from unsteady datafile to CL/CD/CM from steady datafile
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -1528,7 +1532,7 @@ $!ENDIF
 #-------------------------------------------------
 # Map??: 007.07
 $!VarSet |Z| = ( |NumZones| + |Increment| - 2 )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1b/007_JAXA/07_FaSTAR_JAXA-Custom-Structured_SA-noft2/DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1b/007_JAXA/07_FaSTAR_JAXA-Custom-Structured_SA-noft2/DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: Assign TestCase1b CL_AVG/CD_AVG/CM_AVG from unsteady datafile to CL/CD/CM from steady datafile
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -1547,7 +1551,7 @@ $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBa
 #-------------------------------------------------
 # Map??: 007.08
 $!VarSet |Z| = ( |NumZones| + |Increment| - 2 )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1b/007_JAXA/08_FaSTAR_JAXA-Custom-Structured_SA-noft2-R/DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1b/007_JAXA/08_FaSTAR_JAXA-Custom-Structured_SA-noft2-R/DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: Assign TestCase1b CL_AVG/CD_AVG/CM_AVG from unsteady datafile to CL/CD/CM from steady datafile
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -1566,7 +1570,7 @@ $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {     
 #-------------------------------------------------
 # Map??: 007.09
 $!VarSet |Z| = ( |NumZones| + |Increment| - 2 )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1b/007_JAXA/09_FaSTAR_JAXA-Custom-Structured_SA-noft2-R-QCR2000/DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1b/007_JAXA/09_FaSTAR_JAXA-Custom-Structured_SA-noft2-R-QCR2000/DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: Assign TestCase1b CL_AVG/CD_AVG/CM_AVG from unsteady datafile to CL/CD/CM from steady datafile
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -1586,7 +1590,7 @@ $!IF 0 == 1
 #-------------------------------------------------
 # Map??: 008.03 (TestCase1b)
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1b/008_Metacomp/03_CFD++_DDES_Deck/DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1b/008_Metacomp/03_CFD++_DDES_Deck/DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: Assign TestCase1b CL_AVG/CD_AVG/CM_AVG from unsteady datafile to CL/CD/CM from steady datafile
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -1626,7 +1630,7 @@ $!ENDIF
 #-------------------------------------------------
 # Map??: 009.31
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1b/009_ONERA/31_elsA_Cadence-structured_SA/DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1b/009_ONERA/31_elsA_Cadence-structured_SA/DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: Assign TestCase1b CL_AVG/CD_AVG/CM_AVG from unsteady datafile to CL/CD/CM from steady datafile
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -1645,7 +1649,7 @@ $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBa
 #-------------------------------------------------
 # Map??: 009.32
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1b/009_ONERA/32_elsA_Cadence-unstructured_SA/DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1b/009_ONERA/32_elsA_Cadence-unstructured_SA/DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: Assign TestCase1b CL_AVG/CD_AVG/CM_AVG from unsteady datafile to CL/CD/CM from steady datafile
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -1664,7 +1668,7 @@ $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {     
 #-------------------------------------------------
 # Map??: 009.33
 $!VarSet |Z| = ( |NumZones| + |Increment| - 2 )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1b/009_ONERA/33_elsA_Helden-unstructured_SA/DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1b/009_ONERA/33_elsA_Helden-unstructured_SA/DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: Assign TestCase1b CL_AVG/CD_AVG/CM_AVG from unsteady datafile to CL/CD/CM from steady datafile
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -1683,7 +1687,7 @@ $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBa
 #-------------------------------------------------
 # Map??: 009.34
 $!VarSet |Z| = ( |NumZones| + |Increment| - 4 )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1b/009_ONERA/34_elsA_ONERA_O-structured_SA/DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1b/009_ONERA/34_elsA_ONERA_O-structured_SA/DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: Assign TestCase1b CL_AVG/CD_AVG/CM_AVG from unsteady datafile to CL/CD/CM from steady datafile
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -1702,7 +1706,7 @@ $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBa
 #-------------------------------------------------
 # Map??: 009.35
 $!VarSet |Z| = ( |NumZones| + |Increment| - 4 )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1b/009_ONERA/35_elsA_ONERA_O-unstructured_SA/DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1b/009_ONERA/35_elsA_ONERA_O-unstructured_SA/DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: Assign TestCase1b CL_AVG/CD_AVG/CM_AVG from unsteady datafile to CL/CD/CM from steady datafile
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -1721,7 +1725,7 @@ $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {     
 #-------------------------------------------------
 # Map??: 009.36
 $!VarSet |Z| = ( |NumZones| + |Increment| + 3 )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1b/009_ONERA/36_elsA_ONERA-Structured_SA/DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1b/009_ONERA/36_elsA_ONERA-Structured_SA/DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: Assign TestCase1b CL_AVG/CD_AVG/CM_AVG from unsteady datafile to CL/CD/CM from steady datafile
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -1740,7 +1744,7 @@ $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBa
 #-------------------------------------------------
 # Map??: 012.12
 $!VarSet |Z| = ( |NumZones| + |Increment| + 5 )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1b/012_NASA_LARC_AB/12_NCFV_SST_QRC2020_CC/DPW8-AePW4_UnsteadyForceMoment_012.12.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1b/012_NASA_LARC_AB/12_NCFV_SST_QRC2020_CC/DPW8-AePW4_UnsteadyForceMoment_012.12.dat"' )
   #-------------------------------------------------
   # CUSTOM: Assign TestCase1b CL_AVG/CD_AVG/CM_AVG from unsteady datafile to CL/CD/CM from steady datafile
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -1760,7 +1764,7 @@ $!IF 0 == 1
 #-------------------------------------------------
 # Map??: 013.11
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1b/013_Technion/11_SU2_EW-MC-QCR_dt=1e-5/DPW8-AePW4_UnsteadyForceMoment_v5_013.11.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1b/013_Technion/11_SU2_EW-MC-QCR_dt=1e-5/DPW8-AePW4_UnsteadyForceMoment_v5_013.11.dat"' )
   #-------------------------------------------------
   # CUSTOM: Assign TestCase1b CL_AVG/CD_AVG/CM_AVG from unsteady datafile to CL/CD/CM from steady datafile
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -1780,7 +1784,7 @@ $!IF 0 == 1
 #-------------------------------------------------
 # Map??: 013.12
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1b/013_Technion/12_SU2_EW-MC-QCR_dt=2.5e-5/DPW8-AePW4_UnsteadyForceMoment_v5_013.12.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1b/013_Technion/12_SU2_EW-MC-QCR_dt=2.5e-5/DPW8-AePW4_UnsteadyForceMoment_v5_013.12.dat"' )
   #-------------------------------------------------
   # CUSTOM: Assign TestCase1b CL_AVG/CD_AVG/CM_AVG from unsteady datafile to CL/CD/CM from steady datafile
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -1800,7 +1804,7 @@ $!IF 0 == 1
 #-------------------------------------------------
 # Map??: 013.13
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1b/013_Technion/13_SU2_EW-MC_dt=2.5e-6/DPW8-AePW4_UnsteadyForceMoment_v5_013.13.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1b/013_Technion/13_SU2_EW-MC_dt=2.5e-6/DPW8-AePW4_UnsteadyForceMoment_v5_013.13.dat"' )
   #-------------------------------------------------
   # CUSTOM: Assign TestCase1b CL_AVG/CD_AVG/CM_AVG from unsteady datafile to CL/CD/CM from steady datafile
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -1820,7 +1824,7 @@ $!IF 0 == 1
 #-------------------------------------------------
 # Map??: 013.14
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1b/013_Technion/14_SU2_EW-MC_dt=1e-5_HLLC/DPW8-AePW4_UnsteadyForceMoment_v5_013.14.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1b/013_Technion/14_SU2_EW-MC_dt=1e-5_HLLC/DPW8-AePW4_UnsteadyForceMoment_v5_013.14.dat"' )
   #-------------------------------------------------
   # CUSTOM: Assign TestCase1b CL_AVG/CD_AVG/CM_AVG from unsteady datafile to CL/CD/CM from steady datafile
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -1839,7 +1843,7 @@ $!ENDIF
 #-------------------------------------------------
 # Map??: 013.15
 $!VarSet |Z| = ( |NumZones| + |Increment| - 1 )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1b/013_Technion/15_PowerFLOW_2D_grid_v20/DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1b/013_Technion/15_PowerFLOW_2D_grid_v20/DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: Assign TestCase1b CL_AVG/CD_AVG/CM_AVG from unsteady datafile to CL/CD/CM from steady datafile
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -1859,7 +1863,7 @@ $!IF 0 == 1
 #-------------------------------------------------
 # Map??: 014.03
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1b/014_IISc/03_SU2_Symmetric_BC/DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1b/014_IISc/03_SU2_Symmetric_BC/DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: Assign TestCase1b CL_AVG/CD_AVG/CM_AVG from unsteady datafile to CL/CD/CM from steady datafile
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -1878,7 +1882,7 @@ $!ENDIF
 #-------------------------------------------------
 # Map??: 023.01
 $!VarSet |Z| = ( |NumZones| + |Increment| - 1 )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1b/023_PolytechniqueMontreal/01_SA_comp/DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1b/023_PolytechniqueMontreal/01_SA_comp/DPW8-AePW4_UnsteadyForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: Assign TestCase1b CL_AVG/CD_AVG/CM_AVG from unsteady datafile to CL/CD/CM from steady datafile
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -1898,7 +1902,7 @@ $!IF 0 == 1
 #-------------------------------------------------
 # Map??: 027.03
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1b/027_RMIT/03_SST/DPW8-AePW4_URANS_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1b/027_RMIT/03_SST/DPW8-AePW4_URANS_ForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: Assign TestCase1b CL_AVG/CD_AVG/CM_AVG from unsteady datafile to CL/CD/CM from steady datafile
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -1918,7 +1922,7 @@ $!IF 0 == 1
 #-------------------------------------------------
 # Map??: 027.04
 $!VarSet |Z| = ( |NumZones| + |Increment| )
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Buffet/TestCase1b/027_RMIT/04_SA/DPW8-AePW4_URANS_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1b/027_RMIT/04_SA/DPW8-AePW4_URANS_ForceMoment_v5.dat"' )
   #-------------------------------------------------
   # CUSTOM: Assign TestCase1b CL_AVG/CD_AVG/CM_AVG from unsteady datafile to CL/CD/CM from steady datafile
   $!VarSet |Z0| = (|Z| - |Increment| + 1)
@@ -1939,6 +1943,20 @@ $!ENDIF
 #==================================================================================================
 #==================================================================================================
 
+#-------------------------------------------------
+# Map??: 001.01
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/001_University of the West of England/001_01_Fluent_CadenceStructured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!IF |ALPHA| == 1.50
+   $!VarSet |Z| = ( |NumZones| - 1 )
+   $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceStr_Maps" "1a" )
+   $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\0'}}}
+$!ELSEIF |ALPHA| == 3.10
+   $!VarSet |Z| = ( |NumZones| - 0 )
+   $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceStr_Maps" "1a" )
+   $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\0'}}}
+$!ENDIF
+#-------------------------------------------------
+
 #==================================================================================================
 #==================================================================================================
 #==================================================================================================
@@ -1946,7 +1964,7 @@ $!ENDIF
 # Map??: 1c/002.01
 $!IF |ALPHA| == 1.50
    $!VarSet |Z| = ( |NumZones| + 6 + 1 )
-   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1c/002_Embraer/01_CFD++_CadenceUnstructured-Rev02_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
+   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1c/002_Embraer/01_CFD++_CadenceUnstructured-Rev02_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
    $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1c" )
    $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\A'}}}
 $!ENDIF
@@ -1954,7 +1972,7 @@ $!ENDIF
 # Map??: 1c/002.02
 $!IF |ALPHA| == 1.50
    $!VarSet |Z| = ( |NumZones| + 6 + 1 )
-   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1c/002_Embraer/02_CFD++_CadenceStructured-Rev02_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
+   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1c/002_Embraer/02_CFD++_CadenceStructured-Rev02_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
    $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceStr_Maps" "1c" )
    $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\B'}}}
 $!ENDIF
@@ -1962,7 +1980,7 @@ $!ENDIF
 # Map??: 1c/002.03
 $!IF |ALPHA| == 1.50
    $!VarSet |Z| = ( |NumZones| + 7 + 1 )
-   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1c/002_Embraer/03_CFD++_HeldenMesh-Rev02_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
+   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1c/002_Embraer/03_CFD++_HeldenMesh-Rev02_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
    $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "HeldenUnSt_Maps" "1c" )
    $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\C'}}}
 $!ENDIF
@@ -1970,33 +1988,33 @@ $!ENDIF
 # Boeing_only_Scatter Plots
 $!IF |ALPHA| == 1.50
    #-------------------------------------------------
-   # Map71: 1c/003.01
+   # Map??: 1c/003.01
    $!VarSet |Z| = ( |NumZones| + 6 + 1 )
-   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1c/003_Boeing/01_OVERFLOW_Cadence_Structured_REV02_SA-neg/DPW8-AePW4_ForceMoment_v5.dat"' )
+   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1c/003_Boeing/01_OVERFLOW_Cadence_Structured_REV02_SA-neg/DPW8-AePW4_ForceMoment_v5.dat"' )
    $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceStr_Maps" "1c" )
    $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\D'}}}
    #-------------------------------------------------
-   # Map72: 1c/003.02
+   # Map??: 1c/003.02
    $!VarSet |Z| = ( |NumZones| + 6 + 1 )
-   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1c/003_Boeing/02_OVERFLOW_Cadence_Structured_REV02_SA-neg/DPW8-AePW4_ForceMoment_v5.dat"' )
+   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1c/003_Boeing/02_OVERFLOW_Cadence_Structured_REV02_SA-neg/DPW8-AePW4_ForceMoment_v5.dat"' )
    $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceStr_Maps" "1c" )
    $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\E'}}}
    #-------------------------------------------------
-   # Map73: 1c/003.03
+   # Map??: 1c/003.03
    $!VarSet |Z| = ( |NumZones| + 6 + 1 )
-   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1c/003_Boeing/03_OVERFLOW_Cadence_Structured_REV02_SA-neg/DPW8-AePW4_ForceMoment_v5.dat"' )
+   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1c/003_Boeing/03_OVERFLOW_Cadence_Structured_REV02_SA-neg/DPW8-AePW4_ForceMoment_v5.dat"' )
    $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceStr_Maps" "1c" )
    $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\F'}}}
    #-------------------------------------------------
-   # Map74: 1c/003.04
+   # Map??: 1c/003.04
    $!VarSet |Z| = ( |NumZones| + 6 + 1 )
-   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1c/003_Boeing/04_FELight_Cadence_Unstructured_REV02_SA-neg/DPW8-AePW4_ForceMoment_v5.dat"' )
+   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1c/003_Boeing/04_FELight_Cadence_Unstructured_REV02_SA-neg/DPW8-AePW4_ForceMoment_v5.dat"' )
    $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1c" )
    $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\G'}}}
    #-------------------------------------------------
-   # Map75: 1c/003.05
+   # Map??: 1c/003.05
    $!VarSet |Z| = ( |NumZones| + 7 + 1 )
-   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1c/003_Boeing/05_FELight_HeldenMesh_Unstructured_REV02_SA-neg/DPW8-AePW4_ForceMoment_v5.dat"' )
+   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1c/003_Boeing/05_FELight_HeldenMesh_Unstructured_REV02_SA-neg/DPW8-AePW4_ForceMoment_v5.dat"' )
    $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "HeldenUnSt_Maps" "1c" )
    $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\H'}}}
    #-------------------------------------------------
@@ -2016,7 +2034,7 @@ $!ENDIF
 # Map??: 1c/009.01
 $!IF |ALPHA| == 1.50
    $!VarSet |Z| = ( |NumZones| + 6 + 1 )
-   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1c/009_ONERA/01_elsA_Cadence-Structured-REV02_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
+   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1c/009_ONERA/01_elsA_Cadence-Structured-REV02_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
    $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceStr_Maps" "1c" )
    $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\J'}}}
 $!ENDIF
@@ -2024,7 +2042,7 @@ $!ENDIF
 # Map??: 1c/011.01
 $!IF |ALPHA| == 1.50
    $!VarSet |Z| = ( |NumZones| + 6 + 1 + 1 )
-   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1c/011_HEMLAB/01_Structured/DPW8-AePW4_ForceMoment_v5.dat"' )
+   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1c/011_HEMLAB/01_Structured/DPW8-AePW4_ForceMoment_v5.dat"' )
    $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceStr_Maps" "1c" )
    $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\K'}}}
 $!ENDIF
@@ -2032,7 +2050,7 @@ $!ENDIF
 # Map??: 1c/011.02
 $!IF |ALPHA| == 1.50
    $!VarSet |Z| = ( |NumZones| + 10 + 1 )
-   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1c/011_HEMLAB/02_Adaptive/DPW8-AePW4_ForceMoment_v5.dat"' )
+   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1c/011_HEMLAB/02_Adaptive/DPW8-AePW4_ForceMoment_v5.dat"' )
    $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CstmUsrAdp_Maps" "1c" )
    $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\L'}}}
 $!ENDIF
@@ -2040,7 +2058,7 @@ $!ENDIF
 # Map??: 1c/011.03
 $!IF |ALPHA| == 1.50
    $!VarSet |Z| = ( |NumZones| + 6 + 1 )
-   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1c/011_HEMLAB/03_Unstructured/DPW8-AePW4_ForceMoment_v5.dat"' )
+   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1c/011_HEMLAB/03_Unstructured/DPW8-AePW4_ForceMoment_v5.dat"' )
    $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1c" )
    $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\M'}}}
 $!ENDIF
@@ -2048,7 +2066,7 @@ $!ENDIF
 # Map??: 1c/011.04
 $!IF |ALPHA| == 1.50
    $!VarSet |Z| = ( |NumZones| + 4 + 1 )
-   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1c/011_HEMLAB/04_HeldenMesh/DPW8-AePW4_ForceMoment_v5.dat"' )
+   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1c/011_HEMLAB/04_HeldenMesh/DPW8-AePW4_ForceMoment_v5.dat"' )
    $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "HeldenUnSt_Maps" "1c" )
    $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\N'}}}
 $!ENDIF
@@ -2056,7 +2074,7 @@ $!ENDIF
 # Map??: 1c/012.01
 $!IF |ALPHA| == 1.50
    $!VarSet |Z| = ( |NumZones| + 6 + 1 )
-   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1c/012_NASA_LARC_AB/01_FUN3D_NCFV_Cadence/DPW8-AePW4_ForceMoment_v5.dat"' )
+   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1c/012_NASA_LARC_AB/01_FUN3D_NCFV_Cadence/DPW8-AePW4_ForceMoment_v5.dat"' )
    $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1c" )
    $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\P'}}}
 $!ENDIF
@@ -2064,7 +2082,7 @@ $!ENDIF
 # Map??: 1c/012.02
 $!IF |ALPHA| == 1.50
    $!VarSet |Z| = ( |NumZones| + 6 + 1 )
-   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1c/012_NASA_LARC_AB/02_FUN3D_SFE_Cadence/DPW8-AePW4_ForceMoment_v5.dat"' )
+   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1c/012_NASA_LARC_AB/02_FUN3D_SFE_Cadence/DPW8-AePW4_ForceMoment_v5.dat"' )
    $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1c" )
    $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\Q'}}}
 $!ENDIF
@@ -2072,7 +2090,7 @@ $!ENDIF
 # Map??: 1c/012.03
 $!IF |ALPHA| == 1.50
    $!VarSet |Z| = ( |NumZones| + 7 + 1 )
-   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1c/012_NASA_LARC_AB/03_FUN3D_NCFV_Helden/DPW8-AePW4_ForceMoment_v5.dat"' )
+   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1c/012_NASA_LARC_AB/03_FUN3D_NCFV_Helden/DPW8-AePW4_ForceMoment_v5.dat"' )
    $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "HeldenUnSt_Maps" "1c" )
    $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\R'}}}
 $!ENDIF
@@ -2080,7 +2098,7 @@ $!ENDIF
 # Map??: 1c/012.04
 $!IF |ALPHA| == 1.50
    $!VarSet |Z| = ( |NumZones| + 7 + 1 )
-   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1c/012_NASA_LARC_AB/04_FUN3D_SFE_Helden/DPW8-AePW4_ForceMoment_v5.dat"' )
+   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1c/012_NASA_LARC_AB/04_FUN3D_SFE_Helden/DPW8-AePW4_ForceMoment_v5.dat"' )
    $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "HeldenUnSt_Maps" "1c" )
    $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\S'}}}
 $!ENDIF
@@ -2088,7 +2106,7 @@ $!ENDIF
 # Map??: 1c/012.05
 $!IF |ALPHA| == 1.50
    $!VarSet |Z| = ( |NumZones| + 6 + 1 )
-   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1c/012_NASA_LARC_AB/05_FUN3D_NCFV_Adapt/DPW8-AePW4_ForceMoment_v5.dat"' )
+   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1c/012_NASA_LARC_AB/05_FUN3D_NCFV_Adapt/DPW8-AePW4_ForceMoment_v5.dat"' )
    $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CstmUsrAdp_Maps" "1c" )
    $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\T'}}}
 $!ENDIF
@@ -2096,15 +2114,15 @@ $!ENDIF
 # Map??: 1c/012.06
 $!IF |ALPHA| == 1.50
    $!VarSet |Z| = ( |NumZones| + 6 + 1 )
-   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1c/012_NASA_LARC_AB/06_FUN3D_SFE_Adapt/DPW8-AePW4_ForceMoment_v5.dat"' )
+   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1c/012_NASA_LARC_AB/06_FUN3D_SFE_Adapt/DPW8-AePW4_ForceMoment_v5.dat"' )
    $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CstmUsrAdp_Maps" "1c" )
    $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\U'}}}
 $!ENDIF
 #-------------------------------------------------
-# Map43: 029.01
+# Map??: 029.01
 $!IF |ALPHA| == 1.50
    $!VarSet |Z| = ( |NumZones| + |Increment| )
-   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1a/029_MIT_SANS/01_SANS_refine/DPW8-AePW4_ForceMoment_v5.dat"' )
+   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/029_MIT_SANS/01_SANS_refine/DPW8-AePW4_ForceMoment_v5.dat"' )
      # CUSTOM: Alpha (7 Grid Zones)
      $!IF |Increment| > 6
        $!VarSet |Z| = ( |Z| - (6-7) )
@@ -2125,10 +2143,10 @@ $!IF |ALPHA| == 1.50
    $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\S'}}}
 $!ENDIF
 #-------------------------------------------------
-# Map44: 029.02
+# Map??: 029.02
 $!IF |ALPHA| == 1.50
    $!VarSet |Z| = ( |NumZones| + |Increment| )
-   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1a/029_MIT_SANS/02_SANS_Metris/DPW8-AePW4_ForceMoment_v5.dat"' )
+   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/029_MIT_SANS/02_SANS_Metris/DPW8-AePW4_ForceMoment_v5.dat"' )
      # CUSTOM: Alpha (8 Grid Zones)
      $!IF |Increment| > 6
        $!VarSet |Z| = ( |Z| - (6-8) )
@@ -2152,7 +2170,7 @@ $!ENDIF
 # Map??: 1c/040.01
 $!IF |ALPHA| == 1.50
    $!VarSet |Z| = ( |NumZones| + 6 + 1 )
-   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1c/040_QinetiQ/01_FLUENT_ONERA-OAT15A_Cadence_Unstructured_REV02_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
+   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1c/040_QinetiQ/01_FLUENT_ONERA-OAT15A_Cadence_Unstructured_REV02_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
    $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1c" )
    $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\V'}}}
 $!ENDIF
@@ -2160,7 +2178,7 @@ $!ENDIF
 # Map??: 1c/040.02
 $!IF |ALPHA| == 1.50
    $!VarSet |Z| = ( |NumZones| + 6 + 1 )
-   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../DPW8-Scatter/TestCase1c/040_QinetiQ/02_FLUENT_ONERA-OAT15A_Cadence_Structured_REV02_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
+   $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1c/040_QinetiQ/02_FLUENT_ONERA-OAT15A_Cadence_Structured_REV02_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
    $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceStr_Maps" "1c" )
    $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\W'}}}
 $!ENDIF
