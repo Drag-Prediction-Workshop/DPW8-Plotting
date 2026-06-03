@@ -2,6 +2,8 @@
 # Include Test Case1b Data: Set to 1
 $!VarSet |IncludeTestCase1b| = 1
 
+# Export plots for TestCase1b data only: Set to 1
+$!VarSet |ExportTestCase1b| = 0
 
 # Include Preliminary Text on Plots: Set to 1
 $!VarSet |Preliminary| = 0
