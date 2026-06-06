@@ -191,7 +191,8 @@ $!IF 1 == 1
     $!XYLineAxis YDetail 1 {GRSpacing = 0.005}
     $!XYLineAxis YDetail 1 {AutoGrid = No}
   $!ELSEIF |ALPHA| == 3.10
-   #$!XYLineAxis YDetail 1 {RangeMin = -0.140   RangeMax = -0.115}
+    $!XYLineAxis YDetail 1 {RangeMin = -0.210   RangeMax = -0.070}
+    $!XYLineAxis YDetail 1 {GRSpacing = 0.02}
   $!ENDIF
   $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
   $!IF |ExportTestCase1b| == 1
@@ -230,7 +231,8 @@ $!IF 1 == 1
   $!IF |ALPHA| == 1.50
     $!XYLineAxis YDetail 1 {RangeMin = 135.0   RangeMax = 165.0}
   $!ELSEIF |ALPHA| == 3.10
-   #$!XYLineAxis YDetail 1 {RangeMin = 135.0   RangeMax = 165.0}
+    $!XYLineAxis YDetail 1 {RangeMin = 120.0   RangeMax = 600.0}
+    $!XYLineAxis YDetail 1 {GRSpacing = 100}
   $!ENDIF
  #$!XYLineAxis YDetail 1 {TickLabel {NumFormat {Formatting = FixedFloat Precision = 1}}}
   $!XYLineAxis YDetail 1 {TickLabel{NumFormat { Formatting = Integer }}}
@@ -320,7 +322,8 @@ $!IF 1 == 1
     $!XYLineAxis YDetail 1 {GRSpacing = 0.005}
     $!XYLineAxis YDetail 1 {AutoGrid = No}
   $!ELSEIF |ALPHA| == 3.10
-
+    $!XYLineAxis YDetail 1 {RangeMin = -0.210   RangeMax = -0.070}
+    $!XYLineAxis YDetail 1 {GRSpacing = 0.02}
   $!ENDIF
   $!XYLineAxis YDetail 1 {TickLabel {NumFormat {Formatting = FixedFloat Precision = 3}}}
   $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
@@ -365,7 +368,8 @@ $!IF 1 == 1
   $!IF |ALPHA| == 1.50
     $!XYLineAxis YDetail 1 {RangeMin = 135.0   RangeMax = 165.0}
   $!ELSEIF |ALPHA| == 3.10
-
+    $!XYLineAxis YDetail 1 {RangeMin = 120.0   RangeMax = 600.0}
+    $!XYLineAxis YDetail 1 {GRSpacing = 100}
   $!ENDIF
  #$!XYLineAxis YDetail 1 {TickLabel {NumFormat {Formatting = FixedFloat Precision = 1}}}
   $!XYLineAxis YDetail 1 {TickLabel{NumFormat { Formatting = Integer }}}

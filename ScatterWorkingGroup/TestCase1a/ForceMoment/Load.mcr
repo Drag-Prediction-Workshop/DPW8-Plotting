@@ -1945,15 +1945,75 @@ $!ENDIF
 
 #-------------------------------------------------
 # Map??: 001.01
-$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/001_University of the West of England/001_01_Fluent_CadenceStructured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/001_University_of_the_West_of_England/001_01_Fluent_CadenceStructured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!IF |ALPHA| == 1.50
-   $!VarSet |Z| = ( |NumZones| - 1 )
+   $!VarSet |Z| = ( |NumZones| + 4 )
    $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceStr_Maps" "1a" )
    $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\0'}}}
 $!ELSEIF |ALPHA| == 3.10
-   $!VarSet |Z| = ( |NumZones| - 0 )
+   $!VarSet |Z| = ( |NumZones| + 5 )
    $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceStr_Maps" "1a" )
    $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\0'}}}
+$!ENDIF
+#-------------------------------------------------
+# Map??: 001.02
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/001_University_of_the_West_of_England/001_02_Fluent_CadenceUnstructured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!IF |ALPHA| == 1.50
+   $!VarSet |Z| = ( |NumZones| + 4 )
+   $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
+   $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\!'}}}
+$!ELSEIF |ALPHA| == 3.10
+   $!VarSet |Z| = ( |NumZones| + 5 )
+   $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
+   $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\!'}}}
+$!ENDIF
+#-------------------------------------------------
+# Map??: 001.03
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/001_University_of_the_West_of_England/001_03_Fluent_CadenceStructured_SST/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!IF |ALPHA| == 1.50
+   $!VarSet |Z| = ( |NumZones| + 4 )
+   $!RUNMACROFUNCTION "AddLineMap" ( "SST_Maps"  "CadenceStr_Maps" "1a" )
+   $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\@'}}}
+$!ELSEIF |ALPHA| == 3.10
+   $!VarSet |Z| = ( |NumZones| + 5 )
+   $!RUNMACROFUNCTION "AddLineMap" ( "SST_Maps"  "CadenceStr_Maps" "1a" )
+   $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\@'}}}
+$!ENDIF
+#-------------------------------------------------
+# Map??: 001.04
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/001_University_of_the_West_of_England/001_04_Fluent_CadenceUnstructured_SST/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!IF |ALPHA| == 1.50
+   $!VarSet |Z| = ( |NumZones| + 4 )
+   $!RUNMACROFUNCTION "AddLineMap" ( "SST_Maps"  "CadenceUnS_Maps" "1a" )
+   $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\#'}}}
+$!ELSEIF |ALPHA| == 3.10
+   $!VarSet |Z| = ( |NumZones| + 5 )
+   $!RUNMACROFUNCTION "AddLineMap" ( "SST_Maps"  "CadenceUnS_Maps" "1a" )
+   $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\#'}}}
+$!ENDIF
+#-------------------------------------------------
+# Map??: 001.05
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/001_University_of_the_West_of_England/001_05_Fluent_CadenceUnstructured_SA+QCR/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!IF |ALPHA| == 1.50
+   $!VarSet |Z| = ( |NumZones| + 4 )
+   $!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps"  "CadenceUnS_Maps" "1a" )
+   $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\$'}}}
+$!ELSEIF |ALPHA| == 3.10
+   $!VarSet |Z| = ( |NumZones| + 5 )
+   $!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps"  "CadenceUnS_Maps" "1a" )
+   $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\$'}}}
+$!ENDIF
+#-------------------------------------------------
+# Map??: 001.05
+$!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|ScatterRepo|/TestCase1a/001_University_of_the_West_of_England/001_06_Fluent_CadenceStructured_SA+QCR/DPW8-AePW4_ForceMoment_v5.dat"' )
+$!IF |ALPHA| == 1.50
+   $!VarSet |Z| = ( |NumZones| + 4 )
+   $!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps"  "CadenceStr_Maps" "1a" )
+   $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\%'}}}
+$!ELSEIF |ALPHA| == 3.10
+   $!VarSet |Z| = ( |NumZones| + 5 )
+   $!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps"  "CadenceStr_Maps" "1a" )
+   $!LineMap [|NumLineMaps|]  Symbols {SymbolShape {IsASCII = Yes ASCIIShape {UseBaseFont = Yes FontOverride = UserDef ASCIIChar = '\%'}}}
 $!ENDIF
 #-------------------------------------------------
 
@@ -2308,9 +2368,9 @@ $!LinePlotLayers
   ShowSymbols = Yes
 
 $!VarSet |LegendH| = 1.05
-$!VarSet |LegendY| = 10
+$!VarSet |LegendY| = 2
 $!IF |ALPHA| == 1.50
-  $!VarSet |LegendH| = 0.72
+  $!VarSet |LegendH| = 0.68
   $!VarSet |LegendY| = 2
 $!ENDIF
 $!GlobalLinePlot
