@@ -619,6 +619,8 @@ $!IF 1 == 1
   # Disable data from non-1c participants
   $!ActiveLineMaps -= [|TestCase1aa_Maps|]
   $!ActiveLineMaps -= [|TestCase1c_Maps|]
+# Hardcode: Remove 012.02, 012.06, 012.07
+  $!ActiveLineMaps -= [46,50,51]
   $!GlobalLinePlot Legend { TextShape { Height = 1.25 } XYPos { Y = 10 } }
   #-----------------
   $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'TestCase1c_Alpha|ALPHA|_|PlotName|_1cTeams_1aData' '|ImageFormat|' '|ImageFormat2|' )
@@ -675,6 +677,8 @@ $!IF 1 == 1
   # Disable data from non-1c participants
   $!ActiveLineMaps -= [|TestCase1aa_Maps|]
   $!ActiveLineMaps -= [|TestCase1c_Maps|]
+# Hardcode: Remove 012.02, 012.06, 012.07
+  $!ActiveLineMaps -= [46,50,51]
   $!GlobalLinePlot Legend { TextShape { Height = 1.25 } XYPos { Y = 10 } }
   #-----------------
   $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'TestCase1a_Alpha|ALPHA|_|PlotName|_1cTeams' '|ImageFormat|' '|ImageFormat2|' )
