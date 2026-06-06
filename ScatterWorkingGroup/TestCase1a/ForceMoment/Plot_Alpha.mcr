@@ -169,7 +169,8 @@ $!IF 1 == 1
     $!GlobalLinePlot Legend { TextShape { Height = |LegendH| } XYPos { Y = |LegendY| } }
    $!ENDIF
   $!ENDIF
-  $!ActiveLineMaps  = [|TestCase1a_Maps|]
+  $!ActiveLineMaps  = [|TestCase1aa_Maps|]
+  $!ActiveLineMaps += [|TestCase1a_Maps|]
   $!ActiveLineMaps += [|TestCase1b_Maps|]
   $!ActiveLineMaps += [|TestCase1c_Maps|]
   $!ActiveLineMaps -= [|Inactive_Maps|]
@@ -211,7 +212,8 @@ $!IF 1 == 1
     $!GlobalLinePlot Legend { TextShape { Height = |LegendH| } XYPos { Y = |LegendY| } }
    $!ENDIF
   $!ENDIF
-  $!ActiveLineMaps  = [|TestCase1a_Maps|]
+  $!ActiveLineMaps  = [|TestCase1aa_Maps|]
+  $!ActiveLineMaps += [|TestCase1a_Maps|]
   $!ActiveLineMaps += [|TestCase1b_Maps|]
   $!ActiveLineMaps += [|TestCase1c_Maps|]
   $!ActiveLineMaps -= [|Inactive_Maps|]
@@ -253,7 +255,8 @@ $!IF 1 == 1
     $!GlobalLinePlot Legend { TextShape { Height = |LegendH| } XYPos { Y = |LegendY| } }
    $!ENDIF
   $!ENDIF
-  $!ActiveLineMaps  = [|TestCase1a_Maps|]
+  $!ActiveLineMaps  = [|TestCase1aa_Maps|]
+  $!ActiveLineMaps += [|TestCase1a_Maps|]
   $!ActiveLineMaps += [|TestCase1b_Maps|]
   $!ActiveLineMaps += [|TestCase1c_Maps|]
   $!ActiveLineMaps -= [|Inactive_Maps|]
@@ -299,7 +302,8 @@ $!IF 1 == 1
   #-----------------
   $!RUNMACROFUNCTION "ReplaceTitleAlpha" ( '1a' '|ALPHA|' )
   #-----------------
-  $!ActiveLineMaps  = [|TestCase1a_Maps|]
+  $!ActiveLineMaps  = [|TestCase1aa_Maps|]
+  $!ActiveLineMaps += [|TestCase1a_Maps|]
   $!ActiveLineMaps += [|TestCase1b_Maps|]
   $!ActiveLineMaps += [|TestCase1c_Maps|]
   $!ActiveLineMaps -= [|Inactive_Maps|]
@@ -348,7 +352,8 @@ $!IF 1 == 1
     $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'TestCase1c_Alpha|ALPHA|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
   $!ENDIF
  #$!GlobalLinePlot Legend { TextShape { Height = |LegendH| } XYPos { Y = |LegendY| } }
- #$!ActiveLineMaps  = [|TestCase1a_Maps|]
+ #$!ActiveLineMaps  = [|TestCase1aa_Maps|]
+ #$!ActiveLineMaps += [|TestCase1a_Maps|]
  #$!ActiveLineMaps += [|TestCase1b_Maps|]
  #$!ActiveLineMaps += [|TestCase1c_Maps|]
  #$!ActiveLineMaps -= [|Inactive_Maps|]
@@ -381,7 +386,8 @@ $!IF 1 == 1
     $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'Alpha|ALPHA|_|PlotName|_TestCase1b' '|ImageFormat|' '|ImageFormat2|' )
     $!GlobalLinePlot Legend { TextShape { Height = |LegendH| } XYPos { Y = |LegendY| } }
   $!ENDIF
-  $!ActiveLineMaps  = [|TestCase1a_Maps|]
+  $!ActiveLineMaps  = [|TestCase1aa_Maps|]
+  $!ActiveLineMaps += [|TestCase1a_Maps|]
   $!ActiveLineMaps += [|TestCase1b_Maps|]
   $!ActiveLineMaps += [|TestCase1c_Maps|]
   $!ActiveLineMaps -= [|Inactive_Maps|]
@@ -431,7 +437,8 @@ $!IF 1 == 1
   $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'TestCase1c_Alpha|ALPHA|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
  $!ENDIF
  #$!GlobalLinePlot Legend { TextShape { Height = |LegendH| } XYPos { Y = |LegendY| } }
- #$!ActiveLineMaps  = [|TestCase1a_Maps|]
+ #$!ActiveLineMaps  = [|TestCase1aa_Maps|]
+ #$!ActiveLineMaps += [|TestCase1a_Maps|]
  #$!ActiveLineMaps += [|TestCase1b_Maps|]
  #$!ActiveLineMaps += [|TestCase1c_Maps|]
  #$!ActiveLineMaps -= [|Inactive_Maps|]
@@ -481,7 +488,8 @@ $!IF 1 == 1
   $!RUNMACROFUNCTION "ExportAndSave" ( '|MACROFILEPATH|' 'TestCase1c_Alpha|ALPHA|_|PlotName|' '|ImageFormat|' '|ImageFormat2|' )
  $!ENDIF
  #$!GlobalLinePlot Legend { TextShape { Height = |LegendH| } XYPos { Y = |LegendY| } }
- #$!ActiveLineMaps  = [|TestCase1a_Maps|]
+ #$!ActiveLineMaps  = [|TestCase1aa_Maps|]
+ #$!ActiveLineMaps += [|TestCase1a_Maps|]
  #$!ActiveLineMaps += [|TestCase1b_Maps|]
  #$!ActiveLineMaps += [|TestCase1c_Maps|]
  #$!ActiveLineMaps -= [|Inactive_Maps|]
@@ -606,11 +614,10 @@ $!IF 1 == 1
   #-----------------
   $!RUNMACROFUNCTION "ReplaceTitleAlpha" ( '1c' '|ALPHA|' )
   $!RUNMACROFUNCTION "ClearYRange"
-  $!RUNMACROFUNCTION "AddYRange" ( '1a' 'Custom3' '0.000450' '149.75' '5.7' '152.5' )
+  $!RUNMACROFUNCTION "AddYRange" ( '1a' 'Custom3' '0.000450' '149.75' '5.3' '152.5' )
   #-----------------
-  # HARDCODED!!!! Disable data from non-1c participants
-  $!ActiveLineMaps -= [6,9,12,28,30,34-39,42]
-  $!ActiveLineMaps -= [10,26-27,40,62,64,74-75,78-81]
+  # Disable data from non-1c participants
+  $!ActiveLineMaps -= [|TestCase1aa_Maps|]
   $!ActiveLineMaps -= [|TestCase1c_Maps|]
   $!GlobalLinePlot Legend { TextShape { Height = 1.25 } XYPos { Y = 10 } }
   #-----------------
@@ -663,11 +670,10 @@ $!IF 1 == 1
   #-----------------
   $!RUNMACROFUNCTION "ReplaceTitleAlpha" ( '1c' '|ALPHA|' )
   $!RUNMACROFUNCTION "ClearYRange"
-  $!RUNMACROFUNCTION "AddYRange" ( '1a' 'Custom3' '0.000450' '149.75' '5.7' '152.5' )
+  $!RUNMACROFUNCTION "AddYRange" ( '1a' 'Custom3' '0.000450' '149.75' '5.3' '152.5' )
   #-----------------
-  # HARDCODED!!!! Disable data from non-1c participants
-  $!ActiveLineMaps -= [6,9,12,28,30,34-39,42]
-  $!ActiveLineMaps -= [10,26-27,40,62,64,74-75,78-81]
+  # Disable data from non-1c participants
+  $!ActiveLineMaps -= [|TestCase1aa_Maps|]
   $!ActiveLineMaps -= [|TestCase1c_Maps|]
   $!GlobalLinePlot Legend { TextShape { Height = 1.25 } XYPos { Y = 10 } }
   #-----------------
