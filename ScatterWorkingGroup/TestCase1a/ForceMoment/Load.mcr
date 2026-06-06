@@ -474,17 +474,17 @@ $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRe
 $!RUNMACROFUNCTION "AddLineMap" ( "SAQ_Maps" "CadenceStr_Maps" "1aa" )
 #-------------------------------------------------
 # Map??: 009.01
-$!VarSet |Z| = ( |NumZones| + |Increment| )
+$!VarSet |Z| = ( |NumZones| + |Increment| - 4 )
 $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/009_ONERA/01_elsA_Cadence-structured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceStr_Maps" "1a" )
 #-------------------------------------------------
 # Map??: 009.02
-$!VarSet |Z| = ( |NumZones| + |Increment| )
+$!VarSet |Z| = ( |NumZones| + |Increment| - 4 )
 $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/009_ONERA/02_elsA_Cadence-unstructured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "CadenceUnS_Maps" "1a" )
 #-------------------------------------------------
 # Map??: 009.03
-$!VarSet |Z| = ( |NumZones| + |Increment| )
+$!VarSet |Z| = ( |NumZones| + |Increment| - 3 )
 $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/009_ONERA/03_elsA_Helden-unstructured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
   # CUSTOM: Alpha (only 5 Grid Zones)
   $!IF |Increment| > 6
@@ -508,7 +508,7 @@ $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "HeldenUnSt_Maps" "1a" )
   $!ENDIF
 #-------------------------------------------------
 # Map??: 009.04
-$!VarSet |Z| = ( |NumZones| + |Increment| )
+$!VarSet |Z| = ( |NumZones| + |Increment| - 4 - 3 )
 $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/009_ONERA/04_elsA_ONERA_O-structured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
   # CUSTOM: Alpha (9 Grid Zones)
   $!IF |Increment| > 6
@@ -520,19 +520,19 @@ $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRe
 $!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps"  "OneraStruc_Maps" "1a" )
 #-------------------------------------------------
 # Map??: 009.05
-$!VarSet |Z| = ( |NumZones| + |Increment| )
+$!VarSet |Z| = ( |NumZones| + |Increment| - 4 )
 $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/009_ONERA/05_elsA_ONERA_O-unstructured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
-$!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "CadenceStr_Maps" "1a" )
+$!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "OneraStruc_Maps" "1a" )
 #-------------------------------------------------
 # Map??: 009.06
-$!VarSet |Z| = ( |NumZones| + |Increment| )
+$!VarSet |Z| = ( |NumZones| + |Increment| + 3 )
 $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/009_ONERA/06_elsA_ONERA-Structured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
-$!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "CadenceUnS_Maps" "1a" )
+$!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "OneraStruc_Maps" "1a" )
 #-------------------------------------------------
 # Map??: 009.07
-$!VarSet |Z| = ( |NumZones| + |Increment| )
+$!VarSet |Z| = ( |NumZones| + |Increment| + 3 )
 $!RUNMACROFUNCTION "AppendDataSetFile" ( '"|MACROFILEPATH|/../../../../|BuffetRepo|/TestCase1a/009_ONERA/07_CODA_ONERA-Structured_SA/DPW8-AePW4_ForceMoment_v5.dat"' )
-$!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "HeldenUnSt_Maps" "1a" )
+$!RUNMACROFUNCTION "AddLineMap" ( "SA_Maps" "OneraStruc_Maps" "1a" )
 #-------------------------------------------------
 # Map??: 011.01
 $!VarSet |Z| = ( |NumZones| + |Increment| )
